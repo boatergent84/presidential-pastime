@@ -159,10 +159,10 @@ export default function Home() {
 
           <div className="flex gap-3 overflow-x-auto pb-3">
 
-            {presidents.map(([initials, name, years]) => (
+            {presidents.map(([initials, name, years], index) => (
 
               <div
-                key={`${name}-${years}`}
+                key={`${name}-${years}-${index}`}
                 className="min-w-[112px] border border-[#6d7d8b] bg-[#102c44] p-3 text-center"
               >
 
