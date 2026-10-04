@@ -6,7 +6,7 @@ const presidents = [
   ["FDR", "F.D. Roosevelt", "1933–1945"],
   ["HT", "Truman", "1945–1953"],
   ["DDE", "Eisenhower", "1953–1961"],
-  ["JFK", "Kennedy", "1961–1963"],
+  ["/jfk-portrait.jpg", "Kennedy", "1961–1963"],
   ["RN", "Nixon", "1969–1974"],
   ["RR", "Reagan", "1981–1989"],
   ["GHB", "H.W. Bush", "1989–1993"],
@@ -146,7 +146,15 @@ export default function Home() {
               >
 
                 <div className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-full bg-[#e8dfca] font-serif text-lg font-bold text-[#142a3d]">
-                  {initials}
+                  {initials.startsWith("/") ? (
+  <img
+    src={initials}
+    alt={`${name} portrait`}
+    className="h-14 w-14 rounded-full object-cover grayscale"
+  />
+) : (
+  initials
+)}
                 </div>
 
                 <p className="font-serif text-sm font-bold">
