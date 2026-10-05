@@ -408,7 +408,6 @@ export default function JohnFKennedyPage() {
           </div>
         </section>  
           
-          <section className="mt-14">
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
             Explore the Archive
           </p>
