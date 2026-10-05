@@ -152,7 +152,6 @@ export default function Home() {
       {/* PRESIDENT BROWSER */}
       <section className="bg-[#071d31] py-7 text-white">
         <div className="mx-auto max-w-7xl px-6">
-
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[#d9bd80]">
             Browse by President
           </p>
@@ -161,7 +160,7 @@ export default function Home() {
 
             {presidents.map(([initials, name, years], index) => (
 
-              <div
+              <a href={name === "Kennedy" ? "/presidents/john-f-kennedy" : "#"}
                 key={`${name}-${years}-${index}`}
                 className="min-w-[112px] border border-[#6d7d8b] bg-[#102c44] p-3 text-center"
               >
@@ -186,7 +185,7 @@ export default function Home() {
                   {years}
                 </p>
 
-              </div>
+              </a>
 
             ))}
 
