@@ -206,6 +206,7 @@ export default function JohnFKennedyPage() {
                 "1961",
                 "Opening Day",
                 "Kennedy continued the presidential tradition of participating in Major League Baseball's Opening Day ceremonies in Washington.",
+                "/jfk-first-pitch-1961.jpg"
               ],
               [
                 "1962",
