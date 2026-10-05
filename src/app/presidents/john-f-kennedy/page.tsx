@@ -353,6 +353,61 @@ export default function JohnFKennedyPage() {
         </section>
         
         <section className="mt-14">
+                {/* Memorabilia & Artifacts */}
+        <section className="mt-14">
+          <div className="border-b-2 border-[#b8aa8e] pb-3">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
+              Memorabilia & Artifacts
+            </p>
+            <h2 className="mt-1 font-serif text-3xl font-bold">
+              Kennedy Baseball Collection
+            </h2>
+            <p className="mt-3 max-w-3xl leading-7 text-[#59636b]">
+              Baseball artifacts and documents help preserve the story of
+              President Kennedy&apos;s connection to America&apos;s pastime.
+            </p>
+          </div>
+
+          <div className="mt-6 grid gap-5 md:grid-cols-3">
+            {[
+              [
+                "CEREMONIAL BASEBALLS",
+                "First Pitch Baseballs",
+                "Baseballs connected with presidential Opening Day ceremonies and other official baseball events.",
+              ],
+              [
+                "EPHEMERA",
+                "Programs & Tickets",
+                "Programs, tickets and other printed material document the games and ceremonies attended during the Kennedy presidency.",
+              ],
+              [
+                "PRESIDENTIAL RECORDS",
+                "Letters & Documents",
+                "Correspondence, schedules and archival records provide a documentary trail of baseball-related events at the Kennedy White House.",
+              ],
+            ].map(([category, title, description]) => (
+              <article
+                key={title}
+                className="border border-[#c9bea7] bg-[#f6f0e4] p-6 shadow-sm"
+              >
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#a4282d]">
+                  {category}
+                </p>
+
+                <h3 className="mt-3 font-serif text-xl font-bold">
+                  {title}
+                </h3>
+
+                <div className="mt-3 h-1 w-10 bg-[#a4282d]" />
+
+                <p className="mt-4 leading-7 text-[#59636b]">
+                  {description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>  
+          
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
             Explore the Archive
           </p>
