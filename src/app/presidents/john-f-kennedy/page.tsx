@@ -211,13 +211,13 @@ export default function JohnFKennedyPage() {
                 "1962",
                 "Baseball & the White House",
                 "Baseball remained part of the public and ceremonial life surrounding the Kennedy White House.",
-              ],
+              "/jfk-first-pitch-1962.webp"],
               [
                 "1963",
                 "Final Season",
                 "Kennedy's final year in office overlapped with another memorable season in American baseball history.",
               ],
-            ].map(([year, title, description]) => (
+            ].map(([year, title, description, image]) => (
               <article
                 key={`${year}-${title}`}
                 className="grid border border-[#c9bea7] bg-[#f6f0e4] shadow-sm md:grid-cols-[110px_1fr]"
@@ -231,6 +231,13 @@ export default function JohnFKennedyPage() {
                   <p className="mt-2 leading-7 text-[#4c5963]">
                     {description}
                   </p>
+                  {image && (
+  <img
+    src={image}
+    alt={`${title} — ${year}`}
+    className="mt-4 w-full rounded-sm object-cover"
+  />
+)}
                 </div>
               </article>
             ))}
