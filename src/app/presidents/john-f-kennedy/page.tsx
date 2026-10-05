@@ -247,6 +247,59 @@ export default function JohnFKennedyPage() {
         </section>
 
         {/* Archive categories */}
+        {/* Games & First Pitches */}
+        <section className="mt-14">
+          <div className="border-b-2 border-[#b8aa8e] pb-3">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
+              Games & First Pitches
+            </p>
+            <h2 className="mt-1 font-serif text-3xl font-bold">
+              Kennedy at the Ballpark
+            </h2>
+          </div>
+
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            {[
+              [
+                "APR 10, 1961",
+                "Opening Day • Griffith Stadium",
+                "Washington Senators vs. Chicago White Sox",
+                "Kennedy threw the ceremonial first pitch during his first baseball Opening Day as president.",
+              ],
+              [
+                "APR 9, 1962",
+                "Opening Day • D.C. Stadium",
+                "Washington Senators vs. Detroit Tigers",
+                "Kennedy threw the ceremonial first pitch for the first Major League game played at the new D.C. Stadium.",
+              ],
+              [
+                "JUL 10, 1962",
+                "MLB All-Star Game • D.C. Stadium",
+                "National League vs. American League",
+                "Kennedy attended the All-Star Game in Washington and participated in the ceremonial first-pitch tradition.",
+              ],
+              [
+                "APR 8, 1963",
+                "Opening Day • D.C. Stadium",
+                "Washington Senators vs. Baltimore Orioles",
+                "Kennedy returned to the ballpark for his third presidential Opening Day ceremony.",
+              ],
+            ].map(([date, title, game, description]) => (
+              <article
+                key={date}
+                className="border border-[#c9bea7] bg-[#f6f0e4] p-6 shadow-sm"
+              >
+                <p className="text-xs font-bold tracking-[0.2em] text-[#a4282d]">
+                  {date}
+                </p>
+                <h3 className="mt-2 font-serif text-xl font-bold">{title}</h3>
+                <p className="mt-2 text-sm font-bold text-[#53606a]">{game}</p>
+                <p className="mt-4 leading-7 text-[#59636b]">{description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="mt-14">
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
             Explore the Archive
