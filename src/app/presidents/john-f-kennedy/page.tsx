@@ -245,8 +245,11 @@ export default function JohnFKennedyPage() {
             ))}
           </div>
         </section>
-
+        
+        
         {/* Archive categories */}
+      
+
         {/* Games & First Pitches */}
         <section className="mt-14">
           <div className="border-b-2 border-[#b8aa8e] pb-3">
@@ -299,7 +302,56 @@ export default function JohnFKennedyPage() {
             ))}
           </div>
         </section>
+{/* Historic Photos */}
+        <section className="mt-14">
+          <div className="border-b-2 border-[#b8aa8e] pb-3">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
+              Historic Photos
+            </p>
+            <h2 className="mt-1 font-serif text-3xl font-bold">
+              Baseball at the Kennedy White House
+            </h2>
+          </div>
 
+          <article className="mt-6 overflow-hidden border border-[#c9bea7] bg-[#f6f0e4] shadow-sm">
+            <div className="grid md:grid-cols-[1.25fr_1fr]">
+              <img
+                src="/jfk-stan-musial-1962.jpg"
+                alt="President John F. Kennedy with Stan Musial and the Musial family in the Oval Office in 1962"
+                className="h-full min-h-[360px] w-full object-cover grayscale"
+              />
+
+              <div className="flex flex-col justify-center p-7">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
+                  July 11, 1962 • Oval Office
+                </p>
+
+                <h3 className="mt-3 font-serif text-2xl font-bold">
+                  Stan Musial Visits President Kennedy
+                </h3>
+
+                <div className="mt-4 h-1 w-14 bg-[#a4282d]" />
+
+                <p className="mt-5 leading-7 text-[#59636b]">
+                  President Kennedy welcomed St. Louis Cardinals legend Stan
+                  Musial to the Oval Office along with Musial&apos;s wife,
+                  Lillian, and daughter, Janet.
+                </p>
+
+                <div className="mt-6 border-t border-[#c9bea7] pt-4">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8d292d]">
+                    Photograph
+                  </p>
+                  <p className="mt-2 text-sm text-[#59636b]">
+                    Robert Knudsen • White House Photographs • John F. Kennedy
+                    Presidential Library and Museum
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        
         <section className="mt-14">
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
             Explore the Archive
