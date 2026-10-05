@@ -216,6 +216,7 @@ export default function JohnFKennedyPage() {
                 "1963",
                 "Final Season",
                 "Kennedy's final year in office overlapped with another memorable season in American baseball history.",
+                "/jfk-opening-day-1963.jpg"
               ],
             ].map(([year, title, description, image]) => (
               <article
