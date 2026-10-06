@@ -218,9 +218,9 @@ export default function Home() {
               photographs and stories connected with each American president.
             </p>
 
-            <button className="mt-6 bg-[#a71924] px-5 py-3 text-xs font-bold uppercase tracking-wider text-white">
+            <a href="/presidents/john-f-kennedy" className="mt-6 bg-[#a71924] px-5 py-3 text-xs font-bold uppercase tracking-wider text-white">
               View Full Profile →
-            </button>
+            </a>
 
           </article>
 
