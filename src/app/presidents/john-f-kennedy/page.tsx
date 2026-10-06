@@ -352,7 +352,6 @@ export default function JohnFKennedyPage() {
           </article>
         </section>
         
-        <section className="mt-14">
                 {/* Memorabilia & Artifacts */}
         <section className="mt-14">
           <div className="border-b-2 border-[#b8aa8e] pb-3">
@@ -408,36 +407,6 @@ export default function JohnFKennedyPage() {
           </div>
         </section>  
           
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-            Explore the Archive
-          </p>
-
-          <h2 className="mt-2 font-serif text-3xl font-bold">
-            Kennedy Baseball Collection
-          </h2>
-
-          <div className="mt-6 grid gap-5 md:grid-cols-3">
-            {[
-              ["⚾", "First Pitches", "Ceremonial pitches and Opening Day appearances."],
-              ["▣", "Historic Photos", "Archival photographs documenting Kennedy and baseball."],
-              ["★", "Players & Teams", "Players, clubs and baseball figures connected to Kennedy."],
-              ["❝", "Quotes", "Documented Kennedy quotations involving baseball."],
-              ["◆", "Memorabilia", "Tickets, baseballs, programs, photographs and ephemera."],
-              ["⌛", "Timeline", "A chronological record of Kennedy's baseball history."],
-            ].map(([icon, title, description]) => (
-              <div
-                key={title}
-                className="border border-[#c9bea7] bg-[#f6f0e4] p-6 shadow-sm"
-              >
-                <div className="text-2xl text-[#a4282d]">{icon}</div>
-                <h3 className="mt-3 font-serif text-xl font-bold">{title}</h3>
-                <p className="mt-2 text-sm leading-6 text-[#59636b]">
-                  {description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* Sources */}
         <section className="mt-14 border-t border-[#b8aa8e] pt-8">
