@@ -56,20 +56,24 @@ export default async function PresidentPage({
       </header>
 
       <div className="mx-auto max-w-6xl px-6 py-10">
-        {/* Hero */}
-        <section className="grid gap-8 border-b-2 border-[#b8aa8e] pb-10 md:grid-cols-[240px_1fr]">
-          <div className="flex min-h-[290px] items-center justify-center bg-[#102c44] p-3">
-            {president.portrait ? (
-              <img
-                src={president.portrait}
-                alt={president.name}
-                className="max-h-[340px] w-full object-contain"
-              />
-            ) : (
-              <div className="text-center font-serif text-xl text-[#eee7d7]">
-                Historical Portrait
+        {/* Hero with circular presidential portrait */}
+        <section className="grid gap-8 border-b-2 border-[#b8aa8e] pb-10 md:grid-cols-[240px_1fr] md:items-center">
+          <div className="flex justify-center md:justify-start">
+            <div className="flex h-[230px] w-[230px] shrink-0 items-center justify-center rounded-full border-[6px] border-[#102c44] bg-[#c9b98c] p-[4px] shadow-xl">
+              <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-[#e8dfca]">
+                {president.portrait ? (
+                  <img
+                    src={president.portrait}
+                    alt={president.name}
+                    className="h-full w-full object-cover object-top"
+                  />
+                ) : (
+                  <div className="px-5 text-center font-serif text-lg text-[#102c44]">
+                    Historical Portrait
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </div>
 
           <div>
@@ -116,7 +120,7 @@ export default async function PresidentPage({
         <section className="mt-14">
           <div className="border-b-2 border-[#b8aa8e] pb-3">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Baseball & the Presidency
+              Baseball &amp; the Presidency
             </p>
 
             <h2 className="mt-1 font-serif text-3xl font-bold">

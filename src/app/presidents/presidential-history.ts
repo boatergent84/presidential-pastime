@@ -28,6 +28,64 @@ export const presidentialHistory: Record<
   string,
   HistoryAddition
 > = {
+  "william-howard-taft": {
+    events: [
+      {
+        date: "1909",
+        title: "Taft at the Ballpark",
+        description:
+          "Taft's early baseball appearances helped establish a visible connection between the White House and America's national pastime.",
+        image: "/taft-ballgame-1909.jpg",
+      },
+      {
+        date: "1912",
+        title: "Taft Returns to the Ballpark",
+        description:
+          "Taft continued attending baseball during his presidency, leaving an important photographic record of the presidency's growing connection with the game.",
+        image: "/taft-baseball-1912.jpg",
+      },
+    ],
+    sources: [
+      {
+        title: "Baseball Hall of Fame — Presidential History",
+        url: presidentsCollection,
+      },
+    ],
+  },
+
+  "john-f-kennedy": {
+    events: [
+      {
+        date: "July 10, 1962",
+        title: "All-Star Game at D.C. Stadium",
+        description:
+          "Kennedy attended the Major League Baseball All-Star Game in Washington.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "July 11, 1962",
+        title: "Stan Musial Visits the White House",
+        description:
+          "Kennedy welcomed St. Louis Cardinals legend Stan Musial, his wife Lillian, and daughter Janet to the Oval Office.",
+        image: "/jfk-stan-musial-1962.jpg",
+      },
+      {
+        date: "April 8, 1963",
+        title: "Kennedy's Final Presidential Opening Day",
+        description:
+          "Kennedy returned to D.C. Stadium for the Washington Senators' Opening Day game against the Baltimore Orioles.",
+        image: "/jfk-opening-day-1963.jpg",
+        sourceUrl: washingtonGuide,
+      },
+    ],
+    sources: [
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+    ],
+  },
+
   "woodrow-wilson": {
     events: [
       {

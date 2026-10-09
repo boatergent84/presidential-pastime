@@ -1,3 +1,4 @@
+
 export default function WilliamHowardTaftPage() {
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#172b3d]">
@@ -28,13 +29,14 @@ export default function WilliamHowardTaftPage() {
 
       <div className="mx-auto max-w-6xl px-6 py-10">
         {/* HERO */}
-        <section className="grid gap-8 border-b-2 border-[#b8aa8e] pb-10 md:grid-cols-[260px_1fr]">
+        <section className="grid gap-8 border-b-2 border-[#b8aa8e] pb-10 md:grid-cols-[260px_1fr] md:items-center">
           <div className="flex justify-center md:justify-start">
-            <div className="h-[240px] w-[240px] overflow-hidden rounded-full border-4 border-[#102c44] bg-[#d8d0bf]">
+            {/* Circular navy-and-gold presidential portrait */}
+            <div className="flex h-[240px] w-[240px] shrink-0 items-center justify-center rounded-full border-[6px] border-[#102c44] bg-[#c9b98c] p-[9px] shadow-xl">
               <img
                 src="/taft.jpg"
                 alt="President William Howard Taft"
-                className="h-full w-full object-cover object-top"
+                className="h-full w-full rounded-full object-cover object-top"
               />
             </div>
           </div>
@@ -72,7 +74,9 @@ export default function WilliamHowardTaftPage() {
                   <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#a4282d]">
                     {label}
                   </p>
-                  <p className="mt-1 font-serif text-lg font-bold">{value}</p>
+                  <p className="mt-1 font-serif text-lg font-bold">
+                    {value}
+                  </p>
                 </div>
               ))}
             </div>
@@ -130,8 +134,12 @@ export default function WilliamHowardTaftPage() {
               </div>
 
               <div>
-                <p className="font-bold text-white">Historic Baseball Role</p>
-                <p>Early presidential Opening Day ceremonial first pitch</p>
+                <p className="font-bold text-white">
+                  Historic Baseball Role
+                </p>
+                <p>
+                  Early presidential Opening Day ceremonial first pitch
+                </p>
               </div>
 
               <div>
@@ -178,9 +186,10 @@ export default function WilliamHowardTaftPage() {
               </h3>
 
               <p className="mt-4 leading-8 text-[#59636b]">
-                Taft threw the ceremonial first pitch before Washington opened
-                its season against the Philadelphia Athletics. Washington won
-                3–0 behind Walter Johnson&apos;s one-hit shutout.
+                Taft threw the ceremonial first pitch before Washington
+                opened its season against the Philadelphia Athletics.
+                Washington won 3–0 behind Walter Johnson&apos;s one-hit
+                shutout.
               </p>
             </div>
           </article>
@@ -228,7 +237,9 @@ export default function WilliamHowardTaftPage() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="font-serif text-2xl font-bold">{title}</h3>
+                  <h3 className="font-serif text-2xl font-bold">
+                    {title}
+                  </h3>
 
                   <p className="mt-2 leading-7 text-[#59636b]">
                     {description}
@@ -283,7 +294,9 @@ export default function WilliamHowardTaftPage() {
                 <div className="flex items-start gap-5">
                   <div className="min-w-[80px] bg-[#a4282d] p-3 text-center text-white">
                     <p className="text-xs font-bold">{date}</p>
-                    <p className="font-serif text-xl font-bold">{year}</p>
+                    <p className="font-serif text-xl font-bold">
+                      {year}
+                    </p>
                   </div>
 
                   <div>
@@ -291,9 +304,13 @@ export default function WilliamHowardTaftPage() {
                       {place}
                     </p>
 
-                    <h3 className="mt-1 font-serif text-xl font-bold">{game}</h3>
+                    <h3 className="mt-1 font-serif text-xl font-bold">
+                      {game}
+                    </h3>
 
-                    <p className="mt-2 leading-7 text-[#59636b]">{note}</p>
+                    <p className="mt-2 leading-7 text-[#59636b]">
+                      {note}
+                    </p>
                   </div>
                 </div>
               </article>
@@ -375,9 +392,13 @@ export default function WilliamHowardTaftPage() {
                   ⚾
                 </div>
 
-                <h3 className="font-serif text-xl font-bold">{title}</h3>
+                <h3 className="font-serif text-xl font-bold">
+                  {title}
+                </h3>
 
-                <p className="mt-2 leading-7 text-[#59636b]">{description}</p>
+                <p className="mt-2 leading-7 text-[#59636b]">
+                  {description}
+                </p>
               </article>
             ))}
           </div>
@@ -395,9 +416,9 @@ export default function WilliamHowardTaftPage() {
 
           <p className="mt-4 max-w-4xl leading-8 text-[#59636b]">
             Presidential Pastime uses historic photographs, contemporary
-            newspaper accounts, archival records and baseball history sources
-            to document the relationship between American presidents and the
-            national pastime.
+            newspaper accounts, archival records and baseball history
+            sources to document the relationship between American
+            presidents and the national pastime.
           </p>
 
           <div className="mt-5 grid gap-3 text-sm md:grid-cols-2">
