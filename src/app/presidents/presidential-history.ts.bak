@@ -232,70 +232,21 @@ export const presidentialHistory: Record<
   "calvin-coolidge": {
     events: [
       {
-        date: "September 5, 1924",
-        title: "Walter Johnson Demonstrates His Curveball",
+        date: "1924, 1927 and 1928",
+        title: "Opening Day Appearances",
         description:
-          "Washington Senators pitcher Walter Johnson demonstrates his curveball to President Calvin Coolidge, with player-manager Bucky Harris alongside them.",
-        image: "/coolidge-walter-johnson-1924.jpg",
-        sourceUrl: "https://www.loc.gov/item/92520581/",
-      },
-      {
-        date: "April 15, 1924",
-        title: "Opening Day at Griffith Stadium",
-        description:
-          "President Calvin Coolidge threw the ceremonial first pitch as Walter Johnson shut out the Philadelphia Athletics 4–0. It was the beginning of Washington's historic championship season.",
-        sourceUrl: "https://www.baseball-almanac.com/prz_ccc.shtml",
-      },
-      {
-        date: "October 4, 1924",
-        title: "A President Opens the World Series",
-        image: "/coolidge-world-series-1924.jpg",
-        description:
-          "Coolidge threw the ceremonial first pitch before Game 1 between the Washington Senators and New York Giants at Griffith Stadium. The Giants won 4–3 in 12 innings.",
-        sourceUrl: "https://www.mlb.com/news/1924-world-series-recap",
-      },
-      {
-        date: "October 9, 1924",
-        title: "Grace Coolidge Cheers Washington",
-        description:
-          "President Coolidge and First Lady Grace Coolidge watched the Senators defeat the Giants 2–1 in Game 6. Grace was an enthusiastic baseball fan who kept score at games.",
-        sourceUrl: "https://www.whitehousehistory.org/the-coolidges-and-baseball",
-      },
-      {
-        date: "October 10, 1924",
-        title: "Washington Wins the 1924 World Series",
-        description:
-          "With Calvin and Grace Coolidge watching at Griffith Stadium, the Senators defeated the Giants 4–3 in 12 innings. Walter Johnson earned the victory in relief, delivering Washington its first World Series championship.",
-        sourceUrl: "https://baseballhall.org/discover/1924-washington-senators-world-series",
-      },
-      {
-        date: "1927 and 1928",
-        title: "Continuing the First-Pitch Tradition",
-        description:
-          "Coolidge returned to Washington baseball's Opening Day ceremonies in 1927 and 1928, continuing the presidential first-pitch tradition.",
+          "Coolidge threw ceremonial first pitches at Washington baseball season openers.",
         sourceUrl: washingtonGuide,
       },
     ],
     sources: [
       {
-        title: "Library of Congress — Walter Johnson Curveball Photograph",
-        url: "https://www.loc.gov/item/92520581/",
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
       },
       {
-        title: "National Baseball Hall of Fame — 1924 World Series",
-        url: "https://baseballhall.org/discover/1924-washington-senators-world-series",
-      },
-      {
-        title: "White House Historical Association — The Coolidges and Baseball",
-        url: "https://www.whitehousehistory.org/the-coolidges-and-baseball",
-      },
-      {
-        title: "MLB — 1924 World Series Recap",
-        url: "https://www.mlb.com/news/1924-world-series-recap",
-      },
-      {
-        title: "Baseball Almanac — Calvin Coolidge Game Attendance",
-        url: "https://www.baseball-almanac.com/prz_ccc.shtml",
+        title: "Hall of Fame — Presidential Artifacts",
+        url: presidentsCollection,
       },
     ],
   },
