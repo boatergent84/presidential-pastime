@@ -31,13 +31,15 @@ export default function WilliamHowardTaftPage() {
         {/* HERO */}
         <section className="grid gap-8 border-b-2 border-[#b8aa8e] pb-10 md:grid-cols-[260px_1fr] md:items-center">
           <div className="flex justify-center md:justify-start">
-            {/* Circular navy-and-gold presidential portrait */}
-            <div className="flex h-[240px] w-[240px] shrink-0 items-center justify-center rounded-full border-[6px] border-[#102c44] bg-[#c9b98c] p-[9px] shadow-xl">
-              <img
-                src="/taft.jpg"
-                alt="President William Howard Taft"
-                className="h-full w-full rounded-full object-cover object-top"
-              />
+            {/* Thin navy-blue and antique-gold circular portrait */}
+            <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
+              <div className="h-full w-full overflow-hidden rounded-full border border-[#c9b98c] bg-[#e8dfca]">
+                <img
+                  src="/taft.jpg"
+                  alt="President William Howard Taft"
+                  className="h-full w-full object-cover object-top"
+                />
+              </div>
             </div>
           </div>
 

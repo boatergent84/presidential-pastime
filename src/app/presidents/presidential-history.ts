@@ -24,6 +24,15 @@ const presidentsCollection =
 const mlbFirstPitches =
   "https://www.mlb.com/cut4/celebrate-presidents-day-with-every-presidential-first-pitch-since-fdrs/c-109333564";
 
+const wilsonHallOfFame =
+  "https://baseballhall.org/discover/polo-grounds-pass-tells-story-of-woodrow-wilson";
+
+const wilsonWorldSeriesPhoto =
+  "https://artsandculture.google.com/asset/president-wilson-at-game-2-of-the-1915-world-series-photograph/qAGvaFcGxjACFA";
+
+const wilsonLibraryOfCongressPhoto =
+  "https://www.loc.gov/pictures/item/2016851225/";
+
 export const presidentialHistory: Record<
   string,
   HistoryAddition
@@ -89,33 +98,107 @@ export const presidentialHistory: Record<
   "woodrow-wilson": {
     events: [
       {
-        date: "1912 and 1914",
-        title: "Presidential Opening Day Pitches",
+        date: "1874",
+        title: "A Young Baseball Player at Davidson College",
         description:
-          "Wilson continued the presidential ceremonial first-pitch tradition at Washington Senators games.",
-        sourceUrl: washingtonGuide,
+          "Long before reaching the White House, Woodrow Wilson played baseball at Davidson College in North Carolina. He later attended Princeton, where he served as an assistant manager of the baseball team.",
+        sourceUrl:
+          "https://www.woodrowwilson.org/blog-podcast/presidential-baseball",
       },
       {
-        date: "1915",
-        title: "First President to Attend a World Series",
+        date: "April 10, 1913",
+        title: "Wilson's First Presidential Opening Day Pitch",
         description:
-          "Wilson became the first sitting U.S. president to attend a World Series game.",
+          "Newly inaugurated President Woodrow Wilson threw the ceremonial first pitch at Griffith Stadium before the Washington Senators defeated the New York Yankees 2–1. It was one of four baseball games he attended that April.",
         sourceUrl:
-          "https://baseballhall.org/discover/polo-grounds-pass-tells-story-of-woodrow-wilson",
+          "https://www.baseball-almanac.com/prz_cww.shtml",
+      },
+      {
+        date: "August 2, 1913",
+        title: "Walter Johnson Day in Washington",
+        description:
+          "Wilson attended Walter Johnson Day at Griffith Stadium as the Washington Senators defeated the Detroit Tigers 3–2, demonstrating his enthusiasm for baseball beyond ceremonial Opening Day appearances.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cww.shtml",
+      },
+      {
+        date: "April 14, 1915",
+        title: "Opening Day Against the New York Yankees",
+        description:
+          "Wilson returned to Griffith Stadium to throw the ceremonial first pitch. Washington defeated the Yankees 7–0. A Library of Congress photograph documents Wilson at a baseball opening game dated 1915 or 1916.",
+        sourceUrl: wilsonLibraryOfCongressPhoto,
+      },
+      {
+        date: "October 9, 1915",
+        title: "First Sitting President to Attend a World Series",
+        image: "/wilson-world-series-1915.jpg",
+        description:
+          "Wilson made baseball history at the Baker Bowl in Philadelphia, attending Game 2 of the World Series between the Phillies and Boston Red Sox. He threw the ceremonial first pitch and watched the game alongside his fiancée, Edith Bolling Galt. Boston won 2–1.",
+        sourceUrl: wilsonWorldSeriesPhoto,
+      },
+      {
+        date: "April 20, 1916",
+        title: "Another Presidential Opening Day",
+        image: "/wilson-opening-day-1916.jpg",
+        description:
+          "Wilson threw the ceremonial first pitch at Griffith Stadium before Washington defeated the New York Yankees 12–4, continuing the tradition begun by William Howard Taft.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cww.shtml",
+      },
+      {
+        date: "1916",
+        title: "Ty Cobb Supports Wilson's Reelection",
+        description:
+          "Detroit Tigers star Ty Cobb publicly expressed his support for Wilson's reelection campaign, illustrating the connection between baseball personalities and presidential politics during the era.",
+        sourceUrl: wilsonHallOfFame,
+      },
+      {
+        date: "1920s",
+        title: "Watching Baseball From His Automobile",
+        description:
+          "As his health declined, Wilson continued attending Washington Senators games. By arrangement with Clark Griffith, his automobile entered Griffith Stadium through a special gate and parked near the home bullpen. Secret Service agents and players protected him from foul balls as he watched with the top down.",
+        sourceUrl: wilsonHallOfFame,
       },
       {
         date: "1923",
-        title: "A Polo Grounds Season Pass",
+        title: "A Sterling-Silver Polo Grounds Season Pass",
         description:
-          "After leaving office, Wilson received a New York Giants season pass, now preserved in the Baseball Hall of Fame collection.",
-        sourceUrl:
-          "https://baseballhall.org/discover/polo-grounds-pass-tells-story-of-woodrow-wilson",
+          "After his presidency, Wilson received an unusual sterling-silver New York Giants season pass for the Polo Grounds. The circular pass resembled a baseball and bore Wilson's name. It was later donated to the National Baseball Hall of Fame and Museum.",
+        sourceUrl: wilsonHallOfFame,
       },
     ],
     sources: [
       {
-        title: "Hall of Fame — Wilson's Polo Grounds Pass",
-        url: "https://baseballhall.org/discover/polo-grounds-pass-tells-story-of-woodrow-wilson",
+        title: "Library of Congress — Wilson Opening Day Photograph, 1916",
+        url: "https://www.loc.gov/item/97518727/",
+      },
+      {
+        title: "Baseball Hall of Fame — Wilson at the 1915 World Series",
+        url: wilsonWorldSeriesPhoto,
+      },
+      {
+        title: "National Baseball Hall of Fame — Wilson's Polo Grounds Pass",
+        url: wilsonHallOfFame,
+      },
+      {
+        title: "Baseball Almanac — Woodrow Wilson Game Attendance Log",
+        url: "https://www.baseball-almanac.com/prz_cww.shtml",
+      },
+      {
+        title: "MLB — 1915 World Series Game 2",
+        url: "https://www.mlb.com/news/remembering-phillys-1915-world-series-run/c-153671994",
+      },
+      {
+        title: "Baseball Hall of Fame — 1915 World Series Photograph",
+        url: wilsonWorldSeriesPhoto,
+      },
+      {
+        title: "Library of Congress — Wilson at a Baseball Opening Game",
+        url: wilsonLibraryOfCongressPhoto,
+      },
+      {
+        title: "Woodrow Wilson Presidential Library — Wilson and Baseball",
+        url: "https://www.woodrowwilson.org/blog-podcast/presidential-baseball",
       },
       {
         title: "Washington Baseball Media Guide",

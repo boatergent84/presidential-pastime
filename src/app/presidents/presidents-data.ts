@@ -41,7 +41,7 @@ export const presidents: President[] = [
     baseballEra: "Civil War Baseball",
     overview:
       "During Abraham Lincoln's presidency, baseball spread through military camps and American communities. An 1860 political cartoon had already used baseball to depict Lincoln and his political opponents.",
-    portrait: "",
+    portrait: "/lincoln.jpg",
     events: [
       {
         date: "1860",
@@ -75,7 +75,7 @@ export const presidents: President[] = [
     baseballEra: "Post-Civil War Baseball",
     overview:
       "Baseball expanded rapidly after the Civil War. Andrew Johnson's presidency coincided with early baseball activity around the White House.",
-    portrait: "",
+    portrait: "/andrew-johnson.jpg",
     events: [
       {
         date: "August 30, 1865",
@@ -101,7 +101,7 @@ export const presidents: President[] = [
     baseballEra: "Professional Baseball Begins",
     overview:
       "The first openly professional baseball team emerged at the beginning of Grant's presidency, and the National League was founded during his administration.",
-    portrait: "",
+    portrait: "/grant.jpg",
     events: [
       {
         date: "1869",
@@ -135,7 +135,7 @@ export const presidents: President[] = [
     baseballEra: "Early National League",
     overview:
       "During Hayes's presidency, professional baseball developed further under the newly established National League. Specific presidential baseball appearances remain to be documented.",
-    portrait: "",
+    portrait: "/hayes.jpg",
   },
   {
     name: "James A. Garfield",
@@ -145,7 +145,7 @@ export const presidents: President[] = [
     baseballEra: "19th-Century Baseball",
     overview:
       "Professional baseball was established by the time Garfield became president. His brief presidency left a limited record of direct presidential baseball activities.",
-    portrait: "",
+    portrait: "/garfield.jpg",
   },
   {
     name: "Chester A. Arthur",
@@ -155,7 +155,7 @@ export const presidents: President[] = [
     baseballEra: "Professional League Expansion",
     overview:
       "Arthur's presidency coincided with the expansion of professional baseball and the development of competing leagues.",
-    portrait: "",
+    portrait: "/arthur.jpg",
     events: [
       {
         date: "1882",
@@ -173,7 +173,7 @@ export const presidents: President[] = [
     baseballEra: "19th-Century Major Leagues",
     overview:
       "Cleveland's two nonconsecutive presidencies coincided with baseball's growth as a professional spectator sport, including changes in leagues, playing rules, and ballparks.",
-    portrait: "",
+    portrait: "/cleveland.jpg",
   },
   {
     name: "Benjamin Harrison",
@@ -183,7 +183,7 @@ export const presidents: President[] = [
     baseballEra: "First Presidential MLB Attendance",
     overview:
       "Benjamin Harrison became the first sitting president to attend a major-league baseball game, establishing an important precedent in presidential baseball history.",
-    portrait: "",
+    portrait: "/benjamin-harrison.jpg",
     events: [
       {
         date: "June 6, 1892",
@@ -213,7 +213,7 @@ export const presidents: President[] = [
     baseballEra: "Turn-of-the-Century Baseball",
     overview:
       "Baseball was a major American spectator sport during McKinley's presidency. The American League was developing into a major-league competitor at the end of his administration.",
-    portrait: "",
+    portrait: "/mckinley.jpg",
   },
   {
     name: "Theodore Roosevelt",
@@ -223,7 +223,7 @@ export const presidents: President[] = [
     baseballEra: "Deadball Era",
     overview:
       "Roosevelt's presidency overlapped with the early American League, the first modern World Series, and the growth of Major League Baseball as a national institution.",
-    portrait: "",
+    portrait: "/theodore-roosevelt.jpg",
     events: [
       {
         date: "1903",
@@ -273,7 +273,7 @@ export const presidents: President[] = [
     baseballEra: "Deadball to Live-Ball Era",
     overview:
       "Baseball continued through World War I and entered a new era of offensive play near the end of Wilson's presidency.",
-    portrait: "",
+    portrait: "/wilson.jpg",
   },
   {
     name: "Warren G. Harding",
@@ -283,7 +283,7 @@ export const presidents: President[] = [
     baseballEra: "Babe Ruth Era",
     overview:
       "Harding's presidency coincided with Babe Ruth's emergence as baseball's greatest home-run attraction.",
-    portrait: "",
+    portrait: "/harding.jpg",
     events: [
       {
         date: "1921–1923",
@@ -303,7 +303,7 @@ export const presidents: President[] = [
     baseballEra: "Roaring Twenties Baseball",
     overview:
       "Baseball flourished during the 1920s, and Coolidge became part of the presidential baseball memorabilia tradition.",
-    portrait: "",
+    portrait: "/coolidge.jpg",
   },
   {
     name: "Herbert Hoover",
@@ -313,7 +313,7 @@ export const presidents: President[] = [
     baseballEra: "Depression-Era Baseball",
     overview:
       "Hoover's presidency coincided with the beginning of the Great Depression, when baseball remained an important part of American culture.",
-    portrait: "",
+    portrait: "/hoover.jpg",
   },
   {
     name: "Franklin D. Roosevelt",
@@ -323,7 +323,7 @@ export const presidents: President[] = [
     baseballEra: "Depression and World War II",
     overview:
       "Roosevelt supported the continuation of professional baseball during World War II through his historic Green Light Letter.",
-    portrait: "",
+    portrait: "/fdr.jpg",
     events: [
       {
         date: "January 15, 1942",
@@ -349,7 +349,7 @@ export const presidents: President[] = [
     baseballEra: "Baseball Integration",
     overview:
       "Jackie Robinson broke Major League Baseball's modern color barrier during Truman's presidency, transforming the sport.",
-    portrait: "",
+    portrait: "/truman.jpg",
   },
   {
     name: "Dwight D. Eisenhower",
@@ -359,7 +359,7 @@ export const presidents: President[] = [
     baseballEra: "Postwar Baseball",
     overview:
       "Eisenhower had played baseball in his youth and participated in presidential first-pitch ceremonies.",
-    portrait: "",
+    portrait: "/eisenhower.jpg",
   },
   {
     name: "John F. Kennedy",
@@ -395,7 +395,7 @@ export const presidents: President[] = [
     baseballEra: "1960s Baseball",
     overview:
       "Baseball underwent expansion and cultural changes during Johnson's presidency.",
-    portrait: "",
+    portrait: "/lbj.jpg",
   },
   {
     name: "Richard Nixon",
@@ -405,7 +405,7 @@ export const presidents: President[] = [
     baseballEra: "Expansion and Divisional Play",
     overview:
       "Divisional baseball and postseason league championship series became established.",
-    portrait: "",
+    portrait: "/nixon.jpg",
   },
   {
     name: "Gerald Ford",
@@ -415,7 +415,7 @@ export const presidents: President[] = [
     baseballEra: "1970s Baseball",
     overview:
       "Free agency began transforming professional baseball during Ford's presidency.",
-    portrait: "",
+    portrait: "/ford.jpg",
   },
   {
     name: "Jimmy Carter",
@@ -425,7 +425,7 @@ export const presidents: President[] = [
     baseballEra: "Free Agency Era",
     overview:
       "Baseball's labor and financial landscape evolved during Carter's presidency.",
-    portrait: "",
+    portrait: "/carter.jpg",
   },
   {
     name: "Ronald Reagan",
@@ -435,7 +435,7 @@ export const presidents: President[] = [
     baseballEra: "1980s Baseball",
     overview:
       "Reagan had a personal connection to baseball through his earlier career broadcasting Chicago Cubs games.",
-    portrait: "",
+    portrait: "/reagan.jpg",
   },
   {
     name: "George H. W. Bush",
@@ -445,7 +445,7 @@ export const presidents: President[] = [
     baseballEra: "Modern Baseball",
     overview:
       "Bush played college baseball at Yale and maintained a lifelong interest in the game.",
-    portrait: "",
+    portrait: "/bush41.jpg",
   },
   {
     name: "Bill Clinton",
@@ -455,7 +455,7 @@ export const presidents: President[] = [
     baseballEra: "1990s Baseball",
     overview:
       "Baseball experienced labor disputes, expansion, and the home-run race during Clinton's presidency.",
-    portrait: "",
+    portrait: "/clinton.jpg",
   },
   {
     name: "George W. Bush",
@@ -465,7 +465,7 @@ export const presidents: President[] = [
     baseballEra: "21st-Century Baseball",
     overview:
       "A former Texas Rangers managing general partner, Bush participated in memorable ceremonial first pitches.",
-    portrait: "",
+    portrait: "/george-w-bush.jpg",
   },
   {
     name: "Barack Obama",
@@ -475,7 +475,7 @@ export const presidents: President[] = [
     baseballEra: "Modern MLB",
     overview:
       "Obama celebrated baseball traditions and his Chicago White Sox fandom.",
-    portrait: "",
+    portrait: "/obama.jpg",
   },
   {
     name: "Donald Trump",
@@ -485,7 +485,7 @@ export const presidents: President[] = [
     baseballEra: "Contemporary Baseball",
     overview:
       "Trump's presidencies overlap with the modern era of Major League Baseball.",
-    portrait: "",
+    portrait: "/trump.jpg",
   },
   {
     name: "Joe Biden",
@@ -495,7 +495,7 @@ export const presidents: President[] = [
     baseballEra: "Contemporary Baseball",
     overview:
       "Baseball continued evolving through rule changes and expanded postseason formats during Biden's presidency.",
-    portrait: "",
+    portrait: "/biden.jpg",
   },
 ];
 
