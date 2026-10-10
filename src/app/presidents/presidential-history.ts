@@ -258,6 +258,7 @@ export const presidentialHistory: Record<
       {
         date: "April 15, 1924",
         title: "Opening Day at Griffith Stadium",
+        image: "/coolidge-opening-day.jpg",
         description:
           "President Calvin Coolidge threw the ceremonial first pitch as Walter Johnson shut out the Philadelphia Athletics 4–0. It was the beginning of Washington's historic championship season.",
         sourceUrl: "https://www.baseball-almanac.com/prz_ccc.shtml",
@@ -273,6 +274,7 @@ export const presidentialHistory: Record<
       {
         date: "October 9, 1924",
         title: "Grace Coolidge Cheers Washington",
+        image: "/coolidge-grace-world-series-1924.jpg",
         description:
           "President Coolidge and First Lady Grace Coolidge watched the Senators defeat the Giants 2–1 in Game 6. Grace was an enthusiastic baseball fan who kept score at games.",
         sourceUrl: "https://www.whitehousehistory.org/the-coolidges-and-baseball",
@@ -280,6 +282,7 @@ export const presidentialHistory: Record<
       {
         date: "October 10, 1924",
         title: "Washington Wins the 1924 World Series",
+        image: "/coolidge-championship-1924.jpg",
         description:
           "With Calvin and Grace Coolidge watching at Griffith Stadium, the Senators defeated the Giants 4–3 in 12 innings. Walter Johnson earned the victory in relief, delivering Washington its first World Series championship.",
         sourceUrl: "https://baseballhall.org/discover/1924-washington-senators-world-series",
@@ -287,6 +290,7 @@ export const presidentialHistory: Record<
       {
         date: "1927 and 1928",
         title: "Continuing the First-Pitch Tradition",
+        image: "/coolidge-first-pitch-1927.jpg",
         description:
           "Coolidge returned to Washington baseball's Opening Day ceremonies in 1927 and 1928, continuing the presidential first-pitch tradition.",
         sourceUrl: washingtonGuide,
