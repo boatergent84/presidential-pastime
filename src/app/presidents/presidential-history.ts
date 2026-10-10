@@ -232,6 +232,22 @@ export const presidentialHistory: Record<
   "calvin-coolidge": {
     events: [
       {
+        date: "1924",
+        title: "Coolidge in the Baseball Grandstand",
+        description:
+          "A Harris & Ewing photograph captures President Calvin Coolidge in the stands holding a baseball.",
+        image: "/coolidge-grandstand-1924.jpg",
+        sourceUrl: "https://www.loc.gov/pictures/item/2016893374/",
+      },
+      {
+        date: "1920s",
+        title: "Coolidge Welcomes the Washington Senators",
+        description:
+          "President Calvin Coolidge poses with members of the Washington Senators baseball team at the White House.",
+        image: "/coolidge-senators-white-house.jpg",
+        sourceUrl: "https://www.loc.gov/pictures/item/2016838491/",
+      },
+      {
         date: "September 5, 1924",
         title: "Walter Johnson Demonstrates His Curveball",
         description:
