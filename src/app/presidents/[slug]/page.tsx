@@ -1,13 +1,15 @@
-
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPresident, presidents } from "../presidents-data";
 import { presidentialHistory } from "../presidential-history";
 
 export function generateStaticParams() {
-  return presidents.map((president) => ({
-    slug: president.slug,
-  }));
+  return presidents.map(({ slug }) => ({ slug }));
+}
+
+function yearOf(date: string): number {
+  const match = date.match(/\b(18|19|20)\d{2}\b/);
+  return match ? Number(match[0]) : 9999;
 }
 
 export default async function PresidentPage({
@@ -17,559 +19,171 @@ export default async function PresidentPage({
 }) {
   const { slug } = await params;
   const president = getPresident(slug);
+  if (!president) notFound();
 
-  if (!president) {
-    notFound();
-  }
-
-  // Preserve all existing historical records.
-  const additionalHistory = presidentialHistory[slug];
-
-  const events = [
-    ...(president.events ?? []),
-    ...(additionalHistory?.events ?? []),
-  ].sort((a, b) => {
-    const getYear = (date: string) => {
-      const match = date.match(/\b(18|19|20)\d{2}\b/);
-      return match ? Number(match[0]) : 9999;
-    };
-
-    return getYear(a.date) - getYear(b.date);
-  });
-
-  const sources = [
-    ...(president.sources ?? []),
-    ...(additionalHistory?.sources ?? []),
-  ].filter(
-    (source, index, all) =>
-      all.findIndex((item) => item.url === source.url) === index
-  );
-
+  const extra = presidentialHistory[slug];
+  const events = [...(president.events ?? []), ...(extra?.events ?? [])]
+    .sort((a, b) => yearOf(a.date) - yearOf(b.date));
+  const sources = [...(president.sources ?? []), ...(extra?.sources ?? [])]
+    .filter((source, index, all) => all.findIndex(s => s.url === source.url) === index);
   const photos = president.photos ?? [];
-
-  // Previous and next presidential profiles.
-  const sortedPresidents = [...presidents].sort(
-    (a, b) => a.number - b.number
-  );
-
-  const currentIndex = sortedPresidents.findIndex(
-    (item) => item.slug === president.slug
-  );
-
-  const previousPresident =
-    currentIndex > 0 ? sortedPresidents[currentIndex - 1] : null;
-
-  const nextPresident =
-    currentIndex >= 0 && currentIndex < sortedPresidents.length - 1
-      ? sortedPresidents[currentIndex + 1]
-      : null;
+  const featured = events.find(e => e.image) ?? events[0];
+  const mainPhoto = photos[0];
+  const sorted = [...presidents].sort((a, b) => a.number - b.number);
+  const position = sorted.findIndex(p => p.slug === slug);
+  const previous = position > 0 ? sorted[position - 1] : null;
+  const next = position < sorted.length - 1 ? sorted[position + 1] : null;
 
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#172b3d]">
-      {/* HEADER */}
       <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#c9b98c] text-xl">
-              ⚾
-            </div>
-
-            <div>
-              <p className="font-serif text-xl font-bold tracking-wide md:text-2xl">
-                PRESIDENTIAL PASTIME
-              </p>
-
-              <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-[#c9b98c]">
-                America&apos;s Presidents. America&apos;s Pastime.
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            href="/presidents"
-            className="border border-[#c9b98c] px-4 py-2 text-xs font-bold uppercase tracking-wider hover:bg-white/10"
-          >
-            Presidential Archive
-          </Link>
-        </div>
-
-        <nav className="border-t border-[#40576b] bg-[#f8f3e8] text-[#102c44]">
-          <div className="mx-auto flex max-w-6xl flex-wrap gap-6 px-6 py-4 text-sm font-semibold">
-            <Link href="/" className="hover:text-[#a4282d]">
-              Home
-            </Link>
-
-            <Link
-              href="/presidents"
-              className="hover:text-[#a4282d]"
-            >
-              Presidents
-            </Link>
-
-            <Link
-              href="/#first-pitches"
-              className="hover:text-[#a4282d]"
-            >
-              First Pitches
-            </Link>
-
-            <Link
-              href="/#featured-archives"
-              className="hover:text-[#a4282d]"
-            >
-              Historical Archives
-            </Link>
-
-            <Link
-              href="/#about"
-              className="hover:text-[#a4282d]"
-            >
-              About
-            </Link>
+          <div>
+            <Link href="/" className="font-serif text-2xl font-bold tracking-wide">PRESIDENTIAL PASTIME</Link>
+            <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#c9d4df]">America&apos;s Presidents. America&apos;s Pastime.</p>
           </div>
-        </nav>
+          <Link href="/presidents" className="border border-[#c9d4df] px-4 py-2 text-xs font-bold uppercase tracking-widest">← All Presidents</Link>
+        </div>
       </header>
 
       <div className="mx-auto max-w-6xl px-6 py-10">
-        {/* BREADCRUMB */}
-        <div className="mb-8 text-xs font-bold uppercase tracking-[0.15em] text-[#59636b]">
-          <Link href="/" className="hover:text-[#a4282d]">
-            Home
-          </Link>
-
-          <span className="mx-3">/</span>
-
-          <Link
-            href="/presidents"
-            className="hover:text-[#a4282d]"
-          >
-            Presidents
-          </Link>
-
-          <span className="mx-3">/</span>
-
-          <span className="text-[#a4282d]">{president.name}</span>
-        </div>
-
-        {/* PRESIDENT HERO */}
-        <section className="grid gap-8 border-b-2 border-[#b8aa8e] pb-12 md:grid-cols-[240px_1fr] md:items-center">
+        <section className="grid gap-8 border-b-2 border-[#b8aa8e] pb-10 md:grid-cols-[260px_1fr] md:items-center">
           <div className="flex justify-center md:justify-start">
-            <div className="h-[230px] w-[230px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
+            <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
               <div className="h-full w-full overflow-hidden rounded-full border border-[#c9b98c] bg-[#e8dfca]">
-                {president.portrait ? (
-                  <img
-                    src={president.portrait}
-                    alt={`Portrait of ${president.name}`}
-                    className="h-full w-full object-cover object-top"
-                  />
-                ) : (
-                  <div className="flex h-full flex-col items-center justify-center px-5 text-center text-[#102c44]">
-                    <p className="font-serif text-5xl font-bold opacity-40">
-                      {president.number}
-                    </p>
-
-                    <p className="mt-3 font-serif text-base">
-                      Historical Portrait
-                    </p>
-                  </div>
-                )}
+                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className="h-full w-full object-cover object-top" /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.number}</div>}
               </div>
             </div>
           </div>
-
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Presidential Baseball Archive
-            </p>
-
-            <h1 className="mt-4 font-serif text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              {president.name}
-            </h1>
-
-            <div className="my-5 h-[2px] w-24 bg-[#a4282d]" />
-
-            <p className="font-serif text-xl italic text-[#59636b]">
-              {president.baseballEra}
-            </p>
-
-            <p className="mt-6 max-w-3xl text-lg leading-8">
-              {president.overview}
-            </p>
-          </div>
-        </section>
-
-        {/* QUICK FACTS */}
-        <section className="mt-8 grid gap-4 md:grid-cols-3">
-          {[
-            ["President No.", president.number.toString()],
-            ["Years in Office", president.years],
-            ["Baseball Era", president.baseballEra],
-          ].map(([label, value]) => (
-            <div
-              key={label}
-              className="border-l-4 border-[#a4282d] bg-[#f8f3e8] p-5"
-            >
-              <p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">
-                {label}
-              </p>
-
-              <p className="mt-3 font-serif text-lg font-bold">
-                {value}
-              </p>
-            </div>
-          ))}
-        </section>
-
-        {/* OVERVIEW */}
-        <section className="mt-16">
-          <div className="border-b-2 border-[#b8aa8e] pb-4">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Baseball &amp; the Presidency
-            </p>
-
-            <h2 className="mt-2 font-serif text-3xl font-bold md:text-4xl">
-              {president.name} and America&apos;s Pastime
-            </h2>
-          </div>
-
-          <p className="mt-7 max-w-4xl text-lg leading-9 text-[#344656]">
-            {president.overview}
-          </p>
-        </section>
-
-        {/* ARCHIVE RECORD */}
-        <section className="mt-16 border border-[#b8aa8e] bg-[#f8f3e8] p-6 md:p-8">
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-            Presidential Archive Record
-          </p>
-
-          <h2 className="mt-3 font-serif text-3xl font-bold">
-            Historical Profile
-          </h2>
-
-          <div className="mt-7 grid gap-7 md:grid-cols-2">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-[#a4282d]">
-                President
-              </p>
-
-              <p className="mt-2 font-serif text-lg">
-                {president.name}
-              </p>
-            </div>
-
-            <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-[#a4282d]">
-                Presidential Term
-              </p>
-
-              <p className="mt-2 font-serif text-lg">
-                {president.years}
-              </p>
-            </div>
-
-            <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-[#a4282d]">
-                Baseball Era
-              </p>
-
-              <p className="mt-2 font-serif text-lg">
-                {president.baseballEra}
-              </p>
-            </div>
-
-            <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-[#a4282d]">
-                Archive Status
-              </p>
-
-              <p className="mt-2 font-serif text-lg">
-                {events.length > 0
-                  ? `${events.length} historical event${
-                      events.length === 1 ? "" : "s"
-                    } documented`
-                  : "Historical research in progress"}
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* HISTORICAL TIMELINE */}
-        <section className="mt-16">
-          <div className="border-b-2 border-[#b8aa8e] pb-4">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Presidential Baseball Timeline
-            </p>
-
-            <h2 className="mt-2 font-serif text-3xl font-bold md:text-4xl">
-              {president.name}&apos;s Baseball History
-            </h2>
-          </div>
-
-          {events.length > 0 ? (
-            <div className="mt-8 space-y-6">
-              {events.map((event, index) => (
-                <article
-                  key={`${event.date}-${event.title}-${index}`}
-                  className="grid overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] md:grid-cols-[155px_1fr]"
-                >
-                  <div className="flex items-center justify-center bg-[#a4282d] p-5 text-center font-serif text-lg font-bold text-white">
-                    {event.date}
-                  </div>
-
-                  <div className="p-6 md:p-8">
-                    <h3 className="font-serif text-2xl font-bold">
-                      {event.title}
-                    </h3>
-
-                    <p className="mt-4 leading-8 text-[#59636b]">
-                      {event.description}
-                    </p>
-
-                    {event.image && (
-                      <figure className="mt-6">
-                        <div className="flex justify-center bg-[#102c44] p-3">
-                          <img
-                            src={event.image}
-                            alt={event.title}
-                            className="h-auto max-h-[520px] w-full object-contain"
-                          />
-                        </div>
-
-                        <figcaption className="mt-2 text-xs italic text-[#59636b]">
-                          Historical photograph: {event.title}
-                        </figcaption>
-                      </figure>
-                    )}
-
-                    {event.sourceUrl && (
-                      <a
-                        href={event.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-5 inline-block text-sm font-bold text-[#a4282d] hover:underline"
-                      >
-                        View Historical Source →
-                      </a>
-                    )}
-                  </div>
-                </article>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">Presidential Baseball Profile</p>
+            <h1 className="mt-2 font-serif text-5xl font-bold leading-tight md:text-6xl">{president.name}</h1>
+            <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.number} • {president.years}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{president.overview}</p>
+            <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
+              {[["President", `No. ${president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Recorded Events", String(events.length)]].map(([label, value]) => (
+                <div key={label} className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#a4282d]">{label}</p>
+                  <p className="mt-1 font-serif text-base font-bold">{value}</p>
+                </div>
               ))}
             </div>
-          ) : (
-            <div className="mt-8 border border-[#b8aa8e] bg-[#f8f3e8] p-7">
-              <h3 className="font-serif text-2xl font-bold">
-                {president.baseballEra}
-              </h3>
-
-              <p className="mt-4 leading-8 text-[#59636b]">
-                {president.overview}
-              </p>
-
-              <p className="mt-5 text-sm italic text-[#59636b]">
-                Additional historical events are being researched.
-              </p>
-            </div>
-          )}
-        </section>
-
-        {/* HISTORIC PHOTOGRAPHS */}
-        <section className="mt-16">
-          <div className="border-b-2 border-[#b8aa8e] pb-4">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Photographic Archive
-            </p>
-
-            <h2 className="mt-2 font-serif text-3xl font-bold md:text-4xl">
-              Historic Photographs
-            </h2>
-          </div>
-
-          {photos.length > 0 ? (
-            <div className="mt-8 grid gap-6 md:grid-cols-2">
-              {photos.map((photo, index) => (
-                <figure
-                  key={`${photo.image}-${index}`}
-                  className="overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8]"
-                >
-                  <div className="flex min-h-[260px] items-center justify-center bg-[#102c44] p-3">
-                    <img
-                      src={photo.image}
-                      alt={photo.caption}
-                      className="max-h-[480px] w-full object-contain"
-                    />
-                  </div>
-
-                  <figcaption className="p-6">
-                    {photo.year && (
-                      <p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">
-                        {photo.year}
-                      </p>
-                    )}
-
-                    <p className="mt-3 leading-7 text-[#344656]">
-                      {photo.caption}
-                    </p>
-
-                    {photo.sourceUrl && (
-                      <a
-                        href={photo.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-4 inline-block text-sm font-bold text-[#a4282d] hover:underline"
-                      >
-                        View Photograph Source →
-                      </a>
-                    )}
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-          ) : (
-            <div className="mt-8 border border-[#b8aa8e] bg-[#f8f3e8] p-7">
-              <p className="leading-8 text-[#59636b]">
-                Additional verified historical photographs will be
-                added as this presidential archive develops.
-              </p>
-            </div>
-          )}
-        </section>
-
-        {/* MEMORABILIA */}
-        <section className="mt-16">
-          <div className="border-b-2 border-[#b8aa8e] pb-4">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Collectors&apos; Archive
-            </p>
-
-            <h2 className="mt-2 font-serif text-3xl font-bold md:text-4xl">
-              Presidential Baseball Memorabilia
-            </h2>
-          </div>
-
-          <div className="mt-7 border border-[#b8aa8e] bg-[#f8f3e8] p-7">
-            <p className="leading-8 text-[#59636b]">
-              Programs, tickets, photographs, baseballs, and other
-              presidential baseball artifacts will be documented
-              here as historical research continues.
-            </p>
           </div>
         </section>
 
-        {/* HISTORICAL SOURCES */}
-        <section className="mt-16 border-t-2 border-[#b8aa8e] pt-8">
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-            Research &amp; Documentation
-          </p>
-
-          <h2 className="mt-2 font-serif text-3xl font-bold">
-            Historical Sources
-          </h2>
-
-          {sources.length > 0 ? (
-            <ul className="mt-6 space-y-4">
-              {sources.map((source) => (
-                <li
-                  key={source.url}
-                  className="border-l-2 border-[#c9b98c] pl-4"
-                >
-                  <a
-                    href={source.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-bold text-[#a4282d] hover:underline"
-                  >
-                    {source.title} ↗
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mt-5 leading-8 text-[#59636b]">
-              Individual archival citations and historical
-              references will be added as this presidential
-              profile is researched.
-            </p>
-          )}
+        <section className="mt-12 grid gap-8 md:grid-cols-[1fr_320px]">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">The Baseball President</p>
+            <h2 className="mt-1 font-serif text-3xl font-bold">{president.name} and America&apos;s Pastime</h2>
+            <p className="mt-5 text-[17px] leading-8 text-[#3f4b55]">{president.overview}</p>
+          </div>
+          <aside className="border border-[#b8aa8e] bg-[#102c44] p-6 text-white">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e3c6a5]">Archive Record</p>
+            <h3 className="mt-2 font-serif text-2xl font-bold">{president.name}</h3>
+            <div className="mt-5 space-y-4 text-sm leading-6 text-[#dbe2e8]">
+              <div><p className="font-bold text-white">Presidency</p><p>{president.years}</p></div>
+              <div><p className="font-bold text-white">Baseball Era</p><p>{president.baseballEra}</p></div>
+              <div><p className="font-bold text-white">Documented Timeline Entries</p><p>{events.length}</p></div>
+              <div><p className="font-bold text-white">Research Sources</p><p>{sources.length}</p></div>
+            </div>
+          </aside>
         </section>
 
-        {/* PREVIOUS / NEXT PRESIDENT */}
-        <nav
-          aria-label="Presidential profile navigation"
-          className="mt-16 grid gap-4 border-t-2 border-[#b8aa8e] pt-8 sm:grid-cols-2"
-        >
-          {previousPresident ? (
-            <Link
-              href={`/presidents/${previousPresident.slug}`}
-              className="border border-[#b8aa8e] bg-[#f8f3e8] p-5 transition hover:border-[#a4282d]"
-            >
-              <p className="text-xs font-bold uppercase tracking-wider text-[#a4282d]">
-                ← Previous President
-              </p>
+        {featured && (
+          <section className="mt-14">
+            <div className="border-b-2 border-[#b8aa8e] pb-3">
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Featured Moment</p>
+              <h2 className="mt-1 font-serif text-3xl font-bold">{featured.title}</h2>
+            </div>
+            <article className={`mt-6 grid overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] ${featured.image ? "md:grid-cols-2" : ""}`}>
+              {featured.image && <div className="flex items-center justify-center bg-[#102c44] p-3"><img src={featured.image} alt={featured.title} className="h-auto max-h-[480px] w-full object-contain" /></div>}
+              <div className="p-7">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">{featured.date}</p>
+                <h3 className="mt-2 font-serif text-3xl font-bold">{featured.title}</h3>
+                <p className="mt-4 leading-8 text-[#59636b]">{featured.description}</p>
+                {featured.sourceUrl && <a href={featured.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-semibold text-[#a4282d] underline">Historical source ↗</a>}
+              </div>
+            </article>
+          </section>
+        )}
 
-              <p className="mt-2 font-serif text-xl font-bold">
-                {previousPresident.name}
-              </p>
-            </Link>
-          ) : (
-            <div />
-          )}
+        <section className="mt-14">
+          <div className="border-b-2 border-[#b8aa8e] pb-3">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Presidential Baseball Timeline</p>
+            <h2 className="mt-1 font-serif text-3xl font-bold">{president.name}&apos;s Baseball History</h2>
+          </div>
+          <div className="mt-6 space-y-6">
+            {events.length ? events.map((event, index) => (
+              <article key={`${event.date}-${event.title}-${index}`} className="grid overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] md:grid-cols-[140px_1fr]">
+                <div className="flex items-center justify-center bg-[#a4282d] p-6 text-center font-serif text-2xl font-bold text-white">{event.date}</div>
+                <div className="p-6">
+                  <h3 className="font-serif text-2xl font-bold">{event.title}</h3>
+                  <p className="mt-2 leading-7 text-[#59636b]">{event.description}</p>
+                  {event.image && <div className="mt-5 flex justify-center bg-[#102c44] p-3"><img src={event.image} alt={`${event.title} — archival illustration`} className="h-auto max-h-[520px] w-full object-contain" /></div>}
+                  {event.sourceUrl && <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-semibold text-[#a4282d] underline">View source ↗</a>}
+                </div>
+              </article>
+            )) : <p className="border border-[#b8aa8e] bg-[#f8f3e8] p-6 text-[#59636b]">Additional documented baseball events are being researched for this presidency.</p>}
+          </div>
+        </section>
 
-          {nextPresident ? (
-            <Link
-              href={`/presidents/${nextPresident.slug}`}
-              className="border border-[#b8aa8e] bg-[#f8f3e8] p-5 text-right transition hover:border-[#a4282d]"
-            >
-              <p className="text-xs font-bold uppercase tracking-wider text-[#a4282d]">
-                Next President →
-              </p>
+        <section className="mt-14">
+          <div className="border-b-2 border-[#b8aa8e] pb-3">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Games &amp; First Pitches</p>
+            <h2 className="mt-1 font-serif text-3xl font-bold">{president.name} at the Ballpark</h2>
+          </div>
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            {events.filter(event => /pitch|opening day|ballpark|stadium|world series|game/i.test(`${event.title} ${event.description}`)).slice(0, 6).map((event, index) => (
+              <article key={`${event.title}-${index}`} className="border border-[#b8aa8e] bg-[#f8f3e8] p-6">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#a4282d]">{event.date}</p>
+                <h3 className="mt-2 font-serif text-xl font-bold">{event.title}</h3>
+                <p className="mt-2 leading-7 text-[#59636b]">{event.description}</p>
+              </article>
+            ))}
+          </div>
+          <Link href="/first-pitches" className="mt-5 inline-block font-bold text-[#a4282d] underline">Explore the First Pitch Archive →</Link>
+        </section>
 
-              <p className="mt-2 font-serif text-xl font-bold">
-                {nextPresident.name}
-              </p>
-            </Link>
-          ) : (
-            <div />
-          )}
-        </nav>
+        {mainPhoto && <section className="mt-14">
+          <div className="border-b-2 border-[#b8aa8e] pb-3">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Historic Photos</p>
+            <h2 className="mt-1 font-serif text-3xl font-bold">{president.name} and America&apos;s Game</h2>
+          </div>
+          <article className="mt-6 overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8]">
+            <div className="bg-[#102c44] p-4"><img src={mainPhoto.image} alt={mainPhoto.caption} className="mx-auto h-auto max-h-[650px] w-full object-contain" /></div>
+            <div className="p-7"><h3 className="font-serif text-2xl font-bold">{mainPhoto.caption}</h3>{mainPhoto.year && <p className="mt-2 text-[#59636b]">{mainPhoto.year}</p>}{mainPhoto.sourceUrl && <a href={mainPhoto.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm font-semibold text-[#a4282d] underline">Photo source ↗</a>}</div>
+          </article>
+        </section>}
 
-        <div className="mt-10 text-center">
-          <Link
-            href="/presidents"
-            className="inline-block bg-[#102c44] px-7 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#1b405e]"
-          >
-            ← Back to Presidential Archive
-          </Link>
+        <section className="mt-14">
+          <div className="border-b-2 border-[#b8aa8e] pb-3">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Heritage Collection</p>
+            <h2 className="mt-1 font-serif text-3xl font-bold">Collecting the {president.name} Baseball Story</h2>
+          </div>
+          <div className="mt-6 grid gap-5 md:grid-cols-3">
+            {[["Historic Photographs", "Explore archival images and historical photographic records."], ["Tickets & Programs", "Discover game tickets, programs, scorecards, and related ephemera."], ["Presidential Baseballs", "Explore baseballs, autographs, and related historical artifacts."]].map(([title, description]) => (
+              <article key={title} className="border border-[#b8aa8e] bg-[#f8f3e8] p-6"><div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#102c44] text-2xl text-white">⚾</div><h3 className="font-serif text-xl font-bold">{title}</h3><p className="mt-2 leading-7 text-[#59636b]">{description}</p></article>
+            ))}
+          </div>
+          <Link href="/heritage-collection" className="mt-5 inline-block font-bold text-[#a4282d] underline">Visit the Heritage Collection →</Link>
+        </section>
+
+        <section className="mt-14 border-t-2 border-[#b8aa8e] pt-8">
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Research &amp; Sources</p>
+          <h2 className="mt-1 font-serif text-3xl font-bold">Building the Historical Record</h2>
+          <p className="mt-4 max-w-4xl leading-8 text-[#59636b]">Presidential Pastime documents presidential baseball history through archival photographs, historical records, and published research.</p>
+          <div className="mt-5 grid gap-3 text-sm md:grid-cols-2">
+            {sources.length ? sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer" className="border border-[#b8aa8e] bg-[#f8f3e8] p-4 font-semibold text-[#a4282d] hover:underline">{source.title} ↗</a>) : <div className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">Additional sources are being collected.</div>}
+          </div>
+        </section>
+
+        <div className="mt-14 flex flex-wrap justify-between gap-4 border-t border-[#b8aa8e] pt-6 text-sm font-bold text-[#a4282d]">
+          {previous ? <Link href={`/presidents/${previous.slug}`}>← {previous.name}</Link> : <span />}
+          <Link href="/presidents">All Presidents</Link>
+          {next ? <Link href={`/presidents/${next.slug}`}>{next.name} →</Link> : <span />}
         </div>
       </div>
-
-      {/* FOOTER */}
-      <footer className="mt-16 border-t-4 border-[#a4282d] bg-[#071d31] px-6 py-10 text-center text-white">
-        <Link href="/" className="font-serif text-2xl font-bold">
-          PRESIDENTIAL PASTIME
-        </Link>
-
-        <p className="mt-3 text-sm text-[#c9b98c]">
-          America&apos;s Presidents. America&apos;s Pastime.
-        </p>
-
-        <div className="mt-6 flex justify-center gap-6 text-sm">
-          <Link href="/" className="hover:text-[#c9b98c]">
-            Home
-          </Link>
-
-          <Link
-            href="/presidents"
-            className="hover:text-[#c9b98c]"
-          >
-            Presidential Archive
-          </Link>
-        </div>
-
-        <p className="mt-7 text-xs text-[#9baab6]">
-          An independent historical research archive.
-        </p>
-      </footer>
+      <footer className="mt-16 border-t-4 border-[#a4282d] bg-[#102c44] text-white"><div className="mx-auto max-w-6xl px-6 py-8"><p className="font-serif text-xl font-bold">PRESIDENTIAL PASTIME</p><p className="mt-1 text-sm text-[#c9d4df]">Exploring the history of America&apos;s presidents and America&apos;s pastime.</p></div></footer>
     </main>
   );
 }
