@@ -234,6 +234,15 @@ export const presidents: President[] = [
     overview:
       "Cleveland's two nonconsecutive presidencies coincided with baseball's growth as a professional spectator sport, including changes in leagues, playing rules, and ballparks.",
     portrait: "/cleveland.jpg",
+    events: [
+      {
+        date: "October 8, 1888",
+        title: "Cleveland Meets the Chicago White Stockings",
+        description: "President Grover Cleveland welcomed Cap Anson, Albert Spalding and members of the Chicago White Stockings to the White House. The baseball delegation sought presidential endorsement for Spalding's international baseball tour. Cleveland greeted the players but declined to issue the requested proclamation. The accompanying historical baseball-card portrait depicts Chicago captain Cap Anson, not the White House meeting.",
+        image: "/cleveland-cap-anson.jpg",
+        sourceUrl: "https://www.mlb.com/news/cubs-looking-forward-to-white-house-event-c213572950",
+      },
+    ],
   },
   {
     name: "Benjamin Harrison",
