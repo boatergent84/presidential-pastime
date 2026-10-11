@@ -74,9 +74,8 @@ export const presidents: President[] = [
     number: 17,
     years: "1865–1869",
     baseballEra: "Post-Civil War Baseball",
-    overview:
-      "Baseball expanded rapidly after the Civil War. Andrew Johnson's presidency coincided with early baseball activity around the White House.",
-    portrait: "/andrew-johnson.jpg",
+    overview: "Andrew Johnson entered the presidency in April 1865, just as the Civil War was ending and organized baseball was preparing for a remarkable period of national growth. During the war, soldiers had played baseball and related bat-and-ball games in camps and military communities, helping carry the sport beyond its earlier northeastern centers. As Americans returned to civilian life, baseball clubs multiplied and increasingly organized competitive matches attracted public attention. Johnson's administration coincided with the emergence of baseball as a prominent part of the nation's postwar culture. The Brooklyn Atlantics, one of the leading clubs of the era, were associated with an 1865 visit to Washington and a reported White House reception during Johnson's presidency. Their prominence illustrated the growing prestige of organized baseball, although the surviving historical record does not establish Johnson as an active player or especially devoted spectator. The years of his administration also saw major changes in the game's organization, culminating in the formation of the National Association of Base Ball Players' first openly professional club, the Cincinnati Red Stockings, in 1869. Baseball's transformation from an amateur club pastime toward professional competition reflected the larger social changes taking place in the United States after the Civil War. Johnson's connection to baseball is therefore rooted in an important transitional era, when the game was becoming a more visible and lasting institution in American life.",
+    portrait: "/andrew-johnson-brady.jpg",
     events: [
       {
         date: "August 30, 1865",
