@@ -39,8 +39,7 @@ export const presidents: President[] = [
     number: 16,
     years: "1861–1865",
     baseballEra: "Civil War Baseball",
-    overview:
-      "During Abraham Lincoln's presidency, baseball spread through military camps and American communities. An 1860 political cartoon had already used baseball to depict Lincoln and his political opponents.",
+    overview: "Abraham Lincoln occupied the White House during a defining chapter in the development of American baseball. By the time he became president in 1861, organized baseball clubs were already flourishing in northeastern cities, and the sport was beginning to spread into other regions of the country. The Civil War accelerated that expansion as soldiers from different states played ball games in military camps and carried their enthusiasm for the sport to new communities. Lincoln himself appeared in an 1860 political cartoon titled 'The National Game,' which used baseball terminology to satirize the presidential election, demonstrating that the game had already become recognizable enough to serve as a national political metaphor. Although later accounts describe Lincoln playing baseball, historians have questioned the reliability of many such stories, and there is little firm contemporary evidence of his personal participation. His strongest historical connection to baseball lies instead in the extraordinary period of national change over which he presided. During the war, baseball helped provide recreation and companionship for soldiers far from home, while the movement of those soldiers helped carry the game beyond its earlier regional boundaries. Lincoln did not live to see the establishment of the first fully professional baseball club in 1869, but the sport that spread during his presidency would eventually become one of the country's most enduring traditions.",
     portrait: "/lincoln.jpg",
     events: [
       {
