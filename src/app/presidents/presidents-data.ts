@@ -180,6 +180,13 @@ export const presidents: President[] = [
         image: "/garfield-oberlin-baseball-1881.jpg",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:1881_Oberlin_baseball_team.jpg",
       },
+      {
+        date: "1881",
+        title: "Chicago White Stockings Win the Pennant",
+        description: "The Chicago White Stockings captured the 1881 National League championship with a 56–28 record during James A. Garfield's presidency. Pictured is Chicago pitcher Fred Goldsmith in an 1880 photograph, a member of the club's championship-era pitching staff.",
+        image: "/garfield-fred-goldsmith-1880.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Fred%20Goldsmith%201880",
+      },
     ],
     number: 20,
     years: "1881",
