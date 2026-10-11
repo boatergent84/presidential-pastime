@@ -54,11 +54,46 @@ export default async function PresidentPage({
       <div className="mx-auto max-w-6xl px-6 py-10">
         <section className="grid gap-8 border-b-2 border-[#b8aa8e] pb-10 md:grid-cols-[260px_1fr] md:items-center">
           <div className="flex justify-center md:justify-start">
-            <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
+            <div className="relative h-[270px] w-[270px] shrink-0 flex items-center justify-center">
+              {/* PRESIDENTIAL 50 WHITE STARS */}
+              <svg
+                className="pointer-events-none absolute inset-0 h-full w-full"
+                viewBox="0 0 270 270"
+                aria-hidden="true"
+              >
+                {Array.from({ length: 50 }, (_, i) => {
+                  const angle = (i * 2 * Math.PI) / 50 - Math.PI / 2;
+                  const x = 135 + 130 * Math.cos(angle);
+                  const y = 135 + 130 * Math.sin(angle);
+
+                  const points = Array.from({ length: 10 }, (_, j) => {
+                    const a = (j * Math.PI) / 5 - Math.PI / 2;
+                    const r = j % 2 === 0 ? 3.2 : 1.5;
+                    return `${x + r * Math.cos(a)},${y + r * Math.sin(a)}`;
+                  }).join(" ");
+
+                  return (
+                    <polygon
+                      key={i}
+                      points={points}
+                      fill="#FFFFFF"
+                      stroke="#102c44"
+                      strokeWidth="0.35"
+                    />
+                  );
+                })}
+              </svg>
+              <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
               <div className="h-full w-full overflow-hidden rounded-full border border-[#c9b98c] bg-[#e8dfca]">
                 {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className={`h-full w-full object-cover object-top`} /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.slug === "donald-trump" ? "45 & 47" : president.number}</div>}
               </div>
             </div>
+            </div>
+
+
+            
+
+
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">Presidential Baseball Profile</p>
@@ -71,7 +106,7 @@ export default async function PresidentPage({
                 "george-w-bush": "Right-Handed",
                 "george-h-w-bush": "Right-Handed",
               } as Record<string, string>)[president.slug] ?? "Undocumented"]].map(([label, value]) => (
-                <div key={label} className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">
+                <div key={label} className="border-[3px] border-[#C5A46D] bg-[#f8f3e8] p-4">
                   <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#a4282d]">{label}</p>
                   <p className="mt-1 font-serif text-base font-bold">{value}</p>
                 </div>
