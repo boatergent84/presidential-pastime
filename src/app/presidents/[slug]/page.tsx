@@ -27,7 +27,12 @@ export default async function PresidentPage({
   const sources = [...(president.sources ?? []), ...(extra?.sources ?? [])]
     .filter((source, index, all) => all.findIndex(s => s.url === source.url) === index);
   const photos = president.photos ?? [];
-  const featured = events.find(e => e.image) ?? events[0];
+  const featured =
+    president.slug === "chester-a-arthur"
+      ? events.find(e => e.image?.includes("arthur-providence-grays-1884"))
+        ?? events.find(e => e.image)
+        ?? events[0]
+      : events.find(e => e.image) ?? events[0];
   const mainPhoto = photos[0];
   const sorted = [...presidents].sort((a, b) => a.number - b.number);
   const position = sorted.findIndex(p => p.slug === slug);
@@ -59,7 +64,7 @@ export default async function PresidentPage({
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">Presidential Baseball Profile</p>
             <h1 className="mt-2 font-serif text-5xl font-bold leading-tight md:text-6xl">{president.name}</h1>
             <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.slug === "donald-trump" ? "45 & 47" : president.number} • {president.years}</p>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield"].includes(president.slug) ? null : president.overview}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur"].includes(president.slug) ? null : president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
               {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Throwing Hand", ({
                 "barack-obama": "Left-Handed",
@@ -81,7 +86,16 @@ export default async function PresidentPage({
             <h2 className="mt-1 font-serif text-3xl font-bold">{president.name} and America&apos;s Pastime</h2>
             <p className="mt-5 text-[17px] leading-8 text-[#3f4b55]">{president.overview}</p>
           </div>
-          {president.slug === "james-a-garfield" ? (
+          {president.slug === "chester-a-arthur" ? (
+            <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+              <p className="font-serif text-xl italic leading-relaxed">
+                “I shall aim to follow the plain path of duty.”
+              </p>
+              <p className="mt-4 text-sm text-[#eee7d7]">
+                — Chester A. Arthur, 1881
+              </p>
+            </aside>
+          ) : president.slug === "james-a-garfield" ? (
             <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
               <p className="font-serif text-3xl leading-relaxed italic text-[#fff5df]">
                 &ldquo;It is the high privilege and sacred duty of those now living to educate their successors.&rdquo;
@@ -149,7 +163,7 @@ export default async function PresidentPage({
           )}
         </section>
 
-        {featured && !["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield"].includes(president.slug) && (
+        {featured && !["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur"].includes(president.slug) && (
           <section className="mt-14">
             <div className="border-b-2 border-[#b8aa8e] pb-3">
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Featured Moment</p>

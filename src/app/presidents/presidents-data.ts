@@ -200,9 +200,8 @@ export const presidents: President[] = [
     number: 21,
     years: "1881–1885",
     baseballEra: "Professional League Expansion",
-    overview:
-      "Arthur's presidency coincided with the expansion of professional baseball and the development of competing leagues.",
-    portrait: "/arthur.jpg",
+    overview: "Chester A. Arthur became the twenty-first president of the United States on September 19, 1881, following the death of James A. Garfield. His presidency coincided with one of the most important periods in the early development of professional baseball. The National League, founded in 1876, was establishing itself as a major professional organization, while the American Association began play in 1882 and introduced new competition. The Association attracted fans through lower admission prices and Sunday baseball in cities where it was permitted. In 1883, the New York Gothams entered the National League, beginning the franchise history of today's San Francisco Giants. The era featured prominent players including Buck Ewing, Roger Connor, John Montgomery Ward, and Charles Old Hoss Radbourn. In 1884, Radbourn produced one of baseball's most extraordinary pitching seasons, helping the Providence Grays win the National League pennant. Providence then defeated the American Association champion New York Metropolitans in a three-game postseason championship series, an early predecessor to the modern World Series. Arthur's presidency therefore witnessed professional baseball's expansion into competing major leagues and its emergence as an increasingly important part of American culture. No reliably documented ceremonial first pitch by President Arthur has been established.",
+    portrait: "/arthur-whitehouse.jpg",
     events: [
       {
         date: "1883",
@@ -232,7 +231,9 @@ export const presidents: President[] = [
         date: "1882",
         title: "The American Association Begins",
         description:
-          "The American Association began play, offering professional competition alongside the National League.",
+          "The American Association began play in 1882, offering professional competition alongside the National League. The Cincinnati Red Stockings won the league's inaugural pennant. Pictured is the actual 1882 Cincinnati team.",
+        image: "/arthur-american-association-1882.png",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1882_Cincinnati_Red_Stockings.png",
       },
     ],
   },
