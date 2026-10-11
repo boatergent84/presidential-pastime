@@ -153,7 +153,7 @@ export default function PresidentsArchivePage() {
             <Link
               key={president.slug}
               href={`/presidents/${president.slug}`}
-              className="group flex flex-col overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] transition duration-200 hover:-translate-y-1 hover:border-[#a4282d] hover:shadow-lg"
+              className="group flex flex-col overflow-hidden border-[3px] border-[#C5A46D] bg-[#f8f3e8] transition duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
               {/* PORTRAIT AREA */}
               <div className="flex h-[265px] items-center justify-center bg-[#102c44] p-6">
