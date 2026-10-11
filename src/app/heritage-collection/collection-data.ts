@@ -13,6 +13,18 @@ export type Exhibit = {
 // Research topics, not claims that Presidential Pastime owns or has authenticated artifacts.
 // Replace with specific documented items and credited images after verifying provenance and rights.
 export const exhibits: Exhibit[] = [
+  {
+    slug: "walter-johnson-presidential-baseballs",
+    title: "Walter Johnson's Six Presidential Baseballs",
+    president: "Roosevelt, Taft, Wilson, Harding, Coolidge & Hoover",
+    year: "1937",
+    category: "Signed Baseballs",
+    description: "Explore a remarkable archival photograph documenting six presidential-autographed baseballs associated with Washington Senators legend Walter Johnson.",
+    image: "/heritage/walter-johnson-baseballs.jpg",
+    presidentSlug: "william-howard-taft",
+      researchNote: "The 1937 Library of Congress photographic record documents six presidential-autographed baseballs associated with Walter Johnson. This website does not own the original artifacts.",
+    },
+
   {slug:'taft-1910-opening-day',title:'1910 Washington Opening Day Programs & Tickets',category:'Tickets & Programs',year:'1910',president:'William Howard Taft',presidentSlug:'william-howard-taft',description:'Explore surviving printed materials associated with the Opening Day game at which Taft inaugurated the presidential first-pitch tradition.',researchNote:'Locate a specific original ticket or program in a catalog or auction archive before describing or illustrating an individual object.'},
   {slug:'taft-first-pitch-photography',title:'Taft First-Pitch Photographs',category:'Photographs',year:'1910',president:'William Howard Taft',presidentSlug:'william-howard-taft',description:'Historic photographic records of Taft and Washington baseball.',researchNote:'Confirm the exact date and photographer of each image before assigning it to the 1910 ceremony.',image:'/taft-first-pitch-1910.jpg'},
   {slug:'wilson-1915-world-series',title:'1915 World Series Tickets & Programs',category:'Tickets & Programs',year:'1915',president:'Woodrow Wilson',presidentSlug:'woodrow-wilson',description:'Printed souvenirs and documentary material from the World Series attended by President Wilson.',researchNote:'Find a documented specimen and distinguish the specific game and venue.'},
