@@ -18,6 +18,8 @@ const presidents = [
 export default function WalterJohnsonExhibit() {
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#172b3d]">
+
+
       <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5">
           <Link href="/" className="font-serif text-2xl font-bold tracking-wide">PRESIDENTIAL PASTIME</Link>
@@ -32,6 +34,18 @@ export default function WalterJohnsonExhibit() {
           <section className="border border-[#b8aa8e] bg-[#f8f3e8] p-7">
             <p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">Archival Photograph · 1937</p>
             <h2 className="mt-3 font-serif text-2xl font-bold">An Unusual Presidential Collection</h2>
+            <figure className="mt-6 overflow-hidden border border-[#b8aa8e] bg-white p-3">
+              <img
+                src="/heritage/walter-johnson-baseballs.jpg"
+                alt="1937 archival photograph of six presidential-autographed baseballs associated with Walter Johnson"
+                className="mx-auto h-auto max-h-[500px] w-full object-contain"
+              />
+              <figcaption className="mt-3 text-center text-xs leading-5 text-[#59636b]">
+                Six presidential-autographed baseballs, 1937.
+                Harris &amp; Ewing Collection, Library of Congress.
+              </figcaption>
+            </figure>
+
             <p className="mt-4 leading-8 text-[#59636b]">A historic photograph documents six baseballs bearing the signatures of Presidents Theodore Roosevelt, William Howard Taft, Woodrow Wilson, Warren G. Harding, Calvin Coolidge, and Herbert Hoover. The baseballs were associated with Washington Senators pitching legend Walter Johnson.</p>
             <p className="mt-4 leading-8 text-[#59636b]">This exhibit introduces the archival record and connects each president to the broader story of baseball and the White House. It does not claim that Presidential Pastime owns the original baseballs.</p>
             <a href="https://www.loc.gov/item/2016875530/" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block border-b-2 border-[#a4282d] pb-1 font-semibold text-[#a4282d]">View the archival photograph at the Library of Congress ↗</a>
