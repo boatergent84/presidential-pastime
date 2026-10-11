@@ -59,7 +59,7 @@ export default async function PresidentPage({
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">Presidential Baseball Profile</p>
             <h1 className="mt-2 font-serif text-5xl font-bold leading-tight md:text-6xl">{president.name}</h1>
             <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.slug === "donald-trump" ? "45 & 47" : president.number} • {president.years}</p>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{president.overview}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{president.slug === "grover-cleveland" ? null : president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
               {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Recorded Events", String(events.length)]].map(([label, value]) => (
                 <div key={label} className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">
@@ -77,16 +77,27 @@ export default async function PresidentPage({
             <h2 className="mt-1 font-serif text-3xl font-bold">{president.name} and America&apos;s Pastime</h2>
             <p className="mt-5 text-[17px] leading-8 text-[#3f4b55]">{president.overview}</p>
           </div>
-          <aside className="border border-[#b8aa8e] bg-[#102c44] p-6 text-white">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e3c6a5]">Archive Record</p>
-            <h3 className="mt-2 font-serif text-2xl font-bold">{president.name}</h3>
-            <div className="mt-5 space-y-4 text-sm leading-6 text-[#dbe2e8]">
-              <div><p className="font-bold text-white">Presidency</p><p>{president.years}</p></div>
-              <div><p className="font-bold text-white">Baseball Era</p><p>{president.baseballEra}</p></div>
-              <div><p className="font-bold text-white">Documented Timeline Entries</p><p>{events.length}</p></div>
-              <div><p className="font-bold text-white">Research Sources</p><p>{sources.length}</p></div>
-            </div>
-          </aside>
+          {president.slug === "grover-cleveland" ? (
+            <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+              <p className="font-serif text-3xl leading-relaxed italic text-[#fff5df]">
+                &ldquo;Officeholders are the agents of the people, not their masters.&rdquo;
+              </p>
+              <p className="mt-6 font-serif text-lg text-[#e3c6a5]">
+                — Grover Cleveland
+              </p>
+            </aside>
+          ) : (
+            <aside className="border border-[#b8aa8e] bg-[#102c44] p-6 text-white">
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e3c6a5]">Archive Record</p>
+              <h3 className="mt-2 font-serif text-2xl font-bold">{president.name}</h3>
+              <div className="mt-5 space-y-4 text-sm leading-6 text-[#dbe2e8]">
+                <div><p className="font-bold text-white">Presidency</p><p>{president.years}</p></div>
+                <div><p className="font-bold text-white">Baseball Era</p><p>{president.baseballEra}</p></div>
+                <div><p className="font-bold text-white">Documented Timeline Entries</p><p>{events.length}</p></div>
+                <div><p className="font-bold text-white">Research Sources</p><p>{sources.length}</p></div>
+              </div>
+            </aside>
+          )}
         </section>
 
         {featured && (
