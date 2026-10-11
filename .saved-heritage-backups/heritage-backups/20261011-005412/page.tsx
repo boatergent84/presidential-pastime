@@ -1,0 +1,13 @@
+import type { Metadata } from 'next';
+import ArchiveShell from '../components/archive-shell';
+import ArchiveSearch,{type ArchiveItem} from '../components/archive-search';
+export const metadata:Metadata={title:'Heritage Collection | Presidential Pastime',description:'A developing museum of presidential baseball artifacts, tickets, autographs, and programs.'};
+const items:ArchiveItem[]=[
+ {title:'1910 Opening Day — Taft',category:'Tickets & Programs',date:'1910',description:'An exhibit category for original admission tickets, programs, and scorecards associated with Taft’s first-pitch ceremony.',href:'/presidents/william-howard-taft',note:'Artifact sought — no specific original has been cataloged.'},
+ {title:'1924 World Series — Washington',category:'Tickets & Programs',date:'1924',description:'A future display of tickets and programs from the Senators–Giants World Series, with links to Calvin Coolidge’s baseball history.',href:'/presidents/calvin-coolidge',note:'Artifact sought — illustrative historical topic only.'},
+ {title:'Presidential Autographed Baseballs',category:'Signed Baseballs',date:'20th–21st centuries',description:'A planned catalog of baseballs signed by U.S. presidents, with close-up images, authentication, provenance, and collection credits.',note:'No signed baseball is currently authenticated or cataloged here.'},
+ {title:'Presidential First-Pitch Baseballs',category:'Baseballs',date:'1910–present',description:'Baseballs associated with presidential first-pitch ceremonies, where ownership and event attribution can be documented.',note:'Future exhibit category.'},
+ {title:'Presidential Baseball Scorecards',category:'Scorecards',date:'Various years',description:'Original scorecards from games attended by presidents, with front-and-back photography and historical context.',note:'Future exhibit category.'},
+ {title:'Letters, Invitations & Ephemera',category:'Documents',date:'Various years',description:'Presidential baseball correspondence, invitations, passes, and related paper artifacts.',note:'Future exhibit category.'}
+];
+export default function Page(){return <ArchiveShell eyebrow="The Presidential Pastime Museum" title="The Heritage Collection" subtitle="Preserving the material history of America’s presidents and America’s pastime."><p className="mb-8 max-w-3xl leading-7">Explore planned artifact exhibits. We will add photographs of actual tickets, signed baseballs, programs, and documents as their sources, provenance, and reproduction rights are established. These placeholders are not claims of ownership.</p><ArchiveSearch items={items}/></ArchiveShell>}

@@ -1,13 +1,17 @@
-import type { Metadata } from 'next';
-import ArchiveShell from '../components/archive-shell';
-import ArchiveSearch,{type ArchiveItem} from '../components/archive-search';
-export const metadata:Metadata={title:'Heritage Collection | Presidential Pastime',description:'A developing museum of presidential baseball artifacts, tickets, autographs, and programs.'};
-const items:ArchiveItem[]=[
- {title:'1910 Opening Day — Taft',category:'Tickets & Programs',date:'1910',description:'An exhibit category for original admission tickets, programs, and scorecards associated with Taft’s first-pitch ceremony.',href:'/presidents/william-howard-taft',note:'Artifact sought — no specific original has been cataloged.'},
- {title:'1924 World Series — Washington',category:'Tickets & Programs',date:'1924',description:'A future display of tickets and programs from the Senators–Giants World Series, with links to Calvin Coolidge’s baseball history.',href:'/presidents/calvin-coolidge',note:'Artifact sought — illustrative historical topic only.'},
- {title:'Presidential Autographed Baseballs',category:'Signed Baseballs',date:'20th–21st centuries',description:'A planned catalog of baseballs signed by U.S. presidents, with close-up images, authentication, provenance, and collection credits.',note:'No signed baseball is currently authenticated or cataloged here.'},
- {title:'Presidential First-Pitch Baseballs',category:'Baseballs',date:'1910–present',description:'Baseballs associated with presidential first-pitch ceremonies, where ownership and event attribution can be documented.',note:'Future exhibit category.'},
- {title:'Presidential Baseball Scorecards',category:'Scorecards',date:'Various years',description:'Original scorecards from games attended by presidents, with front-and-back photography and historical context.',note:'Future exhibit category.'},
- {title:'Letters, Invitations & Ephemera',category:'Documents',date:'Various years',description:'Presidential baseball correspondence, invitations, passes, and related paper artifacts.',note:'Future exhibit category.'}
-];
-export default function Page(){return <ArchiveShell eyebrow="The Presidential Pastime Museum" title="The Heritage Collection" subtitle="Preserving the material history of America’s presidents and America’s pastime."><p className="mb-8 max-w-3xl leading-7">Explore planned artifact exhibits. We will add photographs of actual tickets, signed baseballs, programs, and documents as their sources, provenance, and reproduction rights are established. These placeholders are not claims of ownership.</p><ArchiveSearch items={items}/></ArchiveShell>}
+"use client";
+import Link from "next/link";
+import { useMemo, useState } from "react";
+import { exhibits } from "./collection-data";
+const categories = ["All", ...Array.from(new Set(exhibits.map(e => e.category)))];
+export default function HeritageCollectionPage() {
+ const [category, setCategory] = useState("All");
+ const [search, setSearch] = useState("");
+ const filtered = useMemo(() => exhibits.filter(e => (category === "All" || e.category === category) && [e.title,e.president,e.year,e.description].join(" ").toLowerCase().includes(search.toLowerCase())), [category,search]);
+ return <main className="min-h-screen bg-[#eee7d7] text-[#102c44]">
+  <header className="border-b-4 border-[#a4282d] bg-[#102c44] px-6 py-5 text-white"><div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4"><Link href="/" className="font-serif text-2xl font-bold">PRESIDENTIAL PASTIME</Link><nav className="flex flex-wrap gap-4 text-sm"><Link href="/presidents">Presidents</Link><Link href="/first-pitches">First Pitches</Link><Link href="/photo-archive">Photo Archive</Link></nav></div></header>
+  <section className="bg-[#102c44] px-6 py-16 text-center text-white"><p className="text-xs uppercase tracking-[0.3em] text-[#c9b98c]">Presidential Pastime</p><h1 className="mt-3 font-serif text-4xl font-bold md:text-6xl">The Heritage Collection</h1><p className="mx-auto mt-5 max-w-2xl text-[#eee7d7]">A developing research gallery of presidential baseball artifacts, photographs, tickets, and signed baseballs.</p></section>
+  <section className="mx-auto max-w-6xl px-6 py-10"><div className="mb-6 border-l-4 border-[#a4282d] bg-[#f8f3e8] p-4 text-sm leading-6"><strong>Collection status:</strong> These are research exhibit topics, not authenticated objects held by Presidential Pastime. Individual artifacts and credits will be added after verification.</div>
+   <div className="mb-8 flex flex-col gap-3 md:flex-row"><input aria-label="Search exhibits" className="w-full border border-[#b8aa8e] bg-white p-3 md:flex-1" placeholder="Search by president, year, or artifact..." value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Filter by category" className="border border-[#b8aa8e] bg-white p-3" value={category} onChange={e=>setCategory(e.target.value)}>{categories.map(c=><option key={c}>{c}</option>)}</select></div>
+   <p className="mb-4 text-sm text-[#59636b]">{filtered.length} research exhibits</p><div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{filtered.map(e=><Link key={e.slug} href={`/heritage-collection/${e.slug}`} className="group overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] hover:border-[#a4282d]"><div className="flex h-44 items-center justify-center bg-[#102c44] p-3">{e.image?<img src={e.image} alt={e.title} className="h-full w-full object-contain"/>:<span className="px-5 text-center font-serif text-2xl text-[#c9b98c]">{e.category}</span>}</div><div className="p-5"><p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">{e.category} · {e.year}</p><h2 className="mt-2 font-serif text-xl font-bold">{e.title}</h2><p className="mt-2 text-sm text-[#59636b]">{e.president}</p><p className="mt-3 text-sm leading-6">{e.description}</p><p className="mt-4 text-sm font-bold text-[#a4282d]">Explore research exhibit →</p></div></Link>)}</div>{filtered.length===0&&<p>No exhibits match your search.</p>}
+  </section></main>;
+}
