@@ -61,7 +61,11 @@ export default async function PresidentPage({
             <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.slug === "donald-trump" ? "45 & 47" : president.number} • {president.years}</p>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant"].includes(president.slug) ? null : president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
-              {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Recorded Events", String(events.length)]].map(([label, value]) => (
+              {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Throwing Hand", ({
+                "barack-obama": "Left-Handed",
+                "george-w-bush": "Right-Handed",
+                "george-h-w-bush": "Right-Handed",
+              } as Record<string, string>)[president.slug] ?? "Undocumented"]].map(([label, value]) => (
                 <div key={label} className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">
                   <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#a4282d]">{label}</p>
                   <p className="mt-1 font-serif text-base font-bold">{value}</p>
