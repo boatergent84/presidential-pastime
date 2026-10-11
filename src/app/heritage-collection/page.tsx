@@ -2,6 +2,24 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { exhibits } from "./collection-data";
+
+// Archive gallery images: uses only files actually present in /public.
+const availableArchiveImages: string[] = ["/andrew-johnson.jpg", "/arthur.jpg", "/benjamin-harrison.jpg", "/biden.jpg", "/bush41-babe-ruth-1948.jpg", "/bush41.jpg", "/carter.jpg", "/cleveland.jpg", "/clinton.jpg", "/coolidge-baseball-1924.jpg", "/coolidge-championship-1924.jpg", "/coolidge-first-pitch-1927.jpg", "/coolidge-grace-world-series-1924.jpg", "/coolidge-grandstand-1924.jpg", "/coolidge-opening-day.jpg", "/coolidge-senators-white-house.jpg", "/coolidge-walter-johnson-1924.jpg", "/coolidge-world-series-1924.jpg", "/coolidge.jpg", "/eisenhower.jpg", "/fdr.jpg", "/ford.jpg", "/garfield.jpg", "/george-w-bush.jpg", "/ghwb.jpg", "/grant.jpg", "/gwb.jpg", "/harding.jpg", "/hayes.jpg", "/heritage/walter-johnson-baseballs.jpg", "/hoover.jpg", "/jfk-first-pitch-1961.jpg", "/jfk-first-pitch-1962.webp", "/jfk-opening-day-1963.jpg", "/jfk-portrait.jpg", "/jfk-stan-musial-1962.jpg", "/lbj.jpg", "/lincoln.jpg", "/mckinley.jpg", "/nixon.jpg", "/obama.jpg", "/reagan-first-pitch-1988.jpg", "/reagan.jpg", "/taft-ballgame-1909.jpg", "/taft-baseball-1911.jpg", "/taft-baseball-1912.jpg", "/taft-first-pitch-1910.jpg", "/taft.jpg", "/theodore-roosevelt.jpg", "/truman.jpg", "/trump.jpg", "/wilson-baseball-1915.jpg", "/wilson-opening-day-1916.jpg", "/wilson.jpg"];
+const imageName = (path: string) => path.split('/').pop()?.toLowerCase() ?? '';
+function heritagePhotoForExhibit(e: (typeof exhibits)[number]): {src:string; reference:boolean} | null {
+  if (e.image) return {src:e.image, reference:false};
+  // Only match a specific president's name/slug; never imply the image is the artifact.
+  const slug = String(e.presidentSlug || '').toLowerCase();
+  if (!slug || slug === 'multiple' || slug === 'various') return null;
+  const candidates = availableArchiveImages.filter(path => {
+    const name = imageName(path);
+    return name.startsWith(slug + '-') || name === slug + '.jpg' || name === slug + '.webp' || name === slug + '.png';
+  });
+  if (!candidates.length) return null;
+  const preferred = candidates.find(path => /first-pitch|baseball|ballgame|opening-day|world-series|stadium/.test(imageName(path))) || candidates[0];
+  return {src:preferred, reference:true};
+}
+
 const categories = ["All", ...Array.from(new Set(exhibits.map(e => e.category)))];
 export default function HeritageCollectionPage() {
  const [category, setCategory] = useState("All");
@@ -27,7 +45,7 @@ export default function HeritageCollectionPage() {
   </section>
   <section className="mx-auto max-w-6xl px-6 py-10"><div className="mb-6 border-l-4 border-[#a4282d] bg-[#f8f3e8] p-4 text-sm leading-6"><strong>Collection status:</strong> These are research exhibit topics, not authenticated objects held by Presidential Pastime. Individual artifacts and credits will be added after verification.</div>
    <div className="mb-8 flex flex-col gap-3 md:flex-row"><input aria-label="Search exhibits" className="w-full border border-[#b8aa8e] bg-white p-3 md:flex-1" placeholder="Search by president, year, or artifact..." value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Filter by category" className="border border-[#b8aa8e] bg-white p-3" value={category} onChange={e=>setCategory(e.target.value)}>{categories.map(c=><option key={c}>{c}</option>)}</select></div>
-   <p className="mb-4 text-sm text-[#59636b]">{filtered.length} research exhibits</p><div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{filtered.map(e=><Link key={e.slug} href={`/heritage-collection/${e.slug}`} className="group overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] hover:border-[#a4282d]"><div className="flex h-44 items-center justify-center bg-[#102c44] p-3">{e.image?<img src={e.image} alt={e.title} className="h-full w-full object-contain"/>:<span className="px-5 text-center font-serif text-2xl text-[#c9b98c]">{e.category}</span>}</div><div className="p-5"><p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">{e.category} · {e.year}</p><h2 className="mt-2 font-serif text-xl font-bold">{e.title}</h2><p className="mt-2 text-sm text-[#59636b]">{e.president}</p><p className="mt-3 text-sm leading-6">{e.description}</p><p className="mt-4 text-sm font-bold text-[#a4282d]">Explore research exhibit →</p></div></Link>)}</div>{filtered.length===0&&<p>No exhibits match your search.</p>}
+   <p className="mb-4 text-sm text-[#59636b]">{filtered.length} research exhibits</p><div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{filtered.map(e=><Link key={e.slug} href={`/heritage-collection/${e.slug}`} className="group overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] hover:border-[#a4282d]"><div className="flex h-44 items-center justify-center bg-[#102c44] p-3">{(() => { const photo = heritagePhotoForExhibit(e); return photo ? <div className="relative h-full w-full"><img src={photo.src} alt={photo.reference ? `Historical reference photograph associated with ${e.president}; not a photograph of the listed artifact` : e.title} className="h-full w-full object-contain"/>{photo.reference && <span className="absolute bottom-0 left-0 right-0 bg-[#102c44]/90 px-2 py-1 text-center text-[10px] text-white">Historical reference photo · not the artifact</span>}</div> : <span className="px-5 text-center font-serif text-2xl text-[#c9b98c]">{e.category}</span>; })()}</div><div className="p-5"><p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">{e.category} · {e.year}</p><h2 className="mt-2 font-serif text-xl font-bold">{e.title}</h2><p className="mt-2 text-sm text-[#59636b]">{e.president}</p><p className="mt-3 text-sm leading-6">{e.description}</p><p className="mt-4 text-sm font-bold text-[#a4282d]">Explore research exhibit →</p></div></Link>)}</div>{filtered.length===0&&<p>No exhibits match your search.</p>}
   </section>
   {/* HERITAGE RESEARCH GUIDE */}
   <section className="border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-14 text-white">
