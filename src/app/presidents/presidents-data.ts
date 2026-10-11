@@ -320,14 +320,29 @@ export const presidents: President[] = [
     years: "1901–1909",
     baseballEra: "Deadball Era",
     overview:
-      "Roosevelt's presidency overlapped with the early American League, the first modern World Series, and the growth of Major League Baseball as a national institution.",
-    portrait: "/theodore-roosevelt.jpg",
+      "Theodore Roosevelt occupied the White House during one of the most important periods in baseball history. When he became president in September 1901, the newly established American League was challenging the older National League for players, fans, and national attention. In 1903, the Boston Americans defeated the Pittsburgh Pirates in the first modern World Series, establishing a championship tradition that would become central to American sports. Roosevelt's presidency also overlapped with the rise of legendary players such as Honus Wagner, Nap Lajoie, Christy Mathewson, and Ty Cobb. The early twentieth century became known as the Deadball Era, when pitching, defense, bunting, and aggressive baserunning were central to the game. The Chicago Cubs won consecutive World Series championships in 1907 and 1908, while the New York Giants and Philadelphia Athletics emerged as important clubs in the new two-league system. Roosevelt strongly advocated physical activity, competition, and vigorous living, values that resonated with the growing popularity of organized sports. Although he did not establish the presidential Opening Day first-pitch tradition, his administration witnessed baseball's transformation into a modern national institution. That ceremonial tradition would begin under his successor, William Howard Taft, in 1910.",
+    portrait: "/roosevelt-formal.jpg?v=1",
     events: [
+      {
+        date: "1901",
+        title: "The American League Challenges the National League",
+        description:
+          "The American League completed its first major-league season, beginning a new era of competition between baseball's two major leagues.",
+        image: "/roosevelt-american-league-1901.jpg",
+      },
       {
         date: "1903",
         title: "The First Modern World Series",
         description:
-          "The Boston Americans defeated the Pittsburgh Pirates in the first modern World Series during Roosevelt's presidency. This was a baseball milestone rather than a documented presidential appearance.",
+          "The Boston Americans defeated the Pittsburgh Pirates five games to three in the first modern World Series. The event occurred during Roosevelt's presidency, but was not a documented presidential appearance.",
+        image: "/roosevelt-world-series-1903.jpg",
+      },
+      {
+        date: "1908",
+        title: "The Chicago Cubs Win Their Second Consecutive World Series",
+        description:
+          "The Chicago Cubs defeated the Detroit Tigers for the second consecutive year, becoming one of the defining championship teams of the Deadball Era.",
+        image: "/roosevelt-cubs-1908.jpg",
       },
     ],
   },
