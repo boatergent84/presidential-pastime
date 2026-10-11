@@ -48,6 +48,7 @@ export const presidents: President[] = [
         title: "Lincoln and the Baseball Cartoon",
         description:
           "A political cartoon used baseball imagery to depict the presidential election of 1860, showing that the game was already familiar to American audiences.",
+        image: "/lincoln-baseball-1860.jpg",
         sourceUrl:
           "https://georgewbush-whitehouse.archives.gov/baseball/text/",
       },
@@ -58,6 +59,7 @@ export const presidents: President[] = [
           "Soldiers played baseball and related bat-and-ball games during the Civil War, contributing to the game's spread across the United States.",
         sourceUrl:
           "https://georgewbush-whitehouse.archives.gov/baseball/text/",
+        image: "/civil-war-baseball.jpg",
       },
     ],
     sources: [
@@ -84,6 +86,7 @@ export const presidents: President[] = [
           "A delegation from the National Baseball Club visited the White House, an early example of the connection between organized baseball and the presidency.",
         sourceUrl:
           "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+        image: "/andrew-johnson-atlantics-1865.jpg",
       },
     ],
     sources: [
@@ -103,6 +106,21 @@ export const presidents: President[] = [
       "The first openly professional baseball team emerged at the beginning of Grant's presidency, and the National League was founded during his administration.",
     portrait: "/grant.jpg",
     events: [
+      {
+        date: "1869",
+        title: "The Cincinnati Red Stockings",
+        description: "In 1869, the year Ulysses S. Grant became president, the Cincinnati Red Stockings emerged as baseball's first openly professional team. This period lithograph depicts the celebrated club.",
+        image: "/grant-red-stockings-lithograph.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1869_Cincinnati_Red_Stockings_lithograph.jpg",
+      },
+      {
+        date: "1869",
+        title: "Baseball Enters the Professional Age",
+        description: "Professional baseball expanded during Grant's presidency. The 1869 Cincinnati club helped establish the model for professional teams and the game's growing national appeal.",
+        image: "/grant-red-stockings-team.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1869_Cincinnati_Red_Stockings.jpg",
+      },
+
       {
         date: "1869",
         title: "Cincinnati Red Stockings Visit",
@@ -130,6 +148,15 @@ export const presidents: President[] = [
   {
     name: "Rutherford B. Hayes",
     slug: "rutherford-b-hayes",
+    events: [
+      {
+        date: "1879",
+        title: "The 1879 Providence Grays",
+        description: "The Providence Grays won the National League championship in 1879 during Rutherford B. Hayes's presidency. This original team photograph documents the growth of professional baseball in the late nineteenth century.",
+        image: "/hayes-providence-grays-1879.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1879_Providence_Grays.jpeg",
+      },
+    ],
     number: 19,
     years: "1877–1881",
     baseballEra: "Early National League",
@@ -140,6 +167,15 @@ export const presidents: President[] = [
   {
     name: "James A. Garfield",
     slug: "james-a-garfield",
+    events: [
+      {
+        date: "1881",
+        title: "The 1881 Oberlin Baseball Team",
+        description: "During James A. Garfield’s presidency, college baseball was expanding across America. This 1881 Oberlin College team photograph includes Moses Fleetwood Walker and his brother Weldy Walker, important figures in early baseball history.",
+        image: "/garfield-oberlin-baseball-1881.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1881_Oberlin_baseball_team.jpg",
+      },
+    ],
     number: 20,
     years: "1881",
     baseballEra: "19th-Century Baseball",
@@ -157,6 +193,30 @@ export const presidents: President[] = [
       "Arthur's presidency coincided with the expansion of professional baseball and the development of competing leagues.",
     portrait: "/arthur.jpg",
     events: [
+      {
+        date: "1883",
+        title: "The New York Gothams Enter the National League",
+        description: "The New York Gothams began National League play in 1883. This original team portrait includes early baseball stars Buck Ewing, Roger Connor, Mickey Welch and John Montgomery Ward.",
+        image: "/arthur-new-york-gothams-1883.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1883_New_York_Gothams.jpeg",
+      },
+
+      {
+        date: "1882",
+        title: "The Providence Grays in 1882",
+        description: "The 1882 Providence Grays, featuring pitcher Charles Old Hoss Radbourn, represent professional baseball during Chester A. Arthur's presidency. This is an original team photograph.",
+        image: "/arthur-providence-grays-1882.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1882_Providence_Grays.jpg",
+      },
+
+      {
+        date: "1884",
+        title: "The 1884 Providence Grays Championship",
+        description: "During Chester A. Arthur’s presidency, the Providence Grays captured the National League pennant and swept the New York Metropolitans in an early postseason championship series. Their star pitcher, Charles Old Hoss Radbourn, became one of baseball’s legendary figures. This photograph depicts the 1884 Providence team.",
+        image: "/arthur-providence-grays-1884.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1884grays.jpg",
+      },
+
       {
         date: "1882",
         title: "The American Association Begins",
