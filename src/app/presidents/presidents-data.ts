@@ -184,9 +184,8 @@ export const presidents: President[] = [
     number: 20,
     years: "1881",
     baseballEra: "19th-Century Baseball",
-    overview:
-      "Professional baseball was established by the time Garfield became president. His brief presidency left a limited record of direct presidential baseball activities.",
-    portrait: "/garfield.jpg",
+    overview: "James A. Garfield became the twentieth president of the United States on March 4, 1881, during the sixth season of the National League. Professional baseball was still relatively young, but the game was developing into an organized national sport with established clubs, competitive pennant races, and growing newspaper coverage. The 1881 season featured eight National League teams, including the Chicago White Stockings, Providence Grays, Boston Red Caps, and the newly admitted Detroit Wolverines. Detroit's arrival was particularly significant for Michigan baseball history, beginning the city's first National League franchise decades before the Tigers. Chicago, managed on the field by the influential Cap Anson, emerged as the league's strongest club and ultimately captured the pennant with a 56–28 record. The Providence Grays finished second. Other important developments included the growing prominence of players such as Roger Connor, whose historic grand slam for the Troy Trojans came in September 1881. Garfield's presidency was tragically brief. He was shot on July 2 and died on September 19, 1881, before the baseball season ended. There is no firmly established evidence that Garfield personally participated in a presidential baseball ceremony or threw a ceremonial first pitch. His connection to the sport is therefore primarily historical: the growth of professional baseball during his administration. In 1881, baseball continued its transformation from a nineteenth-century pastime into a major American sporting institution, with expanding city rivalries, recognized professional championships, and an increasingly national audience.",
+    portrait: "/garfield-whitehouse.jpg",
   },
   {
     name: "Chester A. Arthur",
