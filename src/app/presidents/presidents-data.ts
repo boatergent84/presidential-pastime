@@ -155,13 +155,19 @@ export const presidents: President[] = [
         image: "/hayes-providence-grays-1879.jpg",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:1879_Providence_Grays.jpeg",
       },
+      {
+        date: "September 30, 1879",
+        title: "Baseball at Messer Street Grounds",
+        description: "The Boston and Providence clubs assembled for this historic photograph at Messer Street Grounds in Providence, Rhode Island, on the final day of the 1879 National League season. The photograph captures the growing professional game during President Hayes's administration.",
+        image: "/hayes-messer-street-1879.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Messer_Street_Grounds,_1879.jpg",
+      },
     ],
     number: 19,
     years: "1877–1881",
     baseballEra: "Early National League",
-    overview:
-      "During Hayes's presidency, professional baseball developed further under the newly established National League. Specific presidential baseball appearances remain to be documented.",
-    portrait: "/hayes.jpg",
+    overview: "Rutherford B. Hayes became president in 1877, just one year after the National League was founded, placing his administration at the beginning of a new era in organized professional baseball. The sport was evolving from loosely organized clubs into a more structured competition with established teams, regular schedules, and growing audiences. During Hayes's presidency, the National League worked to strengthen its organization while clubs from major American cities competed for championship honors. One of the most notable teams of the period was the Providence Grays, who joined the league in 1878 and captured the National League pennant in 1879. Led by George Wright, an important figure in early professional baseball, the Grays demonstrated the increasing competitiveness of the young league. Meanwhile, the Boston Red Caps and Chicago White Stockings helped establish enduring baseball traditions as the professional game expanded its reach. Railroads, newspapers, and growing urban populations allowed baseball to attract spectators far beyond the communities where individual clubs played. Newspaper coverage increasingly made prominent players and teams familiar to readers throughout the country. Although Hayes's personal involvement with baseball is not well documented, his presidency coincided with an important period of consolidation for the professional game. By the time he left office in 1881, baseball had become an increasingly organized national attraction, with the National League laying foundations that would shape America's pastime for generations.",
+    portrait: "/hayes-whitehouse.jpg",
   },
   {
     name: "James A. Garfield",

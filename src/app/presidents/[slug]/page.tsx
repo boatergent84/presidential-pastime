@@ -59,7 +59,7 @@ export default async function PresidentPage({
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">Presidential Baseball Profile</p>
             <h1 className="mt-2 font-serif text-5xl font-bold leading-tight md:text-6xl">{president.name}</h1>
             <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.slug === "donald-trump" ? "45 & 47" : president.number} • {president.years}</p>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant"].includes(president.slug) ? null : president.overview}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes"].includes(president.slug) ? null : president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
               {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Throwing Hand", ({
                 "barack-obama": "Left-Handed",
@@ -81,7 +81,16 @@ export default async function PresidentPage({
             <h2 className="mt-1 font-serif text-3xl font-bold">{president.name} and America&apos;s Pastime</h2>
             <p className="mt-5 text-[17px] leading-8 text-[#3f4b55]">{president.overview}</p>
           </div>
-          {president.slug === "ulysses-s-grant" ? (
+          {president.slug === "rutherford-b-hayes" ? (
+            <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+              <p className="font-serif text-3xl leading-relaxed italic text-[#fff5df]">
+                &ldquo;He serves his party best who serves his country best.&rdquo;
+              </p>
+              <p className="mt-6 font-serif text-lg text-[#e3c6a5]">
+                — Rutherford B. Hayes
+              </p>
+            </aside>
+          ) : president.slug === "ulysses-s-grant" ? (
             <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
               <p className="font-serif text-3xl leading-relaxed italic text-[#fff5df]">
                 &ldquo;Let us have peace.&rdquo;
@@ -131,7 +140,7 @@ export default async function PresidentPage({
           )}
         </section>
 
-        {featured && !["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant"].includes(president.slug) && (
+        {featured && !["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes"].includes(president.slug) && (
           <section className="mt-14">
             <div className="border-b-2 border-[#b8aa8e] pb-3">
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Featured Moment</p>
