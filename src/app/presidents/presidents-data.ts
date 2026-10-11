@@ -262,12 +262,13 @@ export const presidents: President[] = [
     years: "1889–1893",
     baseballEra: "First Presidential MLB Attendance",
     overview:
-      "Benjamin Harrison became the first sitting president to attend a major-league baseball game, establishing an important precedent in presidential baseball history.",
-    portrait: "/benjamin-harrison.jpg",
+      "Benjamin Harrison holds a special place in presidential baseball history as the first sitting president documented attending a major-league game. Long before entering the White House, Harrison enjoyed watching baseball in Indianapolis and Chicago. In 1889, he publicly expressed his pleasure in watching a good game of ball. His administration coincided with a turbulent and transformative period in professional baseball. The Players' League challenged the established National League in 1890, while the American Association folded after the 1891 season. The National League expanded to twelve clubs in 1892, including the Washington Senators. On June 6, 1892, Harrison traveled to Boundary Field in Washington to watch the Senators face the Cincinnati Reds. Wearing a derby and frock coat, he watched from the press box as the home team competed against Cincinnati. Harrison departed during the sixth inning with the Reds ahead, missing Washington's comeback and Cincinnati's eventual 7–4 victory in eleven innings. He returned to Boundary Field on June 25, 1892, to see Washington play Philadelphia. His attendance established an enduring connection between the presidency and America's national pastime, preceding the presidential ceremonial first-pitch tradition that began under William Howard Taft in 1910.",
+    portrait: "/harrison-pach-1896.jpg?v=1",
     events: [
       {
         date: "June 6, 1892",
         title: "First Sitting President at a Major-League Game",
+        image: "/harrison-washington-senators-1895.jpg",
         description:
           "Harrison attended the Washington Senators versus Cincinnati Reds game at Boundary Field. Cincinnati won 7–4 in eleven innings.",
         sourceUrl:
