@@ -51,17 +51,17 @@ export default async function PresidentPage({
           <div className="flex justify-center md:justify-start">
             <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
               <div className="h-full w-full overflow-hidden rounded-full border border-[#c9b98c] bg-[#e8dfca]">
-                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className="h-full w-full object-cover object-top" /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.number}</div>}
+                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className="h-full w-full object-cover object-top" /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.slug === "donald-trump" ? "45 & 47" : president.number}</div>}
               </div>
             </div>
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">Presidential Baseball Profile</p>
             <h1 className="mt-2 font-serif text-5xl font-bold leading-tight md:text-6xl">{president.name}</h1>
-            <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.number} • {president.years}</p>
+            <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.slug === "donald-trump" ? "45 & 47" : president.number} • {president.years}</p>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
-              {[["President", `No. ${president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Recorded Events", String(events.length)]].map(([label, value]) => (
+              {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Recorded Events", String(events.length)]].map(([label, value]) => (
                 <div key={label} className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">
                   <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#a4282d]">{label}</p>
                   <p className="mt-1 font-serif text-base font-bold">{value}</p>

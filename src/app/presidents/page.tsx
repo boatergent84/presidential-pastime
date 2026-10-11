@@ -168,7 +168,7 @@ export default function PresidentsArchivePage() {
                     ) : (
                       <div className="flex h-full w-full flex-col items-center justify-center text-center text-[#102c44]">
                         <p className="font-serif text-5xl font-bold opacity-40">
-                          {president.number}
+                          {president.slug === "donald-trump" ? "45 & 47" : president.number}
                         </p>
 
                         <p className="mt-2 px-4 font-serif text-sm">
@@ -183,7 +183,7 @@ export default function PresidentsArchivePage() {
               {/* PRESIDENT DETAILS */}
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">
-                  President No. {president.number}
+                  President No. {president.slug === "donald-trump" ? "45 & 47" : president.number}
                 </p>
 
                 <h3 className="mt-3 font-serif text-2xl font-bold transition group-hover:text-[#a4282d]">
