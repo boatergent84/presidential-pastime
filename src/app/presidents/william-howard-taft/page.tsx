@@ -35,9 +35,9 @@ export default function WilliamHowardTaftPage() {
             <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
               <div className="h-full w-full overflow-hidden rounded-full border border-[#c9b98c] bg-[#e8dfca]">
                 <img
-                  src="/taft.jpg"
+                  src="/taft-formal-portrait.jpg?v=1"
                   alt="President William Howard Taft"
-                  className="h-full w-full object-cover object-top"
+                  className="h-full w-full scale-110 object-cover object-top"
                 />
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function WilliamHowardTaftPage() {
                 ["President", "No. 27"],
                 ["Years", "1909–1913"],
                 ["Baseball Legacy", "Opening Day"],
-                ["Home State", "Ohio"],
+                ["Throwing Hand", "Right"],
               ].map(([label, value]) => (
                 <div
                   key={label}
@@ -97,12 +97,28 @@ export default function WilliamHowardTaftPage() {
             </h2>
 
             <div className="mt-5 space-y-4 text-[17px] leading-8 text-[#3f4b55]">
-              <p>
-                Baseball was already becoming America&apos;s national pastime
-                when William Howard Taft entered the White House in 1909.
-                Taft&apos;s appearances at Washington baseball games helped
-                connect the presidency with the sport in a new and highly
-                visible way.
+              <p className="mt-4 leading-8 text-[#59636b]">
+                William Howard Taft occupies a unique place in the history of American
+                baseball. On April 14, 1910, he became the first sitting United States
+                president to throw a ceremonial first pitch on Major League Baseball's
+                Opening Day. The occasion took place at Washington's National Park,
+                where the Senators faced the Philadelphia Athletics. Taft's appearance
+                helped establish a connection between the presidency and America's
+                national pastime that would endure for generations. The game itself
+                was equally memorable: legendary pitcher Walter Johnson held
+                Philadelphia to one hit as Washington earned a 3–0 victory. Taft
+                returned for Opening Day in 1911, reinforcing the new tradition,
+                and attended another Washington baseball game in 1912. His
+                presidency coincided with the Deadball Era, when dominant pitching,
+                speed, defense, and strategic play shaped professional baseball.
+                Stars such as Johnson, Ty Cobb, Honus Wagner, and Christy Mathewson
+                were among the defining figures of the period. Although earlier
+                presidents had attended baseball games, Taft transformed presidential
+                participation into a ceremonial Opening Day event. His first pitch
+                became a powerful symbol of the relationship between the White House,
+                the nation's capital, and professional baseball. More than a century
+                later, Taft's 1910 appearance remains one of the most recognizable
+                milestones in presidential baseball history.
               </p>
 
               <p>
@@ -120,81 +136,14 @@ export default function WilliamHowardTaftPage() {
             </div>
           </div>
 
-          <aside className="border border-[#b8aa8e] bg-[#102c44] p-6 text-white">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e3c6a5]">
-              Archive Record
+          <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+            <p className="font-serif text-2xl leading-relaxed italic text-[#fff5df]">
+              &ldquo;The game of baseball is a clean, straight game.&rdquo;
             </p>
-
-            <h3 className="mt-2 font-serif text-2xl font-bold">
-              William Howard Taft
-            </h3>
-
-            <div className="mt-5 space-y-4 text-sm leading-6 text-[#dbe2e8]">
-              <div>
-                <p className="font-bold text-white">Presidency</p>
-                <p>March 4, 1909 – March 4, 1913</p>
-              </div>
-
-              <div>
-                <p className="font-bold text-white">
-                  Historic Baseball Role
-                </p>
-                <p>
-                  Early presidential Opening Day ceremonial first pitch
-                </p>
-              </div>
-
-              <div>
-                <p className="font-bold text-white">Primary Ballpark</p>
-                <p>Washington, D.C.</p>
-              </div>
-
-              <div>
-                <p className="font-bold text-white">Legacy</p>
-                <p>Helped establish the president-baseball tradition</p>
-              </div>
-            </div>
+            <p className="mt-6 font-serif text-lg text-[#e3c6a5]">
+              — William Howard Taft
+            </p>
           </aside>
-        </section>
-
-        {/* FEATURED MOMENT */}
-        <section className="mt-14">
-          <div className="border-b-2 border-[#b8aa8e] pb-3">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Featured Moment
-            </p>
-
-            <h2 className="mt-1 font-serif text-3xl font-bold">
-              The First Presidential Opening Day Pitch
-            </h2>
-          </div>
-
-          <article className="mt-6 grid overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] md:grid-cols-2">
-            <div className="bg-[#102c44] p-3">
-              <img
-                src="/taft-first-pitch-1910.jpg"
-                alt="William Howard Taft at a baseball game in 1910"
-                className="h-auto w-full object-contain"
-              />
-            </div>
-
-            <div className="p-7">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
-                April 14, 1910 • Washington, D.C.
-              </p>
-
-              <h3 className="mt-2 font-serif text-3xl font-bold">
-                A Presidential Tradition Begins
-              </h3>
-
-              <p className="mt-4 leading-8 text-[#59636b]">
-                Taft threw the ceremonial first pitch before Washington
-                opened its season against the Philadelphia Athletics.
-                Washington won 3–0 behind Walter Johnson&apos;s one-hit
-                shutout.
-              </p>
-            </div>
-          </article>
         </section>
 
         {/* TIMELINE */}
