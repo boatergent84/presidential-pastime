@@ -293,8 +293,25 @@ export const presidents: President[] = [
     years: "1897–1901",
     baseballEra: "Turn-of-the-Century Baseball",
     overview:
-      "Baseball was a major American spectator sport during McKinley's presidency. The American League was developing into a major-league competitor at the end of his administration.",
-    portrait: "/mckinley.jpg",
+      "William McKinley's presidency marked a turning point in American baseball. In 1897, Washington baseball representatives visited the White House and invited the president to their season opener. Although McKinley did not begin the ceremonial first-pitch tradition, the invitation demonstrated baseball's growing connection to the presidency. During his administration, the National League dominated professional baseball, with stars such as Cy Young, Honus Wagner, and Nap Lajoie helping shape the sport. After the 1899 season, the National League contracted from twelve clubs to eight, eliminating Washington's team. Meanwhile, Ban Johnson's Western League became the American League in 1900. In 1901, the American League began operating as a major league, establishing the rivalry that would transform professional baseball. McKinley's presidency thus bridged nineteenth-century baseball and the beginnings of the modern two-league era.",
+    portrait: "/mckinley-whitehouse.jpg?v=1",
+    events: [
+      {
+        date: "April 1897",
+        title: "Washington Baseball Visits the White House",
+        description:
+          "Washington baseball representatives visited President McKinley and invited him to their season opener.",
+        image: "/mckinley-washington-1895.jpg",
+      },
+      {
+        date: "1901",
+        title: "The American League Arrives",
+        description:
+          "The American League began its first season as a major league during McKinley's final year in office.",
+        image: "/mckinley-american-league-1901.jpg",
+      },
+    ],
+
   },
   {
     name: "Theodore Roosevelt",
