@@ -751,7 +751,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t-4 border-[#a71924] bg-[#071d31] px-6 py-2 text-center text-[#eee2c7]">
+      <footer className="border-t-4 border-[#a71924] bg-[#071d31] px-6 py-5 text-center text-[#eee2c7]">
 
 
         <p className="mt-0 font-serif text-2xl font-bold">
