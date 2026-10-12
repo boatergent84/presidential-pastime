@@ -24,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}<footer className="mt-auto border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-8 text-center text-sm text-white"><p className="font-serif text-lg font-bold">PRESIDENTIAL PASTIME</p><div className="mt-3 flex flex-wrap justify-center gap-5"><Link href="/">Home</Link><Link href="/presidents">Presidents</Link><Link href="/first-pitches">First Pitches</Link><Link href="/heritage-collection">Heritage Collection</Link><Link href="/photo-archive">Photo Archive</Link></div></footer></body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }

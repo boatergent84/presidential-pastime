@@ -753,18 +753,18 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t-4 border-[#a71924] bg-[#071d31] px-6 py-12 text-center text-[#eee2c7]">
+      <footer className="border-t-4 border-[#a71924] bg-[#071d31] px-6 py-2 text-center text-[#eee2c7]">
         <div className="text-4xl">⚾</div>
 
-        <p className="mt-4 font-serif text-2xl font-bold">
+        <p className="mt-0 font-serif text-2xl font-bold">
           Presidential Pastime
         </p>
 
-        <p className="mt-2 text-xs uppercase tracking-[0.22em] text-[#c8b17b] md:text-sm">
+        <p className="mt-1 text-xs uppercase tracking-[0.22em] text-[#c8b17b] md:text-sm">
           America&apos;s Presidents. America&apos;s Pastime.
         </p>
 
-        <div className="mt-7 flex flex-wrap justify-center gap-6 text-sm">
+        <div className="mt-4 flex flex-wrap justify-center gap-2 text-sm">
           <Link href="/" className="hover:text-white">
             Home
           </Link>
@@ -784,13 +784,13 @@ export default function Home() {
           </Link>
         </div>
 
-        <p className="mx-auto mt-8 max-w-2xl text-xs leading-6 text-[#9baab6]">
+        <p className="mx-auto mt-0 max-w-2xl text-xs leading-6 text-[#9baab6]">
           An independent historical research project. Not
           affiliated with the United States government, any
           presidential administration, or Major League Baseball.
         </p>
 
-        <p className="mt-5 text-xs text-[#9baab6]">
+        <p className="mt-1 text-xs text-[#9baab6]">
           © {new Date().getFullYear()} Presidential Pastime
         </p>
       </footer>
