@@ -99,10 +99,11 @@ export default async function PresidentPage({
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">Presidential Baseball Profile</p>
             <h1 className="mt-2 font-serif text-5xl font-bold leading-tight md:text-6xl">{president.name}</h1>
             <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.slug === "donald-trump" ? "45 & 47" : president.number} • {president.years}</p>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt"].includes(president.slug) ? null : president.overview}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt", "woodrow-wilson", "warren-g-harding"].includes(president.slug) ? null : president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
               {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Throwing Hand", ({
-                "woodrow-wilson": "Right-Handed",
+    "warren-g-harding": "Right",
+                "woodrow-wilson": "Right",
                 "barack-obama": "Left-Handed",
                 "george-w-bush": "Right-Handed",
                 "george-h-w-bush": "Right-Handed",
@@ -120,9 +121,33 @@ export default async function PresidentPage({
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">The Baseball President</p>
             <h2 className="mt-1 font-serif text-3xl font-bold">{president.name} and America&apos;s Pastime</h2>
-            <p className="mt-5 text-[17px] leading-8 text-[#3f4b55]">{president.overview}</p>
+            <p className="mt-5 text-[17px] leading-8 text-[#3f4b55]">
+              {president.slug === "warren-g-harding"
+                ? "Warren G. Harding was one of the most enthusiastic baseball fans ever to occupy the White House. Growing up in Ohio, he played baseball and developed an enduring attachment to the game, later becoming involved in minor-league baseball ownership. Unlike presidents who attended games primarily for ceremony, Harding followed the action closely, kept score, and openly rooted for his favorite team, the Washington Senators. His presidency from 1921 to 1923 coincided with baseball's dramatic transformation into the Live-Ball Era, when Babe Ruth's extraordinary home-run hitting brought unprecedented attention to the New York Yankees. Harding continued the presidential first-pitch tradition at Griffith Stadium in 1921, 1922, and 1923, watching Washington compete against clubs led by some of the game's greatest stars. He admired the legendary Senators pitcher Walter Johnson and enjoyed personal relationships with prominent baseball figures, including Babe Ruth. On April 24, 1923, Harding made an unannounced visit to the newly opened Yankee Stadium, where he watched the Yankees defeat Washington 4\u20130 in the first shutout at the new ballpark. His appearance linked the American presidency with one of baseball's most famous stadiums during its inaugural season. When Harding died unexpectedly in August 1923, baseball joined the nation in mourning. His legacy in the sport is that of a president who genuinely loved the game, understood its intricacies, and viewed baseball as an important part of American life."
+                : president.slug === "woodrow-wilson"
+                ? "Woodrow Wilson occupied the White House during a remarkable period in American baseball history. His interest in the game reached back to his student years, when baseball was becoming an important part of American college life. As president from 1913 to 1921, Wilson witnessed the sport grow into a powerful national institution, even as the country confronted profound political and social changes. The Federal League challenged organized baseball during his administration, while legendary players such as Walter Johnson, Ty Cobb, Tris Speaker, and Babe Ruth helped define the era. Wilson attended major-league games in Washington, including Opening Day appearances, strengthening the developing relationship between the presidency and America's national pastime. In 1915, the Philadelphia Phillies and Boston Red Sox met in the World Series, reflecting the continuing popularity of professional baseball. When the United States entered World War I in 1917, baseball faced uncertainty as players entered military service and the nation mobilized for war. The 1918 major-league season was shortened, but the game endured. By the final years of Wilson's presidency, baseball was undergoing another transformation. Babe Ruth's extraordinary home-run hitting helped usher in the Live-Ball Era, changing the way Americans played and watched the sport. Wilson's presidency thus bridged two distinct periods of baseball history, from the strategic, pitching-dominated Deadball Era to the emergence of the modern power game."
+                : president.overview}
+            </p>
           </div>
-          {president.slug === "theodore-roosevelt" ? (
+          {president.slug === "warren-g-harding" ? (
+            <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+              <p className="font-serif text-2xl leading-relaxed italic text-[#fff5df]">
+                &ldquo;I never saw a game without taking sides and never want to see one. There is the soul of the game.&rdquo;
+              </p>
+              <p className="mt-6 font-serif text-lg text-[#e3c6a5]">
+                — Warren G. Harding
+              </p>
+            </aside>
+          ) : president.slug === "woodrow-wilson" ? (
+            <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+              <p className="font-serif text-2xl leading-relaxed italic text-[#fff5df]">
+                &ldquo;Woodrow Wilson was by far the best fan.&rdquo;
+              </p>
+              <p className="mt-6 font-serif text-lg text-[#e3c6a5]">
+                — Joe Judge, Washington Senators first baseman
+              </p>
+            </aside>
+          ) : president.slug === "theodore-roosevelt" ? (
             <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
               <p className="font-serif text-2xl leading-relaxed italic text-[#fff5df]">
                 &ldquo;Far better it is to dare mighty things, to win glorious triumphs, even though checkered by failure.&rdquo;
@@ -226,7 +251,7 @@ export default async function PresidentPage({
           )}
         </section>
 
-        {featured && !["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt"].includes(president.slug) && (
+        {featured && !["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt", "woodrow-wilson", "warren-g-harding"].includes(president.slug) && (
           <section className="mt-14">
             <div className="border-b-2 border-[#b8aa8e] pb-3">
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Featured Moment</p>
@@ -303,15 +328,6 @@ export default async function PresidentPage({
             ))}
           </div>
           <Link href="/heritage-collection" className="mt-5 inline-block font-bold text-[#a4282d] underline">Visit the Heritage Collection →</Link>
-        </section>
-
-        <section className="mt-14 border-t-2 border-[#b8aa8e] pt-8">
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Research &amp; Sources</p>
-          <h2 className="mt-1 font-serif text-3xl font-bold">Building the Historical Record</h2>
-          <p className="mt-4 max-w-4xl leading-8 text-[#59636b]">Presidential Pastime documents presidential baseball history through archival photographs, historical records, and published research.</p>
-          <div className="mt-5 grid gap-3 text-sm md:grid-cols-2">
-            {sources.length ? sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer" className="border border-[#b8aa8e] bg-[#f8f3e8] p-4 font-semibold text-[#a4282d] hover:underline">{source.title} ↗</a>) : <div className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">Additional sources are being collected.</div>}
-          </div>
         </section>
 
         <div className="mt-14 flex flex-wrap justify-between gap-4 border-t border-[#b8aa8e] pt-6 text-sm font-bold text-[#a4282d]">
