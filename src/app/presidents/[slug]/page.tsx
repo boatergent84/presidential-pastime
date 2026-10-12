@@ -85,7 +85,7 @@ export default async function PresidentPage({
               </svg>
               <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
               <div className="h-full w-full overflow-hidden rounded-full border border-[#c9b98c] bg-[#e8dfca]">
-                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className={`h-full w-full object-cover object-top`} /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.slug === "donald-trump" ? "45 & 47" : president.number}</div>}
+                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className={`h-full w-full object-cover object-top ${president.slug === "benjamin-harrison" ? "scale-125 -translate-y-3" : ""}`} /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.slug === "donald-trump" ? "45 & 47" : president.number}</div>}
               </div>
             </div>
             </div>
@@ -102,6 +102,7 @@ export default async function PresidentPage({
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt"].includes(president.slug) ? null : president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
               {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Throwing Hand", ({
+                "woodrow-wilson": "Right-Handed",
                 "barack-obama": "Left-Handed",
                 "george-w-bush": "Right-Handed",
                 "george-h-w-bush": "Right-Handed",

@@ -101,7 +101,7 @@ export const presidents: President[] = [
     years: "1869–1877",
     baseballEra: "Professional Baseball Begins",
     overview: "Ulysses S. Grant entered the White House in March 1869, at precisely the moment American baseball was beginning its transformation from an amateur pastime into an organized professional sport. That same year, the Cincinnati Red Stockings assembled the first widely recognized openly professional baseball team, paying their players and embarking on a remarkable undefeated season. Led by Harry Wright and his brother George Wright, the Red Stockings traveled across the country, attracting large crowds and demonstrating baseball's growing national appeal. Their 1869 season helped establish the commercial possibilities of the game and foreshadowed the professional leagues that would follow. Grant's presidency also witnessed the creation of the National Association of Professional Base Ball Players in 1871, an important predecessor to modern major league baseball. By 1876, during Grant's final full year in office, the National League had been established, bringing greater structure and permanence to professional competition. These developments unfolded during an era of railroad expansion, industrial growth, and rapidly changing American cities, all of which helped teams travel, compete, and attract spectators. Grant's own personal involvement with baseball is less firmly documented than the sport's extraordinary growth during his administration, so his historical importance to the game rests chiefly in the period he represented rather than in any unverified claim that he played or attended particular games. From the first openly professional team in 1869 to the formation of the National League in 1876, the Grant years marked one of the most consequential chapters in baseball history.",
-    portrait: "/grant.jpg",
+    portrait: "/grant-new.jpg",
     events: [
       {
         date: "1869",
@@ -386,7 +386,7 @@ export const presidents: President[] = [
     baseballEra: "Deadball to Live-Ball Era",
     overview:
       "Baseball continued through World War I and entered a new era of offensive play near the end of Wilson's presidency.",
-    portrait: "/wilson.jpg",
+    portrait: "/wilson-new.jpg",
   },
   {
     name: "Warren G. Harding",
