@@ -257,9 +257,7 @@ export default function Home() {
             href="/"
             className="flex min-w-0 items-center gap-3 md:gap-4"
           >
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#c5a35d] text-2xl md:h-16 md:w-16 md:text-3xl">
-              ⚾
-            </div>
+
 
             <div>
               <h1 className="font-serif text-xl font-bold tracking-[0.07em] sm:text-2xl md:text-3xl lg:text-4xl">
@@ -754,7 +752,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="border-t-4 border-[#a71924] bg-[#071d31] px-6 py-2 text-center text-[#eee2c7]">
-        <div className="text-4xl">⚾</div>
+
 
         <p className="mt-0 font-serif text-2xl font-bold">
           Presidential Pastime
