@@ -354,7 +354,7 @@ export const presidents: President[] = [
     baseballEra: "Presidential First-Pitch Tradition",
     overview:
       "Taft began the presidential Opening Day ceremonial first-pitch tradition in 1910.",
-    portrait: "/taft.jpg",
+    portrait: "/taft-formal-portrait.jpg?v=1",
     events: [
       {
         date: "April 14, 1910",
@@ -386,7 +386,7 @@ export const presidents: President[] = [
     baseballEra: "Deadball to Live-Ball Era",
     overview:
       "Baseball continued through World War I and entered a new era of offensive play near the end of Wilson's presidency.",
-    portrait: "/wilson-new.jpg",
+    portrait: "/wilson-1914.jpg",
   },
   {
     name: "Warren G. Harding",

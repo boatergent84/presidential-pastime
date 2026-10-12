@@ -85,7 +85,7 @@ export default async function PresidentPage({
               </svg>
               <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
               <div className="h-full w-full overflow-hidden rounded-full border border-[#c9b98c] bg-[#e8dfca]">
-                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className={`h-full w-full object-cover object-top ${president.slug === "benjamin-harrison" ? "scale-125 -translate-y-3" : ""}`} /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.slug === "donald-trump" ? "45 & 47" : president.number}</div>}
+                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className={`h-full w-full object-cover object-top ${president.slug === "benjamin-harrison" ? "scale-125 -translate-y-3" : president.slug === "theodore-roosevelt" ? "!object-center" : ""}`} /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.slug === "donald-trump" ? "45 & 47" : president.number}</div>}
               </div>
             </div>
             </div>

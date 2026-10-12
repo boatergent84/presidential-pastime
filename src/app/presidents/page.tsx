@@ -163,7 +163,15 @@ export default function PresidentsArchivePage() {
                       <img
                         src={president.portrait}
                         alt={`Portrait of ${president.name}`}
-                        className="h-full w-full object-cover object-top grayscale"
+                        className={`h-full w-full object-cover object-top grayscale ${
+                          president.slug === "benjamin-harrison"
+                            ? "scale-125 -translate-y-3"
+                            : president.slug === "william-howard-taft"
+                            ? "scale-120"
+                            : president.slug === "theodore-roosevelt"
+                            ? "!object-center"
+                            : ""
+                        }`}
                       />
                     ) : (
                       <div className="flex h-full w-full flex-col items-center justify-center text-center text-[#102c44]">
