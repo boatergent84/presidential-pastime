@@ -66,7 +66,7 @@ export default function WilliamHowardTaftPage() {
                 <img
                   src="/taft-formal-portrait.jpg?v=1"
                   alt="President William Howard Taft"
-                  className="h-full w-full scale-110 object-cover object-top"
+                  className="h-full w-full  object-cover object-top scale-[1.15]"
                 />
               </div>
             </div>

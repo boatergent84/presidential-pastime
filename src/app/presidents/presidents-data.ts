@@ -396,7 +396,7 @@ export const presidents: President[] = [
     baseballEra: "Babe Ruth Era",
     overview:
       "Harding's presidency coincided with Babe Ruth's emergence as baseball's greatest home-run attraction.",
-    portrait: "/harding.jpg",
+    portrait: "/harding-front-1920.jpg",
     events: [
       {
         date: "1921–1923",
@@ -415,7 +415,7 @@ export const presidents: President[] = [
     years: "1923–1929",
     baseballEra: "Roaring Twenties Baseball",
     overview:
-      "Baseball flourished during the 1920s, and Coolidge became part of the presidential baseball memorabilia tradition.",
+      "Calvin Coolidge occupied the White House during one of the most celebrated eras in baseball history. Although known for his reserved personality, Coolidge became closely associated with the Washington Senators and their remarkable 1924 championship season. On April 15, 1924, he delivered the ceremonial first pitch at Griffith Stadium before Walter Johnson shut out the Philadelphia Athletics, 4–0. That autumn, the Senators captured their first American League pennant and faced the New York Giants in a dramatic seven-game World Series. Coolidge opened the Series with a ceremonial pitch and attended the deciding seventh game alongside First Lady Grace Coolidge, an enthusiastic baseball supporter who followed the action closely and kept score. Washington prevailed 4–3 in twelve innings, with Walter Johnson earning the victory in relief. Coolidge later continued the presidential Opening Day tradition in 1927 and 1928. His presidency remains linked to the Senators’ greatest triumph and to an unforgettable chapter in the history of baseball in the nation’s capital.",
     portrait: "/coolidge.jpg",
   },
   {
@@ -425,7 +425,7 @@ export const presidents: President[] = [
     years: "1929–1933",
     baseballEra: "Depression-Era Baseball",
     overview:
-      "Hoover's presidency coincided with the beginning of the Great Depression, when baseball remained an important part of American culture.",
+      "Herbert Hoover served as president as American baseball entered the Great Depression. In 1929, the year he took office, Babe Ruth and Lou Gehrig were among the stars drawing crowds, and Connie Mack's Philadelphia Athletics began a run of three straight American League pennants. Hoover continued the Washington Opening Day tradition, participating in ceremonial first pitches in each season from 1929 through 1932. His connection to the game also survives in a presidential autograph baseball associated with former catcher Ray Schalk and preserved in the National Baseball Hall of Fame. As unemployment rose and families faced economic hardship, baseball remained a familiar source of community and inexpensive entertainment, even as attendance and club finances came under pressure. The era also saw remarkable performances by Jimmie Foxx, Lefty Grove, and other stars who helped sustain public interest. Hoover's baseball legacy rests less on a single championship than on his continued public participation in the national pastime during a period of profound economic uncertainty.",
     portrait: "/hoover.jpg",
   },
   {
@@ -435,7 +435,7 @@ export const presidents: President[] = [
     years: "1933–1945",
     baseballEra: "Depression and World War II",
     overview:
-      "Roosevelt supported the continuation of professional baseball during World War II through his historic Green Light Letter.",
+      "Franklin D. Roosevelt's presidency spanned the Great Depression and most of the Second World War, two crises that deeply affected professional baseball. Roosevelt maintained the presidential Opening Day tradition in Washington and attended the 1937 All-Star Game. His most consequential baseball intervention came after the United States entered World War II. In January 1942, Commissioner Kenesaw Mountain Landis asked whether the major leagues should continue playing while the nation mobilized. Roosevelt replied in the famous Green Light Letter, explaining that baseball could provide recreation for Americans working long hours in wartime industries. The major leagues continued, although many players entered military service and rosters changed dramatically. The war years also brought the All-American Girls Professional Baseball League, founded in 1943, to new prominence. Roosevelt did not live to see Jackie Robinson's major-league debut in 1947, but his support for keeping the game on the field during wartime remains one of the clearest examples of a president directly influencing baseball's history.",
     portrait: "/fdr.jpg",
     events: [
       {
@@ -461,7 +461,7 @@ export const presidents: President[] = [
     years: "1945–1953",
     baseballEra: "Baseball Integration",
     overview:
-      "Jackie Robinson broke Major League Baseball's modern color barrier during Truman's presidency, transforming the sport.",
+      "Harry S. Truman entered the White House in April 1945, as World War II neared its end and professional baseball prepared for the return of players from military service. Truman continued the presidential Opening Day custom in Washington, sometimes delighting crowds by throwing ceremonial pitches with both hands. His presidency coincided with a historic transformation in the game. On April 15, 1947, Jackie Robinson made his Brooklyn Dodgers debut, breaking the modern major leagues' longstanding color barrier. Larry Doby integrated the American League later that season with Cleveland, and additional Black players soon followed. Baseball also experienced some of its most memorable postwar pennant races, including Cleveland's 1948 championship and the Yankees' rise under Casey Stengel. Truman's own ceremonial appearances linked the White House with the sport, while the integration of major-league baseball during his administration made the period one of the most consequential in American sporting and social history.",
     portrait: "/truman.jpg",
   },
   {
@@ -471,7 +471,7 @@ export const presidents: President[] = [
     years: "1953–1961",
     baseballEra: "Postwar Baseball",
     overview:
-      "Eisenhower had played baseball in his youth and participated in presidential first-pitch ceremonies.",
+      "Dwight D. Eisenhower brought a personal baseball background to the presidency, having played the sport in his youth and developed a lifelong appreciation for competition. During his years in office, he continued ceremonial first-pitch appearances at Washington baseball games. His administration witnessed a dramatic reshaping of the major leagues: the Boston Braves moved to Milwaukee in 1953, the Philadelphia Athletics moved to Kansas City in 1955, and the Brooklyn Dodgers and New York Giants departed for California after the 1957 season. The sport's national reach grew alongside television broadcasting and the postwar expansion of American suburbs. On the field, Willie Mays, Mickey Mantle, Hank Aaron, and other stars defined the decade. Eisenhower also served during Don Larsen's perfect game in the 1956 World Series and the emergence of new West Coast rivalries. His presidency bridged the traditional eastern-centered baseball map and the modern coast-to-coast major leagues.",
     portrait: "/eisenhower.jpg",
   },
   {
@@ -481,8 +481,8 @@ export const presidents: President[] = [
     years: "1961–1963",
     baseballEra: "Expansion Era",
     overview:
-      "Kennedy continued the presidential Opening Day tradition in Washington.",
-    portrait: "/jfk-portrait.jpg",
+      "John F. Kennedy became president in 1961, the year the American League expanded and Washington received a new Senators franchise after its previous club moved to Minnesota. On April 10, 1961, Kennedy threw the ceremonial first pitch at Griffith Stadium as the new Senators opened their inaugural season against the Chicago White Sox. It was the final presidential Opening Day at the historic ballpark. In 1962, Kennedy returned for the Senators' first opener at the new D.C. Stadium and attended the Major League All-Star Game in Washington. He also welcomed St. Louis Cardinals great Stan Musial to the White House that July. Kennedy made another Opening Day appearance in April 1963, only months before his assassination. His baseball appearances offer a vivid record of the relationship between the White House and Washington's changing ballparks during a period of expansion, televised sports, and rapid cultural change.",
+    portrait: "/jfk-color-portrait.jpg",
     events: [
       {
         date: "April 10, 1961",
@@ -507,7 +507,7 @@ export const presidents: President[] = [
     years: "1963–1969",
     baseballEra: "1960s Baseball",
     overview:
-      "Baseball underwent expansion and cultural changes during Johnson's presidency.",
+      "Lyndon B. Johnson occupied the White House during an eventful period of American baseball, as the sport confronted social change, new markets, and the growing influence of television. Johnson continued the presidential Opening Day tradition with Washington Senators appearances in 1964, 1965, and 1967. His administration coincided with the extraordinary achievements of Sandy Koufax, Bob Gibson, and Willie Mays, along with the 1967 Boston Red Sox 'Impossible Dream' pennant run and the Detroit Tigers' 1968 World Series championship. The 1960s also saw greater attention to players' labor rights and the difficult conditions facing Black athletes despite baseball's earlier integration. By the end of Johnson's presidency, expansion and divisional play were on the horizon, changing how the major leagues would organize pennant races. Johnson's documented ceremonial pitches connect his administration to Washington baseball, while the wider era marked a transition toward the modern game.",
     portrait: "/lbj.jpg",
   },
   {
@@ -517,7 +517,7 @@ export const presidents: President[] = [
     years: "1969–1974",
     baseballEra: "Expansion and Divisional Play",
     overview:
-      "Divisional baseball and postseason league championship series became established.",
+      "Richard Nixon was a serious sports enthusiast whose presidency overlapped with major changes in professional baseball. The 1969 season introduced divisional play and League Championship Series, adding a new postseason round to the traditional pennant race. Nixon threw a ceremonial first pitch in Washington in 1969 and, in 1973, participated in an Opening Day ceremony in Anaheim, helping extend the presidential first-pitch tradition beyond the nation's capital. His years in office also included the rise of the Oakland Athletics dynasty, Hank Aaron's pursuit and breaking of Babe Ruth's career home-run record in 1974, and growing debate over player contracts and labor rights. The Washington Senators relocated to Texas after the 1971 season, ending major-league baseball in the capital for more than three decades. Nixon's baseball story therefore combines personal interest and ceremonial appearances with a period of major changes in the sport's geography and structure.",
     portrait: "/nixon.jpg",
   },
   {
@@ -527,7 +527,7 @@ export const presidents: President[] = [
     years: "1974–1977",
     baseballEra: "1970s Baseball",
     overview:
-      "Free agency began transforming professional baseball during Ford's presidency.",
+      "Gerald Ford's presidency coincided with a turning point in the business of Major League Baseball. The 1975 World Series between Cincinnati and Boston became one of the sport's most celebrated championships, while the Cincinnati Reds' 'Big Red Machine' continued to dominate the National League. In December 1975, an arbitration decision involving pitchers Andy Messersmith and Dave McNally accelerated the end of baseball's reserve-clause system and helped usher in modern free agency. Ford participated in the ceremonial first pitch at the 1976 All-Star Game in Philadelphia, held during the United States bicentennial celebration. The occasion joined America's 200th anniversary with its national pastime. Ford's own background as an accomplished college football player made athletics a familiar part of his public life, but his presidency's strongest baseball connections are the bicentennial All-Star Game and the sweeping changes in player mobility that reshaped the sport.",
     portrait: "/ford.jpg",
   },
   {
@@ -537,7 +537,7 @@ export const presidents: President[] = [
     years: "1977–1981",
     baseballEra: "Free Agency Era",
     overview:
-      "Baseball's labor and financial landscape evolved during Carter's presidency.",
+      "Jimmy Carter's presidency unfolded as free agency transformed major-league rosters and the economics of the game. Star players gained new leverage in contract negotiations, while the New York Yankees, Los Angeles Dodgers, and Pittsburgh Pirates featured prominently in late-1970s pennant races. Carter attended Game 7 of the 1979 World Series in Baltimore, where Willie Stargell and the Pirates completed their comeback against the Orioles. That championship, remembered for Pittsburgh's 'We Are Family' team, became one of the era's defining moments. Carter's Georgia roots also connected him with the growing baseball culture of the Southeast, including the Atlanta Braves. His presidential baseball record is more closely associated with attending a championship game than with repeated ceremonial Opening Day pitches. The Carter years capture baseball adjusting to a new labor landscape while retaining its place in American public life.",
     portrait: "/carter.jpg",
   },
   {
@@ -547,7 +547,7 @@ export const presidents: President[] = [
     years: "1981–1989",
     baseballEra: "1980s Baseball",
     overview:
-      "Reagan had a personal connection to baseball through his earlier career broadcasting Chicago Cubs games.",
+      "Ronald Reagan's connection to baseball began decades before he entered the White House. As a young radio announcer in the 1930s, he recreated Chicago Cubs games for listeners using telegraphed accounts of the action, developing the vivid storytelling skills that later helped define his public career. In the 1952 film The Winning Team, Reagan portrayed Hall of Fame pitcher Grover Cleveland Alexander. As president, he maintained a visible connection to the sport, including a September 30, 1988 appearance at Wrigley Field, where he threw two ceremonial first pitches before a Cubs game. His administration also witnessed the 1981 players' strike, the rise of stars such as Cal Ripken Jr. and Rickey Henderson, and the dramatic 1986 World Series. Reagan's baseball legacy is unusually personal: few presidents have spent part of their professional lives describing the game to fans or portraying one of its great players on screen.",
     portrait: "/reagan.jpg",
   },
   {
@@ -557,7 +557,7 @@ export const presidents: President[] = [
     years: "1989–1993",
     baseballEra: "Modern Baseball",
     overview:
-      "Bush played college baseball at Yale and maintained a lifelong interest in the game.",
+      "George H. W. Bush was among the most accomplished baseball players ever to become president. As a student at Yale after World War II, he played first base and captained the university team, which reached the first two College World Series tournaments in 1947 and 1948. A famous photograph shows Bush meeting Babe Ruth during the legendary slugger's visit to Yale in 1948. Bush carried that personal affection for baseball into public life and participated in ceremonial first pitches as president. His administration saw the Oakland Athletics' 1989 championship, the extraordinary 1991 World Series between Minnesota and Atlanta, and the growing international reach of the major leagues. Unlike presidents whose connections were primarily ceremonial, Bush could speak about the game from direct experience as a competitive college player. His Yale years remain a particularly distinctive chapter in presidential baseball history.",
     portrait: "/bush41.jpg",
   },
   {
@@ -567,7 +567,7 @@ export const presidents: President[] = [
     years: "1993–2001",
     baseballEra: "1990s Baseball",
     overview:
-      "Baseball experienced labor disputes, expansion, and the home-run race during Clinton's presidency.",
+      "Bill Clinton occupied the White House during a turbulent but highly visible era in Major League Baseball. Expansion brought the Colorado Rockies and Florida Marlins into the National League in 1993, followed by the Arizona Diamondbacks and Tampa Bay Devil Rays in 1998. Clinton took part in ceremonial baseball events, including a 1993 Opening Day first pitch in Baltimore. The 1994–95 players' strike canceled the 1994 World Series and damaged relations between fans, owners, and players. Yet the sport rebounded with memorable moments, including Cal Ripken Jr.'s consecutive-games record in 1995 and the celebrated 1998 home-run chase involving Mark McGwire and Sammy Sosa. The Yankees also built a championship dynasty late in the decade. Clinton's presidency illustrates the tension between baseball's popularity and its labor disputes, as well as the game's expanding national footprint.",
     portrait: "/clinton.jpg",
   },
   {
@@ -577,7 +577,7 @@ export const presidents: President[] = [
     years: "2001–2009",
     baseballEra: "21st-Century Baseball",
     overview:
-      "A former Texas Rangers managing general partner, Bush participated in memorable ceremonial first pitches.",
+      "George W. Bush had an unusually direct relationship with Major League Baseball before entering politics. He was part of the ownership group that purchased the Texas Rangers in 1989 and served as the club's managing general partner, giving him firsthand experience with the business of the sport. As president, Bush delivered one of the most memorable ceremonial pitches in baseball history at Yankee Stadium before Game 3 of the 2001 World Series, only weeks after the September 11 terrorist attacks. Wearing a protective vest beneath an FDNY jacket, he threw from the pitcher's mound as the crowd responded with a powerful show of unity. Bush also welcomed championship teams to the White House and spoke frequently about baseball's place in American life. His presidency coincided with debates over performance-enhancing drugs, the Boston Red Sox ending their long championship drought in 2004, and Washington's return to Major League Baseball in 2005. His Rangers experience and the 2001 World Series pitch make his baseball connection among the most distinctive of modern presidents.",
     portrait: "/george-w-bush.jpg",
   },
   {
@@ -587,7 +587,7 @@ export const presidents: President[] = [
     years: "2009–2017",
     baseballEra: "Modern MLB",
     overview:
-      "Obama celebrated baseball traditions and his Chicago White Sox fandom.",
+      "Barack Obama brought an openly expressed allegiance to the Chicago White Sox into the White House. In 2009, he wore a White Sox jacket when he threw the ceremonial first pitch at the Major League All-Star Game in St. Louis. He continued the presidential Opening Day tradition in Washington in 2010, marking a century since William Howard Taft's first presidential Opening Day pitch. Obama's administration also witnessed major developments across the sport: expanded use of instant replay, the introduction of the second wild-card berth in each league, and the Chicago Cubs' historic 2016 World Series victory after a 108-year championship drought. Baseball also remained a prominent part of White House celebrations for championship teams. Obama's fandom and public appearances helped connect the long presidential baseball tradition with a new generation of fans.",
     portrait: "/obama.jpg",
   },
   {
@@ -597,7 +597,7 @@ export const presidents: President[] = [
     years: "2017–2021, 2025–present",
     baseballEra: "Contemporary Baseball",
     overview:
-      "Trump's presidencies overlap with the modern era of Major League Baseball.",
+      "Donald Trump's first presidency, from 2017 to 2021, coincided with major changes and disruptions in professional baseball. The Houston Astros won their first World Series in 2017, the Washington Nationals claimed their first title in 2019, and the 2020 season was shortened to 60 games because of the COVID-19 pandemic. Major League Baseball played that year's postseason under unusual restrictions, with the Los Angeles Dodgers winning the World Series. Trump's presidency also coincided with continuing debates about pace of play, technology, and the integrity of competition. His second presidency began in 2025, placing him in office during a further chapter of baseball's contemporary history. Unlike several predecessors, Trump did not establish a regular presidential Opening Day first-pitch tradition during his first term. His connection to the game is best presented through documented appearances and the changing baseball landscape of the years in which he served, rather than through an unsupported claim of a particular ceremonial pitch.",
     portrait: "/trump.jpg",
   },
   {
@@ -607,7 +607,7 @@ export const presidents: President[] = [
     years: "2021–2025",
     baseballEra: "Contemporary Baseball",
     overview:
-      "Baseball continued evolving through rule changes and expanded postseason formats during Biden's presidency.",
+      "Joe Biden's presidency, from 2021 to 2025, coincided with a period of rapid change in Major League Baseball. After the pandemic-disrupted 2020 season, ballparks gradually returned to fuller attendance in 2021, while the Atlanta Braves won that year's World Series. A labor lockout delayed the start of the 2022 season, and a new collective bargaining agreement established an expanded 12-team postseason format. In 2023, Major League Baseball introduced a pitch timer, restrictions on defensive shifts, and larger bases, producing a faster-paced style of play and more stolen-base attempts. The Texas Rangers won their first World Series in 2023, and the Los Angeles Dodgers claimed the championship in 2024. Biden's administration thus overlapped with a notable reworking of the game's rules and postseason structure. His presidential baseball profile is strongest when grounded in those documented developments rather than in unverified accounts of ceremonial first pitches.",
     portrait: "/biden.jpg",
   },
 ];

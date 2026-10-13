@@ -265,7 +265,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-1 text-[9px] uppercase tracking-[0.18em] text-[#d9c79d] sm:tracking-[0.28em] md:text-xs">
-                America&apos;s Presidents. America&apos;s Pastime.
+                The American Presidency and the Game of Baseball
               </p>
             </div>
           </Link>
@@ -759,7 +759,7 @@ export default function Home() {
         </p>
 
         <p className="mt-1 text-xs uppercase tracking-[0.22em] text-[#c8b17b] md:text-sm">
-          America&apos;s Presidents. America&apos;s Pastime.
+          The American Presidency and the Game of Baseball
         </p>
 
         <div className="mt-4 flex flex-wrap justify-center gap-2 text-sm">

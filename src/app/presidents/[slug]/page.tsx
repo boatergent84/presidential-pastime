@@ -3,6 +3,25 @@ import { notFound } from "next/navigation";
 import { getPresident, presidents } from "../presidents-data";
 import { presidentialHistory } from "../presidential-history";
 
+const remainingPresidentContext: Record<string, string> = {
+  "herbert-hoover": "Four consecutive Washington Opening Day ceremonies, 1929–1932.",
+  "franklin-d-roosevelt": "The 1942 Green Light Letter encouraged baseball to continue during wartime.",
+  "harry-s-truman": "Truman resumed the presidential Opening Day tradition after World War II and famously threw ceremonial first pitches with both hands.",
+  "dwight-d-eisenhower": "The Dodgers and Giants moved west during the Eisenhower administration.",
+  "john-f-kennedy": "Kennedy opened the new Senators era at Griffith Stadium in 1961.",
+  "lyndon-b-johnson": "Johnson participated in Washington Opening Day ceremonies in the 1960s.",
+  "richard-nixon": "Divisional play began in 1969; Nixon later threw an Opening Day pitch in Anaheim.",
+  "gerald-ford": "Ford threw the ceremonial first pitch at the 1976 Bicentennial All-Star Game.",
+  "jimmy-carter": "Carter attended the decisive game of the 1979 World Series in Baltimore.",
+  "ronald-reagan": "Before the White House, Reagan recreated Cubs broadcasts for radio listeners.",
+  "george-h-w-bush": "A Yale first baseman and team captain, Bush played in the early College World Series.",
+  "bill-clinton": "Expansion, a players’ strike, and the 1998 home-run race defined the decade.",
+  "george-w-bush": "A former Rangers executive, Bush delivered the memorable 2001 Yankee Stadium pitch.",
+  "barack-obama": "A White Sox fan, Obama threw the first pitch at the 2009 All-Star Game.",
+  "donald-trump": "The 2020 MLB season was shortened during the COVID-19 pandemic.",
+  "joe-biden": "The 2023 pitch timer and other rule changes reshaped the modern game."
+};
+
 export function generateStaticParams() {
   return presidents.map(({ slug }) => ({ slug }));
 }
@@ -85,7 +104,7 @@ export default async function PresidentPage({
               </svg>
               <div className="h-[240px] w-[240px] shrink-0 overflow-hidden rounded-full border border-[#102c44] p-[2px]">
               <div className="h-full w-full overflow-hidden rounded-full border border-[#c9b98c] bg-[#e8dfca]">
-                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className={`h-full w-full object-cover object-top ${president.slug === "benjamin-harrison" ? "scale-125 -translate-y-3" : president.slug === "theodore-roosevelt" ? "!object-center" : ""}`} /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.slug === "donald-trump" ? "45 & 47" : president.number}</div>}
+                {president.portrait ? <img src={president.portrait} alt={`Portrait of ${president.name}`} className={`h-full w-full object-cover object-top ${president.slug === "calvin-coolidge" ? "scale-125" : president.slug === "benjamin-harrison" ? "scale-125 -translate-y-3" : president.slug === "theodore-roosevelt" ? "!object-center" : ""}`} /> : <div className="flex h-full items-center justify-center font-serif text-5xl">{president.slug === "donald-trump" ? "45 & 47" : president.number}</div>}
               </div>
             </div>
             </div>
@@ -99,14 +118,28 @@ export default async function PresidentPage({
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">Presidential Baseball Profile</p>
             <h1 className="mt-2 font-serif text-5xl font-bold leading-tight md:text-6xl">{president.name}</h1>
             <p className="mt-2 font-serif text-xl italic text-[#59636b]">President No. {president.slug === "donald-trump" ? "45 & 47" : president.number} • {president.years}</p>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt", "woodrow-wilson", "warren-g-harding"].includes(president.slug) ? null : president.overview}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt", "woodrow-wilson", "warren-g-harding", "calvin-coolidge", "herbert-hoover", "franklin-d-roosevelt", "harry-s-truman", "dwight-d-eisenhower", "john-f-kennedy", "lyndon-b-johnson", "richard-nixon", "gerald-ford", "jimmy-carter", "ronald-reagan", "george-h-w-bush", "bill-clinton", "george-w-bush", "barack-obama", "donald-trump", "joe-biden"].includes(president.slug) ? null : president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
               {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Throwing Hand", ({
+    "joe-biden": "Undocumented",
+    "donald-trump": "Right",
+    "bill-clinton": "Left",
+    "ronald-reagan": "Right",
+    "jimmy-carter": "Right",
+    "gerald-ford": "Both",
+    "richard-nixon": "Right",
+    "lyndon-b-johnson": "Right",
+    "john-f-kennedy": "Right",
+    "dwight-d-eisenhower": "Right",
+    "harry-s-truman": "Left",
+    "calvin-coolidge": "Right",
+    "franklin-d-roosevelt": "Right",
+    "herbert-hoover": "Right",
     "warren-g-harding": "Right",
                 "woodrow-wilson": "Right",
-                "barack-obama": "Left-Handed",
-                "george-w-bush": "Right-Handed",
-                "george-h-w-bush": "Right-Handed",
+                "barack-obama": "Left",
+                "george-w-bush": "Right",
+                "george-h-w-bush": "Left",
               } as Record<string, string>)[president.slug] ?? "Undocumented"]].map(([label, value]) => (
                 <div key={label} className="border-[3px] border-[#C5A46D] bg-[#f8f3e8] p-4">
                   <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#a4282d]">{label}</p>
@@ -129,7 +162,16 @@ export default async function PresidentPage({
                 : president.overview}
             </p>
           </div>
-          {president.slug === "warren-g-harding" ? (
+          {president.slug === "calvin-coolidge" ? (
+            <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+              <p className="font-serif text-2xl leading-relaxed italic text-[#fff5df]">
+                &ldquo;While baseball remains our national game, our national tastes will be on a higher level and our ideals on a firmer foundation.&rdquo;
+              </p>
+              <p className="mt-6 font-serif text-lg text-[#e3c6a5]">
+                — Calvin Coolidge, October 11, 1924
+              </p>
+            </aside>
+          ) : president.slug === "warren-g-harding" ? (
             <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
               <p className="font-serif text-2xl leading-relaxed italic text-[#fff5df]">
                 &ldquo;I never saw a game without taking sides and never want to see one. There is the soul of the game.&rdquo;
@@ -237,6 +279,12 @@ export default async function PresidentPage({
                 — Grover Cleveland
               </p>
             </aside>
+          ) : remainingPresidentContext[president.slug] ? (
+            <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+              
+              <p className="mt-5 font-serif text-2xl leading-relaxed text-[#fff5df]">{remainingPresidentContext[president.slug]}</p>
+              <p className="mt-6 font-serif text-lg text-[#e3c6a5]">— {president.name} era</p>
+            </aside>
           ) : (
             <aside className="border border-[#b8aa8e] bg-[#102c44] p-6 text-white">
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#e3c6a5]">Archive Record</p>
@@ -251,7 +299,7 @@ export default async function PresidentPage({
           )}
         </section>
 
-        {featured && !["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt", "woodrow-wilson", "warren-g-harding"].includes(president.slug) && (
+        {featured && !["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt", "woodrow-wilson", "warren-g-harding", "calvin-coolidge", "herbert-hoover", "franklin-d-roosevelt", "harry-s-truman", "dwight-d-eisenhower", "john-f-kennedy", "lyndon-b-johnson", "richard-nixon", "gerald-ford", "jimmy-carter", "ronald-reagan", "george-h-w-bush", "bill-clinton", "george-w-bush", "barack-obama", "donald-trump", "joe-biden"].includes(president.slug) && (
           <section className="mt-14">
             <div className="border-b-2 border-[#b8aa8e] pb-3">
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Featured Moment</p>

@@ -37,6 +37,42 @@ export const presidentialHistory: Record<
   string,
   HistoryAddition
 > = {
+  "donald-trump": {
+    events: [
+      {
+        date: "August 18, 2006",
+        title: "Ceremonial First Pitch at Fenway Park",
+        description:
+          "Before becoming president, Donald Trump threw a ceremonial first pitch at Fenway Park in Boston before a Red Sox–Yankees doubleheader game, during an appearance connected with the Jimmy Fund.",
+      },
+      {
+        date: "October 27, 2019",
+        title: "Trump Attends the World Series",
+        image: "/trump-world-series-2019-final.jpg",
+        description:
+          "President Trump attended Game 5 of the World Series between the Washington Nationals and Houston Astros at Nationals Park in Washington, D.C.",
+      },
+      {
+        date: "July 23, 2020",
+        title: "Baseball Returns During the Pandemic",
+        description:
+          "Major League Baseball began its delayed 60-game regular season under special health protocols during Trump's first presidency.",
+      },
+      {
+        date: "January 20, 2025",
+        title: "A Second Presidential Baseball Era",
+        description:
+          "Trump began his second, nonconsecutive presidency, extending his presidential baseball history into another era of Major League Baseball.",
+      },
+    ],
+    sources: [
+      {
+        title: "Baseball Hall of Fame — Presidential Baseball History",
+        url: presidentsCollection,
+      },
+    ],
+  },
+
   "william-howard-taft": {
     events: [
       {
@@ -107,6 +143,7 @@ export const presidentialHistory: Record<
       },
       {
         date: "April 10, 1913",
+        image: "/wilson-opening-day-1913.jpg",
         title: "Wilson's First Presidential Opening Day Pitch",
         description:
           "Newly inaugurated President Woodrow Wilson threw the ceremonial first pitch at Griffith Stadium before the Washington Senators defeated the New York Yankees 2–1. It was one of four baseball games he attended that April.",
@@ -115,6 +152,7 @@ export const presidentialHistory: Record<
       },
       {
         date: "August 2, 1913",
+        image: "/walter-johnson-1911.jpg",
         title: "Walter Johnson Day in Washington",
         description:
           "Wilson attended Walter Johnson Day at Griffith Stadium as the Washington Senators defeated the Detroit Tigers 3–2, demonstrating his enthusiasm for baseball beyond ceremonial Opening Day appearances.",
@@ -123,6 +161,7 @@ export const presidentialHistory: Record<
       },
       {
         date: "April 14, 1915",
+        image: "/griffith-stadium-historic.jpg",
         title: "Opening Day Against the New York Yankees",
         description:
           "Wilson returned to Griffith Stadium to throw the ceremonial first pitch. Washington defeated the Yankees 7–0. A Library of Congress photograph documents Wilson at a baseball opening game dated 1915 or 1916.",
@@ -148,6 +187,7 @@ export const presidentialHistory: Record<
       {
         date: "1916",
         title: "Ty Cobb Supports Wilson's Reelection",
+        image: "/ty-cobb-1913.jpg",
         description:
           "Detroit Tigers star Ty Cobb publicly expressed his support for Wilson's reelection campaign, illustrating the connection between baseball personalities and presidential politics during the era.",
         sourceUrl: wilsonHallOfFame,
@@ -155,6 +195,7 @@ export const presidentialHistory: Record<
       {
         date: "1920s",
         title: "Watching Baseball From His Automobile",
+        image: "/wilson-automobile-1921.jpg",
         description:
           "As his health declined, Wilson continued attending Washington Senators games. By arrangement with Clark Griffith, his automobile entered Griffith Stadium through a special gate and parked near the home bullpen. Secret Service agents and players protected him from foul balls as he watched with the top down.",
         sourceUrl: wilsonHallOfFame,
@@ -210,27 +251,88 @@ export const presidentialHistory: Record<
   "warren-g-harding": {
     events: [
       {
-        date: "1921 and 1922",
-        title: "Opening Day Ceremonial Pitches",
+        date: "April 13, 1921",
+        title: "Harding's First Presidential Opening Day",
+        image: "/harding-throwing.jpg",
         description:
-          "Harding participated in the presidential Opening Day first-pitch tradition in Washington.",
-        sourceUrl: washingtonGuide,
+          "Harding threw the ceremonial first pitch at Griffith Stadium in Washington. The Boston Red Sox defeated the Senators 6–3, but the occasion established Harding as an enthusiastic supporter of the presidential baseball tradition.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        date: "April 12, 1922",
+        title: "Opening Day Against the Yankees",
+        image: "/harding-opening-day-1922.jpg",
+        description:
+          "Harding returned to Griffith Stadium to throw the ceremonial first pitch as Washington defeated the New York Yankees 6–5. His regular attendance reflected his strong attachment to the Senators.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        date: "May 22, 1922",
+        title: "An Afternoon at Griffith Stadium",
+        image: "/harding-ballgame-may-1922.jpg",
+        description:
+          "Harding watched Washington play the Chicago White Sox, remaining for all nine innings. Future president Herbert Hoover and General John J. Pershing were among those attending with him.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        date: "April 24, 1923",
+        title: "A President Visits the New Yankee Stadium",
+        image: "/harding-yankee-stadium.jpg",
+        description:
+          "A Bain News Service photograph documents Harding's visit to Yankee Stadium on April 24, 1923.",
+        sourceUrl: "https://www.loc.gov/item/2014715992/",
+      },
+      {
+        date: "April 24, 1923",
+        title: "Harding Meets Babe Ruth at Yankee Stadium",
+        image: "/harding-babe-ruth-1923.jpg",
+        description:
+          "Harding arrived unannounced at the newly opened Yankee Stadium, where he met Babe Ruth and watched the Yankees defeat the Washington Senators 4–0. It was the first shutout in the ballpark's history, and Harding was the first sitting president to visit the stadium.",
+        sourceUrl: "https://sabr.org/journal/article/yankee-stadium-the-giants-greatest-mistake/",
+      },
+      {
+        date: "April 26, 1923",
+        title: "Harding's Final Presidential First Pitch",
+        image: "/harding-first-pitch-1923.jpg",
+        description:
+          "Harding threw the ceremonial first pitch at Washington's home opener against the Philadelphia Athletics. The Senators won 2–1. It was his final presidential Opening Day appearance.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        date: "August 1923",
+        title: "Baseball Mourns President Harding",
+        image: "/harding-funeral-1923.jpg",
+        description:
+          "Following Harding's death on August 2, 1923, Babe Ruth sent a condolence letter to First Lady Florence Harding. The original letter is preserved by Ohio History Connection.",
+        sourceUrl: "https://artsandculture.google.com/story/warren-g-harding-ohio-history-connection/BQWBjw37Z4KEJw",
       },
     ],
     sources: [
       {
-        title: "Washington Baseball Media Guide",
-        url: washingtonGuide,
+        title: "SABR — Warren G. Harding",
+        url: "https://sabr.org/bioproj/person/warren-harding",
       },
       {
-        title: "Hall of Fame — Presidential Artifacts",
-        url: presidentsCollection,
+        title: "Baseball Almanac — Harding Game Attendance",
+        url: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        title: "National Baseball Hall of Fame — Presidential Pastime",
+        url: "https://artsandculture.google.com/story/cgVBoiDknfnvJQ",
       },
     ],
   },
 
   "calvin-coolidge": {
     events: [
+      {
+        date: "April 15, 1924",
+        title: "Opening Day at Griffith Stadium",
+        image: "/coolidge-opening-day.jpg",
+        description:
+          "President Calvin Coolidge threw the ceremonial first pitch as Walter Johnson shut out the Philadelphia Athletics 4–0. It was the beginning of Washington's historic championship season.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_ccc.shtml",
+      },
       {
         date: "1924",
         title: "Coolidge in the Baseball Grandstand",
@@ -240,28 +342,12 @@ export const presidentialHistory: Record<
         sourceUrl: "https://www.loc.gov/pictures/item/2016893374/",
       },
       {
-        date: "1920s",
-        title: "Coolidge Welcomes the Washington Senators",
-        description:
-          "President Calvin Coolidge poses with members of the Washington Senators baseball team at the White House.",
-        image: "/coolidge-senators-white-house.jpg",
-        sourceUrl: "https://www.loc.gov/pictures/item/2016838491/",
-      },
-      {
         date: "September 5, 1924",
         title: "Walter Johnson Demonstrates His Curveball",
         description:
           "Washington Senators pitcher Walter Johnson demonstrates his curveball to President Calvin Coolidge, with player-manager Bucky Harris alongside them.",
         image: "/coolidge-walter-johnson-1924.jpg",
         sourceUrl: "https://www.loc.gov/item/92520581/",
-      },
-      {
-        date: "April 15, 1924",
-        title: "Opening Day at Griffith Stadium",
-        image: "/coolidge-opening-day.jpg",
-        description:
-          "President Calvin Coolidge threw the ceremonial first pitch as Walter Johnson shut out the Philadelphia Athletics 4–0. It was the beginning of Washington's historic championship season.",
-        sourceUrl: "https://www.baseball-almanac.com/prz_ccc.shtml",
       },
       {
         date: "October 4, 1924",
@@ -286,6 +372,14 @@ export const presidentialHistory: Record<
         description:
           "With Calvin and Grace Coolidge watching at Griffith Stadium, the Senators defeated the Giants 4–3 in 12 innings. Walter Johnson earned the victory in relief, delivering Washington its first World Series championship.",
         sourceUrl: "https://baseballhall.org/discover/1924-washington-senators-world-series",
+      },
+      {
+        date: "1920s",
+        title: "Coolidge Welcomes the Washington Senators",
+        description:
+          "President Calvin Coolidge poses with members of the Washington Senators baseball team at the White House.",
+        image: "/coolidge-senators-white-house.jpg",
+        sourceUrl: "https://www.loc.gov/pictures/item/2016838491/",
       },
       {
         date: "1927 and 1928",

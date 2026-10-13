@@ -167,7 +167,7 @@ export default function PresidentsArchivePage() {
                           president.slug === "benjamin-harrison"
                             ? "scale-125 -translate-y-3"
                             : president.slug === "william-howard-taft"
-                            ? "scale-120"
+                            ? "scale-[1.35]"
                             : president.slug === "theodore-roosevelt"
                             ? "!object-center"
                             : ""

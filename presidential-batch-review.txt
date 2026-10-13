@@ -1,0 +1,1394 @@
+
+
+===== presidents-data.ts =====
+
+
+export type BaseballEvent = {
+  date: string;
+  title: string;
+  description: string;
+  image?: string;
+  sourceUrl?: string;
+};
+
+export type HistoricPhoto = {
+  image: string;
+  caption: string;
+  year?: string;
+  sourceUrl?: string;
+};
+
+export type HistoricalSource = {
+  title: string;
+  url: string;
+};
+
+export type President = {
+  name: string;
+  slug: string;
+  number: number;
+  years: string;
+  baseballEra: string;
+  overview: string;
+  portrait: string;
+  events?: BaseballEvent[];
+  photos?: HistoricPhoto[];
+  sources?: HistoricalSource[];
+};
+
+export const presidents: President[] = [
+  {
+    name: "Abraham Lincoln",
+    slug: "abraham-lincoln",
+    number: 16,
+    years: "1861–1865",
+    baseballEra: "Civil War Baseball",
+    overview: "Abraham Lincoln occupied the White House during a defining chapter in the development of American baseball. By the time he became president in 1861, organized baseball clubs were already flourishing in northeastern cities, and the sport was beginning to spread into other regions of the country. The Civil War accelerated that expansion as soldiers from different states played ball games in military camps and carried their enthusiasm for the sport to new communities. Lincoln himself appeared in an 1860 political cartoon titled 'The National Game,' which used baseball terminology to satirize the presidential election, demonstrating that the game had already become recognizable enough to serve as a national political metaphor. Although later accounts describe Lincoln playing baseball, historians have questioned the reliability of many such stories, and there is little firm contemporary evidence of his personal participation. His strongest historical connection to baseball lies instead in the extraordinary period of national change over which he presided. During the war, baseball helped provide recreation and companionship for soldiers far from home, while the movement of those soldiers helped carry the game beyond its earlier regional boundaries. Lincoln did not live to see the establishment of the first fully professional baseball club in 1869, but the sport that spread during his presidency would eventually become one of the country's most enduring traditions.",
+    portrait: "/abraham-lincoln-gardner.jpg",
+    events: [
+      {
+        date: "1860",
+        title: "Lincoln and the Baseball Cartoon",
+        description:
+          "A political cartoon used baseball imagery to depict the presidential election of 1860, showing that the game was already familiar to American audiences.",
+        image: "/lincoln-baseball-1860.jpg",
+        sourceUrl:
+          "https://georgewbush-whitehouse.archives.gov/baseball/text/",
+      },
+      {
+        date: "1861–1865",
+        title: "Baseball During the Civil War",
+        description:
+          "Soldiers played baseball and related bat-and-ball games during the Civil War, contributing to the game's spread across the United States.",
+        sourceUrl:
+          "https://georgewbush-whitehouse.archives.gov/baseball/text/",
+        image: "/civil-war-baseball.jpg",
+      },
+    ],
+    sources: [
+      {
+        title: "White House Archives — Baseball at the White House",
+        url: "https://georgewbush-whitehouse.archives.gov/baseball/text/",
+      },
+    ],
+  },
+  {
+    name: "Andrew Johnson",
+    slug: "andrew-johnson",
+    number: 17,
+    years: "1865–1869",
+    baseballEra: "Post-Civil War Baseball",
+    overview: "Andrew Johnson entered the presidency in April 1865, just as the Civil War was ending and organized baseball was preparing for a remarkable period of national growth. During the war, soldiers had played baseball and related bat-and-ball games in camps and military communities, helping carry the sport beyond its earlier northeastern centers. As Americans returned to civilian life, baseball clubs multiplied and increasingly organized competitive matches attracted public attention. Johnson's administration coincided with the emergence of baseball as a prominent part of the nation's postwar culture. The Brooklyn Atlantics, one of the leading clubs of the era, were associated with an 1865 visit to Washington and a reported White House reception during Johnson's presidency. Their prominence illustrated the growing prestige of organized baseball, although the surviving historical record does not establish Johnson as an active player or especially devoted spectator. The years of his administration also saw major changes in the game's organization, culminating in the formation of the National Association of Base Ball Players' first openly professional club, the Cincinnati Red Stockings, in 1869. Baseball's transformation from an amateur club pastime toward professional competition reflected the larger social changes taking place in the United States after the Civil War. Johnson's connection to baseball is therefore rooted in an important transitional era, when the game was becoming a more visible and lasting institution in American life.",
+    portrait: "/andrew-johnson-brady.jpg",
+    events: [
+      {
+        date: "August 30, 1865",
+        title: "Baseball Comes to the White House",
+        description:
+          "A delegation from the National Baseball Club visited the White House, an early example of the connection between organized baseball and the presidency.",
+        sourceUrl:
+          "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+        image: "/andrew-johnson-atlantics-1865.jpg",
+      },
+    ],
+    sources: [
+      {
+        title: "MLB — Baseball's History with U.S. Presidents",
+        url: "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+      },
+    ],
+  },
+  {
+    name: "Ulysses S. Grant",
+    slug: "ulysses-s-grant",
+    number: 18,
+    years: "1869–1877",
+    baseballEra: "Professional Baseball Begins",
+    overview: "Ulysses S. Grant entered the White House in March 1869, at precisely the moment American baseball was beginning its transformation from an amateur pastime into an organized professional sport. That same year, the Cincinnati Red Stockings assembled the first widely recognized openly professional baseball team, paying their players and embarking on a remarkable undefeated season. Led by Harry Wright and his brother George Wright, the Red Stockings traveled across the country, attracting large crowds and demonstrating baseball's growing national appeal. Their 1869 season helped establish the commercial possibilities of the game and foreshadowed the professional leagues that would follow. Grant's presidency also witnessed the creation of the National Association of Professional Base Ball Players in 1871, an important predecessor to modern major league baseball. By 1876, during Grant's final full year in office, the National League had been established, bringing greater structure and permanence to professional competition. These developments unfolded during an era of railroad expansion, industrial growth, and rapidly changing American cities, all of which helped teams travel, compete, and attract spectators. Grant's own personal involvement with baseball is less firmly documented than the sport's extraordinary growth during his administration, so his historical importance to the game rests chiefly in the period he represented rather than in any unverified claim that he played or attended particular games. From the first openly professional team in 1869 to the formation of the National League in 1876, the Grant years marked one of the most consequential chapters in baseball history.",
+    portrait: "/grant-new.jpg",
+    events: [
+      {
+        date: "1869",
+        title: "The Cincinnati Red Stockings",
+        description: "In 1869, the year Ulysses S. Grant became president, the Cincinnati Red Stockings emerged as baseball's first openly professional team. This period lithograph depicts the celebrated club.",
+        image: "/grant-red-stockings-lithograph.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1869_Cincinnati_Red_Stockings_lithograph.jpg",
+      },
+      {
+        date: "1869",
+        title: "Baseball Enters the Professional Age",
+        description: "Professional baseball expanded during Grant's presidency. The 1869 Cincinnati club helped establish the model for professional teams and the game's growing national appeal.",
+        image: "/grant-red-stockings-team.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1869_Cincinnati_Red_Stockings.jpg",
+      },
+
+      {
+        date: "1869",
+        title: "Cincinnati Red Stockings Visit",
+        image: "/grant-champion-bat-1869.jpg",
+        description:
+          "President Grant received the Cincinnati Red Stockings, an early professional baseball club, at the White House.",
+        sourceUrl:
+          "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+      },
+      {
+        date: "1876",
+        title: "The National League Is Founded",
+        image: "/grant-chicago-1876.jpg",
+        description:
+          "The National League was established during Grant's presidency, an important milestone in professional baseball history.",
+        sourceUrl:
+          "https://georgewbush-whitehouse.archives.gov/baseball/text/",
+      },
+    ],
+    sources: [
+      {
+        title: "MLB — Baseball's History with U.S. Presidents",
+        url: "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+      },
+    ],
+  },
+  {
+    name: "Rutherford B. Hayes",
+    slug: "rutherford-b-hayes",
+    events: [
+      {
+        date: "1879",
+        title: "The 1879 Providence Grays",
+        description: "The Providence Grays won the National League championship in 1879 during Rutherford B. Hayes's presidency. This original team photograph documents the growth of professional baseball in the late nineteenth century.",
+        image: "/hayes-providence-grays-1879.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1879_Providence_Grays.jpeg",
+      },
+      {
+        date: "September 30, 1879",
+        title: "Baseball at Messer Street Grounds",
+        description: "The Boston and Providence clubs assembled for this historic photograph at Messer Street Grounds in Providence, Rhode Island, on the final day of the 1879 National League season. The photograph captures the growing professional game during President Hayes's administration.",
+        image: "/hayes-messer-street-1879.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Messer_Street_Grounds,_1879.jpg",
+      },
+    ],
+    number: 19,
+    years: "1877–1881",
+    baseballEra: "Early National League",
+    overview: "Rutherford B. Hayes became president in 1877, just one year after the National League was founded, placing his administration at the beginning of a new era in organized professional baseball. The sport was evolving from loosely organized clubs into a more structured competition with established teams, regular schedules, and growing audiences. During Hayes's presidency, the National League worked to strengthen its organization while clubs from major American cities competed for championship honors. One of the most notable teams of the period was the Providence Grays, who joined the league in 1878 and captured the National League pennant in 1879. Led by George Wright, an important figure in early professional baseball, the Grays demonstrated the increasing competitiveness of the young league. Meanwhile, the Boston Red Caps and Chicago White Stockings helped establish enduring baseball traditions as the professional game expanded its reach. Railroads, newspapers, and growing urban populations allowed baseball to attract spectators far beyond the communities where individual clubs played. Newspaper coverage increasingly made prominent players and teams familiar to readers throughout the country. Although Hayes's personal involvement with baseball is not well documented, his presidency coincided with an important period of consolidation for the professional game. By the time he left office in 1881, baseball had become an increasingly organized national attraction, with the National League laying foundations that would shape America's pastime for generations.",
+    portrait: "/hayes-whitehouse.jpg",
+  },
+  {
+    name: "James A. Garfield",
+    slug: "james-a-garfield",
+    events: [
+      {
+        date: "1881",
+        title: "The 1881 Oberlin Baseball Team",
+        description: "During James A. Garfield’s presidency, college baseball was expanding across America. This 1881 Oberlin College team photograph includes Moses Fleetwood Walker and his brother Weldy Walker, important figures in early baseball history.",
+        image: "/garfield-oberlin-baseball-1881.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1881_Oberlin_baseball_team.jpg",
+      },
+      {
+        date: "1881",
+        title: "Chicago White Stockings Win the Pennant",
+        description: "The Chicago White Stockings captured the 1881 National League championship with a 56–28 record during James A. Garfield's presidency. Pictured is Chicago pitcher Fred Goldsmith in an 1880 photograph, a member of the club's championship-era pitching staff.",
+        image: "/garfield-fred-goldsmith-1880.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Fred%20Goldsmith%201880",
+      },
+    ],
+    number: 20,
+    years: "1881",
+    baseballEra: "19th-Century Baseball",
+    overview: "James A. Garfield became the twentieth president of the United States on March 4, 1881, during the sixth season of the National League. Professional baseball was still relatively young, but the game was developing into an organized national sport with established clubs, competitive pennant races, and growing newspaper coverage. The 1881 season featured eight National League teams, including the Chicago White Stockings, Providence Grays, Boston Red Caps, and the newly admitted Detroit Wolverines. Detroit's arrival was particularly significant for Michigan baseball history, beginning the city's first National League franchise decades before the Tigers. Chicago, managed on the field by the influential Cap Anson, emerged as the league's strongest club and ultimately captured the pennant with a 56–28 record. The Providence Grays finished second. Other important developments included the growing prominence of players such as Roger Connor, whose historic grand slam for the Troy Trojans came in September 1881. Garfield's presidency was tragically brief. He was shot on July 2 and died on September 19, 1881, before the baseball season ended. There is no firmly established evidence that Garfield personally participated in a presidential baseball ceremony or threw a ceremonial first pitch. His connection to the sport is therefore primarily historical: the growth of professional baseball during his administration. In 1881, baseball continued its transformation from a nineteenth-century pastime into a major American sporting institution, with expanding city rivalries, recognized professional championships, and an increasingly national audience.",
+    portrait: "/garfield-whitehouse.jpg",
+  },
+  {
+    name: "Chester A. Arthur",
+    slug: "chester-a-arthur",
+    number: 21,
+    years: "1881–1885",
+    baseballEra: "Professional League Expansion",
+    overview: "Chester A. Arthur became the twenty-first president of the United States on September 19, 1881, following the death of James A. Garfield. His presidency coincided with one of the most important periods in the early development of professional baseball. The National League, founded in 1876, was establishing itself as a major professional organization, while the American Association began play in 1882 and introduced new competition. The Association attracted fans through lower admission prices and Sunday baseball in cities where it was permitted. In 1883, the New York Gothams entered the National League, beginning the franchise history of today's San Francisco Giants. The era featured prominent players including Buck Ewing, Roger Connor, John Montgomery Ward, and Charles Old Hoss Radbourn. In 1884, Radbourn produced one of baseball's most extraordinary pitching seasons, helping the Providence Grays win the National League pennant. Providence then defeated the American Association champion New York Metropolitans in a three-game postseason championship series, an early predecessor to the modern World Series. Arthur's presidency therefore witnessed professional baseball's expansion into competing major leagues and its emergence as an increasingly important part of American culture. No reliably documented ceremonial first pitch by President Arthur has been established.",
+    portrait: "/arthur-whitehouse.jpg",
+    events: [
+      {
+        date: "1883",
+        title: "The New York Gothams Enter the National League",
+        description: "The New York Gothams began National League play in 1883. This original team portrait includes early baseball stars Buck Ewing, Roger Connor, Mickey Welch and John Montgomery Ward.",
+        image: "/arthur-new-york-gothams-1883.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1883_New_York_Gothams.jpeg",
+      },
+
+      {
+        date: "1882",
+        title: "The Providence Grays in 1882",
+        description: "The 1882 Providence Grays, featuring pitcher Charles Old Hoss Radbourn, represent professional baseball during Chester A. Arthur's presidency. This is an original team photograph.",
+        image: "/arthur-providence-grays-1882.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1882_Providence_Grays.jpg",
+      },
+
+      {
+        date: "1884",
+        title: "The 1884 Providence Grays Championship",
+        description: "During Chester A. Arthur’s presidency, the Providence Grays captured the National League pennant and swept the New York Metropolitans in an early postseason championship series. Their star pitcher, Charles Old Hoss Radbourn, became one of baseball’s legendary figures. This photograph depicts the 1884 Providence team.",
+        image: "/arthur-providence-grays-1884.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1884grays.jpg",
+      },
+
+      {
+        date: "1882",
+        title: "The American Association Begins",
+        description:
+          "The American Association began play in 1882, offering professional competition alongside the National League. The Cincinnati Red Stockings won the league's inaugural pennant. Pictured is the actual 1882 Cincinnati team.",
+        image: "/arthur-american-association-1882.png",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:1882_Cincinnati_Red_Stockings.png",
+      },
+    ],
+  },
+  {
+    name: "Grover Cleveland",
+    slug: "grover-cleveland",
+    number: 22,
+    years: "1885–1889, 1893–1897",
+    baseballEra: "19th-Century Major Leagues",
+    overview: "Grover Cleveland, the 22nd and 24th president of the United States, occupied the White House during an extraordinary period in baseball history, when the sport was becoming America's national pastime. Unlike the image of a president uninterested in recreation, Cleveland actually followed baseball and had developed a friendship with future Hall of Fame pitcher James 'Pud' Galvin during his years in Buffalo, New York. Yet Cleveland believed the public expected its president to devote himself entirely to official business, and he avoided attending baseball games while in office. He nevertheless welcomed professional players to the White House, including members of the Chicago White Stockings. On October 8, 1888, Cleveland received Chicago captain Adrian 'Cap' Anson, baseball executive Albert G. Spalding, and their companions before Spalding's ambitious international baseball tour. The players gathered in the East Room, where Cleveland greeted them and heard their request for an official presidential endorsement. Although he declined to issue the proclamation they sought, the encounter demonstrated baseball's growing national significance. The expedition subsequently carried American baseball across the Pacific and through Australia, Asia, Africa, and Europe. Cleveland's relationship with baseball reveals an interesting contrast: a president who appreciated the game personally, yet remained reluctant to be seen enjoying it publicly. His administration helped mark an era when baseball was becoming important enough that its leading figures sought recognition from the president of the United States.",
+    portrait: "/cleveland-new.png?v=1",
+    events: [
+      {
+        date: "October 8, 1888",
+        title: "Cleveland Meets the Chicago White Stockings",
+        description: "President Grover Cleveland welcomed Cap Anson, Albert Spalding and members of the Chicago White Stockings to the White House. The baseball delegation sought presidential endorsement for Spalding's international baseball tour. Cleveland greeted the players but declined to issue the requested proclamation. The accompanying historical baseball-card portrait depicts Chicago captain Cap Anson, not the White House meeting.",
+        image: "/cleveland-cap-anson.jpg",
+        sourceUrl: "https://www.mlb.com/news/cubs-looking-forward-to-white-house-event-c213572950",
+      },
+    ],
+  },
+  {
+    name: "Benjamin Harrison",
+    slug: "benjamin-harrison",
+    number: 23,
+    years: "1889–1893",
+    baseballEra: "First Presidential MLB Attendance",
+    overview:
+      "Benjamin Harrison holds a special place in presidential baseball history as the first sitting president documented attending a major-league game. Long before entering the White House, Harrison enjoyed watching baseball in Indianapolis and Chicago. In 1889, he publicly expressed his pleasure in watching a good game of ball. His administration coincided with a turbulent and transformative period in professional baseball. The Players' League challenged the established National League in 1890, while the American Association folded after the 1891 season. The National League expanded to twelve clubs in 1892, including the Washington Senators. On June 6, 1892, Harrison traveled to Boundary Field in Washington to watch the Senators face the Cincinnati Reds. Wearing a derby and frock coat, he watched from the press box as the home team competed against Cincinnati. Harrison departed during the sixth inning with the Reds ahead, missing Washington's comeback and Cincinnati's eventual 7–4 victory in eleven innings. He returned to Boundary Field on June 25, 1892, to see Washington play Philadelphia. His attendance established an enduring connection between the presidency and America's national pastime, preceding the presidential ceremonial first-pitch tradition that began under William Howard Taft in 1910.",
+    portrait: "/harrison-pach-1896.jpg?v=1",
+    events: [
+      {
+        date: "June 6, 1892",
+        title: "First Sitting President at a Major-League Game",
+        image: "/harrison-washington-senators-1895.jpg",
+        description:
+          "Harrison attended the Washington Senators versus Cincinnati Reds game at Boundary Field. Cincinnati won 7–4 in eleven innings.",
+        sourceUrl:
+          "https://sabr.org/gamesproj/game/june-6-1892-president-benjamin-harrison-attends-a-major-league-game/",
+      },
+    ],
+    sources: [
+      {
+        title: "SABR — Harrison Attends a Major-League Game",
+        url: "https://sabr.org/gamesproj/game/june-6-1892-president-benjamin-harrison-attends-a-major-league-game/",
+      },
+      {
+        title: "MLB — Benjamin Harrison's Historic Ballgame",
+        url: "https://www.mlb.com/cut4/benjamin-harrison-is-first-u-s-president-to-attend-mlb-game-in-1892-c233930574",
+      },
+    ],
+  },
+  {
+    name: "William McKinley",
+    slug: "william-mckinley",
+    number: 25,
+    years: "1897–1901",
+    baseballEra: "Turn-of-the-Century Baseball",
+    overview:
+      "William McKinley's presidency marked a turning point in American baseball. In 1897, Washington baseball representatives visited the White House and invited the president to their season opener. Although McKinley did not begin the ceremonial first-pitch tradition, the invitation demonstrated baseball's growing connection to the presidency. During his administration, the National League dominated professional baseball, with stars such as Cy Young, Honus Wagner, and Nap Lajoie helping shape the sport. After the 1899 season, the National League contracted from twelve clubs to eight, eliminating Washington's team. Meanwhile, Ban Johnson's Western League became the American League in 1900. In 1901, the American League began operating as a major league, establishing the rivalry that would transform professional baseball. McKinley's presidency thus bridged nineteenth-century baseball and the beginnings of the modern two-league era.",
+    portrait: "/mckinley-whitehouse.jpg?v=1",
+    events: [
+      {
+        date: "April 1897",
+        title: "Washington Baseball Visits the White House",
+        description:
+          "Washington baseball representatives visited President McKinley and invited him to their season opener.",
+        image: "/mckinley-washington-1895.jpg",
+      },
+      {
+        date: "1901",
+        title: "The American League Arrives",
+        description:
+          "The American League began its first season as a major league during McKinley's final year in office.",
+        image: "/mckinley-american-league-1901.jpg",
+      },
+    ],
+
+  },
+  {
+    name: "Theodore Roosevelt",
+    slug: "theodore-roosevelt",
+    number: 26,
+    years: "1901–1909",
+    baseballEra: "Deadball Era",
+    overview:
+      "Theodore Roosevelt occupied the White House during one of the most important periods in baseball history. When he became president in September 1901, the newly established American League was challenging the older National League for players, fans, and national attention. In 1903, the Boston Americans defeated the Pittsburgh Pirates in the first modern World Series, establishing a championship tradition that would become central to American sports. Roosevelt's presidency also overlapped with the rise of legendary players such as Honus Wagner, Nap Lajoie, Christy Mathewson, and Ty Cobb. The early twentieth century became known as the Deadball Era, when pitching, defense, bunting, and aggressive baserunning were central to the game. The Chicago Cubs won consecutive World Series championships in 1907 and 1908, while the New York Giants and Philadelphia Athletics emerged as important clubs in the new two-league system. Roosevelt strongly advocated physical activity, competition, and vigorous living, values that resonated with the growing popularity of organized sports. Although he did not establish the presidential Opening Day first-pitch tradition, his administration witnessed baseball's transformation into a modern national institution. That ceremonial tradition would begin under his successor, William Howard Taft, in 1910.",
+    portrait: "/roosevelt-formal.jpg?v=1",
+    events: [
+      {
+        date: "1901",
+        title: "The American League Challenges the National League",
+        description:
+          "The American League completed its first major-league season, beginning a new era of competition between baseball's two major leagues.",
+        image: "/roosevelt-american-league-1901.jpg",
+      },
+      {
+        date: "1903",
+        title: "The First Modern World Series",
+        description:
+          "The Boston Americans defeated the Pittsburgh Pirates five games to three in the first modern World Series. The event occurred during Roosevelt's presidency, but was not a documented presidential appearance.",
+        image: "/roosevelt-world-series-1903.jpg",
+      },
+      {
+        date: "1908",
+        title: "The Chicago Cubs Win Their Second Consecutive World Series",
+        description:
+          "The Chicago Cubs defeated the Detroit Tigers for the second consecutive year, becoming one of the defining championship teams of the Deadball Era.",
+        image: "/roosevelt-cubs-1908.jpg",
+      },
+    ],
+  },
+  {
+    name: "William Howard Taft",
+    slug: "william-howard-taft",
+    number: 27,
+    years: "1909–1913",
+    baseballEra: "Presidential First-Pitch Tradition",
+    overview:
+      "Taft began the presidential Opening Day ceremonial first-pitch tradition in 1910.",
+    portrait: "/taft-formal-portrait.jpg?v=1",
+    events: [
+      {
+        date: "April 14, 1910",
+        title: "The First Presidential Opening Day Pitch",
+        description:
+          "Taft threw the ceremonial first pitch before Washington played the Philadelphia Athletics.",
+        image: "/taft-first-pitch-1910.jpg",
+      },
+      {
+        date: "April 12, 1911",
+        title: "The Tradition Continues",
+        description:
+          "Taft returned for another Opening Day ceremonial first pitch in Washington.",
+        image: "/taft-baseball-1911.jpg",
+      },
+    ],
+    sources: [
+      {
+        title: "Baseball Hall of Fame — Presidential History",
+        url: "https://baseballhall.org/discover/short-stops/presidential-history-part-of-hof-collection",
+      },
+    ],
+  },
+  {
+    name: "Woodrow Wilson",
+    slug: "woodrow-wilson",
+    number: 28,
+    years: "1913–1921",
+    baseballEra: "Deadball to Live-Ball Era",
+    overview:
+      "Baseball continued through World War I and entered a new era of offensive play near the end of Wilson's presidency.",
+    portrait: "/wilson-1914.jpg",
+  },
+  {
+    name: "Warren G. Harding",
+    slug: "warren-g-harding",
+    number: 29,
+    years: "1921–1923",
+    baseballEra: "Babe Ruth Era",
+    overview:
+      "Harding's presidency coincided with Babe Ruth's emergence as baseball's greatest home-run attraction.",
+    portrait: "/harding-front-1920.jpg",
+    events: [
+      {
+        date: "1921–1923",
+        title: "A Presidential Baseball Artifact",
+        description:
+          "A baseball bat autographed by Babe Ruth and presented to Harding survives in the National Baseball Hall of Fame's collection.",
+        sourceUrl:
+          "https://baseballhall.org/discover/short-stops/presidential-history-part-of-hof-collection",
+      },
+    ],
+  },
+  {
+    name: "Calvin Coolidge",
+    slug: "calvin-coolidge",
+    number: 30,
+    years: "1923–1929",
+    baseballEra: "Roaring Twenties Baseball",
+    overview:
+      "Calvin Coolidge occupied the White House during one of the most celebrated eras in baseball history. Although known for his reserved personality, Coolidge became closely associated with the Washington Senators and their remarkable 1924 championship season. On April 15, 1924, he delivered the ceremonial first pitch at Griffith Stadium before Walter Johnson shut out the Philadelphia Athletics, 4–0. That autumn, the Senators captured their first American League pennant and faced the New York Giants in a dramatic seven-game World Series. Coolidge opened the Series with a ceremonial pitch and attended the deciding seventh game alongside First Lady Grace Coolidge, an enthusiastic baseball supporter who followed the action closely and kept score. Washington prevailed 4–3 in twelve innings, with Walter Johnson earning the victory in relief. Coolidge later continued the presidential Opening Day tradition in 1927 and 1928. His presidency remains linked to the Senators’ greatest triumph and to an unforgettable chapter in the history of baseball in the nation’s capital.",
+    portrait: "/coolidge.jpg",
+  },
+  {
+    name: "Herbert Hoover",
+    slug: "herbert-hoover",
+    number: 31,
+    years: "1929–1933",
+    baseballEra: "Depression-Era Baseball",
+    overview:
+      "Hoover's presidency coincided with the beginning of the Great Depression, when baseball remained an important part of American culture.",
+    portrait: "/hoover.jpg",
+  },
+  {
+    name: "Franklin D. Roosevelt",
+    slug: "franklin-d-roosevelt",
+    number: 32,
+    years: "1933–1945",
+    baseballEra: "Depression and World War II",
+    overview:
+      "Roosevelt supported the continuation of professional baseball during World War II through his historic Green Light Letter.",
+    portrait: "/fdr.jpg",
+    events: [
+      {
+        date: "January 15, 1942",
+        title: "The Green Light Letter",
+        description:
+          "Roosevelt responded to Commissioner Kenesaw Mountain Landis and encouraged professional baseball to continue during World War II.",
+        sourceUrl:
+          "https://baseballhall.org/discover-more/stories/short-stops/keep-baseball-going",
+      },
+    ],
+    sources: [
+      {
+        title: "Baseball Hall of Fame — Keep Baseball Going",
+        url: "https://baseballhall.org/discover-more/stories/short-stops/keep-baseball-going",
+      },
+    ],
+  },
+  {
+    name: "Harry S. Truman",
+    slug: "harry-s-truman",
+    number: 33,
+    years: "1945–1953",
+    baseballEra: "Baseball Integration",
+    overview:
+      "Jackie Robinson broke Major League Baseball's modern color barrier during Truman's presidency, transforming the sport.",
+    portrait: "/truman.jpg",
+  },
+  {
+    name: "Dwight D. Eisenhower",
+    slug: "dwight-d-eisenhower",
+    number: 34,
+    years: "1953–1961",
+    baseballEra: "Postwar Baseball",
+    overview:
+      "Eisenhower had played baseball in his youth and participated in presidential first-pitch ceremonies.",
+    portrait: "/eisenhower.jpg",
+  },
+  {
+    name: "John F. Kennedy",
+    slug: "john-f-kennedy",
+    number: 35,
+    years: "1961–1963",
+    baseballEra: "Expansion Era",
+    overview:
+      "Kennedy continued the presidential Opening Day tradition in Washington.",
+    portrait: "/jfk-portrait.jpg",
+    events: [
+      {
+        date: "April 10, 1961",
+        title: "Opening Day at Griffith Stadium",
+        description:
+          "Kennedy threw the ceremonial first pitch at Washington's Opening Day game.",
+        image: "/jfk-first-pitch-1961.jpg",
+      },
+      {
+        date: "April 9, 1962",
+        title: "Opening Day at D.C. Stadium",
+        description:
+          "Kennedy participated in the presidential baseball tradition in Washington.",
+        image: "/jfk-first-pitch-1962.webp",
+      },
+    ],
+  },
+  {
+    name: "Lyndon B. Johnson",
+    slug: "lyndon-b-johnson",
+    number: 36,
+    years: "1963–1969",
+    baseballEra: "1960s Baseball",
+    overview:
+      "Baseball underwent expansion and cultural changes during Johnson's presidency.",
+    portrait: "/lbj.jpg",
+  },
+  {
+    name: "Richard Nixon",
+    slug: "richard-nixon",
+    number: 37,
+    years: "1969–1974",
+    baseballEra: "Expansion and Divisional Play",
+    overview:
+      "Divisional baseball and postseason league championship series became established.",
+    portrait: "/nixon.jpg",
+  },
+  {
+    name: "Gerald Ford",
+    slug: "gerald-ford",
+    number: 38,
+    years: "1974–1977",
+    baseballEra: "1970s Baseball",
+    overview:
+      "Free agency began transforming professional baseball during Ford's presidency.",
+    portrait: "/ford.jpg",
+  },
+  {
+    name: "Jimmy Carter",
+    slug: "jimmy-carter",
+    number: 39,
+    years: "1977–1981",
+    baseballEra: "Free Agency Era",
+    overview:
+      "Baseball's labor and financial landscape evolved during Carter's presidency.",
+    portrait: "/carter.jpg",
+  },
+  {
+    name: "Ronald Reagan",
+    slug: "ronald-reagan",
+    number: 40,
+    years: "1981–1989",
+    baseballEra: "1980s Baseball",
+    overview:
+      "Reagan had a personal connection to baseball through his earlier career broadcasting Chicago Cubs games.",
+    portrait: "/reagan.jpg",
+  },
+  {
+    name: "George H. W. Bush",
+    slug: "george-h-w-bush",
+    number: 41,
+    years: "1989–1993",
+    baseballEra: "Modern Baseball",
+    overview:
+      "Bush played college baseball at Yale and maintained a lifelong interest in the game.",
+    portrait: "/bush41.jpg",
+  },
+  {
+    name: "Bill Clinton",
+    slug: "bill-clinton",
+    number: 42,
+    years: "1993–2001",
+    baseballEra: "1990s Baseball",
+    overview:
+      "Baseball experienced labor disputes, expansion, and the home-run race during Clinton's presidency.",
+    portrait: "/clinton.jpg",
+  },
+  {
+    name: "George W. Bush",
+    slug: "george-w-bush",
+    number: 43,
+    years: "2001–2009",
+    baseballEra: "21st-Century Baseball",
+    overview:
+      "A former Texas Rangers managing general partner, Bush participated in memorable ceremonial first pitches.",
+    portrait: "/george-w-bush.jpg",
+  },
+  {
+    name: "Barack Obama",
+    slug: "barack-obama",
+    number: 44,
+    years: "2009–2017",
+    baseballEra: "Modern MLB",
+    overview:
+      "Obama celebrated baseball traditions and his Chicago White Sox fandom.",
+    portrait: "/obama.jpg",
+  },
+  {
+    name: "Donald Trump",
+    slug: "donald-trump",
+    number: 45,
+    years: "2017–2021, 2025–present",
+    baseballEra: "Contemporary Baseball",
+    overview:
+      "Trump's presidencies overlap with the modern era of Major League Baseball.",
+    portrait: "/trump.jpg",
+  },
+  {
+    name: "Joe Biden",
+    slug: "joe-biden",
+    number: 46,
+    years: "2021–2025",
+    baseballEra: "Contemporary Baseball",
+    overview:
+      "Baseball continued evolving through rule changes and expanded postseason formats during Biden's presidency.",
+    portrait: "/biden.jpg",
+  },
+];
+
+export function getPresident(slug: string): President | undefined {
+  return presidents.find((president) => president.slug === slug);
+}
+
+
+===== presidential-history.ts =====
+
+
+import type {
+  BaseballEvent,
+  HistoricalSource,
+} from "./presidents-data";
+
+type HistoryAddition = {
+  events: BaseballEvent[];
+  sources: HistoricalSource[];
+};
+
+const hallOfFame =
+  "https://baseballhall.org/discover/shortstops-presidential-pitches";
+
+const openingDay =
+  "https://baseballhall.org/discover-more/stories/baseball-history/opening-day-the-baseball-holiday";
+
+const washingtonGuide =
+  "https://content.mlb.com/documents/9/2/6/275087926/2018_media_guide.pdf";
+
+const presidentsCollection =
+  "https://baseballhall.org/discover/short-stops/presidential-history-part-of-hof-collection";
+
+const mlbFirstPitches =
+  "https://www.mlb.com/cut4/celebrate-presidents-day-with-every-presidential-first-pitch-since-fdrs/c-109333564";
+
+const wilsonHallOfFame =
+  "https://baseballhall.org/discover/polo-grounds-pass-tells-story-of-woodrow-wilson";
+
+const wilsonWorldSeriesPhoto =
+  "https://artsandculture.google.com/asset/president-wilson-at-game-2-of-the-1915-world-series-photograph/qAGvaFcGxjACFA";
+
+const wilsonLibraryOfCongressPhoto =
+  "https://www.loc.gov/pictures/item/2016851225/";
+
+export const presidentialHistory: Record<
+  string,
+  HistoryAddition
+> = {
+  "william-howard-taft": {
+    events: [
+      {
+        date: "1909",
+        title: "Taft at the Ballpark",
+        description:
+          "Taft's early baseball appearances helped establish a visible connection between the White House and America's national pastime.",
+        image: "/taft-ballgame-1909.jpg",
+      },
+      {
+        date: "1912",
+        title: "Taft Returns to the Ballpark",
+        description:
+          "Taft continued attending baseball during his presidency, leaving an important photographic record of the presidency's growing connection with the game.",
+        image: "/taft-baseball-1912.jpg",
+      },
+    ],
+    sources: [
+      {
+        title: "Baseball Hall of Fame — Presidential History",
+        url: presidentsCollection,
+      },
+    ],
+  },
+
+  "john-f-kennedy": {
+    events: [
+      {
+        date: "July 10, 1962",
+        title: "All-Star Game at D.C. Stadium",
+        description:
+          "Kennedy attended the Major League Baseball All-Star Game in Washington.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "July 11, 1962",
+        title: "Stan Musial Visits the White House",
+        description:
+          "Kennedy welcomed St. Louis Cardinals legend Stan Musial, his wife Lillian, and daughter Janet to the Oval Office.",
+        image: "/jfk-stan-musial-1962.jpg",
+      },
+      {
+        date: "April 8, 1963",
+        title: "Kennedy's Final Presidential Opening Day",
+        description:
+          "Kennedy returned to D.C. Stadium for the Washington Senators' Opening Day game against the Baltimore Orioles.",
+        image: "/jfk-opening-day-1963.jpg",
+        sourceUrl: washingtonGuide,
+      },
+    ],
+    sources: [
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+    ],
+  },
+
+  "woodrow-wilson": {
+    events: [
+      {
+        date: "1874",
+        title: "A Young Baseball Player at Davidson College",
+        description:
+          "Long before reaching the White House, Woodrow Wilson played baseball at Davidson College in North Carolina. He later attended Princeton, where he served as an assistant manager of the baseball team.",
+        sourceUrl:
+          "https://www.woodrowwilson.org/blog-podcast/presidential-baseball",
+      },
+      {
+        date: "April 10, 1913",
+        image: "/wilson-opening-day-1913.jpg",
+        title: "Wilson's First Presidential Opening Day Pitch",
+        description:
+          "Newly inaugurated President Woodrow Wilson threw the ceremonial first pitch at Griffith Stadium before the Washington Senators defeated the New York Yankees 2–1. It was one of four baseball games he attended that April.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cww.shtml",
+      },
+      {
+        date: "August 2, 1913",
+        image: "/walter-johnson-1911.jpg",
+        title: "Walter Johnson Day in Washington",
+        description:
+          "Wilson attended Walter Johnson Day at Griffith Stadium as the Washington Senators defeated the Detroit Tigers 3–2, demonstrating his enthusiasm for baseball beyond ceremonial Opening Day appearances.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cww.shtml",
+      },
+      {
+        date: "April 14, 1915",
+        image: "/griffith-stadium-historic.jpg",
+        title: "Opening Day Against the New York Yankees",
+        description:
+          "Wilson returned to Griffith Stadium to throw the ceremonial first pitch. Washington defeated the Yankees 7–0. A Library of Congress photograph documents Wilson at a baseball opening game dated 1915 or 1916.",
+        sourceUrl: wilsonLibraryOfCongressPhoto,
+      },
+      {
+        date: "October 9, 1915",
+        title: "First Sitting President to Attend a World Series",
+        image: "/wilson-world-series-1915.jpg",
+        description:
+          "Wilson made baseball history at the Baker Bowl in Philadelphia, attending Game 2 of the World Series between the Phillies and Boston Red Sox. He threw the ceremonial first pitch and watched the game alongside his fiancée, Edith Bolling Galt. Boston won 2–1.",
+        sourceUrl: wilsonWorldSeriesPhoto,
+      },
+      {
+        date: "April 20, 1916",
+        title: "Another Presidential Opening Day",
+        image: "/wilson-opening-day-1916.jpg",
+        description:
+          "Wilson threw the ceremonial first pitch at Griffith Stadium before Washington defeated the New York Yankees 12–4, continuing the tradition begun by William Howard Taft.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cww.shtml",
+      },
+      {
+        date: "1916",
+        title: "Ty Cobb Supports Wilson's Reelection",
+        image: "/ty-cobb-1913.jpg",
+        description:
+          "Detroit Tigers star Ty Cobb publicly expressed his support for Wilson's reelection campaign, illustrating the connection between baseball personalities and presidential politics during the era.",
+        sourceUrl: wilsonHallOfFame,
+      },
+      {
+        date: "1920s",
+        title: "Watching Baseball From His Automobile",
+        image: "/wilson-automobile-1921.jpg",
+        description:
+          "As his health declined, Wilson continued attending Washington Senators games. By arrangement with Clark Griffith, his automobile entered Griffith Stadium through a special gate and parked near the home bullpen. Secret Service agents and players protected him from foul balls as he watched with the top down.",
+        sourceUrl: wilsonHallOfFame,
+      },
+      {
+        date: "1923",
+        title: "A Sterling-Silver Polo Grounds Season Pass",
+        description:
+          "After his presidency, Wilson received an unusual sterling-silver New York Giants season pass for the Polo Grounds. The circular pass resembled a baseball and bore Wilson's name. It was later donated to the National Baseball Hall of Fame and Museum.",
+        sourceUrl: wilsonHallOfFame,
+      },
+    ],
+    sources: [
+      {
+        title: "Library of Congress — Wilson Opening Day Photograph, 1916",
+        url: "https://www.loc.gov/item/97518727/",
+      },
+      {
+        title: "Baseball Hall of Fame — Wilson at the 1915 World Series",
+        url: wilsonWorldSeriesPhoto,
+      },
+      {
+        title: "National Baseball Hall of Fame — Wilson's Polo Grounds Pass",
+        url: wilsonHallOfFame,
+      },
+      {
+        title: "Baseball Almanac — Woodrow Wilson Game Attendance Log",
+        url: "https://www.baseball-almanac.com/prz_cww.shtml",
+      },
+      {
+        title: "MLB — 1915 World Series Game 2",
+        url: "https://www.mlb.com/news/remembering-phillys-1915-world-series-run/c-153671994",
+      },
+      {
+        title: "Baseball Hall of Fame — 1915 World Series Photograph",
+        url: wilsonWorldSeriesPhoto,
+      },
+      {
+        title: "Library of Congress — Wilson at a Baseball Opening Game",
+        url: wilsonLibraryOfCongressPhoto,
+      },
+      {
+        title: "Woodrow Wilson Presidential Library — Wilson and Baseball",
+        url: "https://www.woodrowwilson.org/blog-podcast/presidential-baseball",
+      },
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+    ],
+  },
+
+  "warren-g-harding": {
+    events: [
+      {
+        date: "April 13, 1921",
+        title: "Harding's First Presidential Opening Day",
+        image: "/harding-throwing.jpg",
+        description:
+          "Harding threw the ceremonial first pitch at Griffith Stadium in Washington. The Boston Red Sox defeated the Senators 6–3, but the occasion established Harding as an enthusiastic supporter of the presidential baseball tradition.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        date: "April 12, 1922",
+        title: "Opening Day Against the Yankees",
+        image: "/harding-opening-day-1922.jpg",
+        description:
+          "Harding returned to Griffith Stadium to throw the ceremonial first pitch as Washington defeated the New York Yankees 6–5. His regular attendance reflected his strong attachment to the Senators.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        date: "May 22, 1922",
+        title: "An Afternoon at Griffith Stadium",
+        image: "/harding-ballgame-may-1922.jpg",
+        description:
+          "Harding watched Washington play the Chicago White Sox, remaining for all nine innings. Future president Herbert Hoover and General John J. Pershing were among those attending with him.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        date: "April 24, 1923",
+        title: "A President Visits the New Yankee Stadium",
+        image: "/harding-yankee-stadium.jpg",
+        description:
+          "A Bain News Service photograph documents Harding's visit to Yankee Stadium on April 24, 1923.",
+        sourceUrl: "https://www.loc.gov/item/2014715992/",
+      },
+      {
+        date: "April 24, 1923",
+        title: "Harding Meets Babe Ruth at Yankee Stadium",
+        image: "/harding-babe-ruth-1923.jpg",
+        description:
+          "Harding arrived unannounced at the newly opened Yankee Stadium, where he met Babe Ruth and watched the Yankees defeat the Washington Senators 4–0. It was the first shutout in the ballpark's history, and Harding was the first sitting president to visit the stadium.",
+        sourceUrl: "https://sabr.org/journal/article/yankee-stadium-the-giants-greatest-mistake/",
+      },
+      {
+        date: "April 26, 1923",
+        title: "Harding's Final Presidential First Pitch",
+        image: "/harding-first-pitch-1923.jpg",
+        description:
+          "Harding threw the ceremonial first pitch at Washington's home opener against the Philadelphia Athletics. The Senators won 2–1. It was his final presidential Opening Day appearance.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        date: "August 1923",
+        title: "Baseball Mourns President Harding",
+        image: "/harding-funeral-1923.jpg",
+        description:
+          "Following Harding's death on August 2, 1923, Babe Ruth sent a condolence letter to First Lady Florence Harding. The original letter is preserved by Ohio History Connection.",
+        sourceUrl: "https://artsandculture.google.com/story/warren-g-harding-ohio-history-connection/BQWBjw37Z4KEJw",
+      },
+    ],
+    sources: [
+      {
+        title: "SABR — Warren G. Harding",
+        url: "https://sabr.org/bioproj/person/warren-harding",
+      },
+      {
+        title: "Baseball Almanac — Harding Game Attendance",
+        url: "https://www.baseball-almanac.com/prz_cwh.shtml",
+      },
+      {
+        title: "National Baseball Hall of Fame — Presidential Pastime",
+        url: "https://artsandculture.google.com/story/cgVBoiDknfnvJQ",
+      },
+    ],
+  },
+
+  "calvin-coolidge": {
+    events: [
+      {
+        date: "April 15, 1924",
+        title: "Opening Day at Griffith Stadium",
+        image: "/coolidge-opening-day.jpg",
+        description:
+          "President Calvin Coolidge threw the ceremonial first pitch as Walter Johnson shut out the Philadelphia Athletics 4–0. It was the beginning of Washington's historic championship season.",
+        sourceUrl: "https://www.baseball-almanac.com/prz_ccc.shtml",
+      },
+      {
+        date: "1924",
+        title: "Coolidge in the Baseball Grandstand",
+        description:
+          "A Harris & Ewing photograph captures President Calvin Coolidge in the stands holding a baseball.",
+        image: "/coolidge-grandstand-1924.jpg",
+        sourceUrl: "https://www.loc.gov/pictures/item/2016893374/",
+      },
+      {
+        date: "September 5, 1924",
+        title: "Walter Johnson Demonstrates His Curveball",
+        description:
+          "Washington Senators pitcher Walter Johnson demonstrates his curveball to President Calvin Coolidge, with player-manager Bucky Harris alongside them.",
+        image: "/coolidge-walter-johnson-1924.jpg",
+        sourceUrl: "https://www.loc.gov/item/92520581/",
+      },
+      {
+        date: "October 4, 1924",
+        title: "A President Opens the World Series",
+        image: "/coolidge-world-series-1924.jpg",
+        description:
+          "Coolidge threw the ceremonial first pitch before Game 1 between the Washington Senators and New York Giants at Griffith Stadium. The Giants won 4–3 in 12 innings.",
+        sourceUrl: "https://www.mlb.com/news/1924-world-series-recap",
+      },
+      {
+        date: "October 9, 1924",
+        title: "Grace Coolidge Cheers Washington",
+        image: "/coolidge-grace-world-series-1924.jpg",
+        description:
+          "President Coolidge and First Lady Grace Coolidge watched the Senators defeat the Giants 2–1 in Game 6. Grace was an enthusiastic baseball fan who kept score at games.",
+        sourceUrl: "https://www.whitehousehistory.org/the-coolidges-and-baseball",
+      },
+      {
+        date: "October 10, 1924",
+        title: "Washington Wins the 1924 World Series",
+        image: "/coolidge-championship-1924.jpg",
+        description:
+          "With Calvin and Grace Coolidge watching at Griffith Stadium, the Senators defeated the Giants 4–3 in 12 innings. Walter Johnson earned the victory in relief, delivering Washington its first World Series championship.",
+        sourceUrl: "https://baseballhall.org/discover/1924-washington-senators-world-series",
+      },
+      {
+        date: "1920s",
+        title: "Coolidge Welcomes the Washington Senators",
+        description:
+          "President Calvin Coolidge poses with members of the Washington Senators baseball team at the White House.",
+        image: "/coolidge-senators-white-house.jpg",
+        sourceUrl: "https://www.loc.gov/pictures/item/2016838491/",
+      },
+      {
+        date: "1927 and 1928",
+        title: "Continuing the First-Pitch Tradition",
+        image: "/coolidge-first-pitch-1927.jpg",
+        description:
+          "Coolidge returned to Washington baseball's Opening Day ceremonies in 1927 and 1928, continuing the presidential first-pitch tradition.",
+        sourceUrl: washingtonGuide,
+      },
+    ],
+    sources: [
+      {
+        title: "Library of Congress — Walter Johnson Curveball Photograph",
+        url: "https://www.loc.gov/item/92520581/",
+      },
+      {
+        title: "National Baseball Hall of Fame — 1924 World Series",
+        url: "https://baseballhall.org/discover/1924-washington-senators-world-series",
+      },
+      {
+        title: "White House Historical Association — The Coolidges and Baseball",
+        url: "https://www.whitehousehistory.org/the-coolidges-and-baseball",
+      },
+      {
+        title: "MLB — 1924 World Series Recap",
+        url: "https://www.mlb.com/news/1924-world-series-recap",
+      },
+      {
+        title: "Baseball Almanac — Calvin Coolidge Game Attendance",
+        url: "https://www.baseball-almanac.com/prz_ccc.shtml",
+      },
+    ],
+  },
+
+  "herbert-hoover": {
+    events: [
+      {
+        date: "1929–1932",
+        title: "Four Presidential Opening Days",
+        description:
+          "Hoover participated in Washington's ceremonial Opening Day first pitches in four consecutive seasons.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "1929",
+        title: "The Presidential Autograph Baseball",
+        description:
+          "Hoover became the fourth president to sign Ray Schalk's presidential baseball, now preserved in Cooperstown.",
+        sourceUrl: presidentsCollection,
+      },
+    ],
+    sources: [
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+      {
+        title: "Hall of Fame — Presidential Autograph Baseball",
+        url: presidentsCollection,
+      },
+    ],
+  },
+
+  "franklin-d-roosevelt": {
+    events: [
+      {
+        date: "1933–1941",
+        title: "Opening Day at the Ballpark",
+        description:
+          "Roosevelt repeatedly participated in Washington's Opening Day ceremonies, continuing the presidential first-pitch tradition.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "1937",
+        title: "A President at the All-Star Game",
+        description:
+          "Roosevelt became the first sitting president to attend a Major League Baseball All-Star Game.",
+        sourceUrl: hallOfFame,
+      },
+    ],
+    sources: [
+      {
+        title: "Hall of Fame — Presidential Pitches",
+        url: hallOfFame,
+      },
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+    ],
+  },
+
+  "harry-s-truman": {
+    events: [
+      {
+        date: "1946",
+        title: "Baseball Returns After World War II",
+        description:
+          "Truman participated in Washington's Opening Day ceremonial first pitch following the end of World War II.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "1950",
+        title: "First Pitches With Both Hands",
+        description:
+          "The ambidextrous Truman famously delivered ceremonial first pitches with his right and left hands.",
+        sourceUrl:
+          "https://baseballhall.org/discover-more/stories/baseball-history/opening-day",
+      },
+    ],
+    sources: [
+      {
+        title: "Hall of Fame — Opening Day History",
+        url: "https://baseballhall.org/discover-more/stories/baseball-history/opening-day",
+      },
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+    ],
+  },
+
+  "dwight-d-eisenhower": {
+    events: [
+      {
+        date: "1953–1960",
+        title: "The Presidential Opening Day Tradition",
+        description:
+          "Eisenhower threw ceremonial first pitches at multiple Washington season openers.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "1956",
+        title: "A World Series First Pitch",
+        description:
+          "Eisenhower became the first sitting president to throw a ceremonial first pitch at a World Series game.",
+        sourceUrl:
+          "https://www.mlb.com/cut4/president-bush-throws-first-pitch-at-yankee-stadium/c-155935460",
+      },
+    ],
+    sources: [
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+      {
+        title: "MLB — Presidential World Series First Pitches",
+        url: "https://www.mlb.com/cut4/president-bush-throws-first-pitch-at-yankee-stadium/c-155935460",
+      },
+    ],
+  },
+
+  "lyndon-b-johnson": {
+    events: [
+      {
+        date: "1964, 1965 and 1967",
+        title: "Washington Opening Day First Pitches",
+        description:
+          "Johnson participated in three presidential Opening Day first-pitch ceremonies.",
+        sourceUrl: washingtonGuide,
+      },
+    ],
+    sources: [
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+    ],
+  },
+
+  "richard-nixon": {
+    events: [
+      {
+        date: "1969",
+        title: "Opening Day in Washington",
+        description:
+          "Nixon threw the ceremonial first pitch for Washington's Opening Day.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "1973",
+        title: "Opening Day in Anaheim",
+        description:
+          "Nixon became the first sitting president to throw an Opening Day ceremonial first pitch outside Washington, D.C.",
+        sourceUrl:
+          "https://baseballhall.org/discover/Shortstops-Sox-and-jackets",
+      },
+    ],
+    sources: [
+      {
+        title: "Hall of Fame — Presidential Pitches",
+        url: "https://baseballhall.org/discover/Shortstops-Sox-and-jackets",
+      },
+      {
+        title: "Washington Baseball Media Guide",
+        url: washingtonGuide,
+      },
+    ],
+  },
+
+  "gerald-ford": {
+    events: [
+      {
+        date: "July 13, 1976",
+        title: "The Bicentennial All-Star Game",
+        description:
+          "Ford threw the ceremonial first pitch at the 1976 Major League Baseball All-Star Game during America's bicentennial year.",
+        sourceUrl: hallOfFame,
+      },
+    ],
+    sources: [
+      {
+        title: "Hall of Fame — Presidential Pitches",
+        url: hallOfFame,
+      },
+    ],
+  },
+
+  "jimmy-carter": {
+    events: [
+      {
+        date: "1979",
+        title: "World Series Game Seven",
+        description:
+          "Carter attended Game 7 of the World Series in Baltimore, where the Pittsburgh Pirates defeated the Orioles.",
+        sourceUrl:
+          "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
+      },
+    ],
+    sources: [
+      {
+        title: "Baltimore Orioles Media Guide",
+        url: "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
+      },
+      {
+        title: "Hall of Fame — Opening Day Traditions",
+        url: openingDay,
+      },
+    ],
+  },
+
+  "ronald-reagan": {
+    events: [
+      {
+        date: "1930s",
+        title: "Broadcasting Chicago Cubs Baseball",
+        description:
+          "Before his political career, Reagan recreated Chicago Cubs games for radio audiences.",
+        sourceUrl: mlbFirstPitches,
+      },
+      {
+        date: "1952",
+        title: "The Winning Team",
+        description:
+          "Reagan portrayed Hall of Fame pitcher Grover Cleveland Alexander in the motion picture The Winning Team.",
+        sourceUrl: mlbFirstPitches,
+      },
+      {
+        date: "September 30, 1988",
+        title: "Two First Pitches at Wrigley Field",
+        description:
+          "President Ronald Reagan threw two ceremonial first pitches at Wrigley Field before the Chicago Cubs played the Pittsburgh Pirates. The moment was captured by the Reagan White House Photographic Office.",
+        image: "/reagan-first-pitch-1988.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_throwing_out_the_first_pitch_at_a_baseball_game_between_the_Chicago_Cubs_and_Pittsburgh_Pirates.jpg",
+      },
+    ],
+    sources: [
+      {
+        title: "MLB — Reagan at Wrigley Field",
+        url: "https://www.mlb.com/video/reagan-throws-two-first-pitches-c37228051",
+      },
+      {
+        title: "MLB — Presidential First Pitches",
+        url: mlbFirstPitches,
+      },
+      {
+        title: "Reagan First Pitch — National Archives Photograph",
+        url: "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_throwing_out_the_first_pitch_at_a_baseball_game_between_the_Chicago_Cubs_and_Pittsburgh_Pirates.jpg",
+      },
+    ],
+  },
+
+  "george-h-w-bush": {
+    events: [
+      {
+        date: "1947",
+        title: "Baseball at Yale",
+        description:
+          "Bush played college baseball at Yale, including a game against Fordham in which future broadcaster Vin Scully played.",
+        sourceUrl:
+          "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+      },
+      {
+        date: "1948",
+        title: "George H. W. Bush Meets Babe Ruth at Yale",
+        description:
+          "George H. W. Bush, captain of the Yale baseball team, receives a manuscript of Babe Ruth's autobiography as Ruth donates it to Yale. The historic photograph captures the future president alongside one of baseball's greatest legends.",
+        image: "/bush41-babe-ruth-1948.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:George_Bush,_Captain_of_the_Yale_Baseball_Team,_Receives_Babe_Ruth%27s_Manuscript_of_His_Autobiography_which_He_Was_Donating_to_Yale_(3679513408).jpg",
+      },
+      {
+        date: "April 3, 1989",
+        title: "Opening Day in Baltimore",
+        description:
+          "Bush threw the ceremonial first pitch at Memorial Stadium before the Orioles played the Red Sox.",
+        sourceUrl:
+          "https://www.mlb.com/video/bush-throws-out-first-pitch-c37227645",
+      },
+      {
+        date: "April 6, 1992",
+        title: "Opening Oriole Park at Camden Yards",
+        description:
+          "Bush threw a ceremonial first pitch at the first regular-season game at Camden Yards.",
+        sourceUrl:
+          "https://www.mlb.com/brewers/video/president-bush-s-first-pitch-c33379335",
+      },
+    ],
+    sources: [
+      {
+        title: "MLB — Opening Day at Camden Yards",
+        url: "https://www.mlb.com/brewers/video/president-bush-s-first-pitch-c33379335",
+      },
+      {
+        title: "MLB — Bush at Yale",
+        url: "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+      },
+      {
+        title: "1948 Bush and Babe Ruth — Archival Photograph",
+        url: "https://commons.wikimedia.org/wiki/File:George_Bush,_Captain_of_the_Yale_Baseball_Team,_Receives_Babe_Ruth%27s_Manuscript_of_His_Autobiography_which_He_Was_Donating_to_Yale_(3679513408).jpg",
+      },
+    ],
+  },
+
+  "bill-clinton": {
+    events: [
+      {
+        date: "1993",
+        title: "Opening Day in Baltimore",
+        description:
+          "Clinton attended the Baltimore Orioles' home opener during his first year in office.",
+        sourceUrl:
+          "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
+      },
+      {
+        date: "September 6, 1995",
+        title: "Cal Ripken Jr.'s Record-Breaking Game",
+        description:
+          "Clinton attended the game in which Cal Ripken Jr. surpassed Lou Gehrig's record by playing his 2,131st consecutive game.",
+        sourceUrl:
+          "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
+      },
+    ],
+    sources: [
+      {
+        title: "Baltimore Orioles Media Guide",
+        url: "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
+      },
+    ],
+  },
+
+  "george-w-bush": {
+    events: [
+      {
+        date: "October 30, 2001",
+        title: "The World Series First Pitch After 9/11",
+        description:
+          "At Yankee Stadium, Bush delivered the ceremonial first pitch before Game 3 of the World Series, an enduring moment of national unity after the September 11 attacks.",
+        sourceUrl:
+          "https://www.mlb.com/cut4/president-bush-throws-first-pitch-at-yankee-stadium/c-155935460",
+      },
+      {
+        date: "March 30, 2008",
+        title: "Opening Nationals Park",
+        description:
+          "Bush threw the ceremonial first pitch at the first regular-season game at Nationals Park.",
+        sourceUrl:
+          "https://www.mlb.com/news/nationals-top-opening-day-moments",
+      },
+    ],
+    sources: [
+      {
+        title: "MLB — The 2001 World Series First Pitch",
+        url: "https://www.mlb.com/cut4/president-bush-throws-first-pitch-at-yankee-stadium/c-155935460",
+      },
+      {
+        title: "MLB — Nationals Park Opening Day",
+        url: "https://www.mlb.com/news/nationals-top-opening-day-moments",
+      },
+    ],
+  },
+
+  "barack-obama": {
+    events: [
+      {
+        date: "July 14, 2009",
+        title: "All-Star Game in St. Louis",
+        description:
+          "Obama threw the ceremonial first pitch at the MLB All-Star Game in St. Louis.",
+        sourceUrl:
+          "https://www.mlb.com/cut4/rank-presidential-first-pitches-since-john-f-kennedy-c164344940",
+      },
+      {
+        date: "2010",
+        title: "A Century of Presidential First Pitches",
+        description:
+          "Obama threw the Opening Day first pitch at Nationals Park, 100 years after Taft began the tradition.",
+        sourceUrl: openingDay,
+      },
+    ],
+    sources: [
+      {
+        title: "Hall of Fame — Opening Day Traditions",
+        url: openingDay,
+      },
+      {
+        title: "MLB — Presidential First Pitches",
+        url: "https://www.mlb.com/cut4/rank-presidential-first-pitches-since-john-f-kennedy-c164344940",
+      },
+    ],
+  },
+};

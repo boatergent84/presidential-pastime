@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Presidential Pastime | America’s Presidents. America’s Pastime.",
+  title: "Presidential Pastime | The American Presidency and the Game of Baseball",
   description: "Explore presidential baseball history, ceremonial first pitches, archival photographs, and the Heritage Collection.",
 };
 
