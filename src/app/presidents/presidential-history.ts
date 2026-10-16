@@ -617,32 +617,83 @@ export const presidentialHistory: Record<
   "dwight-d-eisenhower": {
     events: [
       {
-        date: "1953–1960",
-        title: "The Presidential Opening Day Tradition",
+        date: "Early 1910s",
+        title: "Eisenhower's Semiprofessional Baseball Days",
         description:
-          "Eisenhower threw ceremonial first pitches at multiple Washington season openers.",
-        sourceUrl: washingtonGuide,
+          "Before becoming president, Dwight Eisenhower played baseball as a young man in Kansas. He later acknowledged playing for money under an assumed name, a detail that raised questions about his amateur athletic eligibility at West Point.",
+        sourceUrl: "https://www.eisenhowerlibrary.gov/",
       },
       {
-        date: "1956",
-        title: "A World Series First Pitch",
+        date: "April 16, 1953",
+        title: "Eisenhower's First Presidential Opening Day",
         description:
-          "Eisenhower became the first sitting president to throw a ceremonial first pitch at a World Series game.",
-        sourceUrl:
-          "https://www.mlb.com/cut4/president-bush-throws-first-pitch-at-yankee-stadium/c-155935460",
+          "President Eisenhower continued the ceremonial first-pitch tradition at Griffith Stadium in Washington during his first spring in the White House.",
+        sourceUrl: "https://www.eisenhowerlibrary.gov/",
+      },
+      {
+        date: "1955",
+        title: "Brooklyn's Historic World Series Victory",
+        description:
+          "During Eisenhower's presidency, the Brooklyn Dodgers defeated the New York Yankees to win their first World Series championship. Jackie Robinson, Duke Snider, and Roy Campanella helped make the victory a landmark in baseball history.",
+        sourceUrl: "https://baseballhall.org/",
+      },
+      {
+        date: "October 3, 1956",
+        title: "Eisenhower Throws the World Series First Pitch",
+        description:
+          "At Ebbets Field in Brooklyn, President Eisenhower threw the ceremonial first pitch before Game 1 of the World Series between the Brooklyn Dodgers and New York Yankees. Seated near Dodgers owner Walter O'Malley, Eisenhower watched Brooklyn defeat New York 6–3. It was the first presidential World Series first pitch since Franklin D. Roosevelt's appearance in 1936.",
+        sourceUrl: "https://sabr.org/gamesproj/game/october-3-1956-sal-maglie-fans-10-bests-whitey-ford-in-world-series-opener/",
+      },
+      {
+        date: "1957",
+        title: "The Milwaukee Braves Win the World Series",
+        description:
+          "Hank Aaron led the Milwaukee Braves to the 1957 World Series championship over the Yankees. The victory highlighted baseball's growing popularity beyond its traditional northeastern strongholds.",
+        sourceUrl: "https://baseballhall.org/",
+      },
+      {
+        date: "May 14, 1957",
+        title: "Eisenhower Meets Jackie Robinson",
+        image: "/eisenhower-jackie-robinson-1957.jpg",
+        description:
+          "President Eisenhower met baseball pioneer Jackie Robinson and entertainer Joe E. Brown. The Eisenhower Presidential Library preserves a photograph documenting the meeting, connecting the White House with one of baseball's most important figures.",
+        sourceUrl: "https://www.eisenhowerlibrary.gov/research/photographs",
+      },
+      {
+        date: "1957",
+        title: "Eisenhower Throws an Opening Day First Pitch",
+        description:
+          "President Eisenhower throws the ceremonial first pitch at Griffith Stadium in Washington. The moment is preserved in an archival photograph from the Library of Congress.",
+        image: "/eisenhower-opening-day-1957.jpg",
+        sourceUrl: "https://www.loc.gov/pictures/item/2023630487/",
+      },
+      {
+        date: "1958",
+        title: "Major League Baseball Reaches the West Coast",
+        description:
+          "The Brooklyn Dodgers moved to Los Angeles and the New York Giants moved to San Francisco, fundamentally changing Major League Baseball's geography during Eisenhower's presidency.",
+        sourceUrl: "https://baseballhall.org/",
+      },
+      {
+        date: "1960",
+        title: "Eisenhower's Final Baseball Season as President",
+        description:
+          "In Eisenhower's final year in office, Bill Mazeroski's dramatic Game 7 home run gave the Pittsburgh Pirates a World Series victory over the New York Yankees. It closed an extraordinary decade of baseball history.",
+        sourceUrl: "https://baseballhall.org/",
       },
     ],
     sources: [
       {
-        title: "Washington Baseball Media Guide",
-        url: washingtonGuide,
+        title: "Dwight D. Eisenhower Presidential Library",
+        url: "https://www.eisenhowerlibrary.gov/",
       },
       {
-        title: "MLB — Presidential World Series First Pitches",
-        url: "https://www.mlb.com/cut4/president-bush-throws-first-pitch-at-yankee-stadium/c-155935460",
+        title: "National Baseball Hall of Fame",
+        url: "https://baseballhall.org/",
       },
     ],
   },
+
 
   "lyndon-b-johnson": {
     events: [
