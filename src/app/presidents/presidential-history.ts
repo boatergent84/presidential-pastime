@@ -478,57 +478,138 @@ export const presidentialHistory: Record<
     events: [
       {
         date: "1933–1941",
-        title: "Opening Day at the Ballpark",
+        title: "Eight Presidential Opening Day First Pitches",
         description:
-          "Roosevelt repeatedly participated in Washington's Opening Day ceremonies, continuing the presidential first-pitch tradition.",
-        sourceUrl: washingtonGuide,
+          "Roosevelt continued the ceremonial first-pitch tradition at Washington Senators games, throwing eight Opening Day pitches during his presidency. His appearances helped maintain a visible connection between the White House and America's national pastime.",
+        sourceUrl: "https://baseballhall.org/discover/short-stops/red-light-letter",
       },
       {
-        date: "1937",
-        title: "A President at the All-Star Game",
+        date: "January 23, 1937",
+        title: "Roosevelt Describes His Ideal Baseball Game",
         description:
-          "Roosevelt became the first sitting president to attend a Major League Baseball All-Star Game.",
-        sourceUrl: hallOfFame,
+          "In a letter to the Baseball Writers' Association of America, Roosevelt described his preference for high-scoring games and exciting action over low-scoring pitchers' duels. The letter provides an unusually personal glimpse into his enthusiasm for baseball.",
+        sourceUrl: "https://www.presidency.ucsb.edu/documents/letter-baseball-sports-and-sportsmanship",
+      },
+      {
+        date: "July 7, 1937",
+        title: "The First President at an All-Star Game",
+        image: "/fdr-all-star-1937.jpg",
+        description:
+          "Roosevelt became the first sitting president to attend Major League Baseball's All-Star Game. At Griffith Stadium in Washington, the American League defeated the National League 8–3. Lou Gehrig hit a two-run home run, while a line drive fractured pitcher Dizzy Dean's toe.",
+        sourceUrl: "https://content.mlb.com/documents/9/2/6/275087926/2018_media_guide.pdf",
+      },
+      {
+        date: "April 19, 1937",
+        title: "Opening Day with Connie Mack",
+        image: "/fdr-opening-day-1937.jpg",
+        description:
+          "President Roosevelt opened Washington's 1937 baseball season against the Philadelphia Athletics. He was photographed with Connie Mack, Clark Griffith, Bucky Harris, and presidential secretary Marvin McIntyre at Griffith Stadium.",
+        sourceUrl: "https://www.loc.gov/item/2016883754/",
+      },
+      {
+        date: "April 16, 1940",
+        title: "Opening Day at Griffith Stadium",
+        description:
+          "Roosevelt threw the ceremonial first pitch before the Washington Senators faced the Boston Red Sox. The appearance became one of the best-documented images of his connection to professional baseball.",
+        sourceUrl: "https://baseballhall.org/discover/inside-pitch/roosevelt-sends-green-light-letter",
+      },
+      {
+        date: "January 15, 1942",
+        title: "The Green Light Letter Saves Wartime Baseball",
+        image: "/fdr-green-light-letter-1942.jpg",
+        description:
+          "Responding to Commissioner Kenesaw Mountain Landis after the attack on Pearl Harbor, Roosevelt expressed his personal support for continuing professional baseball during World War II. He believed Americans needed affordable recreation and relief from the pressures of wartime work. His celebrated Green Light Letter helped encourage baseball to continue throughout the war.",
+        sourceUrl: "https://www.archives.gov/publications/prologue/2002/spring/greenlight.html",
       },
     ],
     sources: [
       {
-        title: "Hall of Fame — Presidential Pitches",
-        url: hallOfFame,
+        title: "National Baseball Hall of Fame — Green Light Letter",
+        url: "https://baseballhall.org/discover/inside-pitch/roosevelt-sends-green-light-letter",
       },
       {
-        title: "Washington Baseball Media Guide",
-        url: washingtonGuide,
+        title: "National Archives — When FDR Said Play Ball",
+        url: "https://www.archives.gov/publications/prologue/2002/spring/greenlight.html",
+      },
+      {
+        title: "American Presidency Project — Roosevelt's 1937 Baseball Letter",
+        url: "https://www.presidency.ucsb.edu/documents/letter-baseball-sports-and-sportsmanship",
       },
     ],
   },
 
+
   "harry-s-truman": {
     events: [
       {
-        date: "1946",
-        title: "Baseball Returns After World War II",
+        date: "1945",
+        title: "Baseball Welcomes the Return of Peace",
         description:
-          "Truman participated in Washington's Opening Day ceremonial first pitch following the end of World War II.",
-        sourceUrl: washingtonGuide,
+          "Following the end of World War II, President Truman's baseball appearances became symbols of the country's return to peacetime. He attended a Washington baseball game shortly after Japan's surrender, renewing the presidential connection to the national pastime.",
+        sourceUrl: "https://www.trumanlibraryinstitute.org/",
       },
       {
-        date: "1950",
-        title: "First Pitches With Both Hands",
+        date: "April 17, 1946",
+        title: "Truman's First Presidential Opening Day",
         description:
-          "The ambidextrous Truman famously delivered ceremonial first pitches with his right and left hands.",
-        sourceUrl:
-          "https://baseballhall.org/discover-more/stories/baseball-history/opening-day",
+          "At Griffith Stadium, Truman continued the presidential first-pitch tradition and became the first president to deliver an Opening Day pitch left-handed. The Washington Senators opened their season against the Boston Red Sox.",
+        sourceUrl: "https://artsandculture.google.com/story/presidential-pastime-national-baseball-hall-of-fame-and-museum/cgVBoiDknfnvJQ",
+      },
+      {
+        date: "April 15, 1947",
+        title: "Jackie Robinson Breaks Baseball's Color Barrier",
+        description:
+          "During Truman's presidency, Jackie Robinson made his historic Brooklyn Dodgers debut against the Boston Braves at Ebbets Field, breaking the modern major leagues' longstanding color barrier. His arrival marked a defining turning point in baseball and American civil rights.",
+        sourceUrl: "https://baseballhall.org/",
+      },
+      {
+        date: "July 5, 1947",
+        title: "Larry Doby Integrates the American League",
+        description:
+          "Larry Doby made his debut with the Cleveland Indians, becoming the first Black player in the American League's modern era. Alongside Jackie Robinson, Doby helped begin baseball's transformation into an integrated major league sport.",
+        sourceUrl: "https://baseballhall.org/",
+      },
+      {
+        date: "April 18, 1950",
+        title: "The President Who Pitched With Both Hands",
+        image: "/truman-first-pitch-1950.jpg",
+        description:
+          "Opening the Washington Senators' season against the Philadelphia Athletics, Truman famously threw ceremonial baseballs with both his left and right hands. Bess Truman, Margaret Truman, Vice President Alben Barkley, Connie Mack, and Clark Griffith were among those present.",
+        sourceUrl: "https://www.trumanlibrary.gov/photograph-records/2015-2278",
+      },
+      {
+        date: "April 20, 1951",
+        title: "Opening Day With Casey Stengel",
+        image: "/truman-opening-day-1951.jpg",
+        description:
+          "Truman threw the ceremonial first pitch at Griffith Stadium before the Washington Senators played the New York Yankees. The president was photographed alongside Bess Truman, Senators owner Clark Griffith, and Yankees manager Casey Stengel.",
+        sourceUrl: "https://www.trumanlibrary.gov/photograph-records/65-3598",
+      },
+      {
+        date: "April 15, 1952",
+        title: "Truman's Final Presidential Opening Day",
+        image: "/truman-opening-day-1952.jpg",
+        description:
+          "In his final full year as president, Truman threw the ceremonial first pitch at Griffith Stadium before the Washington Senators faced the Boston Red Sox. Vice President Alben Barkley and managers Bucky Harris and Lou Boudreau were present.",
+        sourceUrl: "https://www.trumanlibrary.gov/photograph-records/58-125",
       },
     ],
     sources: [
       {
-        title: "Hall of Fame — Opening Day History",
-        url: "https://baseballhall.org/discover-more/stories/baseball-history/opening-day",
+        title: "Harry S. Truman Presidential Library — 1950 First Pitch",
+        url: "https://www.trumanlibrary.gov/photograph-records/2015-2278",
       },
       {
-        title: "Washington Baseball Media Guide",
-        url: washingtonGuide,
+        title: "Harry S. Truman Presidential Library — 1951 Opening Day",
+        url: "https://www.trumanlibrary.gov/photograph-records/65-3598",
+      },
+      {
+        title: "Harry S. Truman Presidential Library — 1952 Opening Day",
+        url: "https://www.trumanlibrary.gov/photograph-records/58-125",
+      },
+      {
+        title: "National Baseball Hall of Fame — Opening Day",
+        url: "https://baseballhall.org/discover-more/stories/baseball-history/opening-day",
       },
     ],
   },
