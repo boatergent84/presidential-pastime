@@ -417,18 +417,49 @@ export const presidentialHistory: Record<
   "herbert-hoover": {
     events: [
       {
-        date: "1929–1932",
-        title: "Four Presidential Opening Days",
+        date: "April 17, 1929",
+        title: "Hoover's First Presidential Opening Day",
+        image: "/hoover-first-pitch-1929.jpg",
         description:
-          "Hoover participated in Washington's ceremonial Opening Day first pitches in four consecutive seasons.",
+          "President Herbert Hoover continued the presidential first-pitch tradition at Griffith Stadium in Washington, D.C. The Washington Senators faced Connie Mack's Philadelphia Athletics, whose powerful lineup included future Hall of Famers. Philadelphia defeated Washington 13–4.",
         sourceUrl: washingtonGuide,
       },
       {
         date: "1929",
         title: "The Presidential Autograph Baseball",
         description:
-          "Hoover became the fourth president to sign Ray Schalk's presidential baseball, now preserved in Cooperstown.",
+          "Hoover became the fourth president to sign a special baseball associated with former major league catcher Ray Schalk. The historic presidential autograph baseball is preserved in the National Baseball Hall of Fame in Cooperstown.",
         sourceUrl: presidentsCollection,
+      },
+      {
+        date: "April 14, 1930",
+        title: "Opening Day During the Great Depression",
+        image: "/hoover-baseball-1930.jpg",
+        description:
+          "Hoover returned to Griffith Stadium for Washington's home opener against the Boston Red Sox. As the nation entered the Great Depression, the presidential ceremonial first pitch remained an annual baseball tradition.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "April 14, 1931",
+        title: "A Third Consecutive Opening Day",
+        image: "/hoover-first-pitch-1931.jpg",
+        description:
+          "President Hoover continued the White House's connection to the Washington Senators, appearing for another Opening Day ceremony against the Philadelphia Athletics, one of the American League's dominant clubs.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "April 11, 1932",
+        title: "Hoover's Final Presidential Opening Day",
+        description:
+          "Hoover made his fourth and final presidential Opening Day appearance at Griffith Stadium. The Senators defeated the Boston Red Sox 1–0, providing a memorable conclusion to Hoover's participation in the annual ceremony.",
+        sourceUrl: washingtonGuide,
+      },
+      {
+        date: "November 11, 1933",
+        title: "Hoover Meets Babe Ruth",
+        image: "/hoover-babe-ruth-1933.jpg",
+        description:
+          "Former President Herbert Hoover met baseball legend Babe Ruth during a Stanford–USC football game in California. The photograph preserves a meeting between a former president and one of the most celebrated figures in baseball history.",
       },
     ],
     sources: [
