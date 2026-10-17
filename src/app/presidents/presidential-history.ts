@@ -698,20 +698,73 @@ export const presidentialHistory: Record<
   "lyndon-b-johnson": {
     events: [
       {
-        date: "1964, 1965 and 1967",
-        title: "Washington Opening Day First Pitches",
+        date: "April 13, 1964",
+        title: "Johnson's First Presidential Opening Day",
+        image: "/lbj-opening-day-1964.jpg",
         description:
-          "Johnson participated in three presidential Opening Day first-pitch ceremonies.",
-        sourceUrl: washingtonGuide,
+          "President Lyndon B. Johnson threw the ceremonial first pitch at D.C. Stadium before the Washington Senators faced the Los Angeles Angels. The Angels defeated Washington 4–0.",
+        sourceUrl: "https://www.baseball-reference.com/bullpen/Ceremonial_first_pitch",
+      },
+      {
+        date: "April 9, 1965",
+        title: "The Astrodome Opens in Houston",
+        description:
+          "President Johnson and Lady Bird Johnson attended an exhibition between the Houston Astros and New York Yankees at the newly opened Astrodome. Mickey Mantle hit the stadium's first home run.",
+        sourceUrl: "https://www.milb.com/news/gcs-185535722",
+      },
+      {
+        date: "April 12, 1965",
+        title: "Opening Day With Gil Hodges",
+        image: "/lbj-gil-hodges-1965.jpg",
+        description:
+          "Johnson threw the ceremonial first pitch at D.C. Stadium and greeted Washington Senators manager Gil Hodges. The Boston Red Sox defeated the Senators 7–2.",
+        sourceUrl: "https://sabr.org/gamesproj/game/april-12-1965-red-sox-center-fielder-lenny-green-homers-twice-on-opening-day/",
+      },
+      {
+        date: "April 6, 1967",
+        title: "Hank Aaron Visits the White House",
+        description:
+          "President Johnson welcomed baseball stars including Hank Aaron, Brooks Robinson, Joe Torre, and Harmon Killebrew to the Oval Office during a presentation of annual major league baseball passes.",
+        sourceUrl: "https://sites.google.com/view/spotlightseries-playball/home",
+      },
+      {
+        date: "April 10, 1967",
+        title: "Johnson's Final Presidential Opening Day Pitch",
+        description:
+          "Johnson threw the ceremonial first pitch as the Washington Senators opened their season against the New York Yankees. New York won 8–0.",
+        sourceUrl: "https://www.baseball-reference.com/bullpen/Ceremonial_first_pitch",
+      },
+      {
+        date: "April 10, 1968",
+        title: "Opening Day Amid National Mourning",
+        description:
+          "Following the assassination of Martin Luther King Jr., President Johnson did not attend Washington's Opening Day game. Vice President Hubert Humphrey represented the administration instead.",
+        sourceUrl: "https://washingtonbaseballhistory.com/2023/03/30/presidential-openers-and-d-c/",
+      },
+      {
+        date: "1968",
+        title: "The Detroit Tigers Win the World Series",
+        description:
+          "During Johnson's final full year as president, the Detroit Tigers defeated the St. Louis Cardinals in seven games, led by Mickey Lolich and Denny McLain. The championship became one of the defining baseball moments of the decade.",
+        sourceUrl: "https://baseballhall.org/",
       },
     ],
     sources: [
       {
-        title: "Washington Baseball Media Guide",
-        url: washingtonGuide,
+        title: "LBJ Presidential Library Baseball Collection",
+        url: "https://sites.google.com/view/spotlightseries-playball/home",
+      },
+      {
+        title: "Washington Nationals Historical Media Guide",
+        url: "https://content.mlb.com/documents/9/2/6/275087926/2018_media_guide.pdf",
+      },
+      {
+        title: "Society for American Baseball Research",
+        url: "https://sabr.org/",
       },
     ],
   },
+
 
   "richard-nixon": {
     events: [
