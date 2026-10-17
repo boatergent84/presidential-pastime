@@ -769,32 +769,93 @@ export const presidentialHistory: Record<
   "richard-nixon": {
     events: [
       {
-        date: "1969",
-        title: "Opening Day in Washington",
+        date: "April 7, 1969",
+        title: "Nixon Throws His First Presidential Opening Day Pitch",
+        image: "/nixon-opening-day-1969.jpg",
         description:
-          "Nixon threw the ceremonial first pitch for Washington's Opening Day.",
-        sourceUrl: washingtonGuide,
+          "President Richard Nixon threw the ceremonial first pitch at RFK Stadium as the Washington Senators opened their season against the New York Yankees. Senators manager Ted Williams and Baseball Commissioner Bowie Kuhn joined the president for the ceremony.",
+        sourceUrl: "https://www.nixonlibrary.gov/research/almanac/april-7-1969",
       },
       {
-        date: "1973",
-        title: "Opening Day in Anaheim",
+        date: "1969",
+        title: "Baseball Enters the Divisional Era",
         description:
-          "Nixon became the first sitting president to throw an Opening Day ceremonial first pitch outside Washington, D.C.",
-        sourceUrl:
-          "https://baseballhall.org/discover/Shortstops-Sox-and-jackets",
+          "During Nixon's first year in office, Major League Baseball expanded to 24 teams and introduced divisional play and League Championship Series. The changes transformed the pennant race and created a new postseason structure.",
+        sourceUrl: "https://baseballhall.org/",
+      },
+      {
+        date: "July 15, 1969",
+        title: "Nixon Meets Detroit Tigers Stars at the White House",
+        description:
+          "President Nixon met with Detroit Tigers players Al Kaline, Tom Tresh, and Mickey Stanley, accompanied by Congressman Gerald Ford, in the Oval Office. The meeting was documented by the White House Photographic Office.",
+        image: "/nixon-al-kaline-1969.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Nixon_Contact_Sheet_WHPO-1552.jpg",
+      },
+      {
+        date: "July 22, 1969",
+        title: "Nixon Welcomes Baseball Legends to the White House",
+        description:
+          "Nixon hosted a White House reception celebrating professional baseball's centennial. More than 400 guests attended, including Joe DiMaggio, Mickey Mantle, Roberto Clemente, and Pete Rose. The gathering brought generations of baseball stars together at the Executive Mansion.",
+        sourceUrl: "https://www.nixonfoundation.org/2019/07/podcast-nicholas-sarantakes-nixon-baseball/",
+      },
+      {
+        date: "1970",
+        title: "Nixon Visits Anaheim Stadium",
+        description:
+          "President Nixon attended a game between the Washington Senators and California Angels at Anaheim Stadium. The contest lasted 11 innings, with Washington defeating California 11–10.",
+        sourceUrl: "https://sabr.org/gamesproj/game/april-6-1973-nolan-ryan-whiffs-12-on-opening-day-vietnam-war-pow-throws-out-first-ball/",
+      },
+      {
+        date: "July 14, 1970",
+        title: "Nixon Throws the First Pitch at the All-Star Game",
+        description:
+          "President Nixon attended the 1970 Major League Baseball All-Star Game at Cincinnati's Riverfront Stadium and threw the ceremonial first pitch. The National League defeated the American League 5–4 in 12 innings.",
+        image: "/nixon-all-star-1970.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:President_Richard_Nixon_Throwing_Out_the_First_Ball_at_the_1970_All_Star_Baseball_Game_-_DPLA_-_7847749c959d29290002f45718831b4e.jpg",
+      },
+      {
+        date: "1971",
+        title: "Washington Loses the Senators",
+        description:
+          "Following the 1971 season, the Washington Senators relocated to Arlington, Texas, becoming the Texas Rangers. The departure ended major-league baseball in the nation's capital until 2005 and changed the presidential Opening Day tradition.",
+        sourceUrl: "https://baseballhall.org/discover-more/stories/baseball-history/opening-day",
+      },
+      {
+        date: "April 6, 1973",
+        title: "Nixon Makes Opening Day History in Anaheim",
+        image: "/nixon-anaheim-1973.jpg",
+        description:
+          "Nixon became the first sitting president to participate in a Major League Opening Day first-pitch ceremony outside Washington, D.C. At Anaheim Stadium, he joined former Vietnam War prisoner of war José Luna in the pregame ceremony.",
+        sourceUrl: "https://sabr.org/gamesproj/game/april-6-1973-nolan-ryan-whiffs-12-on-opening-day-vietnam-war-pow-throws-out-first-ball/",
+      },
+      {
+        date: "April 8, 1974",
+        title: "Nixon Calls Hank Aaron After Home Run No. 715",
+        description:
+          "After Hank Aaron surpassed Babe Ruth's career home-run record against the Los Angeles Dodgers, President Nixon telephoned Aaron and invited him to the White House. Aaron later recalled the extraordinary interruption during the historic game.",
+        sourceUrl: "https://baseballhall.org/discover/fifty-years-ago-hank-aaron-became-king",
       },
     ],
     sources: [
       {
-        title: "Hall of Fame — Presidential Pitches",
+        title: "Richard Nixon Presidential Library — April 7, 1969",
+        url: "https://www.nixonlibrary.gov/research/almanac/april-7-1969",
+      },
+      {
+        title: "National Baseball Hall of Fame — Presidential First Pitches",
         url: "https://baseballhall.org/discover/Shortstops-Sox-and-jackets",
       },
       {
-        title: "Washington Baseball Media Guide",
-        url: washingtonGuide,
+        title: "SABR — Nixon's 1973 Anaheim Opening Day",
+        url: "https://sabr.org/gamesproj/game/april-6-1973-nolan-ryan-whiffs-12-on-opening-day-vietnam-war-pow-throws-out-first-ball/",
+      },
+      {
+        title: "National Baseball Hall of Fame — Hank Aaron's 715th",
+        url: "https://baseballhall.org/discover/fifty-years-ago-hank-aaron-became-king",
       },
     ],
   },
+
 
   "gerald-ford": {
     events: [
