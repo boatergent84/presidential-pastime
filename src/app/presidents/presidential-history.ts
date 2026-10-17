@@ -1009,45 +1009,98 @@ export const presidentialHistory: Record<
   "ronald-reagan": {
     events: [
       {
-        date: "1930s",
+        date: "1933–1937",
         title: "Broadcasting Chicago Cubs Baseball",
         description:
-          "Before his political career, Reagan recreated Chicago Cubs games for radio audiences.",
-        sourceUrl: mlbFirstPitches,
+          "As a sports announcer for WHO Radio in Des Moines, Iowa, Ronald Reagan recreated Chicago Cubs games for listeners using play-by-play reports transmitted by telegraph. His vivid descriptions helped develop the storytelling skills that later became a hallmark of his public career.",
+        sourceUrl:
+          "https://www.reaganlibrary.gov/virtual-exhibits/reagan-and-baseball",
+      },
+      {
+        date: "June 7, 1934",
+        title: "The Famous Radio Broadcast That Went Silent",
+        description:
+          "While recreating a Cubs–Cardinals game, Reagan lost his telegraph feed during a ninth-inning at-bat involving Billy Jurges and Dizzy Dean. To keep listeners entertained, he improvised nearly twelve minutes of foul balls until the transmission returned. The story became one of his favorite baseball anecdotes.",
+        sourceUrl:
+          "https://www.reaganlibrary.gov/virtual-exhibits/reagan-and-baseball",
       },
       {
         date: "1952",
-        title: "The Winning Team",
+        title: "Playing Grover Cleveland Alexander in The Winning Team",
         description:
-          "Reagan portrayed Hall of Fame pitcher Grover Cleveland Alexander in the motion picture The Winning Team.",
-        sourceUrl: mlbFirstPitches,
+          "Reagan starred as Hall of Fame pitcher Grover Cleveland Alexander in the Warner Bros. baseball film The Winning Team, opposite Doris Day. The role connected his acting career with one of the most celebrated pitchers of baseball's early twentieth century.",
+        sourceUrl:
+          "https://www.reaganlibrary.gov/virtual-exhibits/reagan-and-baseball",
+      },
+      {
+        date: "April 2, 1984",
+        title: "Opening Day with the Baltimore Orioles",
+        image: "/reagan-opening-day-1984.jpg",
+        description:
+          "President Reagan threw the ceremonial first pitch to catcher Rick Dempsey at Baltimore's Memorial Stadium before the Orioles faced the Chicago White Sox. He then spent part of the game in the Orioles dugout alongside baseball officials.",
+        sourceUrl:
+          "https://www.reaganfoundation.org/ronald-reagan/white-house-diaries/diary-entry-04021984",
+      },
+      {
+        date: "April 7, 1986",
+        title: "Another Presidential First Pitch in Baltimore",
+        image: "/reagan-opening-day-1986.jpg",
+        description:
+          "Reagan returned to Memorial Stadium for the Orioles' Opening Day game against Cleveland. His first ceremonial throw went astray, prompting another attempt. The visit was documented in his White House diary and by official presidential photographers.",
+        sourceUrl:
+          "https://www.reaganfoundation.org/ronald-reagan/white-house-diaries/diary-entry-04071986",
+      },
+      {
+        date: "1986",
+        title: "Meeting Cal Ripken Jr. in the Orioles Dugout",
+        image: "/reagan-cal-ripken-1986.jpg",
+        description:
+          "During his Baltimore baseball appearances, Reagan was photographed speaking with Orioles star Cal Ripken Jr. The Ronald Reagan Presidential Library preserves the encounter in its White House sports photography collection.",
+        sourceUrl:
+          "https://www.reaganlibrary.gov/archives/photo/sports-and-athletes",
       },
       {
         date: "September 30, 1988",
         title: "Two First Pitches at Wrigley Field",
         description:
-          "President Ronald Reagan threw two ceremonial first pitches at Wrigley Field before the Chicago Cubs played the Pittsburgh Pirates. The moment was captured by the Reagan White House Photographic Office.",
+          "Reagan returned to Chicago's Wrigley Field and threw two ceremonial first pitches before the Cubs played the Pittsburgh Pirates. The appearance brought him back to the ballpark associated with his early broadcasting career.",
         image: "/reagan-first-pitch-1988.jpg",
         sourceUrl:
           "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_throwing_out_the_first_pitch_at_a_baseball_game_between_the_Chicago_Cubs_and_Pittsburgh_Pirates.jpg",
       },
+      {
+        date: "September 30, 1988",
+        title: "Back in the Broadcast Booth with Harry Caray",
+        image: "/reagan-harry-caray-1988.jpg",
+        description:
+          "During the Cubs–Pirates game at Wrigley Field, Reagan joined legendary broadcaster Harry Caray and returned to calling baseball on the air. The appearance brought his baseball story full circle, from Iowa radio announcer to president of the United States.",
+        sourceUrl:
+          "https://www.reaganlibrary.gov/virtual-exhibits/reagan-and-baseball",
+      },
     ],
     sources: [
       {
-        title: "MLB — Reagan at Wrigley Field",
-        url: "https://www.mlb.com/video/reagan-throws-two-first-pitches-c37228051",
+        title: "Ronald Reagan Presidential Library — Reagan and Baseball",
+        url: "https://www.reaganlibrary.gov/virtual-exhibits/reagan-and-baseball",
       },
       {
-        title: "MLB — Presidential First Pitches",
-        url: mlbFirstPitches,
+        title: "Ronald Reagan Presidential Library — Sports Photographs",
+        url: "https://www.reaganlibrary.gov/archives/photo/sports-and-athletes",
       },
       {
-        title: "Reagan First Pitch — National Archives Photograph",
+        title: "Reagan White House Diary — April 2, 1984",
+        url: "https://www.reaganfoundation.org/ronald-reagan/white-house-diaries/diary-entry-04021984",
+      },
+      {
+        title: "Reagan White House Diary — April 7, 1986",
+        url: "https://www.reaganfoundation.org/ronald-reagan/white-house-diaries/diary-entry-04071986",
+      },
+      {
+        title: "National Archives — Reagan at Wrigley Field",
         url: "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_throwing_out_the_first_pitch_at_a_baseball_game_between_the_Chicago_Cubs_and_Pittsburgh_Pirates.jpg",
       },
     ],
   },
-
   "george-h-w-bush": {
     events: [
       {
