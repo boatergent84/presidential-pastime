@@ -944,26 +944,68 @@ export const presidentialHistory: Record<
   "jimmy-carter": {
     events: [
       {
-        date: "1979",
-        title: "World Series Game Seven",
+        date: "April 8, 1974",
+        title: "Witnessing Hank Aaron's 715th Home Run",
         description:
-          "Carter attended Game 7 of the World Series in Baltimore, where the Pittsburgh Pirates defeated the Orioles.",
+          "While serving as governor of Georgia, Jimmy Carter attended the Atlanta Braves game in which Hank Aaron hit his 715th career home run, surpassing Babe Ruth's longstanding major-league record. The historic moment connected Carter with one of baseball's most celebrated achievements.",
         sourceUrl:
-          "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
+          "https://www.whitehousehistory.org/jimmy-carter-and-sports",
+      },
+      {
+        date: "August 15, 1978",
+        title: "Hank Aaron Visits the Oval Office",
+        image: "/carter-hank-aaron-1978.jpg",
+        description:
+          "President Carter welcomed baseball legend Hank Aaron to the Oval Office. Their meeting reflected a friendship that began during Carter's years as Georgia governor and Aaron's record-setting career with the Atlanta Braves.",
+        sourceUrl:
+          "https://www.whitehousehistory.org/photos/jimmy-carter-chats-with-home-run-king-hank-aaron-at-the-white-house",
+      },
+      {
+        date: "October 17, 1979",
+        title: "A Presidential First Pitch at World Series Game Seven",
+        image: "/carter-world-series-1979.jpg",
+        description:
+          "President Carter attended the decisive seventh game of the 1979 World Series at Memorial Stadium in Baltimore and threw the ceremonial first pitch to Orioles catcher Rick Dempsey. Willie Stargell led the Pittsburgh Pirates to a 4–1 victory over Baltimore, completing a comeback from a three-games-to-one deficit.",
+        sourceUrl:
+          "https://sabr.org/gamesproj/game/october-17-1979-pops-stargell-named-mvp-as-pirates-complete-world-series-comeback/",
+      },
+      {
+        date: "October 17, 1979",
+        title: "Celebrating with Willie Stargell and the Pirates",
+        description:
+          "After Pittsburgh's World Series victory, Carter visited the Pirates' clubhouse and celebrated with star Willie Stargell. The moment was captured by White House photographers and preserved in the National Archives.",
+        sourceUrl:
+          "https://docsteach.org/document/jimmy-carter-pirates-locker-room/",
+      },
+      {
+        date: "February 22, 1980",
+        title: "The World Champion Pirates Visit the White House",
+        image: "/carter-pirates-white-house-1980.jpg",
+        description:
+          "President Carter welcomed the Pittsburgh Pirates and Pittsburgh Steelers to the White House to celebrate their championships. During the East Room reception, Carter held a Pirates cap and a Steelers Terrible Towel, honoring Pittsburgh's remarkable year in professional sports.",
+        sourceUrl:
+          "https://www.whitehousehistory.org/photos/president-carter-congratulates-pittsburgh-sports-champions",
       },
     ],
     sources: [
       {
-        title: "Baltimore Orioles Media Guide",
-        url: "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
+        title: "White House Historical Association — Jimmy Carter and Sports",
+        url: "https://www.whitehousehistory.org/jimmy-carter-and-sports",
       },
       {
-        title: "Hall of Fame — Opening Day Traditions",
-        url: openingDay,
+        title: "National Archives — Carter in the Pirates Clubhouse",
+        url: "https://docsteach.org/document/jimmy-carter-pirates-locker-room/",
+      },
+      {
+        title: "SABR — 1979 World Series Game Seven",
+        url: "https://sabr.org/gamesproj/game/october-17-1979-pops-stargell-named-mvp-as-pirates-complete-world-series-comeback/",
+      },
+      {
+        title: "White House Historical Association — Pirates Reception",
+        url: "https://www.whitehousehistory.org/photos/president-carter-congratulates-pittsburgh-sports-champions",
       },
     ],
   },
-
   "ronald-reagan": {
     events: [
       {
