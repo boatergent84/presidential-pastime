@@ -860,20 +860,86 @@ export const presidentialHistory: Record<
   "gerald-ford": {
     events: [
       {
-        date: "July 13, 1976",
-        title: "The Bicentennial All-Star Game",
+        date: "1957",
+        title: "Ford Hits a Congressional Baseball Grand Slam",
         description:
-          "Ford threw the ceremonial first pitch at the 1976 Major League Baseball All-Star Game during America's bicentennial year.",
-        sourceUrl: hallOfFame,
+          "Long before becoming president, Congressman Gerald Ford played catcher for the Republican team in the Congressional Baseball Game. In 1957, he hit an inside-the-park grand slam, although his team ultimately lost.",
+        sourceUrl:
+          "https://baseballhall.org/discover/shortstops-gerald-first-all-star-game-first-pitch",
+      },
+      {
+        date: "February 6, 1975",
+        title: "Ford Writes to Baseball Commissioner Bowie Kuhn",
+        description:
+          "President Ford wrote to Commissioner Bowie Kuhn praising Major League Baseball's Drug Education and Prevention Program. The letter is preserved among the National Baseball Hall of Fame's presidential baseball artifacts.",
+        sourceUrl:
+          "https://artsandculture.google.com/story/cgVBoiDknfnvJQ",
+      },
+      {
+        date: "December 1975",
+        title: "Baseball's Free Agency Revolution Begins",
+        description:
+          "During Ford's presidency, an arbitration ruling involving pitchers Andy Messersmith and Dave McNally helped dismantle baseball's longstanding reserve-clause system. The decision paved the way for modern free agency and transformed player contracts.",
+        sourceUrl:
+          "https://baseballhall.org/",
+      },
+      {
+        date: "April 9, 1976",
+        title: "Opening Day with the Texas Rangers",
+        image: "/ford-rangers-opening-day-1976.jpg",
+        description:
+          "Ford participated in the Texas Rangers' home opener at Arlington Stadium, throwing two ceremonial baseballs to Rangers catcher Jim Sundberg. The appearance continued the presidential Opening Day tradition outside Washington.",
+        sourceUrl:
+          "https://artsandculture.google.com/story/cgVBoiDknfnvJQ",
+      },
+      {
+        date: "May 17, 1976",
+        title: "Gerald Ford Meets Mickey Mantle at the White House",
+        description:
+          "President Gerald Ford and French President Valéry Giscard d'Estaing greeted New York Yankees legend Mickey Mantle in the receiving line at a White House state dinner honoring the French president. The meeting was captured in an official White House photograph.",
+        image: "/ford-mickey-mantle-1976.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:President_Gerald_R._Ford_and_President_Valery_Giscard_d%27Estaing_of_France_Greeting_Baseball_Player_Mickey_Mantle_in_the_Receiving_Line_at_a_State_Dinner_Honoring_President_Giscard_d%27Estaing_-_NARA_-_12004822_(cropped).jpg",
+      },
+      {
+        date: "July 13, 1976",
+        title: "Ford Meets Pittsburgh Pirates Star Al Oliver",
+        description:
+          "Before the 1976 All-Star Game at Veterans Stadium in Philadelphia, President Ford spoke with Pittsburgh Pirates outfielder Al Oliver. The moment was preserved in an official National Archives photograph.",
+        image: "/ford-al-oliver-1976.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gerald_Ford_and_Al_Oliver_1976.jpg",
+      },
+      {
+        date: "July 13, 1976",
+        title: "Two First Pitches at the Bicentennial All-Star Game",
+        image: "/ford-all-star-1976.jpg",
+        description:
+          "At Veterans Stadium in Philadelphia, President Ford celebrated America's bicentennial by throwing two ceremonial first pitches: one right-handed to Cincinnati Reds catcher Johnny Bench and another left-handed to New York Yankees catcher Thurman Munson. The National League won 7–1.",
+        sourceUrl:
+          "https://baseballhall.org/discover/shortstops-gerald-first-all-star-game-first-pitch",
       },
     ],
     sources: [
       {
-        title: "Hall of Fame — Presidential Pitches",
-        url: hallOfFame,
+        title: "Baseball Hall of Fame — Gerald Ford's First Pitches",
+        url: "https://baseballhall.org/discover/shortstops-gerald-first-all-star-game-first-pitch",
+      },
+      {
+        title: "National Baseball Hall of Fame — Presidential Pastime Collection",
+        url: "https://artsandculture.google.com/story/cgVBoiDknfnvJQ",
+      },
+      {
+        title: "White House Historical Association — Ford's All-Star Pitch",
+        url: "https://www.whitehousehistory.org/photos/presidents-baseball-president-ford-throws-the-first-pitch",
+      },
+      {
+        title: "National Archives — Baseball and the All-Star Game",
+        url: "https://www.archives.gov/news/articles/baseball-records-provide-historical-perspective-on-all-star",
       },
     ],
   },
+
 
   "jimmy-carter": {
     events: [
