@@ -1104,18 +1104,42 @@ export const presidentialHistory: Record<
   "george-h-w-bush": {
     events: [
       {
-        date: "1947",
-        title: "Baseball at Yale",
+        date: "1945–1948",
+        title: "A First Baseman at Yale University",
         description:
-          "Bush played college baseball at Yale, including a game against Fordham in which future broadcaster Vin Scully played.",
+          "After serving as a naval aviator during World War II, George H. W. Bush attended Yale University and played first base for the Bulldogs. Baseball became an important part of his college experience, and he eventually served as team captain.",
+        sourceUrl:
+          "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+      },
+      {
+        date: "1947",
+        title: "Playing in the First College World Series",
+        description:
+          "Bush played first base for Yale in the inaugural College World Series, held in Kalamazoo, Michigan. Yale advanced to the championship series but lost to California, making Bush part of the earliest chapter in the tournament's history.",
+        sourceUrl:
+          "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+      },
+      {
+        date: "1947",
+        title: "Facing Fordham and Future Broadcaster Vin Scully",
+        description:
+          "While playing for Yale, Bush competed against Fordham University, whose baseball team included future Hall of Fame broadcaster Vin Scully. The connection linked two figures who would later become prominent in American public life and baseball history.",
         sourceUrl:
           "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
       },
       {
         date: "1948",
+        title: "Captain of the Yale Baseball Team",
+        description:
+          "Bush captained the Yale Bulldogs during his senior season. Yale returned to the College World Series championship round, where the Bulldogs fell to Southern California. His college baseball career remained a source of pride throughout his life.",
+        sourceUrl:
+          "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+      },
+      {
+        date: "June 5, 1948",
         title: "George H. W. Bush Meets Babe Ruth at Yale",
         description:
-          "George H. W. Bush, captain of the Yale baseball team, receives a manuscript of Babe Ruth's autobiography as Ruth donates it to Yale. The historic photograph captures the future president alongside one of baseball's greatest legends.",
+          "As Yale's baseball captain, Bush received the manuscript of Babe Ruth's autobiography during a ceremony at Yale Field. The historic photograph captures the future president beside the legendary slugger just weeks before Ruth's death.",
         image: "/bush41-babe-ruth-1948.jpg",
         sourceUrl:
           "https://commons.wikimedia.org/wiki/File:George_Bush,_Captain_of_the_Yale_Baseball_Team,_Receives_Babe_Ruth%27s_Manuscript_of_His_Autobiography_which_He_Was_Donating_to_Yale_(3679513408).jpg",
@@ -1123,8 +1147,9 @@ export const presidentialHistory: Record<
       {
         date: "April 3, 1989",
         title: "Opening Day in Baltimore",
+        image: "/bush41-opening-day-1989.jpg",
         description:
-          "Bush threw the ceremonial first pitch at Memorial Stadium before the Orioles played the Red Sox.",
+          "President Bush threw the ceremonial first pitch at Baltimore's Memorial Stadium before the Orioles played the Boston Red Sox. The appearance continued the presidential tradition of participating in Major League Baseball's Opening Day.",
         sourceUrl:
           "https://www.mlb.com/video/bush-throws-out-first-pitch-c37227645",
       },
@@ -1132,19 +1157,23 @@ export const presidentialHistory: Record<
         date: "April 6, 1992",
         title: "Opening Oriole Park at Camden Yards",
         description:
-          "Bush threw a ceremonial first pitch at the first regular-season game at Camden Yards.",
+          "Bush delivered the ceremonial first pitch for the inaugural regular-season game at Oriole Park at Camden Yards. The Baltimore Orioles defeated the Cleveland Indians, 2–0, as the ballpark began a new era in stadium architecture.",
         sourceUrl:
           "https://www.mlb.com/brewers/video/president-bush-s-first-pitch-c33379335",
       },
     ],
     sources: [
       {
-        title: "MLB — Opening Day at Camden Yards",
-        url: "https://www.mlb.com/brewers/video/president-bush-s-first-pitch-c33379335",
+        title: "MLB — Presidential Baseball History",
+        url: "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
       },
       {
-        title: "MLB — Bush at Yale",
-        url: "https://www.mlb.com/news/baseball-has-history-with-many-u-s-presidents-c164503968",
+        title: "MLB — 1989 Presidential First Pitch",
+        url: "https://www.mlb.com/video/bush-throws-out-first-pitch-c37227645",
+      },
+      {
+        title: "MLB — Opening Day at Camden Yards",
+        url: "https://www.mlb.com/brewers/video/president-bush-s-first-pitch-c33379335",
       },
       {
         title: "1948 Bush and Babe Ruth — Archival Photograph",
@@ -1152,7 +1181,6 @@ export const presidentialHistory: Record<
       },
     ],
   },
-
   "bill-clinton": {
     events: [
       {
