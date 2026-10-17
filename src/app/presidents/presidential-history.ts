@@ -1106,6 +1106,7 @@ export const presidentialHistory: Record<
       {
         date: "1945–1948",
         title: "A First Baseman at Yale University",
+      image: "/bush41-yale-first-base.webp",
         description:
           "After serving as a naval aviator during World War II, George H. W. Bush attended Yale University and played first base for the Bulldogs. Baseball became an important part of his college experience, and he eventually served as team captain.",
         sourceUrl:
@@ -1114,6 +1115,7 @@ export const presidentialHistory: Record<
       {
         date: "1947",
         title: "Playing in the First College World Series",
+      image: "/bush41-yale-team.webp",
         description:
           "Bush played first base for Yale in the inaugural College World Series, held in Kalamazoo, Michigan. Yale advanced to the championship series but lost to California, making Bush part of the earliest chapter in the tournament's history.",
         sourceUrl:
@@ -1122,6 +1124,7 @@ export const presidentialHistory: Record<
       {
         date: "1947",
         title: "Facing Fordham and Future Broadcaster Vin Scully",
+      image: "/bush41-yale-at-bat.webp",
         description:
           "While playing for Yale, Bush competed against Fordham University, whose baseball team included future Hall of Fame broadcaster Vin Scully. The connection linked two figures who would later become prominent in American public life and baseball history.",
         sourceUrl:
@@ -1130,6 +1133,7 @@ export const presidentialHistory: Record<
       {
         date: "1948",
         title: "Captain of the Yale Baseball Team",
+      image: "/bush41-college-world-series-1948.webp",
         description:
           "Bush captained the Yale Bulldogs during his senior season. Yale returned to the College World Series championship round, where the Bulldogs fell to Southern California. His college baseball career remained a source of pride throughout his life.",
         sourceUrl:
@@ -1161,7 +1165,42 @@ export const presidentialHistory: Record<
         sourceUrl:
           "https://www.mlb.com/brewers/video/president-bush-s-first-pitch-c33379335",
       },
-    ],
+    {
+      date: "August 28, 1988",
+      title: "An Astrodome First Pitch with Nolan Ryan",
+      description: "While serving as vice president, George H. W. Bush threw a ceremonial first pitch at Houston's Astrodome as Astros pitcher Nolan Ryan looked on. The occasion brought together two prominent Texans whose careers intersected with America's national pastime.",
+      image: "/bush41-nolan-ryan-1988.webp",
+      sourceUrl: "https://www.bush41library.gov/galleries/baseball",
+    },
+    {
+      date: "April 10, 1990",
+      title: "Opening Day with the Texas Rangers",
+      description: "President Bush threw the ceremonial first pitch at the Texas Rangers' 1990 home opener against the Toronto Blue Jays, continuing the presidential tradition of celebrating the beginning of the baseball season.",
+      image: "/bush41-rangers-1990.webp",
+      sourceUrl: "https://www.bush41library.gov/galleries/baseball",
+    },
+    {
+      date: "September 25, 1990",
+      title: "Exchanging Baseball Keepsakes with Stan Musial",
+      description: "Baseball Hall of Famer Stan Musial presented President Bush with an autographed glove during a White House visit. Bush reciprocated with a signed baseball, creating a memorable exchange between a president and one of the game's greatest hitters.",
+      image: "/bush41-stan-musial-1990.webp",
+      sourceUrl: "https://www.bush41library.gov/galleries/baseball",
+    },
+    {
+      date: "May 15, 1991",
+      title: "Cal Ripken Jr. Meets President Bush and Queen Elizabeth II",
+      description: "During Queen Elizabeth II's visit to an Orioles game at Baltimore's Memorial Stadium, President Bush and Barbara Bush joined the queen for a photograph with Cal Ripken Jr. The occasion connected baseball with a historic royal visit.",
+      image: "/bush41-cal-ripken-1991.webp",
+      sourceUrl: "https://www.bush41library.gov/galleries/baseball",
+    },
+    {
+      date: "July 9, 1991",
+      title: "A White House Visit from DiMaggio and Williams",
+      description: "President Bush welcomed baseball legends Joe DiMaggio and Ted Williams to the White House. An archival photograph captures the president alongside two of the most celebrated hitters in American baseball history.",
+      image: "/bush41-dimaggio-williams-1991.webp",
+      sourceUrl: "https://www.bush41library.gov/galleries/baseball",
+    },
+  ],
     sources: [
       {
         title: "MLB — Presidential Baseball History",
