@@ -1225,18 +1225,81 @@ export const presidentialHistory: Record<
       {
         date: "1993",
         title: "Opening Day in Baltimore",
+        image: "/clinton-opening-day-1993.jpg",
         description:
           "Clinton attended the Baltimore Orioles' home opener during his first year in office.",
         sourceUrl:
           "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
       },
       {
+        date: "April 5, 1993",
+        title: "Meeting Fernando Valenzuela",
+        description:
+          "During his visit to Camden Yards for the Baltimore Orioles' 1993 home opener, President Clinton met pitcher Fernando Valenzuela. A White House photograph preserves their encounter during Clinton's first baseball Opening Day as president.",
+        image: "/clinton-valenzuela-1993.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Bill_Clinton_with_Fernando_Valenzuela_(42-WHPO-P02240-11)_(cropped).jpg",
+      },
+      {
+        date: "May 6, 1993",
+        title: "Stan Musial Visits the Oval Office",
+        description:
+          "Hall of Famer Stan Musial presented President Clinton with a baseball bat in the Oval Office. An official White House photograph documents the meeting.",
+        image: "/clinton-stan-musial-1993.jpg",
+        sourceUrl:
+          "https://www.clintonlibrary.gov/galleries/president-bill-clinton-photo-gallery",
+      },
+      {
+        date: "April 4, 1994",
+        title: "Opening Jacobs Field in Cleveland",
+        image: "/clinton-cleveland-1994.jpeg",
+        description:
+          "President Clinton threw the ceremonial first pitch at the Cleveland Indians' inaugural regular-season game at Jacobs Field, helping inaugurate a new era of baseball in Cleveland.",
+        sourceUrl:
+          "https://artsandculture.google.com/story/presidential-pastime-national-baseball-hall-of-fame-and-museum/cgVBoiDknfnvJQ?hl=en",
+      },
+      {
         date: "September 6, 1995",
         title: "Cal Ripken Jr.'s Record-Breaking Game",
+        image: "/clinton-ripken-1995.jpg",
         description:
           "Clinton attended the game in which Cal Ripken Jr. surpassed Lou Gehrig's record by playing his 2,131st consecutive game.",
         sourceUrl:
           "https://content.mlb.com/documents/5/2/8/266184528/2011_media_guide.pdf",
+      },
+      {
+        date: "April 2, 1996",
+        title: "Returning to Camden Yards",
+        image: "/clinton-opening-day-1996.jpg",
+        description:
+          "Clinton returned to Baltimore to throw the ceremonial first pitch before the Orioles' Opening Day game against the Kansas City Royals.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cbc.shtml",
+      },
+      {
+        date: "April 15, 1997",
+        title: "Honoring Jackie Robinson",
+        image: "/clinton-jackie-robinson-1997.jpg",
+        description:
+          "At Shea Stadium, Clinton joined Major League Baseball's commemoration of Jackie Robinson's historic debut 50 years earlier. Commissioner Bud Selig announced the permanent retirement of Robinson's number 42 across the major leagues.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cbc.shtml",
+      },
+      {
+        date: "June 30, 1999",
+        title: "A Presidential Visit to Wrigley Field",
+        description:
+          "Clinton attended a Chicago Cubs game at Wrigley Field, where Sammy Sosa hit a game-winning home run against the Milwaukee Brewers.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cbc.shtml",
+      },
+      {
+        date: "April 15, 2000",
+        title: "Baseball in San Francisco",
+        description:
+          "President Clinton and his daughter Chelsea attended a San Francisco Giants game against the Arizona Diamondbacks, continuing his appearances at major league ballparks.",
+        sourceUrl:
+          "https://www.baseball-almanac.com/prz_cbc.shtml",
       },
     ],
     sources: [
