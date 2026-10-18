@@ -1313,10 +1313,37 @@ export const presidentialHistory: Record<
   "george-w-bush": {
     events: [
       {
+        date: "March 18, 1989",
+        title: "Becoming an Owner of the Texas Rangers",
+        description:
+          "George W. Bush and Edward W. 'Rusty' Rose led an investor group that acquired controlling interest in the Texas Rangers from Eddie Chiles. Bush became the club's managing general partner, beginning a direct involvement in Major League Baseball that continued until he stepped down following his election as governor of Texas in 1994. The ownership group also oversaw the development of The Ballpark in Arlington, which opened in 1994.",
+        sourceUrl:
+          "https://www.mlb.com/rangers/history/timeline-1980s",
+      },
+      {
+        date: "2001",
+        title: "Tee Ball on the South Lawn",
+        description:
+          "President George W. Bush introduced Tee Ball on the South Lawn of the White House in 2001, inviting young players to experience baseball at the nation's most famous residence. The tradition continued throughout his presidency, celebrating youth baseball and sportsmanship.",
+        image: "/gwb-white-house-tee-ball.jpg",
+        sourceUrl:
+          "https://www.georgewbushlibrary.gov/explore/galleries/tee-ball-0",
+      },
+      {
+        date: "October 30, 2001",
+        title: "A Conversation with Derek Jeter",
+        description:
+          "Before Game Three of the 2001 World Series at Yankee Stadium, President George W. Bush spoke with New York Yankees shortstop Derek Jeter. An official White House photograph captures their conversation before Bush took the mound for the ceremonial first pitch.",
+        image: "/gwb-jeter-2001.jpg",
+        sourceUrl:
+          "https://www.georgewbushlibrary.gov/explore/photograph-video-galleries/september-11-2001-gallery-0",
+      },
+      {
         date: "October 30, 2001",
         title: "The World Series First Pitch After 9/11",
         description:
           "At Yankee Stadium, Bush delivered the ceremonial first pitch before Game 3 of the World Series, an enduring moment of national unity after the September 11 attacks.",
+        image: "/gwb-world-series-2001.jpg",
         sourceUrl:
           "https://www.mlb.com/cut4/president-bush-throws-first-pitch-at-yankee-stadium/c-155935460",
       },
@@ -1325,6 +1352,7 @@ export const presidentialHistory: Record<
         title: "Opening Nationals Park",
         description:
           "Bush threw the ceremonial first pitch at the first regular-season game at Nationals Park.",
+        image: "/gwb-nationals-park-2008.jpg",
         sourceUrl:
           "https://www.mlb.com/news/nationals-top-opening-day-moments",
       },
