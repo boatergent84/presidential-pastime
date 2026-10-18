@@ -1475,4 +1475,51 @@ export const presidentialHistory: Record<
       },
     ],
   },
+  "joe-biden": {
+    events: [
+      {
+        date: "July 2, 2021",
+        title: "The Los Angeles Dodgers Visit the White House",
+        image: "/biden-dodgers-2021.jpg",
+        description:
+          "President Joe Biden and Vice President Kamala Harris welcomed the Los Angeles Dodgers to the White House to celebrate their 2020 World Series championship. The visit marked a return of the traditional championship-team ceremony following the pandemic-disrupted baseball season.",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:President_Joe_Biden_and_Vice_President_Kamala_Harris_with_the_Los_Angeles_Dodgers_(2).jpg",
+      },
+      {
+        date: "September 26, 2022",
+        title: "The Atlanta Braves Championship Celebration",
+        image: "/biden-braves-2022.jpg",
+        description:
+          "President Biden welcomed the Atlanta Braves to the White House in recognition of their 2021 World Series victory. The team had defeated the Houston Astros to capture its first championship since 1995.",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:President_Joe_Biden_with_the_Atlanta_Braves,_2021_World_Series_champions_(1).jpg",
+      },
+      {
+        date: "August 7, 2023",
+        title: "The Houston Astros Return to the White House",
+        image: "/biden-astros-2023.jpg",
+        description:
+          "President Biden honored the Houston Astros for winning the 2022 World Series. During a ceremony in the White House East Room, he delivered remarks celebrating the team's championship. Official White House photographer Cameron Smith documented the event.",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:P20230807CS-0696_(53234990253).jpg",
+      },
+      {
+        date: "August 8, 2024",
+        title: "The Texas Rangers Celebrate Their First World Series",
+        image: "/biden-rangers-2024.jpg",
+        description:
+          "President Biden welcomed the Texas Rangers to the White House following the franchise's first World Series championship in 2023. An official photograph shows him with members of the team in the State Dining Room.",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:President_Joe_Biden_with_members_of_the_2023_World_Series_champion_Texas_Rangers_on_August_8,_2024,_in_the_State_Dining_Room_of_the_White_House.jpg",
+      },
+    ],
+    sources: [
+      {
+        title: "White House Presidential Baseball Photographs",
+        url: "https://commons.wikimedia.org/wiki/Category:Joe_Biden_and_baseball",
+      },
+    ],
+  },
+
 };
