@@ -293,6 +293,13 @@ export default function Home() {
             </Link>
 
             <Link
+              href="/heritage-collection"
+              className="hover:text-[#a71924]"
+            >
+              Heritage Collection
+            </Link>
+
+            <Link
               href="/#first-pitches"
               className="hover:text-[#a71924]"
             >
