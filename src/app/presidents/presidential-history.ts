@@ -1373,11 +1373,57 @@ export const presidentialHistory: Record<
     events: [
       {
         date: "July 14, 2009",
+        title: "Meeting Ichiro Suzuki at the All-Star Game",
+        description:
+          "During the 2009 Major League Baseball All-Star Game in St. Louis, President Barack Obama was photographed with Seattle Mariners outfielder Ichiro Suzuki. Official White House photographer Pete Souza captured the meeting in photograph P071409PS-0792.",
+        image: "/obama-ichiro-2009.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ichiro_Suzuki_and_Barack_Obama.jpg",
+      },
+      {
+        date: "July 14, 2009",
+        title: "Warming Up with Albert Pujols",
+        description:
+          "Before throwing the ceremonial first pitch at the Major League Baseball All-Star Game in St. Louis, President Barack Obama warmed up with Cardinals first baseman Albert Pujols. Obama later delivered the first pitch to Pujols. White House photographer Pete Souza captured the moment.",
+        image: "/obama-pujols-2009.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Barack_Obama_practises_baseball_with_Albert_Pujols.jpg",
+      },
+      {
+        date: "July 14, 2009",
         title: "All-Star Game in St. Louis",
+        image: "/obama-all-star-2009.jpg",
         description:
           "Obama threw the ceremonial first pitch at the MLB All-Star Game in St. Louis.",
         sourceUrl:
           "https://www.mlb.com/cut4/rank-presidential-first-pitches-since-john-f-kennedy-c164344940",
+      },
+      {
+        date: "July 25, 2011",
+        title: "Willie Mays and the World Champion Giants",
+        description:
+          "President Barack Obama met Hall of Famer Willie Mays and San Francisco Giants manager Bruce Bochy in the White House Blue Room before a ceremony honoring the Giants' 2010 World Series championship. White House photographer Pete Souza captured their conversation.",
+        image: "/obama-willie-mays-2011.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Barack_Obama_with_Willie_Mays_%26_Bruce_Bochy_2011-07-25.jpg",
+      },
+      {
+        date: "April 1, 2014",
+        title: "David Ortiz and the Red Sox Championship",
+        description:
+          "President Barack Obama welcomed the Boston Red Sox to the White House to celebrate their 2013 World Series championship. During the ceremony, David Ortiz took a selfie with the president. White House photographer Amanda Lucidon captured the moment.",
+        image: "/obama-red-sox-2014.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:President_Obama_Welcomes_the_Red_Sox_to_the_White_House.jpg",
+      },
+      {
+        date: "January 16, 2017",
+        title: "The Chicago Cubs Visit the White House",
+        description:
+          "Four days before leaving office, President Barack Obama welcomed the Chicago Cubs to the White House to celebrate their 2016 World Series championship. The Cubs had ended a 108-year championship drought. During the ceremony, the team presented Obama with an autographed W flag, the traditional symbol of a Cubs victory.",
+        image: "/obama-cubs-2017.jpg",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Cubs_visit_to_the_White_House,_Obama_presented_with_%27W%27_flag_(1).jpg",
       },
       {
         date: "2010",
