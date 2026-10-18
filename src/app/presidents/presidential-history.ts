@@ -43,7 +43,23 @@ export const presidentialHistory: Record<
         date: "August 18, 2006",
         title: "Ceremonial First Pitch at Fenway Park",
         description:
-          "Before becoming president, Donald Trump threw a ceremonial first pitch at Fenway Park in Boston before a Red Sox–Yankees doubleheader game, during an appearance connected with the Jimmy Fund.",
+          "Before becoming president, Donald Trump threw a ceremonial first pitch at Fenway Park in Boston during a Red Sox–Yankees doubleheader, in an appearance associated with the Jimmy Fund.",
+      },
+      {
+        date: "March 12, 2018",
+        title: "The Houston Astros Visit the White House",
+        image: "/trump-astros-2018.jpg",
+        description:
+          "President Trump welcomed the 2017 World Series champion Houston Astros to the White House. During the East Room ceremony, outfielder Josh Reddick presented him with a commemorative baseball jersey.",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:President_Donald_J._Trump_is_presented_a_baseball_jersey_by_Josh_Reddick.jpg",
+      },
+      {
+        date: "May 9, 2019",
+        title: "The Boston Red Sox Championship Visit",
+        image: "/trump-red-sox-2019.jpg",
+        description:
+          "Trump welcomed members of the 2018 World Series champion Boston Red Sox to the White House, celebrating their championship during a ceremony at the South Portico.",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:President_Trump_Welcomes_the_Boston_Red_Sox_to_the_White_House_(47028934414).jpg",
       },
       {
         date: "October 27, 2019",
@@ -51,6 +67,14 @@ export const presidentialHistory: Record<
         image: "/trump-world-series-2019-final.jpg",
         description:
           "President Trump attended Game 5 of the World Series between the Washington Nationals and Houston Astros at Nationals Park in Washington, D.C.",
+      },
+      {
+        date: "November 4, 2019",
+        title: "The Washington Nationals Celebrate at the White House",
+        image: "/trump-nationals-2019.jpg",
+        description:
+          "Following the Nationals' first World Series championship, Trump and First Lady Melania Trump welcomed members of the team to the White House. An official photograph shows them with team owner Mark Lerner in the Oval Office.",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:President_Trump_Welcomes_the_Washington_Nationals_to_the_White_House_(49018972466).jpg",
       },
       {
         date: "July 23, 2020",
@@ -64,6 +88,14 @@ export const presidentialHistory: Record<
         description:
           "Trump began his second, nonconsecutive presidency, extending his presidential baseball history into another era of Major League Baseball.",
       },
+      {
+        date: "September 11, 2025",
+        title: "A Presidential Visit to Yankee Stadium",
+        image: "/trump-yankees-2025.jpg",
+        description:
+          "President Trump visited Yankee Stadium on September 11, meeting New York Yankees players and coaches before a game against the Detroit Tigers. The visit was documented by official White House photographer Daniel Torok.",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_greets_players_and_coaches_with_the_New_York_Yankees_baseball_team,_Thursday,_September_11,_2025,_before_a_Yankees-Tigers_game_at_Yankee_Stadium_in_the_Bronx,_New_York_(P20250911DT-0849).jpg",
+      },
     ],
     sources: [
       {
@@ -72,7 +104,6 @@ export const presidentialHistory: Record<
       },
     ],
   },
-
   "william-howard-taft": {
     events: [
       {
