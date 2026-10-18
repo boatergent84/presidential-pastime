@@ -121,7 +121,8 @@ export default async function PresidentPage({
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#3f4b55]">{["grover-cleveland", "abraham-lincoln", "andrew-johnson", "ulysses-s-grant", "rutherford-b-hayes", "james-a-garfield", "chester-a-arthur", "benjamin-harrison", "william-mckinley", "theodore-roosevelt", "woodrow-wilson", "warren-g-harding", "calvin-coolidge", "herbert-hoover", "franklin-d-roosevelt", "harry-s-truman", "dwight-d-eisenhower", "john-f-kennedy", "lyndon-b-johnson", "richard-nixon", "gerald-ford", "jimmy-carter", "ronald-reagan", "george-h-w-bush", "bill-clinton", "george-w-bush", "barack-obama", "donald-trump", "joe-biden"].includes(president.slug) ? null : president.overview}</p>
             <div className="mt-7 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
               {[["President", `No. ${president.slug === "donald-trump" ? "45 & 47" : president.number}`], ["Years", president.years], ["Baseball Era", president.baseballEra], ["Throwing Hand", ({
-    "joe-biden": "Undocumented",
+    "joe-biden": "Right",
+    "william-howard-taft": "Right",
     "donald-trump": "Right",
     "bill-clinton": "Left",
     "ronald-reagan": "Right",

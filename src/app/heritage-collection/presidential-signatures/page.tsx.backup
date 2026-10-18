@@ -1,0 +1,307 @@
+"use client";
+
+import Link from "next/link";
+import { useMemo, useState } from "react";
+
+type Artifact = {
+  president: string;
+  years: string;
+  number: number;
+  source: string;
+  sourceUrl: string;
+  note: string;
+};
+
+const artifacts: Artifact[] = [
+  {
+    president: "Theodore Roosevelt",
+    years: "1901–1909",
+    number: 26,
+    source: "Library of Congress",
+    sourceUrl: "https://www.loc.gov/item/2016875530/",
+    note: "One of six presidential-autographed baseballs documented in the Walter Johnson archival photograph."
+  },
+  {
+    president: "William Howard Taft",
+    years: "1909–1913",
+    number: 27,
+    source: "Library of Congress",
+    sourceUrl: "https://www.loc.gov/item/2016875530/",
+    note: "A signed baseball appears among the six associated with Walter Johnson."
+  },
+  {
+    president: "Woodrow Wilson",
+    years: "1913–1921",
+    number: 28,
+    source: "Library of Congress",
+    sourceUrl: "https://www.loc.gov/item/2016875530/",
+    note: "Included in the archival record of Walter Johnson's presidential-autographed baseballs."
+  },
+  {
+    president: "Warren G. Harding",
+    years: "1921–1923",
+    number: 29,
+    source: "Library of Congress",
+    sourceUrl: "https://www.loc.gov/item/2016875530/",
+    note: "One of the presidential signatures represented in the Walter Johnson collection."
+  },
+  {
+    president: "Calvin Coolidge",
+    years: "1923–1929",
+    number: 30,
+    source: "Library of Congress",
+    sourceUrl: "https://www.loc.gov/item/2016875530/",
+    note: "His signed baseball is represented in the historic group photograph."
+  },
+  {
+    president: "Herbert Hoover",
+    years: "1929–1933",
+    number: 31,
+    source: "Library of Congress",
+    sourceUrl: "https://www.loc.gov/item/2016875530/",
+    note: "The sixth president represented in the Walter Johnson photograph."
+  },
+  {
+    president: "Franklin D. Roosevelt",
+    years: "1933–1945",
+    number: 32,
+    source: "Christie's — Geddy Lee Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6457700",
+    note: "A Roosevelt single-signed American League baseball attributed to the 1935 ceremonial first pitch. The attribution is historical, not conclusively established."
+  },
+  {
+    president: "Harry S. Truman",
+    years: "1945–1953",
+    number: 33,
+    source: "Christie's — Home Plate Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6296581",
+    note: "A Truman single-signed Cronin American League baseball, accompanied by authentication letters from PSA/DNA and JSA."
+  },
+  {
+    president: "Dwight D. Eisenhower",
+    years: "1953–1961",
+    number: 34,
+    source: "Christie's — Home Plate Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6296582",
+    note: "A single-signed Cronin American League baseball with authentication letters from PSA/DNA and JSA."
+  },
+  {
+    president: "John F. Kennedy",
+    years: "1961–1963",
+    number: 35,
+    source: "SCP Auctions — Spring 2023",
+    sourceUrl: "https://catalogs.scpauctions.com/online-auctions/scp-auctions-inc/newly-discovered-1961-president-john-f-kennedy-single-signed-baseball-from-jfks-alliance-for-progress-tour-to-south-america-photomatched-to-venezuelan-newspaper-w-direct-provenance---psa-dna-loa-5997855",
+    note: "A 1961 Kennedy-signed baseball documented through contemporary newspaper photography, direct provenance, and a PSA/DNA authentication letter."
+  },
+  {
+    president: "Lyndon B. Johnson",
+    years: "1963–1969",
+    number: 36,
+    source: "Christie's — Geddy Lee Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6457708",
+    note: "A baseball from the April 12, 1965 Washington Senators ceremonial first pitch, subsequently signed by Johnson and others. Provenance traces to White House photographer Cecil Stoughton. Christie's notes PSA/DNA declined to authenticate Johnson's signature on the ball."
+  },
+  {
+    president: "Richard Nixon",
+    years: "1969–1974",
+    number: 37,
+    source: "SCP Auctions — Spring 2025",
+    sourceUrl: "https://catalogs.scpauctions.com/online-auctions/scp-auctions-inc/former-president-richard-nixon-single-signed-onl-white-baseball---psa-dna-loa-7004096",
+    note: "An Official National League baseball signed by Nixon near the sweet spot in black ink, cataloged with a PSA/DNA authentication letter."
+  },
+  {
+    president: "Gerald Ford",
+    years: "1974–1977",
+    number: 38,
+    source: "Christie's — Geddy Lee Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6457710",
+    note: "A Ford-signed baseball associated with the 1976 All-Star Game, formerly in Thurman Munson's collection. Includes PSA/DNA authentication and a provenance letter from Diana Munson."
+  },
+  {
+    president: "Jimmy Carter",
+    years: "1977–1981",
+    number: 39,
+    source: "Christie's — Home Plate Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6296586",
+    note: "A single-signed Bobby Brown American League baseball with Carter's signature across the sweet spot, accompanied by PSA/DNA and JSA authentication letters."
+  },
+  {
+    president: "Ronald Reagan",
+    years: "1981–1989",
+    number: 40,
+    source: "RR Auction — 2021",
+    sourceUrl: "https://www.rrauction.com/auctions/lot-detail/3443649060846-ronald-reagan-single-signed-baseball-by-ronald-reagan/",
+    note: "A single-signed Rawlings Official American League baseball, autographed on the sweet spot in black felt tip. RR Auction cataloged the signature as pre-certified by PSA/DNA."
+  },
+  {
+    president: "George H. W. Bush",
+    years: "1989–1993",
+    number: 41,
+    source: "Christie's — Geddy Lee Collection",
+    sourceUrl: "https://www.christies.com/lot/lot-6457711",
+    note: "A single-signed Selig Major League baseball bearing Bush's signature in blue ink across the sweet spot. Christie's records a full PSA/DNA letter with a GEM MINT 10 overall grade."
+  },
+  {
+    president: "Bill Clinton",
+    years: "1993–2001",
+    number: 42,
+    source: "Christie's — Home Plate Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6296591",
+    note: "A single-signed Budig American League baseball with Clinton's blue-ink signature on the sweet spot. Accompanied by full authentication letters from PSA/DNA and JSA."
+  },
+  {
+    president: "George W. Bush",
+    years: "2001–2009",
+    number: 43,
+    source: "Christie's — Geddy Lee Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6457712",
+    note: "A single-signed Coleman National League baseball bearing Bush's black-ink signature across the sweet spot. Christie's documents a full PSA/DNA authentication letter."
+  },
+  {
+    president: "Barack Obama",
+    years: "2009–2017",
+    number: 44,
+    source: "Christie's — Geddy Lee Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6457713",
+    note: "A single-signed Rawlings Official League baseball, signed across the sweet spot in blue felt-tip marker. Christie's documents a full PSA/DNA authentication letter."
+  },
+  {
+    president: "Donald Trump",
+    years: "2017–2021; 2025–present",
+    number: 45,
+    source: "Christie's — Home Plate Collection",
+    sourceUrl: "https://www.christies.com/en/lot/lot-6296595",
+    note: "A single-signed Manfred Official Major League baseball, autographed across the sweet spot in black marker. Cataloged with full PSA/DNA and JSA authentication letters."
+  },
+  {
+    president: "Joe Biden",
+    years: "2021–2025",
+    number: 46,
+    source: "Heritage Auctions — August 2022",
+    sourceUrl: "https://sports.ha.com/itm/baseball-collectibles/balls/circa-2020-joe-biden-single-signed-baseball/a/50058-53971.s",
+    note: "A circa 2020 single-signed Manfred Official Major League baseball, bearing Biden's signature on a side panel. Heritage Auctions documents PSA/DNA certification and a full Beckett authentication letter."
+  }
+
+];
+
+export default function PresidentialSignaturesPage() {
+  const [search, setSearch] = useState("");
+  const filtered = useMemo(
+    () => artifacts.filter(a =>
+      `${a.president} ${a.years} ${a.note}`.toLowerCase().includes(search.toLowerCase())
+    ),
+    [search]
+  );
+
+  return (
+    <main className="min-h-screen bg-[#eee7d7] text-[#102c44]">
+      <header className="border-b-4 border-[#a4282d] bg-[#102c44] px-6 py-5 text-white">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
+          <Link href="/" className="font-serif text-2xl font-bold">PRESIDENTIAL PASTIME</Link>
+          <Link href="/heritage-collection" className="text-sm text-[#d7bb83]">← Heritage Collection</Link>
+        </div>
+      </header>
+
+      <section className="border-b border-[#b89a61] bg-[#102c44] px-6 py-20 text-center text-white">
+        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
+          The Heritage Collection · Special Museum Exhibit
+        </p>
+        <div className="mx-auto my-8 flex h-28 w-28 items-center justify-center rounded-full border-4 border-[#b89a61] bg-[#eee7d7] text-6xl shadow-xl">
+          ⚾
+        </div>
+        <h1 className="font-serif text-4xl font-bold md:text-6xl">
+          The Presidential Signature Collection
+        </h1>
+        <p className="mx-auto mt-5 max-w-2xl font-serif text-xl italic text-[#d7bb83]">
+          A History of America, Written on Baseballs
+        </p>
+        <p className="mx-auto mt-7 max-w-3xl leading-8 text-[#eee7d7]">
+          A growing historical archive of baseballs signed by American presidents.
+          Explore documented examples, discover the stories behind their signatures,
+          and follow the original historical sources.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-12">
+        <div className="mb-10 grid gap-5 md:grid-cols-3">
+          {[
+            ["01", "The President", "Explore each presidential signature in its historical setting."],
+            ["02", "The Baseball", "Examine the documented artifact and its provenance."],
+            ["03", "The Evidence", "Follow original catalogs, photographs, and authentication records."]
+          ].map(([number, title, description]) => (
+            <div key={number} className="border border-[#b8aa8e] bg-[#f8f3e8] p-6">
+              <p className="font-serif text-3xl text-[#a4282d]">{number}</p>
+              <h2 className="mt-3 font-serif text-xl font-bold">{title}</h2>
+              <p className="mt-3 text-sm leading-7 text-[#59636b]">{description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mb-8 border-l-4 border-[#a4282d] bg-[#f8f3e8] p-5 text-sm leading-7">
+          <strong>Curatorial note:</strong> These entries document historical references,
+          not artifacts owned or independently authenticated by Presidential Pastime.
+          Individual object photographs and authentication details will be added after
+          verification and image-permission review.
+        </div>
+
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
+              The Presidential Archive
+            </p>
+            <h2 className="mt-2 font-serif text-3xl font-bold">Explore the Signatures</h2>
+            <p className="mt-2 text-sm text-[#59636b]">
+              {filtered.length} documented presidential entries
+            </p>
+          </div>
+          <input
+            aria-label="Search presidents"
+            placeholder="Search a president..."
+            value={search}
+            onChange={event => setSearch(event.target.value)}
+            className="w-full border border-[#b8aa8e] bg-white px-4 py-3 md:w-72"
+          />
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {filtered.map(artifact => (
+            <article key={artifact.number} className="overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8]">
+              <div className="relative flex h-56 items-center justify-center bg-[#102c44]">
+                <span className="absolute left-5 top-5 text-xs font-bold uppercase tracking-widest text-[#d7bb83]">
+                  President No. {artifact.number}
+                </span>
+                <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-[#b89a61] bg-[#eee7d7] shadow-xl">
+                  <span className="text-6xl">⚾</span>
+                </div>
+                <span className="absolute bottom-4 text-xs uppercase tracking-widest text-[#d7bb83]">
+                  Artifact photo pending
+                </span>
+              </div>
+              <div className="p-6">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">
+                  {artifact.years}
+                </p>
+                <h3 className="mt-2 font-serif text-2xl font-bold">{artifact.president}</h3>
+                <p className="mt-4 text-sm leading-7 text-[#59636b]">{artifact.note}</p>
+                <p className="mt-4 text-xs text-[#59636b]">Historical source: {artifact.source}</p>
+                <a
+                  href={artifact.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-block border-b-2 border-[#a4282d] pb-1 text-sm font-bold text-[#a4282d]"
+                >
+                  View historical source ↗
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+        {filtered.length === 0 && <p>No presidents match your search.</p>}
+      </section>
+
+      <footer className="border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-10 text-center text-sm text-[#eee7d7]">
+        Presidential Pastime · Preserving the intersection of the presidency and America's pastime.
+      </footer>
+    </main>
+  );
+}

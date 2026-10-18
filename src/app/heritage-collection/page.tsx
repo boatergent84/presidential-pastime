@@ -91,6 +91,33 @@ export default function HeritageCollectionPage() {
     </Link>
   </section>
 
+  {/* PRESIDENTIAL SIGNATURE COLLECTION */}
+  <section className="mx-auto max-w-6xl px-6 pt-8">
+    <Link href="/heritage-collection/presidential-signatures"
+      className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2">
+      <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
+        <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d7bb83]">Special Museum Exhibit</p>
+        <div className="my-6 flex h-40 w-40 items-center justify-center rounded-full border-4 border-[#b89a61] bg-[#eee7d7] shadow-xl">
+          <span className="text-7xl">⚾</span>
+        </div>
+        <p className="font-serif text-lg italic text-[#d7bb83]">Presidential Autographs</p>
+      </div>
+      <div className="flex flex-col justify-center p-7 md:p-10">
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">The Heritage Collection · Special Exhibit</p>
+        <h2 className="mt-3 font-serif text-3xl font-bold">The Presidential Signature Collection</h2>
+        <p className="mt-2 font-serif text-lg italic text-[#987944]">A History of America, Written on Baseballs</p>
+        <p className="mt-5 leading-7 text-[#59636b]">
+          Explore the extraordinary tradition of presidential-autographed baseballs,
+          from Theodore Roosevelt onward. Discover documented signatures,
+          historical provenance, and the stories behind these presidential artifacts.
+        </p>
+        <span className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]">
+          Explore the Signature Collection →
+        </span>
+      </div>
+    </Link>
+  </section>
+
   <section className="mx-auto max-w-6xl px-6 py-10"><div className="mb-6 border-l-4 border-[#a4282d] bg-[#f8f3e8] p-4 text-sm leading-6"><strong>Collection status:</strong> These are research exhibit topics, not authenticated objects held by Presidential Pastime. Individual artifacts and credits will be added after verification.</div>
    <div className="mb-8 flex flex-col gap-3 md:flex-row"><input aria-label="Search exhibits" className="w-full border border-[#b8aa8e] bg-white p-3 md:flex-1" placeholder="Search by president, year, or artifact..." value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Filter by category" className="border border-[#b8aa8e] bg-white p-3" value={category} onChange={e=>setCategory(e.target.value)}>{categories.map(c=><option key={c}>{c}</option>)}</select></div>
    <p className="mb-4 text-sm text-[#59636b]">{filtered.length} research exhibits</p><div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{filtered.map(e=><Link key={e.slug} href={`/heritage-collection/${e.slug}`} className="group overflow-hidden border border-[#b8aa8e] bg-[#f8f3e8] hover:border-[#a4282d]"><div className="flex h-44 items-center justify-center bg-[#102c44] p-3">{(() => { const photo = heritagePhotoForExhibit(e); return photo ? <div className="relative h-full w-full"><img src={photo.src} alt={photo.reference ? `Historical reference photograph associated with ${e.president}; not a photograph of the listed artifact` : e.title} className="h-full w-full object-contain"/>{photo.reference && <span className="absolute bottom-0 left-0 right-0 bg-[#102c44]/90 px-2 py-1 text-center text-[10px] text-white">Historical reference photo · not the artifact</span>}</div> : <span className="px-5 text-center font-serif text-2xl text-[#c9b98c]">{e.category}</span>; })()}</div><div className="p-5"><p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">{e.category} · {e.year}</p><h2 className="mt-2 font-serif text-xl font-bold">{e.title}</h2><p className="mt-2 text-sm text-[#59636b]">{e.president}</p><p className="mt-3 text-sm leading-6">{e.description}</p><p className="mt-4 text-sm font-bold text-[#a4282d]">Explore research exhibit →</p></div></Link>)}</div>{filtered.length===0&&<p>No exhibits match your search.</p>}
