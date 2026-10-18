@@ -50,18 +50,18 @@ const eras: Era[] = [
   },
   {
     period: "1870s–1900",
-    title: "The Standardized Baseball",
-    label: "The Rise of Professional Baseball",
+    title: "The 1883 Spalding Official League Baseball",
+    label: "The Rise of the Standardized Baseball",
     description:
-      "As professional leagues developed, the recognizable two-piece figure-eight cover became the standard. Manufacturing and league specifications brought greater consistency to the game.",
+      "Featured artifact: an original circa-1883 Spalding Official League baseball preserved in the Smithsonian National Museum of American History (catalog no. 1979.1152.01). Made with an off-white leather cover and red stitching, this surviving nineteenth-century baseball bears the marking 'Official League Ball — Adopted by the National League.' It represents the growing standardization of baseball equipment as professional leagues expanded and manufacturers developed more consistent construction methods.",
     president: "Hayes · Garfield · Arthur · Cleveland · Harrison · McKinley",
-    source: "National Baseball Hall of Fame",
-    url: "https://baseballhall.org/discover/museum/taking-the-field",
+    source: "Smithsonian National Museum of American History · 1979.1152.01",
+    url: "https://americanhistory.si.edu/collections/object/nmah_1062798",
     photos: [
-      { label: "Front View" },
-      { label: "Reverse View" },
-      { label: "Stitching" },
-      { label: "Markings" },
+      { label: "Front View", src: "/heritage/baseballs/spalding-1883/front.jpg", credit: "Smithsonian National Museum of American History" },
+      { label: "Center Detail (Crop)", src: "/heritage/baseballs/spalding-1883/center-detail.jpg", credit: "Smithsonian National Museum of American History · Cropped from original photograph" },
+      { label: "Left Detail (Crop)", src: "/heritage/baseballs/spalding-1883/left-detail.jpg", credit: "Smithsonian National Museum of American History · Cropped from original photograph" },
+      { label: "Right Detail (Crop)", src: "/heritage/baseballs/spalding-1883/right-detail.jpg", credit: "Smithsonian National Museum of American History · Cropped from original photograph" },
     ],
   },
   {
