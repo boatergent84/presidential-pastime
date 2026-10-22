@@ -224,20 +224,6 @@ export default function PresidentialSignaturesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-12">
-        <div className="mb-10 grid gap-5 md:grid-cols-3">
-          {[
-            ["01", "The President", "Explore each presidential signature in its historical setting."],
-            ["02", "The Baseball", "Examine the documented artifact and its provenance."],
-            ["03", "The Evidence", "Follow original catalogs, photographs, and authentication records."]
-          ].map(([number, title, description]) => (
-            <div key={number} className="border border-[#b8aa8e] bg-[#f8f3e8] p-6">
-              <p className="font-serif text-3xl text-[#a4282d]">{number}</p>
-              <h2 className="mt-3 font-serif text-xl font-bold">{title}</h2>
-              <p className="mt-3 text-sm leading-7 text-[#59636b]">{description}</p>
-            </div>
-          ))}
-        </div>
-
         <div className="mb-8 border-l-4 border-[#a4282d] bg-[#f8f3e8] p-5 text-sm leading-7">
           <strong>Curatorial note:</strong> These entries document historical references,
           not artifacts owned or independently authenticated by Presidential Pastime.
