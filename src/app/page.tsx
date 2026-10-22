@@ -649,73 +649,105 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
+
           <Link
             href="/presidents"
-            className="group border border-[#c9b994] bg-[#f8f1df] p-6 transition hover:border-[#a71924]"
+            className="group relative isolate flex min-h-[340px] flex-col overflow-hidden border border-[#b99b62] bg-[#071d31] p-6 text-[#f8f2e4] transition hover:border-[#e0c78e] hover:shadow-xl"
           >
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#10243a] text-xl text-white">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
+              style={{"backgroundImage": "url('/abraham-lincoln-gardner.jpg')" }}
+            />
+
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 -z-10 bg-[#071d31]/80"
+            />
+
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
               ★
             </div>
 
-            <h3 className="font-serif text-2xl font-bold">
+            <h3 className="font-serif text-2xl font-bold text-[#fff8e8]">
               Presidential Profiles
             </h3>
 
-            <p className="mt-3 leading-7 text-[#52606d]">
-              Explore the baseball histories of America&apos;s presidents,
-              including ballpark visits, historic games, photographs,
-              and their connections to the national pastime.
+            <div className="my-4 h-[2px] w-16 bg-[#b99b62]" />
+
+            <p className="leading-7 text-[#e2dfd5]">
+              Explore the baseball histories of America&apos;s presidents, including ballpark visits, historic games, photographs, and their connections to the national pastime.
             </p>
 
-            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
+            <p className="mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
               Explore the Presidents →
             </p>
           </Link>
 
           <Link
             href="/did-you-know"
-            className="group border border-[#c9b994] bg-[#f8f1df] p-6 transition hover:border-[#a71924]"
+            className="group relative isolate flex min-h-[340px] flex-col overflow-hidden border border-[#b99b62] bg-[#071d31] p-6 text-[#f8f2e4] transition hover:border-[#e0c78e] hover:shadow-xl"
           >
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#10243a] text-xl text-white">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
+              style={{"backgroundImage": "url('/taft-first-pitch-1910.jpg')" }}
+            />
+
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 -z-10 bg-[#071d31]/80"
+            />
+
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
               ?
             </div>
 
-            <h3 className="font-serif text-2xl font-bold">
+            <h3 className="font-serif text-2xl font-bold text-[#fff8e8]">
               Did You Know?
             </h3>
 
-            <p className="mt-3 leading-7 text-[#52606d]">
-              Discover fascinating facts, forgotten stories,
-              remarkable moments, and surprising connections
-              between America&apos;s presidents and baseball.
+            <div className="my-4 h-[2px] w-16 bg-[#b99b62]" />
+
+            <p className="leading-7 text-[#e2dfd5]">
+              Discover fascinating facts, forgotten stories, remarkable moments, and surprising connections between America&apos;s presidents and baseball.
             </p>
 
-            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
+            <p className="mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
               Explore Fascinating Facts →
             </p>
           </Link>
 
           <Link
             href="/heritage-collection"
-            id="memorabilia"
-            className="group border border-[#c9b994] bg-[#f8f1df] p-6 transition hover:border-[#a71924]"
+            className="group relative isolate flex min-h-[340px] flex-col overflow-hidden border border-[#b99b62] bg-[#071d31] p-6 text-[#f8f2e4] transition hover:border-[#e0c78e] hover:shadow-xl"
           >
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#10243a] text-xl text-white">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
+              style={{"backgroundImage": "url('/heritage/roosevelt-signed-baseball-1918.jpg')" }}
+            />
+
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 -z-10 bg-[#071d31]/80"
+            />
+
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
               ◆
             </div>
 
-            <h3 className="font-serif text-2xl font-bold">
+            <h3 className="font-serif text-2xl font-bold text-[#fff8e8]">
               Heritage Collection
             </h3>
 
-            <p className="mt-3 leading-7 text-[#52606d]">
-              Explore historical baseball artifacts, including
-              presidential-signed baseballs, authentic period
-              baseballs, and Walter Johnson&apos;s remarkable
-              presidential baseball collection.
+            <div className="my-4 h-[2px] w-16 bg-[#b99b62]" />
+
+            <p className="leading-7 text-[#e2dfd5]">
+              Explore historical baseball artifacts, including presidential-signed baseballs, authentic period baseballs, and Walter Johnson&apos;s remarkable presidential baseball collection.
             </p>
 
-            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
+            <p className="mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
               View the Heritage Collection →
             </p>
           </Link>
