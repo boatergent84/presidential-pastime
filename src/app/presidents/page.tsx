@@ -164,7 +164,9 @@ export default function PresidentsArchivePage() {
                         src={president.portrait}
                         alt={`Portrait of ${president.name}`}
                         className={`h-full w-full object-cover object-top grayscale ${
-                          president.slug === "benjamin-harrison"
+                          president.slug === "calvin-coolidge"
+                            ? "scale-[1.35]"
+                            : president.slug === "benjamin-harrison"
                             ? "scale-125 -translate-y-3"
                             : president.slug === "william-howard-taft"
                             ? "scale-[1.35]"

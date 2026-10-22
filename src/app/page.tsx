@@ -3,91 +3,91 @@ import Link from "next/link";
 
 const presidents = [
   {
-    image: "/lincoln.jpg",
+    image: "/abraham-lincoln-gardner.jpg",
     name: "Lincoln",
     fullName: "Abraham Lincoln",
     years: "1861–1865",
     slug: "abraham-lincoln",
   },
   {
-    image: "/andrew-johnson.jpg",
+    image: "/andrew-johnson-brady.jpg",
     name: "A. Johnson",
     fullName: "Andrew Johnson",
     years: "1865–1869",
     slug: "andrew-johnson",
   },
   {
-    image: "/grant.jpg",
+    image: "/grant-new.jpg",
     name: "Grant",
     fullName: "Ulysses S. Grant",
     years: "1869–1877",
     slug: "ulysses-s-grant",
   },
   {
-    image: "/hayes.jpg",
+    image: "/hayes-whitehouse.jpg",
     name: "Hayes",
     fullName: "Rutherford B. Hayes",
     years: "1877–1881",
     slug: "rutherford-b-hayes",
   },
   {
-    image: "/garfield.jpg",
+    image: "/garfield-whitehouse.jpg",
     name: "Garfield",
     fullName: "James A. Garfield",
     years: "1881",
     slug: "james-a-garfield",
   },
   {
-    image: "/arthur.jpg",
+    image: "/arthur-whitehouse.jpg",
     name: "Arthur",
     fullName: "Chester A. Arthur",
     years: "1881–1885",
     slug: "chester-a-arthur",
   },
   {
-    image: "/cleveland.jpg",
+    image: "/cleveland-new.png?v=1",
     name: "Cleveland",
     fullName: "Grover Cleveland",
     years: "1885–1889, 1893–1897",
     slug: "grover-cleveland",
   },
   {
-    image: "/benjamin-harrison.jpg",
+    image: "/harrison-pach-1896.jpg?v=1",
     name: "B. Harrison",
     fullName: "Benjamin Harrison",
     years: "1889–1893",
     slug: "benjamin-harrison",
   },
   {
-    image: "/mckinley.jpg",
+    image: "/mckinley-whitehouse.jpg?v=1",
     name: "McKinley",
     fullName: "William McKinley",
     years: "1897–1901",
     slug: "william-mckinley",
   },
   {
-    image: "/theodore-roosevelt.jpg",
+    image: "/roosevelt-formal.jpg?v=1",
     name: "T. Roosevelt",
     fullName: "Theodore Roosevelt",
     years: "1901–1909",
     slug: "theodore-roosevelt",
   },
   {
-    image: "/taft.jpg",
+    image: "/taft-formal-portrait.jpg?v=1",
     name: "Taft",
     fullName: "William Howard Taft",
     years: "1909–1913",
     slug: "william-howard-taft",
   },
   {
-    image: "/wilson.jpg",
+    image: "/wilson-1914.jpg",
     name: "Wilson",
     fullName: "Woodrow Wilson",
     years: "1913–1921",
     slug: "woodrow-wilson",
   },
   {
-    image: "/harding.jpg",
+    image: "/harding-front-1920.jpg",
     name: "Harding",
     fullName: "Warren G. Harding",
     years: "1921–1923",
@@ -129,7 +129,7 @@ const presidents = [
     slug: "dwight-d-eisenhower",
   },
   {
-    image: "/jfk-portrait.jpg",
+    image: "/jfk-color-portrait.jpg",
     name: "Kennedy",
     fullName: "John F. Kennedy",
     years: "1961–1963",
@@ -171,7 +171,7 @@ const presidents = [
     slug: "ronald-reagan",
   },
   {
-    image: "/ghwb.jpg",
+    image: "/bush41.jpg",
     name: "H.W. Bush",
     fullName: "George H. W. Bush",
     years: "1989–1993",
@@ -185,7 +185,7 @@ const presidents = [
     slug: "bill-clinton",
   },
   {
-    image: "/gwb.jpg",
+    image: "/george-w-bush.jpg",
     name: "W. Bush",
     fullName: "George W. Bush",
     years: "2001–2009",
@@ -242,7 +242,7 @@ const featuredArchives = [
     president: "Woodrow Wilson",
     description:
       "Explore Wilson's historic World Series appearance and his place in early presidential baseball history.",
-    image: "",
+    image: "/wilson-baseball-1915.jpg",
     href: "/presidents/woodrow-wilson",
   },
 ];
@@ -254,15 +254,13 @@ export default function Home() {
       <header className="bg-[#071d31] text-[#f5edd8]">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5 px-5 py-5 md:px-6">
           <Link
-            href="/"
+            href="/did-you-know"
             className="flex min-w-0 items-center gap-3 md:gap-4"
           >
 
 
             <div>
-              <h1 className="font-serif text-xl font-bold tracking-[0.07em] sm:text-2xl md:text-3xl lg:text-4xl">
-                PRESIDENTIAL PASTIME
-              </h1>
+              <h1 className="font-serif text-xl font-bold tracking-[0.07em] sm:text-2xl md:text-3xl lg:text-4xl">Presidential Pastime</h1>
 
               <p className="mt-1 text-[9px] uppercase tracking-[0.18em] text-[#d9c79d] sm:tracking-[0.28em] md:text-xs">
                 The American Presidency and the Game of Baseball
@@ -280,7 +278,7 @@ export default function Home() {
 
         {/* NAVIGATION */}
         <nav className="border-t border-[#31475b] bg-[#f8f2e4] text-[#10243a]">
-          <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-7 gap-y-3 px-6 py-4 text-sm font-semibold">
+          <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-7 gap-y-3 px-6 py-4 text-center text-sm font-semibold">
             <Link href="/" className="hover:text-[#a71924]">
               Home
             </Link>
@@ -307,31 +305,22 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/#featured-archives"
-              className="hover:text-[#a71924]"
-            >
-              Historical Archives
-            </Link>
-
-            <Link
-              href="/#photographs"
-              className="hover:text-[#a71924]"
-            >
-              Photographs
-            </Link>
-
-            <Link
-              href="/#memorabilia"
-              className="hover:text-[#a71924]"
-            >
-              Memorabilia
-            </Link>
-
-            <Link
-              href="/#about"
+              href="/about"
               className="hover:text-[#a71924]"
             >
               About
+            </Link>
+<Link
+              href="/donate"
+              className="hover:text-[#a71924]"
+            >
+              Donate
+            </Link>
+<Link
+              href="/contact"
+              className="hover:text-[#a71924]"
+            >
+              Contact
             </Link>
           </div>
         </nav>
@@ -346,11 +335,7 @@ export default function Home() {
                 Presidents • Baseball • American History
               </p>
 
-              <h2 className="font-serif text-5xl font-bold leading-[0.98] text-[#fff8e8] sm:text-6xl lg:text-7xl">
-                Presidential
-                <br />
-                Pastime
-              </h2>
+              <h2 className="font-serif text-3xl font-bold leading-tight text-[#fff8e8] sm:text-4xl lg:text-5xl">Play Ball, Mr. President!</h2>
 
               <div className="my-7 h-[2px] w-32 bg-[#a91d28]" />
 
@@ -440,7 +425,17 @@ export default function Home() {
                     <img
                       src={president.image}
                       alt={`${president.fullName} portrait`}
-                      className="h-full w-full object-cover object-top grayscale"
+                      className={`h-full w-full object-cover object-top grayscale ${
+                         president.slug === "william-howard-taft"
+                            ? "scale-[1.40]"
+                            : president.slug === "calvin-coolidge"
+                           ? "scale-125"
+                           : president.slug === "benjamin-harrison"
+                           ? "scale-125 -translate-y-3"
+                           : president.slug === "theodore-roosevelt"
+                           ? "!object-center"
+                           : ""
+                       }`}
                     />
                   </div>
                 </div>
@@ -636,76 +631,27 @@ export default function Home() {
       </section>
 
       {/* PHOTOGRAPHS AND MEMORABILIA */}
-      <section
-        id="photographs"
-        className="mx-auto max-w-7xl px-6 py-14 md:py-20"
-      >
-        <div className="mb-9 text-center">
+      {/* DISCOVER THE COLLECTION */}
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <div className="mb-12 text-center">
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a71924]">
             Discover the Collection
           </p>
 
           <h2 className="mt-3 font-serif text-3xl font-bold md:text-4xl">
-            More Than First Pitch
+            Explore Presidential Baseball History
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-[#52606d]">
-            The history of presidents and baseball lives in
-            photographs, personal stories, historic games, and
-            surviving memorabilia.
+            Discover the presidents, traditions, and surviving
+            artifacts that connect America's highest office
+            with its national pastime.
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           <Link
-            href="/presidents/john-f-kennedy"
-            className="group border border-[#c9b994] bg-[#f8f1df] p-6 transition hover:border-[#a71924]"
-          >
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#10243a] text-xl text-white">
-              ◉
-            </div>
-
-            <h3 className="font-serif text-2xl font-bold">
-              Historic Photographs
-            </h3>
-
-            <p className="mt-3 leading-7 text-[#52606d]">
-              Explore archival images of presidents at ballparks,
-              ceremonial pitches, and meetings with baseball
-              legends.
-            </p>
-
-            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
-              View Kennedy&apos;s Archive →
-            </p>
-          </Link>
-
-          <Link
-            href="/presidents/woodrow-wilson"
-            className="group border border-[#c9b994] bg-[#f8f1df] p-6 transition hover:border-[#a71924]"
-          >
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#10243a] text-xl text-white">
-              ⚾
-            </div>
-
-            <h3 className="font-serif text-2xl font-bold">
-              Teams, Games & Visits
-            </h3>
-
-            <p className="mt-3 leading-7 text-[#52606d]">
-              Discover presidential World Series appearances,
-              ballpark visits, and connections with legendary
-              players.
-            </p>
-
-            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
-              Explore Wilson&apos;s History →
-            </p>
-          </Link>
-
-          <Link
-            href="/presidents/warren-g-harding"
-            id="memorabilia"
+            href="/presidents"
             className="group border border-[#c9b994] bg-[#f8f1df] p-6 transition hover:border-[#a71924]"
           >
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#10243a] text-xl text-white">
@@ -713,17 +659,65 @@ export default function Home() {
             </div>
 
             <h3 className="font-serif text-2xl font-bold">
-              Presidential Memorabilia
+              Presidential Profiles
             </h3>
 
             <p className="mt-3 leading-7 text-[#52606d]">
-              Discover signed baseballs, historic bats, programs,
-              photographs, and other presidential baseball
-              artifacts.
+              Explore the baseball histories of America's presidents,
+              including ballpark visits, historic games, photographs,
+              and their connections to the national pastime.
             </p>
 
             <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
-              Explore Harding&apos;s Artifacts →
+              Explore the Presidents →
+            </p>
+          </Link>
+
+          <Link
+            href="/did-you-know"
+            className="group border border-[#c9b994] bg-[#f8f1df] p-6 transition hover:border-[#a71924]"
+          >
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#10243a] text-xl text-white">
+              ?
+            </div>
+
+            <h3 className="font-serif text-2xl font-bold">
+              Did You Know?
+            </h3>
+
+            <p className="mt-3 leading-7 text-[#52606d]">
+              Discover fascinating facts, forgotten stories,
+              remarkable moments, and surprising connections
+              between America's presidents and baseball.
+            </p>
+
+            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
+              Explore Fascinating Facts →
+            </p>
+          </Link>
+
+          <Link
+            href="/heritage-collection"
+            id="memorabilia"
+            className="group border border-[#c9b994] bg-[#f8f1df] p-6 transition hover:border-[#a71924]"
+          >
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#10243a] text-xl text-white">
+              ◆
+            </div>
+
+            <h3 className="font-serif text-2xl font-bold">
+              Heritage Collection
+            </h3>
+
+            <p className="mt-3 leading-7 text-[#52606d]">
+              Explore historical baseball artifacts, including
+              presidential-signed baseballs, authentic period
+              baseballs, and Walter Johnson's remarkable
+              presidential baseball collection.
+            </p>
+
+            <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
+              View the Heritage Collection →
             </p>
           </Link>
         </div>
@@ -782,7 +776,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/#about"
+            href="/about"
             className="hover:text-white"
           >
             About the Project

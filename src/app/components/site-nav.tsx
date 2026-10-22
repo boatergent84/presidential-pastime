@@ -1,7 +1,7 @@
 import Link from 'next/link';
 const links = [
   ['Home','/'], ['Presidents','/presidents'], ['First Pitch','/first-pitches'],
-  ['Heritage Collection','/heritage-collection'], ['Photo Archive','/photo-archive']
+  ['Heritage Collection','/heritage-collection']
 ];
 export default function SiteNav() {
  return <nav aria-label="Main navigation" className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
