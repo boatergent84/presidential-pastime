@@ -278,7 +278,7 @@ export default function Home() {
 
         {/* NAVIGATION */}
         <nav className="border-t border-[#31475b] bg-[#f8f2e4] text-[#10243a]">
-          <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-7 gap-y-3 px-6 py-4 text-center text-sm font-semibold">
+          <div className="mx-auto flex max-w-7xl flex-nowrap items-center gap-6 overflow-x-auto px-4 py-3 text-center text-sm font-semibold whitespace-nowrap sm:justify-center sm:gap-7 sm:px-6 sm:py-4">
             <Link href="/" className="hover:text-[#a71924]">
               Home
             </Link>
@@ -325,13 +325,13 @@ export default function Home() {
       {/* HERO */}
       <section className="bg-[#0b2439]">
         <div className="mx-auto grid max-w-7xl md:grid-cols-2">
-          <div className="flex min-h-[440px] items-center px-7 py-16 md:min-h-[510px] md:px-14">
+          <div className="flex items-center px-5 py-10 sm:px-7 sm:py-14 md:min-h-[510px] md:px-14 md:py-16">
             <div>
               <p className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-[#c6a35c] md:text-sm">
                 Presidents • Baseball • American History
               </p>
 
-              <h2 className="font-serif text-3xl font-bold leading-tight text-[#fff8e8] sm:text-4xl lg:text-5xl">Play Ball, Mr. President!</h2>
+              <h2 className="font-serif text-[2rem] font-bold leading-tight text-[#fff8e8] sm:text-4xl lg:text-5xl">Play Ball, Mr. President!</h2>
 
               <div className="my-7 h-[2px] w-32 bg-[#a91d28]" />
 
@@ -346,7 +346,7 @@ export default function Home() {
                 story.
               </p>
 
-              <div className="mt-9 flex flex-wrap gap-4">
+              <div className="mt-7 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:gap-4">
                 <Link
                   href="/presidents"
                   className="bg-[#a71924] px-6 py-3 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-[#c12a35]"
@@ -365,7 +365,7 @@ export default function Home() {
           </div>
 
           {/* COOLIDGE HERO PHOTOGRAPH */}
-          <div className="relative min-h-[370px] overflow-hidden bg-[#d8cfba] md:min-h-[510px]">
+          <div className="relative min-h-[280px] overflow-hidden bg-[#d8cfba] sm:min-h-[370px] md:min-h-[510px]">
             <img
               src="/coolidge-baseball-1924.jpg"
               alt="President Calvin Coolidge at a baseball event in 1924"
@@ -409,12 +409,12 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="flex gap-3 overflow-x-auto pb-4">
+          <div className="flex snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pb-4 touch-pan-x">
             {presidents.map((president) => (
               <Link
                 href={`/presidents/${president.slug}`}
                 key={president.slug}
-                className="group min-w-[116px] border border-[#6d7d8b] bg-[#102c44] p-3 text-center transition hover:border-[#d5b46d] hover:bg-[#173a56]"
+                className="group min-w-[116px] snap-start border border-[#6d7d8b] bg-[#102c44] p-3 text-center transition hover:border-[#d5b46d] hover:bg-[#173a56]"
               >
                 <div className="mx-auto mb-3 h-[66px] w-[66px] overflow-hidden rounded-full border border-[#d5b46d] p-[2px]">
                   <div className="h-full w-full overflow-hidden rounded-full bg-[#e8dfca]">
