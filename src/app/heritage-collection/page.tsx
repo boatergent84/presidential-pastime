@@ -91,7 +91,7 @@ export default function HeritageCollectionPage() {
       </div>
       <div className="flex flex-col justify-center p-7 md:p-10">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">Featured Archival Exhibit · 1937</p>
-        <h2 className="mt-3 font-serif text-3xl font-bold">Walter Johnson's Six Presidential Baseballs</h2>
+        <h2 className="mt-3 font-serif text-3xl font-bold">Walter Johnson&apos;s Six Presidential Baseballs</h2>
         <p className="mt-4 leading-7 text-[#59636b]">Explore the historic photograph documenting six presidential-autographed baseballs associated with Washington Senators legend Walter Johnson, with links to the presidents and the Library of Congress catalog.</p>
         <p className="mt-3 text-xs text-[#59636b]">Photograph: Harris &amp; Ewing Collection, Library of Congress. The original baseballs are not owned by Presidential Pastime.</p>
         <Link href="/heritage-collection/walter-johnson-presidential-baseballs" className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]">Explore the featured exhibit →</Link>

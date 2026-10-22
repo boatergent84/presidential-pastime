@@ -35,8 +35,10 @@ export default function DonatePage() {
           <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5]">
             <Link href="/" className="hover:text-white">Home</Link>
             <Link href="/presidents" className="hover:text-white">Presidents</Link>
+            <Link href="/first-pitches" className="hover:text-white">First Pitch</Link>
             <Link href="/heritage-collection" className="hover:text-white">Heritage Collection</Link>
             <Link href="/about" className="hover:text-white">About</Link>
+            <Link href="/donate" className="hover:text-white">Donate</Link>
             <Link href="/contact" className="hover:text-white">Contact</Link>
           </nav>
         </div>
@@ -56,7 +58,7 @@ export default function DonatePage() {
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#d3dce0]">
             Great stories deserve to be discovered, documented, and shared.
             Your support can help build a lasting home for the history of
-            America's presidents and America's pastime.
+            America&apos;s presidents and America&apos;s pastime.
           </p>
         </div>
       </section>
@@ -90,7 +92,7 @@ export default function DonatePage() {
             Every Contribution Has a Story.
           </h2>
           <p className="mt-7 text-base leading-8 text-[#47505a]">
-            Support our mission through Stripe's secure checkout.
+            Support our mission through Stripe&apos;s secure checkout.
             In the meantime, you can contact us to discuss supporting
             the project, contributing historical materials, or collaborating
             on research.
@@ -112,9 +114,9 @@ export default function DonatePage() {
 
       <section className="bg-[#102c44] px-6 py-20 text-center text-white">
         <p className="font-serif text-3xl italic leading-relaxed text-[#e8d4a6] md:text-4xl">
-          "The past is worth preserving.
+          &quot;The past is worth preserving.
           <br />
-          The stories are worth sharing."
+          The stories are worth sharing.&quot;
         </p>
         <p className="mt-6 text-xs uppercase tracking-[0.2em] text-[#b5c3cb]">
           Presidential Pastime
@@ -125,7 +127,7 @@ export default function DonatePage() {
         <Link href="/" className="font-serif text-lg font-bold text-white">
           PRESIDENTIAL PASTIME
         </Link>
-        <p className="mt-2">America's Presidents. America's Pastime.</p>
+        <p className="mt-2">America&apos;s Presidents. America&apos;s Pastime.</p>
       </footer>
     </main>
   );

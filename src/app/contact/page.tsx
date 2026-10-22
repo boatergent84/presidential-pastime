@@ -44,9 +44,11 @@ export default function ContactPage() {
           <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5]">
             <Link href="/" className="hover:text-white">Home</Link>
             <Link href="/presidents" className="hover:text-white">Presidents</Link>
+            <Link href="/first-pitches" className="hover:text-white">First Pitch</Link>
             <Link href="/heritage-collection" className="hover:text-white">Heritage Collection</Link>
             <Link href="/about" className="hover:text-white">About</Link>
             <Link href="/donate" className="hover:text-white">Donate</Link>
+            <Link href="/contact" className="hover:text-white">Contact</Link>
           </nav>
         </div>
       </header>
@@ -63,7 +65,7 @@ export default function ContactPage() {
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#d3dce0]">
             Have a historical discovery, a rare photograph, an artifact,
-            or a question? We'd love to hear about it.
+            or a question? We&apos;d love to hear about it.
           </p>
         </div>
       </section>
@@ -208,7 +210,7 @@ export default function ContactPage() {
         <Link href="/" className="font-serif text-lg font-bold text-white">
           PRESIDENTIAL PASTIME
         </Link>
-        <p className="mt-2">America's Presidents. America's Pastime.</p>
+        <p className="mt-2">America&apos;s Presidents. America&apos;s Pastime.</p>
       </footer>
     </main>
   );

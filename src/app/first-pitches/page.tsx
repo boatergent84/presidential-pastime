@@ -120,14 +120,14 @@ export default function FirstPitchPage() {
               On a spring afternoon in Washington, D.C., President William
               Howard Taft stepped into baseball history. It was April 14,
               1910, and the Washington Senators were preparing to open
-              their American League season against Connie Mack's
+              their American League season against Connie Mack&apos;s
               Philadelphia Athletics.
             </p>
             <p>
               Before the game began, umpire Billy Evans approached the
-              president's box and presented Taft with a new baseball.
+              president&apos;s box and presented Taft with a new baseball.
               From his seat in the grandstand, the 27th president
-              tossed the ball toward Washington's young pitching
+              tossed the ball toward Washington&apos;s young pitching
               sensation, Walter Johnson.
             </p>
             <p>
@@ -135,7 +135,7 @@ export default function FirstPitchPage() {
               far beyond that afternoon. Taft had become the first
               sitting American president to perform the ceremonial
               Opening Day first pitch, establishing a tradition
-              that would connect the presidency with America's
+              that would connect the presidency with America&apos;s
               national pastime for generations.
             </p>
           </div>
@@ -237,7 +237,7 @@ export default function FirstPitchPage() {
                   A Presidential Baseball Fan — 1912
                 </p>
                 <p className="mt-2 text-sm leading-6 text-[#46515a]">
-                  Taft's enthusiasm for baseball extended beyond
+                  Taft&apos;s enthusiasm for baseball extended beyond
                   his historic 1910 appearance, reflecting a lasting
                   connection to the sport.
                 </p>
@@ -245,7 +245,7 @@ export default function FirstPitchPage() {
             </figure>
           </div>
           <p className="mt-3 text-xs italic text-[#65717b]">
-            Companion photographs represent Taft's broader baseball history;
+            Companion photographs represent Taft&apos;s broader baseball history;
             they are not presented as images of the April 14, 1910 ceremony.
             Individual photographic attributions should be confirmed
             against their original archival records.
@@ -295,17 +295,17 @@ export default function FirstPitchPage() {
           </h2>
 
           <p className="mt-5 leading-8 text-[#334454]">
-            The baseball used in Taft's first-pitch ceremony was
+            The baseball used in Taft&apos;s first-pitch ceremony was
             not forgotten after the game. Walter Johnson had it
-            preserved and requested the president's autograph.
+            preserved and requested the president&apos;s autograph.
             Taft signed the ball with a personal message celebrating
-            Johnson's outstanding performance.
+            Johnson&apos;s outstanding performance.
           </p>
 
           <div className="my-7 border-l-4 border-[#a4282d] bg-[#fffaf0] p-6">
             <p className="font-serif text-lg italic leading-8 text-[#102c44]">
-              "For Walter Johnson, with the hope that he may
-              continue to be as formidable as in yesterday's game."
+              &quot;For Walter Johnson, with the hope that he may
+              continue to be as formidable as in yesterday&apos;s game.&quot;
             </p>
             <p className="mt-3 text-sm font-bold text-[#a4282d]">
               — William Howard Taft, April 15, 1910
@@ -314,7 +314,7 @@ export default function FirstPitchPage() {
 
           <p className="text-sm leading-7 text-[#46515a]">
             This inscription is documented in the Library of Congress
-            account of Taft's correspondence. No substitute or
+            account of Taft&apos;s correspondence. No substitute or
             reproduction baseball is shown here as the original artifact.
           </p>
         </section>
@@ -376,7 +376,7 @@ export default function FirstPitchPage() {
             href="/presidents/william-howard-taft"
             className="mt-8 inline-block rounded-md border border-[#d7bb7a] px-7 py-3 font-bold text-[#f0d79b] transition hover:bg-[#d7bb7a] hover:text-[#102c44]"
           >
-            Explore William Howard Taft's Presidential Profile →
+            Explore William Howard Taft&apos;s Presidential Profile →
           </Link>
         </section>
 

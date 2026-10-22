@@ -49,9 +49,13 @@ export default async function ExhibitPage({ params }: Props) {
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5">
           <Link href="/" className="font-serif text-2xl font-bold tracking-wide">PRESIDENTIAL PASTIME</Link>
           <nav className="flex flex-wrap gap-4 text-sm">
+            <Link href="/" className="hover:underline">Home</Link>
             <Link href="/presidents" className="hover:underline">Presidents</Link>
+            <Link href="/first-pitches" className="hover:underline">First Pitch</Link>
             <Link href="/heritage-collection" className="hover:underline">Heritage Collection</Link>
-            <Link href="/photo-archive" className="hover:underline">Photo Archive</Link>
+            <Link href="/about" className="hover:underline">About</Link>
+            <Link href="/donate" className="hover:underline">Donate</Link>
+            <Link href="/contact" className="hover:underline">Contact</Link>
           </nav>
         </div>
       </header>

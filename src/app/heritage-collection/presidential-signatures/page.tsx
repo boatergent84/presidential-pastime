@@ -313,7 +313,7 @@ export default function PresidentialSignaturesPage() {
       </section>
 
       <footer className="border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-10 text-center text-sm text-[#eee7d7]">
-        Presidential Pastime · Preserving the intersection of the presidency and America's pastime.
+        Presidential Pastime · Preserving the intersection of the presidency and America&apos;s pastime.
       </footer>
     </main>
   );

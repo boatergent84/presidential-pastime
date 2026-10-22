@@ -51,9 +51,11 @@ export default function AboutPage() {
           <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5]">
             <Link href="/" className="hover:text-white">Home</Link>
             <Link href="/presidents" className="hover:text-white">Presidents</Link>
-            <Link href="/heritage-collection" className="hover:text-white">Heritage Collection</Link>
             <Link href="/first-pitches" className="hover:text-white">First Pitch</Link>
+            <Link href="/heritage-collection" className="hover:text-white">Heritage Collection</Link>
             <Link href="/about" className="text-white">About</Link>
+            <Link href="/donate" className="hover:text-white">Donate</Link>
+            <Link href="/contact" className="hover:text-white">Contact</Link>
           </nav>
         </div>
       </header>
@@ -87,7 +89,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="mt-9 max-w-2xl text-lg leading-8 text-[#e5dfd1] md:text-xl">
-            One represents the nation's highest office. The other
+            One represents the nation&apos;s highest office. The other
             its most enduring game. Together, they tell a story
             that belongs to generations of Americans.
           </p>
@@ -96,7 +98,7 @@ export default function AboutPage() {
             <span className="text-xl">★</span>
             <span className="h-px w-20 bg-[#a98a52]" />
             <span className="text-xs font-bold uppercase tracking-[0.25em]">
-              America's Presidents. America's Pastime.
+              America&apos;s Presidents. America&apos;s Pastime.
             </span>
           </div>
         </div>
@@ -173,9 +175,9 @@ export default function AboutPage() {
             Why This History Matters
           </p>
           <p className="mt-8 font-serif text-3xl leading-relaxed md:text-5xl">
-            "To understand a president, sometimes it helps
+            &quot;To understand a president, sometimes it helps
             to look beyond the White House
-            <span className="text-[#d6b46f]"> and into the ballpark.</span>"
+            <span className="text-[#d6b46f]"> and into the ballpark.</span>&quot;
           </p>
           <p className="mt-7 text-xs uppercase tracking-[0.25em] text-[#b5c3cb]">
             The Editorial Vision of Presidential Pastime
@@ -191,7 +193,7 @@ export default function AboutPage() {
           </p>
           <h2 className="mt-5 font-serif text-4xl font-bold md:text-5xl">
             A Living Museum of
-            <span className="italic text-[#9b712f]"> America's Game.</span>
+            <span className="italic text-[#9b712f]"> America&apos;s Game.</span>
           </h2>
           <p className="mt-6 text-lg leading-8 text-[#57606a]">
             Every presidential profile, historical photograph,
@@ -301,9 +303,9 @@ export default function AboutPage() {
           </h2>
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#c8d1d5]">
             This is a place to discover forgotten moments,
-            revisit familiar traditions, and see America's
+            revisit familiar traditions, and see America&apos;s
             presidents through the shared experience of
-            America's pastime.
+            America&apos;s pastime.
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link
@@ -327,7 +329,7 @@ export default function AboutPage() {
           PRESIDENTIAL PASTIME
         </p>
         <p className="mt-2 uppercase tracking-[0.2em]">
-          America's Presidents. America's Pastime.
+          America&apos;s Presidents. America&apos;s Pastime.
         </p>
       </footer>
     </main>

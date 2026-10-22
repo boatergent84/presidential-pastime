@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function WilliamHowardTaftPage() {
   return (
@@ -6,24 +7,24 @@ export default function WilliamHowardTaftPage() {
       <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <div>
-            <a
+            <Link
               href="/"
               className="font-serif text-2xl font-bold tracking-wide"
             >
               PRESIDENTIAL PASTIME
-            </a>
+            </Link>
 
             <p className="mt-1 text-xs uppercase tracking-[0.25em] text-[#c9d4df]">
               America&apos;s Presidents. America&apos;s Pastime.
             </p>
           </div>
 
-          <a
+          <Link
             href="/"
             className="border border-[#c9d4df] px-4 py-2 text-xs font-bold uppercase tracking-widest"
           >
             ← Home
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -135,10 +136,10 @@ export default function WilliamHowardTaftPage() {
               <p className="mt-4 leading-8 text-[#59636b]">
                 William Howard Taft occupies a unique place in the history of American
                 baseball. On April 14, 1910, he became the first sitting United States
-                president to throw a ceremonial first pitch on Major League Baseball's
-                Opening Day. The occasion took place at Washington's National Park,
-                where the Senators faced the Philadelphia Athletics. Taft's appearance
-                helped establish a connection between the presidency and America's
+                president to throw a ceremonial first pitch on Major League Baseball&apos;s
+                Opening Day. The occasion took place at Washington&apos;s National Park,
+                where the Senators faced the Philadelphia Athletics. Taft&apos;s appearance
+                helped establish a connection between the presidency and America&apos;s
                 national pastime that would endure for generations. The game itself
                 was equally memorable: legendary pitcher Walter Johnson held
                 Philadelphia to one hit as Washington earned a 3–0 victory. Taft
@@ -151,8 +152,8 @@ export default function WilliamHowardTaftPage() {
                 presidents had attended baseball games, Taft transformed presidential
                 participation into a ceremonial Opening Day event. His first pitch
                 became a powerful symbol of the relationship between the White House,
-                the nation's capital, and professional baseball. More than a century
-                later, Taft's 1910 appearance remains one of the most recognizable
+                the nation&apos;s capital, and professional baseball. More than a century
+                later, Taft&apos;s 1910 appearance remains one of the most recognizable
                 milestones in presidential baseball history.
               </p>
 

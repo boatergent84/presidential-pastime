@@ -28,7 +28,7 @@ export default function WalterJohnsonExhibit() {
       </header>
       <div className="mx-auto max-w-5xl px-6 py-12">
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">The Heritage Collection · Featured Exhibit</p>
-        <h1 className="mt-3 font-serif text-4xl font-bold md:text-6xl">Walter Johnson's Six Presidential Baseballs</h1>
+        <h1 className="mt-3 font-serif text-4xl font-bold md:text-6xl">Walter Johnson&apos;s Six Presidential Baseballs</h1>
         <p className="mt-4 font-serif text-xl italic text-[#59636b]">Six presidential signatures. One extraordinary baseball story.</p>
         <div className="mt-9 grid gap-8 md:grid-cols-[1fr_290px]">
           <section className="border border-[#b8aa8e] bg-[#f8f3e8] p-7">

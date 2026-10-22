@@ -282,41 +282,37 @@ export default function Home() {
             <Link href="/" className="hover:text-[#a71924]">
               Home
             </Link>
-
             <Link
               href="/presidents"
               className="hover:text-[#a71924]"
             >
               Presidents
             </Link>
-
-            <Link
-              href="/heritage-collection"
-              className="hover:text-[#a71924]"
-            >
-              Heritage Collection
-            </Link>
-
             <Link
               href="/first-pitches"
               className="hover:text-[#a71924]"
             >
               First Pitch
             </Link>
-
+            <Link
+              href="/heritage-collection"
+              className="hover:text-[#a71924]"
+            >
+              Heritage Collection
+            </Link>
             <Link
               href="/about"
               className="hover:text-[#a71924]"
             >
               About
             </Link>
-<Link
+            <Link
               href="/donate"
               className="hover:text-[#a71924]"
             >
               Donate
             </Link>
-<Link
+            <Link
               href="/contact"
               className="hover:text-[#a71924]"
             >
@@ -644,7 +640,7 @@ export default function Home() {
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-[#52606d]">
             Discover the presidents, traditions, and surviving
-            artifacts that connect America's highest office
+            artifacts that connect America&apos;s highest office
             with its national pastime.
           </p>
         </div>
@@ -663,7 +659,7 @@ export default function Home() {
             </h3>
 
             <p className="mt-3 leading-7 text-[#52606d]">
-              Explore the baseball histories of America's presidents,
+              Explore the baseball histories of America&apos;s presidents,
               including ballpark visits, historic games, photographs,
               and their connections to the national pastime.
             </p>
@@ -688,7 +684,7 @@ export default function Home() {
             <p className="mt-3 leading-7 text-[#52606d]">
               Discover fascinating facts, forgotten stories,
               remarkable moments, and surprising connections
-              between America's presidents and baseball.
+              between America&apos;s presidents and baseball.
             </p>
 
             <p className="mt-6 text-xs font-bold uppercase tracking-wider text-[#a71924] group-hover:underline">
@@ -712,7 +708,7 @@ export default function Home() {
             <p className="mt-3 leading-7 text-[#52606d]">
               Explore historical baseball artifacts, including
               presidential-signed baseballs, authentic period
-              baseballs, and Walter Johnson's remarkable
+              baseballs, and Walter Johnson&apos;s remarkable
               presidential baseball collection.
             </p>
 

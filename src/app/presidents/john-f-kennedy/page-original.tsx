@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function JohnFKennedyPage() {
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#172b3d]">
@@ -5,23 +6,23 @@ export default function JohnFKennedyPage() {
       <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <div>
-            <a
+            <Link
               href="/"
               className="font-serif text-2xl font-bold tracking-wide"
             >
               PRESIDENTIAL PASTIME
-            </a>
+            </Link>
             <p className="text-xs uppercase tracking-[0.25em] text-[#c9b98c]">
               America&apos;s Presidents. America&apos;s Pastime.
             </p>
           </div>
 
-          <a
+          <Link
             href="/"
             className="border border-[#c9b98c] px-4 py-2 text-xs font-bold uppercase tracking-wider"
           >
             ← Home
-          </a>
+          </Link>
         </div>
       </header>
 

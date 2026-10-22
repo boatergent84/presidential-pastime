@@ -157,9 +157,13 @@ export default function DidYouKnowPage() {
             <Link href="/presidents" className="hover:text-[#d6b46f]">
               Presidents
             </Link>
+            <Link href="/first-pitches" className="hover:text-[#d6b46f]">First Pitch</Link>
             <Link href="/heritage-collection" className="hover:text-[#d6b46f]">
               Heritage Collection
             </Link>
+            <Link href="/about" className="hover:text-[#d6b46f]">About</Link>
+            <Link href="/donate" className="hover:text-[#d6b46f]">Donate</Link>
+            <Link href="/contact" className="hover:text-[#d6b46f]">Contact</Link>
           </nav>
         </div>
       </header>
@@ -174,7 +178,7 @@ export default function DidYouKnowPage() {
         <div className="mx-auto my-7 h-[2px] w-28 bg-[#a4282d]" />
         <p className="mx-auto max-w-2xl font-serif text-lg leading-8 text-[#e6dac1] md:text-xl">
           Remarkable moments, forgotten stories, and surprising
-          connections between America's presidents and its national pastime.
+          connections between America&apos;s presidents and its national pastime.
         </p>
       </section>
 
