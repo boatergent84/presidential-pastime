@@ -29,23 +29,37 @@ export default function HeritageCollectionPage() {
   <header className="border-b-4 border-[#a4282d] bg-[#102c44] px-6 py-5 text-white"><div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4"><Link href="/" className="font-serif text-2xl font-bold">PRESIDENTIAL PASTIME</Link><nav className="flex flex-wrap gap-4 text-sm"><Link href="/presidents">Presidents</Link><Link href="/first-pitches">First Pitches</Link><Link href="/photo-archive">Photo Archive</Link></nav></div></header>
   <section className="bg-[#102c44] px-6 py-16 text-center text-white"><p className="text-xs uppercase tracking-[0.3em] text-[#c9b98c]">Presidential Pastime</p><h1 className="mt-3 font-serif text-4xl font-bold md:text-6xl">The Heritage Collection</h1><p className="mx-auto mt-5 max-w-2xl text-[#eee7d7]">A developing research gallery of presidential baseball artifacts, photographs, tickets, and signed baseballs.</p></section>
   {/* HERITAGE FEATURED EXHIBIT */}
-  <section className="mx-auto max-w-6xl px-6 pt-10">
-    <div className="grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] md:grid-cols-2">
-      <div className="flex min-h-64 items-center justify-center bg-[#102c44] p-5">
-        <img src="/heritage/walter-johnson-baseballs.jpg" alt="1937 archival photograph of Walter Johnson's six presidential-autographed baseballs" className="max-h-80 w-full object-contain" />
+  <section className="mx-auto max-w-6xl px-6 pt-8">
+    <Link href="/heritage-collection/presidential-signatures"
+      className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2">
+      <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
+        <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d7bb83]">Special Museum Exhibit</p>
+        <div className="my-6 flex h-[208px] w-[208px] items-center justify-center overflow-hidden rounded-full border-4 border-[#b89a61] bg-white shadow-xl">
+          <img
+            src="/heritage/presidential-signatures/george-h-w-bush.png"
+            alt="Baseball signed by President George H. W. Bush"
+            className="h-full w-full object-contain"
+          />
+        </div>
+        <p className="font-serif text-lg italic text-[#d7bb83]">Presidential Autographs</p>
       </div>
       <div className="flex flex-col justify-center p-7 md:p-10">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">Featured Archival Exhibit · 1937</p>
-        <h2 className="mt-3 font-serif text-3xl font-bold">Walter Johnson's Six Presidential Baseballs</h2>
-        <p className="mt-4 leading-7 text-[#59636b]">Explore the historic photograph documenting six presidential-autographed baseballs associated with Washington Senators legend Walter Johnson, with links to the presidents and the Library of Congress catalog.</p>
-        <p className="mt-3 text-xs text-[#59636b]">Photograph: Harris &amp; Ewing Collection, Library of Congress. The original baseballs are not owned by Presidential Pastime.</p>
-        <Link href="/heritage-collection/walter-johnson-presidential-baseballs" className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]">Explore the featured exhibit →</Link>
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">The Heritage Collection · Special Exhibit</p>
+        <h2 className="mt-3 font-serif text-3xl font-bold">The Presidential Signature Collection</h2>
+        <p className="mt-2 font-serif text-lg italic text-[#987944]">A History of America, Written on Baseballs</p>
+        <p className="mt-5 leading-7 text-[#59636b]">
+          Explore the extraordinary tradition of presidential-autographed baseballs,
+          from Theodore Roosevelt onward. Discover documented signatures,
+          historical provenance, and the stories behind these presidential artifacts.
+        </p>
+        <span className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]">
+          Explore the Signature Collection →
+        </span>
       </div>
-    </div>
+    </Link>
   </section>
 
-  {/* THE BALL THROUGH TIME — FEATURED MUSEUM EXHIBIT */}
-  <section className="mx-auto max-w-6xl px-6 pt-8">
+<section className="mx-auto max-w-6xl px-6 pt-8">
     <Link
       href="/heritage-collection/the-ball-through-time"
       className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
@@ -93,32 +107,22 @@ export default function HeritageCollectionPage() {
     </Link>
   </section>
 
-  {/* PRESIDENTIAL SIGNATURE COLLECTION */}
-  <section className="mx-auto max-w-6xl px-6 pt-8">
-    <Link href="/heritage-collection/presidential-signatures"
-      className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2">
-      <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
-        <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d7bb83]">Special Museum Exhibit</p>
-        <div className="my-6 flex h-40 w-40 items-center justify-center rounded-full border-4 border-[#b89a61] bg-[#eee7d7] shadow-xl">
-          <span className="text-7xl">⚾</span>
-        </div>
-        <p className="font-serif text-lg italic text-[#d7bb83]">Presidential Autographs</p>
+<section className="mx-auto max-w-6xl px-6 pt-10">
+    <div className="grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] md:grid-cols-2">
+      <div className="flex min-h-64 items-center justify-center bg-[#102c44] p-5">
+        <img src="/heritage/walter-johnson-baseballs.jpg" alt="1937 archival photograph of Walter Johnson's six presidential-autographed baseballs" className="max-h-80 w-full object-contain" />
       </div>
       <div className="flex flex-col justify-center p-7 md:p-10">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">The Heritage Collection · Special Exhibit</p>
-        <h2 className="mt-3 font-serif text-3xl font-bold">The Presidential Signature Collection</h2>
-        <p className="mt-2 font-serif text-lg italic text-[#987944]">A History of America, Written on Baseballs</p>
-        <p className="mt-5 leading-7 text-[#59636b]">
-          Explore the extraordinary tradition of presidential-autographed baseballs,
-          from Theodore Roosevelt onward. Discover documented signatures,
-          historical provenance, and the stories behind these presidential artifacts.
-        </p>
-        <span className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]">
-          Explore the Signature Collection →
-        </span>
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">Featured Archival Exhibit · 1937</p>
+        <h2 className="mt-3 font-serif text-3xl font-bold">Walter Johnson's Six Presidential Baseballs</h2>
+        <p className="mt-4 leading-7 text-[#59636b]">Explore the historic photograph documenting six presidential-autographed baseballs associated with Washington Senators legend Walter Johnson, with links to the presidents and the Library of Congress catalog.</p>
+        <p className="mt-3 text-xs text-[#59636b]">Photograph: Harris &amp; Ewing Collection, Library of Congress. The original baseballs are not owned by Presidential Pastime.</p>
+        <Link href="/heritage-collection/walter-johnson-presidential-baseballs" className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]">Explore the featured exhibit →</Link>
       </div>
-    </Link>
+    </div>
   </section>
+
+  
 
   <section className="mx-auto max-w-6xl px-6 py-10"><div className="mb-6 border-l-4 border-[#a4282d] bg-[#f8f3e8] p-4 text-sm leading-6"><strong>Collection status:</strong> These are research exhibit topics, not authenticated objects held by Presidential Pastime. Individual artifacts and credits will be added after verification.</div>
    <div className="mb-8 flex flex-col gap-3 md:flex-row"><input aria-label="Search exhibits" className="w-full border border-[#b8aa8e] bg-white p-3 md:flex-1" placeholder="Search by president, year, or artifact..." value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Filter by category" className="border border-[#b8aa8e] bg-white p-3" value={category} onChange={e=>setCategory(e.target.value)}>{categories.map(c=><option key={c}>{c}</option>)}</select></div>
