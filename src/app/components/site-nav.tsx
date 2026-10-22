@@ -1,6 +1,6 @@
 import Link from 'next/link';
 const links = [
-  ['Home','/'], ['Presidents','/presidents'], ['First Pitches','/first-pitches'],
+  ['Home','/'], ['Presidents','/presidents'], ['First Pitch','/first-pitches'],
   ['Heritage Collection','/heritage-collection'], ['Photo Archive','/photo-archive']
 ];
 export default function SiteNav() {

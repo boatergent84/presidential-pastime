@@ -300,10 +300,10 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/#first-pitches"
+              href="/first-pitches"
               className="hover:text-[#a71924]"
             >
-              First Pitches
+              First Pitch
             </Link>
 
             <Link
@@ -374,10 +374,10 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href="/#first-pitches"
+                  href="/first-pitches"
                   className="border border-[#d8c79e] px-6 py-3 text-sm font-bold uppercase tracking-wider text-[#f7eed9] transition hover:bg-white/10"
                 >
-                  View First Pitches
+                  Explore the First Pitch
                 </Link>
               </div>
             </div>
@@ -625,7 +625,7 @@ export default function Home() {
               </p>
 
               <Link
-                href="/presidents/william-howard-taft"
+                href="/first-pitches"
                 className="mt-8 inline-block bg-[#a71924] px-6 py-3 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-[#c12a35]"
               >
                 Discover the First Pitch →
@@ -646,7 +646,7 @@ export default function Home() {
           </p>
 
           <h2 className="mt-3 font-serif text-3xl font-bold md:text-4xl">
-            More Than First Pitches
+            More Than First Pitch
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-[#52606d]">
