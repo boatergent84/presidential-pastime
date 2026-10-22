@@ -252,7 +252,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#eee6d3] text-[#10243a]">
       {/* HEADER */}
       <header className="bg-[#071d31] text-[#f5edd8]">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5 px-5 py-5 md:px-6">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-5 sm:py-5 md:px-6">
           <Link
             href="/did-you-know"
             className="flex min-w-0 items-center gap-3 md:gap-4"
@@ -270,54 +270,42 @@ export default function Home() {
 
           <Link
             href="/presidents"
-            className="border border-[#d5b46d] bg-[#9e1821] px-5 py-3 text-center text-xs font-bold uppercase tracking-wider text-white transition hover:bg-[#b6232d]"
+            className="hidden border border-[#d5b46d] bg-[#9e1821] px-5 py-3 text-center text-xs font-bold uppercase tracking-wider text-white transition hover:bg-[#b6232d] md:inline-block"
           >
             Explore the Presidents
           </Link>
         </div>
 
-        {/* NAVIGATION */}
-        <nav className="border-t border-[#31475b] bg-[#f8f2e4] text-[#10243a]">
-          <div className="mx-auto flex max-w-7xl flex-nowrap items-center gap-6 overflow-x-auto px-4 py-3 text-center text-sm font-semibold whitespace-nowrap sm:justify-center sm:gap-7 sm:px-6 sm:py-4">
-            <Link href="/" className="hover:text-[#a71924]">
-              Home
-            </Link>
-            <Link
-              href="/presidents"
-              className="hover:text-[#a71924]"
-            >
-              Presidents
-            </Link>
-            <Link
-              href="/first-pitches"
-              className="hover:text-[#a71924]"
-            >
-              First Pitch
-            </Link>
-            <Link
-              href="/heritage-collection"
-              className="hover:text-[#a71924]"
-            >
-              Heritage Collection
-            </Link>
-            <Link
-              href="/about"
-              className="hover:text-[#a71924]"
-            >
-              About
-            </Link>
-            <Link
-              href="/donate"
-              className="hover:text-[#a71924]"
-            >
-              Donate
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:text-[#a71924]"
-            >
-              Contact
-            </Link>
+        {/* MOBILE NAVIGATION */}
+        <details className="group border-t border-[#31475b] bg-[#f8f2e4] text-[#10243a] md:hidden">
+          <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-3 font-bold uppercase tracking-[0.14em] [&::-webkit-details-marker]:hidden">
+            <span className="flex items-center gap-3">
+              <span className="text-xl text-[#a71924]">☰</span>
+              Menu
+            </span>
+            <span className="text-[#a71924] transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <nav aria-label="Mobile navigation" className="grid border-t border-[#d1c2a2] px-5 py-2 text-sm font-semibold">
+            <Link href="/" className="border-b border-[#e2d8c4] py-3">Home</Link>
+            <Link href="/presidents" className="border-b border-[#e2d8c4] py-3">Presidents</Link>
+            <Link href="/first-pitches" className="border-b border-[#e2d8c4] py-3">First Pitch</Link>
+            <Link href="/heritage-collection" className="border-b border-[#e2d8c4] py-3">Heritage Collection</Link>
+            <Link href="/about" className="border-b border-[#e2d8c4] py-3">About</Link>
+            <Link href="/donate" className="border-b border-[#e2d8c4] py-3">Donate</Link>
+            <Link href="/contact" className="py-3">Contact</Link>
+          </nav>
+        </details>
+
+        {/* DESKTOP NAVIGATION */}
+        <nav aria-label="Main navigation" className="hidden border-t border-[#31475b] bg-[#f8f2e4] text-[#10243a] md:block">
+          <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-7 gap-y-3 px-6 py-4 text-center text-sm font-semibold">
+            <Link href="/" className="hover:text-[#a71924]">Home</Link>
+            <Link href="/presidents" className="hover:text-[#a71924]">Presidents</Link>
+            <Link href="/first-pitches" className="hover:text-[#a71924]">First Pitch</Link>
+            <Link href="/heritage-collection" className="hover:text-[#a71924]">Heritage Collection</Link>
+            <Link href="/about" className="hover:text-[#a71924]">About</Link>
+            <Link href="/donate" className="hover:text-[#a71924]">Donate</Link>
+            <Link href="/contact" className="hover:text-[#a71924]">Contact</Link>
           </div>
         </nav>
       </header>
@@ -325,13 +313,13 @@ export default function Home() {
       {/* HERO */}
       <section className="bg-[#0b2439]">
         <div className="mx-auto grid max-w-7xl md:grid-cols-2">
-          <div className="flex items-center px-5 py-10 sm:px-7 sm:py-14 md:min-h-[510px] md:px-14 md:py-16">
+          <div className="order-2 flex items-center px-5 py-8 sm:px-7 sm:py-12 md:order-1 md:min-h-[510px] md:px-14 md:py-16">
             <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-[#c6a35c] md:text-sm">
+              <p className="mb-5 hidden text-xs font-bold uppercase tracking-[0.25em] text-[#c6a35c] md:block md:text-sm">
                 Presidents • Baseball • American History
               </p>
 
-              <h2 className="font-serif text-[2rem] font-bold leading-tight text-[#fff8e8] sm:text-4xl lg:text-5xl">Play Ball, Mr. President!</h2>
+              <h2 className="hidden font-serif text-[2rem] font-bold leading-tight text-[#fff8e8] md:block md:text-4xl lg:text-5xl">Play Ball, Mr. President!</h2>
 
               <div className="my-7 h-[2px] w-32 bg-[#a91d28]" />
 
@@ -365,7 +353,7 @@ export default function Home() {
           </div>
 
           {/* COOLIDGE HERO PHOTOGRAPH */}
-          <div className="relative min-h-[280px] overflow-hidden bg-[#d8cfba] sm:min-h-[370px] md:min-h-[510px]">
+          <div className="relative order-1 min-h-[390px] overflow-hidden bg-[#d8cfba] sm:min-h-[430px] md:order-2 md:min-h-[510px]">
             <img
               src="/coolidge-baseball-1924.jpg"
               alt="President Calvin Coolidge at a baseball event in 1924"
@@ -374,7 +362,19 @@ export default function Home() {
 
             <div className="absolute inset-0 bg-gradient-to-r from-[#0b2439]/20 via-transparent to-transparent" />
 
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071d31] via-[#071d31]/75 to-transparent px-8 pb-8 pt-28 text-white">
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071d31] via-[#071d31]/70 to-transparent px-5 pb-7 pt-32 text-white md:hidden">
+              <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.18em] text-[#e0c78e]">
+                Presidents • Baseball • American History
+              </p>
+              <h2 className="font-serif text-3xl font-bold leading-tight text-[#fff8e8]">
+                Play Ball, Mr. President!
+              </h2>
+              <p className="mt-3 text-sm text-[#e6dac1]">
+                President Calvin Coolidge • 1924
+              </p>
+            </div>
+
+            <div className="absolute inset-x-0 bottom-0 hidden bg-gradient-to-t from-[#071d31] via-[#071d31]/75 to-transparent px-8 pb-8 pt-28 text-white md:block">
               <p className="font-serif text-xl font-bold">
                 President Calvin Coolidge • 1924
               </p>
@@ -454,12 +454,12 @@ export default function Home() {
         id="about"
         className="border-b border-[#d1c2a2] bg-[#f8f2e4]"
       >
-        <div className="mx-auto max-w-4xl px-6 py-14 text-center md:py-20">
+        <div className="mx-auto max-w-4xl px-5 py-10 text-center md:px-6 md:py-20">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a71924]">
             Preserving an American Tradition
           </p>
 
-          <h2 className="mt-4 font-serif text-3xl font-bold md:text-5xl">
+          <h2 className="mt-4 font-serif text-[1.75rem] font-bold leading-tight md:text-5xl">
             Two American Institutions.
             <br />
             One Remarkable History.
@@ -476,12 +476,15 @@ export default function Home() {
             history of the nation.
           </p>
 
-          <p className="mx-auto mt-5 max-w-3xl leading-7 text-[#52606d]">
+          <p className="mx-auto mt-5 hidden max-w-3xl leading-7 text-[#52606d] md:block">
             Presidential Pastime is an independent historical archive
             dedicated to researching, documenting, and preserving
             these connections through photographs, original sources,
             timelines, and presidential profiles.
           </p>
+          <Link href="/about" className="mt-5 inline-block text-sm font-bold uppercase tracking-wider text-[#a71924] md:hidden">
+            Read Our Story →
+          </Link>
         </div>
       </section>
 
