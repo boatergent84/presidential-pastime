@@ -1,0 +1,82 @@
+export type PresidentialQuote = {
+  text: string;
+  attribution: string;
+  source: string;
+  sourceUrl: string;
+  baseball: boolean;
+};
+
+export const presidentialQuotes: Record<string, PresidentialQuote> = {
+  "abraham-lincoln": {
+    text: "With malice toward none; with charity for all.",
+    attribution: "Abraham Lincoln · 1865",
+    source: "Second Inaugural Address",
+    sourceUrl: "https://www.nps.gov/linc/learn/historyculture/lincoln-second-inaugural.htm",
+    baseball: false,
+  },
+
+  "calvin-coolidge": {
+    text: "While baseball remains our national game, our national tastes will be on a higher level and our ideals on a firmer foundation.",
+    attribution: "Calvin Coolidge · October 11, 1924",
+    source: "Remarks on Baseball",
+    sourceUrl: "https://coolidgefoundation.org/resources/good-sportsmanship/",
+    baseball: true,
+  },
+
+  "john-f-kennedy": {
+    text: "Ask not what your country can do for you—ask what you can do for your country.",
+    attribution: "John F. Kennedy · January 20, 1961",
+    source: "Inaugural Address",
+    sourceUrl: "https://www.archives.gov/milestone-documents/president-john-f-kennedys-inaugural-address",
+    baseball: false,
+  },
+  "franklin-d-roosevelt": {
+    text: "I honestly feel that it would be best for the country to keep baseball going.",
+    attribution: "Franklin D. Roosevelt · January 1942",
+    source: "Green Light Letter",
+    sourceUrl: "https://baseballhall.org/discover/inside-pitch/roosevelt-sends-green-light-letter",
+    baseball: true,
+  },
+  "woodrow-wilson": {
+    text: "The world must be made safe for democracy.",
+    attribution: "Woodrow Wilson · April 2, 1917",
+    source: "Address to Congress",
+    sourceUrl: "https://www.presidency.ucsb.edu/documents/address-congress-requesting-declaration-war-against-germany",
+    baseball: false,
+  },
+  "gerald-ford": {
+    text: "Our long national nightmare is over.",
+    attribution: "Gerald Ford · August 9, 1974",
+    source: "Remarks Upon Taking the Oath of Office",
+    sourceUrl: "https://www.fordlibrarymuseum.gov/",
+    baseball: false,
+  },
+  "jimmy-carter": {
+    text: "We must adjust to changing times and still hold to unchanging principles.",
+    attribution: "Jimmy Carter · January 20, 1977",
+    source: "Inaugural Address",
+    sourceUrl: "https://www.presidency.ucsb.edu/documents/inaugural-address-9",
+    baseball: false,
+  },
+  "bill-clinton": {
+    text: "There is nothing wrong with America that cannot be cured by what is right with America.",
+    attribution: "Bill Clinton · January 20, 1993",
+    source: "First Inaugural Address",
+    sourceUrl: "https://www.presidency.ucsb.edu/documents/inaugural-address-18",
+    baseball: false,
+  },
+  "donald-trump": {
+    text: "The forgotten men and women of our country will be forgotten no longer.",
+    attribution: "Donald Trump · January 20, 2017",
+    source: "First Inaugural Address",
+    sourceUrl: "https://www.govinfo.gov/features/presidential-inaugural-addresses",
+    baseball: false,
+  },
+  "joe-biden": {
+    text: "This is America's day. This is democracy's day.",
+    attribution: "Joe Biden · January 20, 2021",
+    source: "Inaugural Address",
+    sourceUrl: "https://www.govinfo.gov/features/presidential-inaugural-addresses",
+    baseball: false,
+  },
+};

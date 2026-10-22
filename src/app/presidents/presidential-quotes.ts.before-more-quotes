@@ -1,0 +1,33 @@
+export type PresidentialQuote = {
+  text: string;
+  attribution: string;
+  source: string;
+  sourceUrl: string;
+  baseball: boolean;
+};
+
+export const presidentialQuotes: Record<string, PresidentialQuote> = {
+  "abraham-lincoln": {
+    text: "With malice toward none; with charity for all.",
+    attribution: "Abraham Lincoln · 1865",
+    source: "Second Inaugural Address",
+    sourceUrl: "https://www.nps.gov/linc/learn/historyculture/lincoln-second-inaugural.htm",
+    baseball: false,
+  },
+
+  "calvin-coolidge": {
+    text: "While baseball remains our national game, our national tastes will be on a higher level and our ideals on a firmer foundation.",
+    attribution: "Calvin Coolidge · October 11, 1924",
+    source: "Remarks on Baseball",
+    sourceUrl: "https://coolidgefoundation.org/resources/good-sportsmanship/",
+    baseball: true,
+  },
+
+  "john-f-kennedy": {
+    text: "Ask not what your country can do for you—ask what you can do for your country.",
+    attribution: "John F. Kennedy · January 20, 1961",
+    source: "Inaugural Address",
+    sourceUrl: "https://www.archives.gov/milestone-documents/president-john-f-kennedys-inaugural-address",
+    baseball: false,
+  },
+};

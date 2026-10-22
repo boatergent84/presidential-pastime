@@ -54,10 +54,12 @@ export default function HeritageCollectionPage() {
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d7bb83]">
           Special Museum Exhibit
         </p>
-        <div className="my-6 flex h-40 w-40 items-center justify-center rounded-full border-4 border-[#b89a61] bg-[#eee7d7] shadow-xl">
-          <div className="flex h-32 w-32 items-center justify-center rounded-full border-2 border-dashed border-[#a4282d]">
-            <span className="font-serif text-6xl text-[#102c44]">⚾</span>
-          </div>
+        <div className="my-6 flex w-full max-w-sm items-center justify-center border-4 border-[#b89a61] bg-[#eee7d7] p-3 shadow-xl">
+          <img
+            src="/heritage/1912-reach-american-league-baseball.jpg"
+            alt="Original circa-1912 Reach Official American League baseball and period box from the Deadball Era"
+            className="max-h-64 w-full object-contain"
+          />
         </div>
         <p className="font-serif text-lg italic text-[#d7bb83]">
           1840s — Present

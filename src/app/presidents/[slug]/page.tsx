@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPresident, presidents } from "../presidents-data";
 import { presidentialHistory } from "../presidential-history";
+import { presidentialQuotes } from "../presidential-quotes";
 
 const remainingPresidentContext: Record<string, string> = {
   "herbert-hoover": "Four consecutive Washington Opening Day ceremonies, 1929–1932.",
@@ -40,6 +41,7 @@ export default async function PresidentPage({
   const president = getPresident(slug);
   if (!president) notFound();
 
+  const selectedQuote = presidentialQuotes[slug];
   const extra = presidentialHistory[slug];
   const events = [...(president.events ?? []), ...(extra?.events ?? [])]
     .sort((a, b) => yearOf(a.date) - yearOf(b.date));
@@ -163,6 +165,17 @@ export default async function PresidentPage({
                 : president.overview}
             </p>
           </div>
+          {selectedQuote ? (
+            <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
+              <p className="font-serif text-2xl leading-relaxed italic text-[#fff5df]">
+                &ldquo;{selectedQuote.text}&rdquo;
+              </p>
+              <p className="mt-6 font-serif text-lg text-[#e3c6a5]">
+                — {selectedQuote.attribution}
+              </p>
+            </aside>
+          ) : (
+            <>
           {president.slug === "calvin-coolidge" ? (
             <aside className="flex flex-col items-center justify-center border border-[#b8aa8e] bg-[#102c44] p-8 text-center text-white">
               <p className="font-serif text-2xl leading-relaxed italic text-[#fff5df]">
@@ -297,6 +310,8 @@ export default async function PresidentPage({
                 <div><p className="font-bold text-white">Research Sources</p><p>{sources.length}</p></div>
               </div>
             </aside>
+          )}
+            </>
           )}
         </section>
 

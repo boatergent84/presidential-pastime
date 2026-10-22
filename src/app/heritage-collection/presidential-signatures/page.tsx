@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { signaturePhotos } from "./signature-photos";
 import { useMemo, useState } from "react";
 
 type Artifact = {
@@ -270,11 +271,11 @@ export default function PresidentialSignaturesPage() {
                 <span className="absolute left-3 top-3 text-[10px] font-semibold uppercase tracking-wide text-[#102c44]">
                   President No. {artifact.number}
                 </span>
-                {artifact.number === 26 ? (
+                {signaturePhotos[artifact.number]?.approved ? (
                   <div className="flex h-full w-full items-center justify-center overflow-hidden bg-white p-3">
                     <img
-                      src="/heritage/roosevelt-signed-baseball-1918-white.jpg"
-                      alt="Theodore Roosevelt signed baseball dated May 30, 1918, photographed by Hunt Auctions"
+                      src={signaturePhotos[artifact.number].src}
+                      alt={`Authenticated baseball signed by ${artifact.president}`}
                       className="h-full w-full object-contain"
                     />
                   </div>
