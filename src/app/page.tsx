@@ -253,10 +253,7 @@ export default function Home() {
       {/* HEADER */}
       <header className="bg-[#071d31] text-[#f5edd8]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-5 sm:py-5 md:px-6">
-          <Link
-            href="/did-you-know"
-            className="flex min-w-0 items-center gap-3 md:gap-4"
-          >
+          <div className="flex min-w-0 items-center gap-3 md:gap-4">
 
 
             <div>
@@ -266,7 +263,7 @@ export default function Home() {
                 The Baseball History of the American Presidency
               </p>
             </div>
-          </Link>
+          </div>
 
 
         </div>
