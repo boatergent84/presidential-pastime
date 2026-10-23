@@ -39,16 +39,16 @@ const collections = [
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#f4ecdb] text-[#172b3d]">
+    <main className="min-h-screen w-full max-w-full overflow-x-clip bg-[#f4ecdb] text-[#172b3d]">
       <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-5 px-6 py-6">
+        <div className="mx-auto flex w-full min-w-0 max-w-6xl flex-col items-start gap-5 px-5 py-6 md:flex-row md:items-center md:justify-between md:px-6">
           <Link
             href="/"
             className="font-serif text-xl font-bold tracking-wide md:text-2xl"
           >
             PRESIDENTIAL PASTIME
           </Link>
-          <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5]">
+          <nav className="flex w-full min-w-0 max-w-full flex-nowrap gap-x-5 overflow-x-auto overscroll-x-contain whitespace-nowrap pb-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5] [touch-action:pan-x] md:w-auto md:flex-wrap md:overflow-visible md:whitespace-normal md:pb-0">
             <Link href="/" className="hover:text-white">Home</Link>
             <Link href="/presidents" className="hover:text-white">Presidents</Link>
             <Link href="/first-pitches" className="hover:text-white">First Pitch</Link>
@@ -261,7 +261,7 @@ export default function AboutPage() {
                 Together, they tell an American story.”
               </p>
               <footer className="mt-4 text-xs font-bold uppercase tracking-[0.15em] text-[#8d6c32]">
-                — Brandon Wabeke, Founder of Presidential Pastime
+                — Brandon Wabeke, Creator of Presidential Pastime
               </footer>
             </blockquote>
           </div>
