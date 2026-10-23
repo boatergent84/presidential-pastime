@@ -799,6 +799,10 @@ export default function Home() {
           <p className="mt-4 text-xs text-[#9baab6]">
             © {new Date().getFullYear()} Presidential Pastime. All rights reserved.
           </p>
+
+          <p className="mt-3 text-center font-serif text-[10px] font-semibold tracking-[0.2em] text-[#c8b17b]">
+            SDG
+          </p>
         </div>
       </footer>
     </main>
