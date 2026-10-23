@@ -109,7 +109,7 @@ const eras: Era[] = [
     description:
       "Featured artifact: an official Rawlings Major League Baseball bearing the facsimile commissioner signature of Robert D. Manfred Jr., who became Commissioner of Baseball in 2015. Displayed alongside its original Rawlings box, this baseball represents the modern game, an era of expanded international participation, advanced statistics, new technology, and changing traditions. Its factory markings, white leather, and red stitching connect today's baseball to generations of earlier official league baseballs.",
     president: "Reagan · George H. W. Bush · Clinton · George W. Bush · Obama · Trump · Biden",
-    source: "Rawlings Official Major League Baseball · Robert D. Manfred Jr. · eBay listing 277500077913",
+    source: "Rawlings Official Major League Baseball · Robert D. Manfred Jr.",
     url: "https://www.ebay.com/itm/277500077913",
     photos: [
       { label: "Official Baseball and Original Box", src: "/heritage/baseballs/manfred-baseball-with-box.jpg", credit: "Original listing photograph · eBay item 277500077913" },
