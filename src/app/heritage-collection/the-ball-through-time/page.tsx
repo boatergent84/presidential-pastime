@@ -278,7 +278,7 @@ export default function BallThroughTimePage() {
             >
               <div className="bg-[#102c44] p-6 md:p-8">
                 <p className="mb-5 text-center text-xs uppercase tracking-[0.2em] text-[#d7bb83]">
-                  Museum Exhibit · {String(index + 1).padStart(2, "0")}
+                  Archive · {String(index + 1).padStart(2, "0")}
                 </p>
 
                 <MuseumGallery photos={era.photos} title={era.title} />
