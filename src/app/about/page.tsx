@@ -234,22 +234,7 @@ export default function AboutPage() {
 
       {/* AUTHENTICITY */}
       <section className="border-y border-[#d4c3a1] bg-[#eae0cb]">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[0.75fr_1.25fr] md:items-center md:py-24">
-          <div className="border-2 border-[#bca16b] p-8 text-center">
-            <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border-2 border-[#a98a52] font-serif text-5xl text-[#8d6c32]">
-              P
-            </div>
-            <p className="mt-6 text-xs font-bold uppercase tracking-[0.25em] text-[#8d6c32]">
-              Preservation
-            </p>
-            <p className="mt-3 font-serif text-2xl font-bold">
-              History Deserves
-              <br />
-              the Real Thing.
-            </p>
-            <div className="mt-6 text-[#a98a52]">★ ★ ★</div>
-          </div>
-
+        <div className="mx-auto max-w-4xl px-6 py-20 md:py-24">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#9b712f]">
               Chapter III / Our Commitment
