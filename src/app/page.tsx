@@ -217,13 +217,13 @@ const presidents = [
 const featuredArchives = [
   {
     number: "01",
-    title: "The First Presidential Pitch",
-    date: "April 14, 1910",
-    president: "William Howard Taft",
+    title: "Roosevelt's Green Light to Baseball",
+    date: "January 15, 1942",
+    president: "Franklin D. Roosevelt",
     description:
-      "Explore the Opening Day appearance that began one of baseball's most enduring presidential traditions.",
-    image: "/taft-first-pitch-1910.jpg",
-    href: "/presidents/william-howard-taft",
+      "During World War II, Roosevelt encouraged Major League Baseball to continue playing, preserving a cherished American tradition during wartime.",
+    image: "/fdr-green-light-letter-1942.jpg",
+    href: "/presidents/franklin-d-roosevelt",
   },
   {
     number: "02",
@@ -263,7 +263,7 @@ export default function Home() {
               <h1 className="font-serif text-xl font-bold tracking-[0.07em] sm:text-2xl md:text-3xl lg:text-4xl">Presidential Pastime</h1>
 
               <p className="mt-1 text-[9px] uppercase tracking-[0.18em] text-[#d9c79d] sm:tracking-[0.28em] md:text-xs">
-                The American Presidency and the Game of Baseball
+                The Baseball History of the American Presidency
               </p>
             </div>
           </Link>
@@ -785,7 +785,7 @@ export default function Home() {
         </p>
 
         <p className="mt-1 text-xs uppercase tracking-[0.22em] text-[#c8b17b] md:text-sm">
-          The American Presidency and the Game of Baseball
+          The Baseball History of the American Presidency
         </p>
 
         <div className="mt-4 flex flex-wrap justify-center gap-2 text-sm">
