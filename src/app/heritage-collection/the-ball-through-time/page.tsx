@@ -315,14 +315,16 @@ export default function BallThroughTimePage() {
                   {era.president}
                 </p>
 
-                <a
-                  href={era.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-block self-start border-b border-[#a4282d] pb-1 text-sm font-semibold text-[#a4282d]"
-                >
-                  Historical Reference: {era.source} ↗
-                </a>
+                {era.title !== "The Modern Game" && (
+                  <a
+                    href={era.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-block self-start border-b border-[#a4282d] pb-1 text-sm font-semibold text-[#a4282d]"
+                  >
+                    Historical Reference: {era.source} ↗
+                  </a>
+                )}
               </div>
             </article>
           ))}
