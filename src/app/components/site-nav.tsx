@@ -8,7 +8,7 @@ export default function SiteNav() {
   <div className="mx-auto max-w-6xl px-5 py-4">
    <Link href="/" className="font-serif text-xl font-bold tracking-wide">PRESIDENTIAL PASTIME</Link>
    <p className="mt-1 text-xs tracking-widest text-[#c9b98c]">The Baseball History of the American Presidency</p>
-   <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">{links.map(([label,href])=><Link key={href} href={href} className="hover:text-[#c9b98c]">{label}</Link>)}</div>
+   <div className="mt-4 flex max-w-full flex-nowrap gap-6 overflow-x-auto overscroll-x-contain touch-pan-x whitespace-nowrap pb-2 text-sm md:flex-wrap md:overflow-visible md:whitespace-normal md:pb-0">{links.map(([label,href])=><Link key={href} href={href} className="hover:text-[#c9b98c]">{label}</Link>)}</div>
   </div>
  </nav>
 }
