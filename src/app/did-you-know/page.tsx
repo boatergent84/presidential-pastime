@@ -150,7 +150,7 @@ export default function DidYouKnowPage() {
           <Link href="/" className="font-serif text-xl font-bold tracking-wide">
             PRESIDENTIAL PASTIME
           </Link>
-          <nav className="flex gap-6 text-sm">
+          <nav className="flex max-w-full min-w-0 gap-6 overflow-x-auto overscroll-x-contain whitespace-nowrap touch-pan-x pb-2 text-sm md:overflow-visible md:whitespace-normal md:pb-0">
             <Link href="/" className="hover:text-[#d6b46f]">
               Home
             </Link>
