@@ -99,7 +99,7 @@ const eras: Era[] = [
     source: "Hunt Auctions · 1947–1948 Spalding Baseball · Lot 752",
     url: "https://www.huntauctions.com/phone/imageviewer.cfm?auction_num=163&lot_num=752",
     photos: [
-      { label: "Original Baseball and Box", src: "/heritage/baseballs/spalding-1948/baseball-with-box.jpg", credit: "Hunt Auctions · Original auction photograph" },
+      { label: "Original Baseball and Box", src: "/heritage/baseballs/spalding-1948/baseball-with-box-white.png", credit: "Hunt Auctions · Original auction photograph" },
     ],
   },
   {
