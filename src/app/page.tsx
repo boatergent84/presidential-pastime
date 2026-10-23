@@ -315,9 +315,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl md:grid-cols-2">
           <div className="order-2 flex items-center px-5 py-8 sm:px-7 sm:py-12 md:order-1 md:min-h-[510px] md:px-14 md:py-16">
             <div>
-              <p className="mb-5 hidden text-xs font-bold uppercase tracking-[0.25em] text-[#c6a35c] md:block md:text-sm">
-                Presidents • Baseball • American History
-              </p>
+              
 
               <h2 className="hidden font-serif text-[2rem] font-bold leading-tight text-[#fff8e8] md:block md:text-4xl lg:text-5xl">Play Ball, Mr. President!</h2>
 
@@ -363,9 +361,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#0b2439]/20 via-transparent to-transparent" />
 
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071d31] via-[#071d31]/70 to-transparent px-5 pb-7 pt-32 text-white md:hidden">
-              <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.18em] text-[#e0c78e]">
-                Presidents • Baseball • American History
-              </p>
+              
               <h2 className="font-serif text-3xl font-bold leading-tight text-[#fff8e8]">
                 Play Ball, Mr. President!
               </h2>
@@ -656,30 +652,30 @@ export default function Home() {
           >
             <div
               aria-hidden="true"
-              className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
+              className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
               style={{"backgroundImage": "url('/abraham-lincoln-gardner.jpg')" }}
             />
 
             <div
               aria-hidden="true"
-              className="absolute inset-0 -z-10 bg-[#071d31]/80"
+              className="absolute inset-0 z-0 bg-[#071d31]/65"
             />
 
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
+            <div className="relative z-10 mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
               ★
             </div>
 
-            <h3 className="font-serif text-2xl font-bold text-[#fff8e8]">
+            <h3 className="relative z-10 font-serif text-2xl font-bold text-[#fff8e8]">
               Presidential Profiles
             </h3>
 
-            <div className="my-4 h-[2px] w-16 bg-[#b99b62]" />
+            <div className="relative z-10 my-4 h-[2px] w-16 bg-[#b99b62]" />
 
-            <p className="leading-7 text-[#e2dfd5]">
+            <p className="relative z-10 leading-7 text-[#e2dfd5]">
               Explore the baseball histories of America&apos;s presidents, including ballpark visits, historic games, photographs, and their connections to the national pastime.
             </p>
 
-            <p className="mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
+            <p className="relative z-10 mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
               Explore the Presidents →
             </p>
           </Link>
@@ -690,30 +686,30 @@ export default function Home() {
           >
             <div
               aria-hidden="true"
-              className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
+              className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
               style={{"backgroundImage": "url('/taft-first-pitch-1910.jpg')" }}
             />
 
             <div
               aria-hidden="true"
-              className="absolute inset-0 -z-10 bg-[#071d31]/80"
+              className="absolute inset-0 z-0 bg-[#071d31]/65"
             />
 
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
+            <div className="relative z-10 mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
               ?
             </div>
 
-            <h3 className="font-serif text-2xl font-bold text-[#fff8e8]">
+            <h3 className="relative z-10 font-serif text-2xl font-bold text-[#fff8e8]">
               Did You Know?
             </h3>
 
-            <div className="my-4 h-[2px] w-16 bg-[#b99b62]" />
+            <div className="relative z-10 my-4 h-[2px] w-16 bg-[#b99b62]" />
 
-            <p className="leading-7 text-[#e2dfd5]">
+            <p className="relative z-10 leading-7 text-[#e2dfd5]">
               Discover fascinating facts, forgotten stories, remarkable moments, and surprising connections between America&apos;s presidents and baseball.
             </p>
 
-            <p className="mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
+            <p className="relative z-10 mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
               Explore Fascinating Facts →
             </p>
           </Link>
@@ -724,30 +720,30 @@ export default function Home() {
           >
             <div
               aria-hidden="true"
-              className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
+              className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat grayscale transition duration-500 group-hover:scale-105"
               style={{"backgroundImage": "url('/heritage/roosevelt-signed-baseball-1918.jpg')" }}
             />
 
             <div
               aria-hidden="true"
-              className="absolute inset-0 -z-10 bg-[#071d31]/80"
+              className="absolute inset-0 z-0 bg-[#071d31]/65"
             />
 
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
+            <div className="relative z-10 mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99b62] bg-[#10243a]/80 text-xl text-[#e0c78e]">
               ◆
             </div>
 
-            <h3 className="font-serif text-2xl font-bold text-[#fff8e8]">
+            <h3 className="relative z-10 font-serif text-2xl font-bold text-[#fff8e8]">
               Heritage Collection
             </h3>
 
-            <div className="my-4 h-[2px] w-16 bg-[#b99b62]" />
+            <div className="relative z-10 my-4 h-[2px] w-16 bg-[#b99b62]" />
 
-            <p className="leading-7 text-[#e2dfd5]">
+            <p className="relative z-10 leading-7 text-[#e2dfd5]">
               Explore historical baseball artifacts, including presidential-signed baseballs, authentic period baseballs, and Walter Johnson&apos;s remarkable presidential baseball collection.
             </p>
 
-            <p className="mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
+            <p className="relative z-10 mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
               View the Heritage Collection →
             </p>
           </Link>
