@@ -317,7 +317,7 @@ export default function Home() {
             <div>
               
 
-              <h2 className="hidden font-serif text-[2rem] font-bold leading-tight text-[#fff8e8] md:block md:text-4xl lg:text-5xl">Play Ball, Mr. President!</h2>
+
 
               <div className="my-7 h-[2px] w-32 bg-[#a91d28]" />
 
@@ -362,9 +362,7 @@ export default function Home() {
 
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071d31] via-[#071d31]/70 to-transparent px-5 pb-7 pt-32 text-white md:hidden">
               
-              <h2 className="font-serif text-3xl font-bold leading-tight text-[#fff8e8]">
-                Play Ball, Mr. President!
-              </h2>
+
               <p className="mt-3 text-sm text-[#e6dac1]">
                 President Calvin Coolidge • 1924
               </p>
