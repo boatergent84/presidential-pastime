@@ -86,10 +86,7 @@ const eras: Era[] = [
     photos: [
       { label: "Original Photograph 1", src: "/heritage/baseballs/lively-ball-1928/reach-1928-1.jpg", credit: "Robert Edward Auctions · Original auction photograph" },
       { label: "Original Photograph 2", src: "/heritage/baseballs/lively-ball-1928/reach-1928-2.jpg", credit: "Robert Edward Auctions · Original auction photograph" },
-      { label: "Original Photograph 3", src: "/heritage/baseballs/lively-ball-1928/reach-1928-3.jpg", credit: "Robert Edward Auctions · Original auction photograph" },
-      { label: "Original Photograph 4", src: "/heritage/baseballs/lively-ball-1928/reach-1928-4.jpg", credit: "Robert Edward Auctions · Original auction photograph" },
-      { label: "Original Photograph 5", src: "/heritage/baseballs/lively-ball-1928/reach-1928-5.jpg", credit: "Robert Edward Auctions · Original auction photograph" },
-      { label: "Original Photograph 6", src: "/heritage/baseballs/lively-ball-1928/reach-1928-6.jpg", credit: "Robert Edward Auctions · Original auction photograph" },
+      { label: "Original Photograph 3", src: "/heritage/baseballs/lively-ball-1928/reach-1928-4.jpg", credit: "Robert Edward Auctions · Original auction photograph" },
     ],
   },
   {
