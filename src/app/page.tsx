@@ -317,7 +317,7 @@ export default function Home() {
               <div className="my-7 h-[2px] w-32 bg-[#a91d28]" />
 
               <p className="max-w-xl font-serif text-xl italic leading-relaxed text-[#e6dac1]">
-                The Baseball History of the American Presidency
+                When Presidents Stepped Up to the Plate
               </p>
 
               <p className="mt-5 max-w-xl leading-7 text-[#c8d0d5]">
