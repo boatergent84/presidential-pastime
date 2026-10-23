@@ -133,7 +133,7 @@ function MuseumGallery({
 
   return (
     <div>
-      <div className="flex min-h-[300px] items-center justify-center border border-[#b89a61] bg-[#091c2d] p-6">
+      <div className={`flex min-h-[300px] items-center justify-center border border-[#b89a61] p-6 ${title === "The Modern Game" ? "bg-white" : "bg-[#091c2d]"}`}>
         {imageAvailable ? (
           <img
             key={selected.src}
