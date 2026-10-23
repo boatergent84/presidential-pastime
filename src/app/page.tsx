@@ -268,12 +268,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link
-            href="/presidents"
-            className="hidden border border-[#d5b46d] bg-[#9e1821] px-5 py-3 text-center text-xs font-bold uppercase tracking-wider text-white transition hover:bg-[#b6232d] md:inline-block"
-          >
-            Explore the Presidents
-          </Link>
+
         </div>
 
         {/* MOBILE NAVIGATION */}
