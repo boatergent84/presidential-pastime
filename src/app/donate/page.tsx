@@ -26,13 +26,13 @@ const priorities = [
 
 export default function DonatePage() {
   return (
-    <main className="min-h-screen bg-[#f4ecdb] text-[#172b3d]">
+    <main className="overflow-x-clip min-h-screen bg-[#f4ecdb] text-[#172b3d]">
       <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-5 px-6 py-6">
           <Link href="/" className="font-serif text-xl font-bold tracking-wide md:text-2xl">
             PRESIDENTIAL PASTIME
           </Link>
-          <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5]">
+          <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5] w-full min-w-0 overflow-x-auto flex-nowrap [touch-action:pan-x] md:w-auto md:overflow-visible">
             <Link href="/" className="hover:text-white">Home</Link>
             <Link href="/presidents" className="hover:text-white">Presidents</Link>
             <Link href="/first-pitches" className="hover:text-white">First Pitch</Link>
