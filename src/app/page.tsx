@@ -777,46 +777,37 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t-4 border-[#a71924] bg-[#071d31] px-6 py-5 text-center text-[#eee2c7]">
+      <footer className="border-t-4 border-[#a71924] bg-[#071d31] px-6 py-10 text-center text-[#eee2c7]">
+        <div className="mx-auto max-w-5xl">
+          <p className="font-serif text-2xl font-bold tracking-wide md:text-3xl">
+            PRESIDENTIAL PASTIME
+          </p>
 
+          <p className="mt-2 text-xs tracking-[0.12em] text-[#c8b17b] md:text-sm">
+            The Baseball History of the American Presidency
+          </p>
 
-        <p className="mt-0 font-serif text-2xl font-bold">
-          Presidential Pastime
-        </p>
+          <div className="mx-auto my-6 h-px max-w-lg bg-[#405064]" />
 
-        <p className="mt-1 text-xs uppercase tracking-[0.22em] text-[#c8b17b] md:text-sm">
-          The Baseball History of the American Presidency
-        </p>
+          <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-medium">
+            <Link href="/" className="transition hover:text-[#d6b46f]">Home</Link>
+            <Link href="/about" className="transition hover:text-[#d6b46f]">About</Link>
+            <Link href="/contact" className="transition hover:text-[#d6b46f]">Contact</Link>
+            <Link href="/donate" className="transition hover:text-[#d6b46f]">Donate</Link>
+          </nav>
 
-        <div className="mt-4 flex flex-wrap justify-center gap-2 text-sm">
-          <Link href="/" className="hover:text-white">
-            Home
-          </Link>
+          <div className="mx-auto my-6 h-px max-w-lg bg-[#405064]" />
 
-          <Link
-            href="/presidents"
-            className="hover:text-white"
-          >
-            Presidential Archive
-          </Link>
+          <p className="mx-auto max-w-2xl text-xs leading-6 text-[#9baab6]">
+            An independent historical research project. Not affiliated with
+            the United States government, any presidential administration,
+            or Major League Baseball.
+          </p>
 
-          <Link
-            href="/about"
-            className="hover:text-white"
-          >
-            About the Project
-          </Link>
+          <p className="mt-4 text-xs text-[#9baab6]">
+            © {new Date().getFullYear()} Presidential Pastime. All rights reserved.
+          </p>
         </div>
-
-        <p className="mx-auto mt-0 max-w-2xl text-xs leading-6 text-[#9baab6]">
-          An independent historical research project. Not
-          affiliated with the United States government, any
-          presidential administration, or Major League Baseball.
-        </p>
-
-        <p className="mt-1 text-xs text-[#9baab6]">
-          © {new Date().getFullYear()} Presidential Pastime
-        </p>
       </footer>
     </main>
   );
