@@ -112,16 +112,7 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section className="bg-[#102c44] px-6 py-20 text-center text-white">
-        <p className="font-serif text-3xl italic leading-relaxed text-[#e8d4a6] md:text-4xl">
-          &quot;The past is worth preserving.
-          <br />
-          The stories are worth sharing.&quot;
-        </p>
-        <p className="mt-6 text-xs uppercase tracking-[0.2em] text-[#b5c3cb]">
-          Presidential Pastime
-        </p>
-      </section>
+
 
       <footer className="bg-[#061727] px-6 py-8 text-center text-xs text-[#aebcc6]">
         <Link href="/" className="font-serif text-lg font-bold text-white">
