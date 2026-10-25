@@ -451,6 +451,64 @@ export default function WilliamHowardTaftPage() {
             America&apos;s pastime.
           </p>
         </div>
+
+      <section className="mx-auto max-w-6xl px-6 py-12">
+        <div className="border-t-2 border-[#b8aa8e] pt-10">
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
+            Presidential Pastime · Heritage Collection
+          </p>
+
+          <h2 className="mt-3 font-serif text-3xl font-bold text-[#102c44]">
+            Explore Related Historical Exhibits
+          </h2>
+
+          <p className="mt-3 max-w-3xl leading-7 text-[#59636b]">
+            Discover archival photographs, historical programs, and
+            presidential baseball artifacts connected to William Howard
+            Taft and the origins of the presidential first-pitch tradition.
+          </p>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                title: "The First Presidential Pitch · 1910",
+                description:
+                  "Explore historical programs and tickets associated with Washington's 1910 Opening Day.",
+                href: "/heritage-collection/taft-1910-opening-day",
+              },
+              {
+                title: "Taft's First-Pitch Photographs",
+                description:
+                  "Examine photographic records of Taft's connection to Washington baseball.",
+                href: "/heritage-collection/taft-first-pitch-photography",
+              },
+              {
+                title: "Walter Johnson's Presidential Baseballs",
+                description:
+                  "Discover the 1937 archival photograph documenting six presidential-autographed baseballs.",
+                href: "/heritage-collection/walter-johnson-presidential-baseballs",
+              },
+            ].map((exhibit) => (
+              <Link
+                key={exhibit.href}
+                href={exhibit.href}
+                className="group border border-[#b8aa8e] bg-[#f8f3e8] p-6 transition-colors hover:border-[#a4282d]"
+              >
+                <h3 className="font-serif text-xl font-bold text-[#102c44]">
+                  {exhibit.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[#59636b]">
+                  {exhibit.description}
+                </p>
+                <span className="mt-5 block text-sm font-bold text-[#a4282d]">
+                  Explore Exhibit →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       </footer>
     </main>
   );
