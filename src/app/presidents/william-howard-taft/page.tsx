@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "William Howard Taft's First Pitch in 1910 | Presidential Pastime",
+  description:
+    "Discover how President William Howard Taft began the presidential first-pitch tradition on April 14, 1910, at Washington's Opening Day baseball game.",
+  alternates: {
+    canonical: "https://presidentialpastime.com/presidents/william-howard-taft",
+  },
+  openGraph: {
+    title: "William Howard Taft's Historic 1910 First Pitch",
+    description:
+      "Explore the story of President Taft's 1910 ceremonial first pitch and the beginning of a White House baseball tradition.",
+    url: "https://presidentialpastime.com/presidents/william-howard-taft",
+    siteName: "Presidential Pastime",
+    type: "article",
+  },
+};
+
 import Link from "next/link";
 
 export default function WilliamHowardTaftPage() {
