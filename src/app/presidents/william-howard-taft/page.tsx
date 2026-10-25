@@ -363,53 +363,6 @@ export default function WilliamHowardTaftPage() {
           </article>
         </section>
 
-        {/* MEMORABILIA */}
-        <section className="mt-14">
-          <div className="border-b-2 border-[#b8aa8e] pb-3">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Memorabilia
-            </p>
-
-            <h2 className="mt-1 font-serif text-3xl font-bold">
-              Collecting the Taft Baseball Story
-            </h2>
-          </div>
-
-          <div className="mt-6 grid gap-5 md:grid-cols-3">
-            {[
-              [
-                "Historic Photographs",
-                "Original photographs and press images documenting Taft at Washington baseball games.",
-              ],
-              [
-                "Opening Day Programs",
-                "Programs, scorecards and ephemera connected with early presidential Opening Day appearances.",
-              ],
-              [
-                "Presidential Baseballs",
-                "Baseballs and related artifacts representing the beginning of the presidential first-pitch tradition.",
-              ],
-            ].map(([title, description]) => (
-              <article
-                key={title}
-                className="border border-[#b8aa8e] bg-[#f8f3e8] p-6"
-              >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#102c44] text-2xl text-white">
-                  ⚾
-                </div>
-
-                <h3 className="font-serif text-xl font-bold">
-                  {title}
-                </h3>
-
-                <p className="mt-2 leading-7 text-[#59636b]">
-                  {description}
-                </p>
-              </article>
-            ))}
-          </div>
-        </section>
-
         {/* SOURCES */}
         <section className="mt-14 border-t-2 border-[#b8aa8e] pt-8">
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">

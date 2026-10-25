@@ -425,19 +425,6 @@ export default async function PresidentPage({
           </article>
         </section>}
 
-        <section className="mt-14">
-          <div className="border-b-2 border-[#b8aa8e] pb-3">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Heritage Collection</p>
-            <h2 className="mt-1 font-serif text-3xl font-bold">Collecting the {president.name} Baseball Story</h2>
-          </div>
-          <div className="mt-6 grid gap-5 md:grid-cols-3">
-            {[["Historic Photographs", "Explore archival images and historical photographic records."], ["Tickets & Programs", "Discover game tickets, programs, scorecards, and related ephemera."], ["Presidential Baseballs", "Explore baseballs, autographs, and related historical artifacts."]].map(([title, description]) => (
-              <article key={title} className="border border-[#b8aa8e] bg-[#f8f3e8] p-6"><div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#102c44] text-2xl text-white">⚾</div><h3 className="font-serif text-xl font-bold">{title}</h3><p className="mt-2 leading-7 text-[#59636b]">{description}</p></article>
-            ))}
-          </div>
-          <Link href="/heritage-collection" className="mt-5 inline-block font-bold text-[#a4282d] underline">Visit the Heritage Collection →</Link>
-        </section>
-
         <div className="mt-14 flex flex-wrap justify-between gap-4 border-t border-[#b8aa8e] pt-6 text-sm font-bold text-[#a4282d]">
           {previous ? <Link href={`/presidents/${previous.slug}`}>← {previous.name}</Link> : <span />}
           <Link href="/presidents">All Presidents</Link>
