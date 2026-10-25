@@ -13,10 +13,28 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const exhibit = exhibits.find((item) => item.slug === slug);
-  if (!exhibit) return { title: "Exhibit not found | Presidential Pastime" };
+
+  if (!exhibit) {
+    return { title: "Exhibit Not Found | Presidential Pastime" };
+  }
+
+  const title = `${exhibit.title} | Presidential Pastime`;
+  const description = exhibit.description;
+  const url = `https://presidentialpastime.com/heritage-collection/${slug}`;
+
   return {
-    title: `${exhibit.title} | Heritage Collection | Presidential Pastime`,
-    description: exhibit.description,
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: "Presidential Pastime",
+      type: "article",
+    },
   };
 }
 
