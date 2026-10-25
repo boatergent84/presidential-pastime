@@ -20,9 +20,6 @@ export const metadata: Metadata = {
   title: "Presidential Pastime | The Baseball History of the American Presidency",
   description:
     "Explore the history of American presidents and baseball through presidential first pitches, historic photographs, original baseball artifacts, and archival research.",
-  alternates: {
-    canonical: siteUrl,
-  },
   openGraph: {
     title: "Presidential Pastime | The Baseball History of the American Presidency",
     description:

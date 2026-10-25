@@ -1,3 +1,4 @@
+export { homeMetadata as metadata } from "./home-metadata";
 
 import Link from "next/link";
 
