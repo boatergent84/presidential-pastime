@@ -363,48 +363,6 @@ export default function WilliamHowardTaftPage() {
           </article>
         </section>
 
-        {/* SOURCES */}
-        <section className="mt-14 border-t-2 border-[#b8aa8e] pt-8">
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-            Research &amp; Sources
-          </p>
-
-          <h2 className="mt-1 font-serif text-3xl font-bold">
-            Building the Historical Record
-          </h2>
-
-          <p className="mt-4 max-w-4xl leading-8 text-[#59636b]">
-            Presidential Pastime uses historic photographs, contemporary
-            newspaper accounts, archival records and baseball history
-            sources to document the relationship between American
-            presidents and the national pastime.
-          </p>
-
-          <div className="mt-5 grid gap-3 text-sm md:grid-cols-2">
-            <div className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">
-              Library of Congress photographic collections
-            </div>
-
-            <div className="border border-[#b8aa8e] bg-[#f8f3e8] p-4">
-              Historic baseball and newspaper archives
-            </div>
-          </div>
-        </section>
-      </div>
-
-      {/* FOOTER */}
-      <footer className="mt-16 border-t-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto max-w-6xl px-6 py-8">
-          <p className="font-serif text-xl font-bold">
-            PRESIDENTIAL PASTIME
-          </p>
-
-          <p className="mt-1 text-sm text-[#c9d4df]">
-            Exploring the history of America&apos;s presidents and
-            America&apos;s pastime.
-          </p>
-        </div>
-
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="border-t-2 border-[#b8aa8e] pt-10">
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
