@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPresident, presidents } from "../presidents-data";
@@ -22,6 +23,49 @@ const remainingPresidentContext: Record<string, string> = {
   "donald-trump": "The 2020 MLB season was shortened during the COVID-19 pandemic.",
   "joe-biden": "The 2023 pitch timer and other rule changes reshaped the modern game."
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const president = getPresident(slug);
+
+  if (!president) {
+    return {
+      title: "President Not Found | Presidential Pastime",
+    };
+  }
+
+  const title = `${president.name} & Baseball History | Presidential Pastime`;
+
+  const description = [
+    `Explore ${president.name}'s connection to American baseball.`,
+    president.overview,
+  ]
+    .join(" ")
+    .replace(/\\s+/g, " ")
+    .slice(0, 155)
+    .trim();
+
+  const url = `https://presidentialpastime.com/presidents/${slug}`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: "Presidential Pastime",
+      type: "article",
+    },
+  };
+}
 
 export function generateStaticParams() {
   return presidents.map(({ slug }) => ({ slug }));
