@@ -2,6 +2,9 @@ import type { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
 
+import { presidents } from "./presidents/presidents-data";
+import { exhibits } from "./heritage-collection/collection-data";
+
 const BASE_URL = "https://presidentialpastime.com";
 
 function getRoutes(directory: string, prefix = ""): string[] {
@@ -14,8 +17,12 @@ function getRoutes(directory: string, prefix = ""): string[] {
 
     const segment = entry.name;
 
-    // Dynamic routes require actual slugs, not folder names.
-    if (segment.startsWith("[") || segment.startsWith("(") || segment.startsWith("@")) {
+    // Dynamic routes are added from their actual data below.
+    if (
+      segment.startsWith("[") ||
+      segment.startsWith("(") ||
+      segment.startsWith("@")
+    ) {
       continue;
     }
 
@@ -35,9 +42,23 @@ function getRoutes(directory: string, prefix = ""): string[] {
 export default function sitemap(): MetadataRoute.Sitemap {
   const appDirectory = path.join(process.cwd(), "src", "app");
 
-  const routes = ["/", ...getRoutes(appDirectory)];
+  const staticRoutes = ["/", ...getRoutes(appDirectory)];
 
-  return [...new Set(routes)].map((route) => ({
+  const presidentRoutes = presidents.map(
+    (president) => `/presidents/${president.slug}`
+  );
+
+  const exhibitRoutes = exhibits.map(
+    (exhibit) => `/heritage-collection/${exhibit.slug}`
+  );
+
+  const allRoutes = [
+    ...staticRoutes,
+    ...presidentRoutes,
+    ...exhibitRoutes,
+  ];
+
+  return [...new Set(allRoutes)].map((route) => ({
     url: `${BASE_URL}${route === "/" ? "" : route}`,
     changeFrequency: "monthly",
     priority: route === "/" ? 1 : 0.7,
