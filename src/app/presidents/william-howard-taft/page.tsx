@@ -420,6 +420,15 @@ export default function WilliamHowardTaftPage() {
         </div>
       </section>
 
+      <footer className="mt-16 border-t-4 border-[#a4282d] bg-[#102c44] text-white">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <p className="font-serif text-xl font-bold">
+            PRESIDENTIAL PASTIME
+          </p>
+          <p className="mt-1 text-sm text-[#c9d4df]">
+            Exploring the history of America's presidents and America's pastime.
+          </p>
+        </div>
       </footer>
     </main>
   );
