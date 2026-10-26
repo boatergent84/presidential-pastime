@@ -13,17 +13,13 @@ export default function PresidentsArchivePage() {
       <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
         <div className="mx-auto max-w-6xl flex flex-wrap items-center justify-between gap-4 px-6 py-5">
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#c9b98c] text-xl">
-              ⚾
-            </div>
-
             <div>
               <p className="font-serif text-xl font-bold tracking-wide md:text-2xl">
                 PRESIDENTIAL PASTIME
               </p>
 
               <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-[#c9b98c]">
-                America&apos;s Presidents. America&apos;s Pastime.
+                The Baseball History of the American Presidency
               </p>
             </div>
           </Link>
@@ -237,21 +233,8 @@ export default function PresidentsArchivePage() {
         </Link>
 
         <p className="mt-3 text-sm text-[#c9b98c]">
-          America&apos;s Presidents. America&apos;s Pastime.
+          The Baseball History of the American Presidency
         </p>
-
-        <div className="mt-6 flex justify-center gap-6 text-sm">
-          <Link href="/" className="hover:text-[#c9b98c]">
-            Home
-          </Link>
-
-          <Link
-            href="/presidents"
-            className="hover:text-[#c9b98c]"
-          >
-            Presidents
-          </Link>
-        </div>
 
         <p className="mt-7 text-xs text-[#9baab6]">
           An independent historical research archive.
