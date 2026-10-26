@@ -95,7 +95,12 @@ export default function PresidentsArchivePage() {
               className="group flex flex-col overflow-hidden border-[3px] border-[#C5A46D] bg-[#f8f3e8] transition duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
               {/* PORTRAIT AREA */}
-              <div className="flex h-[265px] items-center justify-center bg-[#102c44] p-6">
+              <div className="relative flex h-[265px] items-center justify-center bg-[#102c44] p-6">
+                {/* Antique gold corner ticks */}
+                <span aria-hidden="true" className="pointer-events-none absolute left-[7px] top-[7px] h-[22px] w-[22px] border-l-[1.5px] border-t-[1.5px] border-[#c9b98c]" />
+                <span aria-hidden="true" className="pointer-events-none absolute right-[7px] top-[7px] h-[22px] w-[22px] border-r-[1.5px] border-t-[1.5px] border-[#c9b98c]" />
+                <span aria-hidden="true" className="pointer-events-none absolute bottom-[7px] left-[7px] h-[22px] w-[22px] border-b-[1.5px] border-l-[1.5px] border-[#c9b98c]" />
+                <span aria-hidden="true" className="pointer-events-none absolute bottom-[7px] right-[7px] h-[22px] w-[22px] border-b-[1.5px] border-r-[1.5px] border-[#c9b98c]" />
                 <div className="h-[205px] w-[205px] overflow-hidden rounded-full border border-[#c9b98c] p-[2px]">
                   <div className="h-full w-full overflow-hidden rounded-full border border-[#102c44] bg-[#e8dfca]">
                     {president.portrait ? (
