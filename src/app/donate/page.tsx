@@ -29,9 +29,9 @@ export default function DonatePage() {
     <main className="overflow-x-clip min-h-screen bg-[#f4ecdb] text-[#172b3d]">
       <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
         <div className="mx-auto flex max-w-6xl min-w-0 flex-col items-start gap-5 px-6 py-6 md:flex-row md:items-center md:justify-between">
-          <Link href="/" className="font-serif text-xl font-bold tracking-wide md:text-2xl">
+          <div className="flex flex-col"><Link href="/" className="font-serif text-xl font-bold tracking-wide md:text-2xl">
             PRESIDENTIAL PASTIME
-          </Link>
+          </Link><p className="mt-1 text-xs tracking-[0.15em] text-[#c9b98c]">The Baseball History of the American Presidency</p></div>
           <nav className="flex w-full min-w-0 flex-nowrap items-center gap-5 overflow-x-auto whitespace-nowrap [touch-action:pan-x] text-xs font-bold uppercase tracking-wider text-[#e1d3b5] md:w-auto md:flex-wrap md:overflow-visible">
             <Link href="/" className="hover:text-white">Home</Link>
             <Link href="/presidents" className="hover:text-white">Presidents</Link>
@@ -88,9 +88,7 @@ export default function DonatePage() {
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#9b712f]">
             Become a Supporter
           </p>
-          <h2 className="mt-5 font-serif text-4xl font-bold md:text-5xl">
-            Every Contribution Has a Story.
-          </h2>
+          
           <p className="mt-7 text-base leading-8 text-[#47505a]">
             Support our mission through Stripe&apos;s secure checkout.
             In the meantime, you can contact us to discuss supporting
@@ -118,7 +116,7 @@ export default function DonatePage() {
         <Link href="/" className="font-serif text-lg font-bold text-white">
           PRESIDENTIAL PASTIME
         </Link>
-        <p className="mt-2">America&apos;s Presidents. America&apos;s Pastime.</p>
+        <p className="mt-2">The Baseball History of the American Presidency</p>
       </footer>
     </main>
   );
