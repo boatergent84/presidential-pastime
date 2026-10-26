@@ -23,7 +23,7 @@ export default function HeritageCollectionPage() {
       </nav>
     </div>
   </header>
-  <section className="bg-[#102c44] px-6 py-16 text-center text-white"><p className="text-xs uppercase tracking-[0.3em] text-[#c9b98c]">Presidential Pastime</p><h1 className="mt-3 font-serif text-4xl font-bold md:text-6xl">The Heritage Collection</h1><p className="mx-auto mt-5 max-w-2xl text-[#eee7d7]">A developing research gallery of presidential baseball artifacts, photographs, tickets, and signed baseballs.</p></section>
+  <section className="bg-[#102c44] px-6 py-16 text-center text-white"><p className="text-xs uppercase tracking-[0.3em] text-[#c9b98c]">Presidential Pastime</p><h1 className="mt-3 font-serif text-[30px] font-bold md:text-[37.5px]">The Heritage Collection</h1><p className="mx-auto mt-5 max-w-2xl text-[#eee7d7]">A developing research gallery of presidential baseball artifacts, photographs, tickets, and signed baseballs.</p></section>
   {/* HERITAGE FEATURED EXHIBIT */}
   <section className="mx-auto max-w-6xl px-6 pt-8">
     <Link href="/heritage-collection/presidential-signatures"
