@@ -39,10 +39,10 @@ export default function WilliamHowardTaftPage() {
           </div>
 
           <Link
-            href="/"
+            href="/presidents"
             className="border border-[#c9d4df] px-4 py-2 text-xs font-bold uppercase tracking-widest"
           >
-            ← Home
+            ← All Presidents
           </Link>
         </div>
       </header>
@@ -365,6 +365,25 @@ export default function WilliamHowardTaftPage() {
 
 
       </div>
+
+      <nav
+        aria-label="Presidential profile navigation"
+        className="mx-auto max-w-6xl px-6"
+      >
+        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-[#b8aa8e] py-7 text-sm font-bold text-[#a4282d]">
+          <Link href="/presidents/theodore-roosevelt">
+            ← Theodore Roosevelt
+          </Link>
+
+          <Link href="/presidents">
+            All Presidents
+          </Link>
+
+          <Link href="/presidents/woodrow-wilson">
+            Woodrow Wilson →
+          </Link>
+        </div>
+      </nav>
 
       {/* FOOTER */}
       <footer className="mt-16 border-t-4 border-[#a4282d] bg-[#102c44] text-white">
