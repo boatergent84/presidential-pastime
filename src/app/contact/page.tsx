@@ -36,22 +36,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen w-full max-w-full overflow-x-clip bg-[#f4ecdb] text-[#172b3d]">
-      <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto flex w-full min-w-0 max-w-6xl flex-col items-start gap-5 px-5 py-6 md:flex-row md:items-center md:justify-between md:px-6">
-          <Link href="/" className="font-serif text-xl font-bold tracking-wide md:text-2xl">
-            PRESIDENTIAL PASTIME
-          </Link>
-          <nav className="flex w-full min-w-0 max-w-full flex-nowrap gap-x-5 overflow-x-auto overscroll-x-contain whitespace-nowrap pb-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5] [touch-action:pan-x] md:w-auto md:flex-wrap md:overflow-visible md:whitespace-normal md:pb-0">
-            <Link href="/" className="hover:text-white">Home</Link>
-            <Link href="/presidents" className="hover:text-white">Presidents</Link>
-            <Link href="/first-pitches" className="hover:text-white">First Pitch</Link>
-            <Link href="/heritage-collection" className="hover:text-white">Heritage Collection</Link>
-            <Link href="/about" className="hover:text-white">About</Link>
-            <Link href="/donate" className="hover:text-white">Donate</Link>
-            <Link href="/contact" className="hover:text-white">Contact</Link>
-          </nav>
-        </div>
-      </header>
+      
 
       <section className="bg-[#071d31] px-6 py-20 text-center text-white md:py-28">
         <div className="mx-auto max-w-4xl">
@@ -206,12 +191,7 @@ export default function ContactPage() {
         </p>
       </section>
 
-      <footer className="bg-[#061727] px-6 py-8 text-center text-xs text-[#aebcc6]">
-        <Link href="/" className="font-serif text-lg font-bold text-white">
-          PRESIDENTIAL PASTIME
-        </Link>
-        <p className="mt-2">America&apos;s Presidents. America&apos;s Pastime.</p>
-      </footer>
+      
     </main>
   );
 }

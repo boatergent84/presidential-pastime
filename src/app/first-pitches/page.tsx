@@ -383,15 +383,7 @@ export default function FirstPitchPage() {
       </div>
 
       {/* SITE FOOTER */}
-      <footer className="relative left-1/2 mt-16 -mb-12 w-screen max-w-none -translate-x-1/2 border-t-4 border-[#a4282d] bg-[#071d31] px-6 py-12 text-center text-white">
-        <Link href="/" className="font-serif text-2xl font-bold">
-          PRESIDENTIAL PASTIME
-        </Link>
-
-        <p className="mt-3 text-sm tracking-wide text-[#c9b98c]">
-          The Baseball History of the American Presidency
-        </p>
-      </footer>
+      
     </ArchiveShell>
   );
 }

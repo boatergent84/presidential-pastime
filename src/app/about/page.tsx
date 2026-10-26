@@ -40,25 +40,7 @@ const collections = [
 export default function AboutPage() {
   return (
     <main className="min-h-screen w-full max-w-full overflow-x-clip bg-[#f4ecdb] text-[#172b3d]">
-      <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto flex w-full min-w-0 max-w-6xl flex-col items-start gap-5 px-5 py-6 md:flex-row md:items-center md:justify-between md:px-6">
-          <div className="flex flex-col"><Link
-            href="/"
-            className="font-serif text-xl font-bold tracking-wide md:text-2xl"
-          >
-            PRESIDENTIAL PASTIME
-          </Link><p className="mt-1 text-xs tracking-[0.15em] text-[#c9b98c]">The Baseball History of the American Presidency</p></div>
-          <nav className="flex w-full min-w-0 max-w-full flex-nowrap gap-x-5 overflow-x-auto overscroll-x-contain whitespace-nowrap pb-2 text-xs font-bold uppercase tracking-wider text-[#e1d3b5] [touch-action:pan-x] md:w-auto md:flex-wrap md:overflow-visible md:whitespace-normal md:pb-0">
-            <Link href="/" className="hover:text-white">Home</Link>
-            <Link href="/presidents" className="hover:text-white">Presidents</Link>
-            <Link href="/first-pitches" className="hover:text-white">First Pitch</Link>
-            <Link href="/heritage-collection" className="hover:text-white">Heritage Collection</Link>
-            <Link href="/about" className="text-white">About</Link>
-            <Link href="/donate" className="hover:text-white">Donate</Link>
-            <Link href="/contact" className="hover:text-white">Contact</Link>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-[#071d31] text-white">
@@ -309,14 +291,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <footer className="bg-[#061727] px-6 py-8 text-center text-xs text-[#aebcc6]">
-        <p className="font-serif text-lg font-bold tracking-wider text-white">
-          PRESIDENTIAL PASTIME
-        </p>
-        <p className="mt-2 uppercase tracking-[0.2em]">
-          The Baseball History of the American Presidency
-        </p>
-      </footer>
+      
     </main>
   );
 }

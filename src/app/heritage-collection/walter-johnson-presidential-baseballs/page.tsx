@@ -33,12 +33,7 @@ export default function WalterJohnsonExhibit() {
     <main className="min-h-screen bg-[#eee7d7] text-[#172b3d]">
 
 
-      <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5">
-          <Link href="/" className="font-serif text-2xl font-bold tracking-wide">PRESIDENTIAL PASTIME</Link>
-          <Link href="/heritage-collection" className="border border-[#c9b98c] px-4 py-2 text-xs font-bold uppercase tracking-widest">← Heritage Collection</Link>
-        </div>
-      </header>
+      
       <div className="mx-auto max-w-5xl px-6 py-12">
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">The Heritage Collection · Featured Exhibit</p>
         <h1 className="mt-3 font-serif text-4xl font-bold md:text-6xl">Walter Johnson&apos;s Six Presidential Baseballs</h1>
@@ -91,7 +86,7 @@ export default function WalterJohnsonExhibit() {
           <a className="mt-4 inline-block font-semibold text-[#a4282d] underline" href="https://www.loc.gov/item/2016875530/" target="_blank" rel="noopener noreferrer">Library of Congress — archival catalog entry ↗</a>
         </section>
       </div>
-      <footer className="mt-16 border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-8 text-center text-sm text-white">PRESIDENTIAL PASTIME · THE HERITAGE COLLECTION</footer>
+      
     </main>
   );
 }

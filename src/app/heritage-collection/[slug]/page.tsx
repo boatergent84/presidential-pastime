@@ -63,20 +63,7 @@ export default async function ExhibitPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#102c44]">
-      <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5">
-          <Link href="/" className="font-serif text-2xl font-bold tracking-wide">PRESIDENTIAL PASTIME</Link>
-          <nav className="flex flex-wrap gap-4 text-sm">
-            <Link href="/" className="hover:underline">Home</Link>
-            <Link href="/presidents" className="hover:underline">Presidents</Link>
-            <Link href="/first-pitches" className="hover:underline">First Pitch</Link>
-            <Link href="/heritage-collection" className="hover:underline">Heritage Collection</Link>
-            <Link href="/about" className="hover:underline">About</Link>
-            <Link href="/donate" className="hover:underline">Donate</Link>
-            <Link href="/contact" className="hover:underline">Contact</Link>
-          </nav>
-        </div>
-      </header>
+      
 
       <div className="mx-auto max-w-6xl px-6 py-12">
         <Link href="/heritage-collection" className="text-sm font-bold text-[#a4282d] hover:underline">← Back to the Heritage Collection</Link>
@@ -162,7 +149,7 @@ export default async function ExhibitPage({ params }: Props) {
           </section>
         )}
       </div>
-      <footer className="mt-16 border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-8 text-center text-sm text-white">PRESIDENTIAL PASTIME · THE HERITAGE COLLECTION</footer>
+      
     </main>
   );
 }

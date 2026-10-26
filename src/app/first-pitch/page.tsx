@@ -3,16 +3,7 @@ import Link from "next/link";
 export default function FirstPitchPage() {
   return (
     <main className="min-h-screen bg-[#f4ecdb] text-[#102c44]">
-      <header className="bg-[#102c44] px-6 py-6 text-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link href="/" className="font-serif text-xl font-bold">
-            PRESIDENTIAL PASTIME
-          </Link>
-          <Link href="/" className="text-sm text-[#d6b46f]">
-            ← Back to Home
-          </Link>
-        </div>
-      </header>
+      
 
       <section className="mx-auto max-w-4xl px-6 py-20 text-center">
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">

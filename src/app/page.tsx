@@ -252,56 +252,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#eee6d3] text-[#10243a]">
       {/* HEADER */}
-      <header className="bg-[#071d31] text-[#f5edd8]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-5 sm:py-5 md:px-6">
-          <div className="flex min-w-0 items-center gap-3 md:gap-4">
-
-
-            <div>
-              <h1 className="font-serif text-xl font-bold tracking-[0.07em] sm:text-2xl md:text-3xl lg:text-4xl">Presidential Pastime</h1>
-
-              <p className="mt-1 text-[9px] uppercase tracking-[0.18em] text-[#d9c79d] sm:tracking-[0.28em] md:text-xs">
-                The Baseball History of the American Presidency
-              </p>
-            </div>
-          </div>
-
-
-        </div>
-
-        {/* MOBILE NAVIGATION */}
-        <details className="group border-t border-[#31475b] bg-[#f8f2e4] text-[#10243a] md:hidden">
-          <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-3 font-bold uppercase tracking-[0.14em] [&::-webkit-details-marker]:hidden">
-            <span className="flex items-center gap-3">
-              <span className="text-xl text-[#a71924]">☰</span>
-              Menu
-            </span>
-            <span className="text-[#a71924] transition-transform group-open:rotate-180">⌄</span>
-          </summary>
-          <nav aria-label="Mobile navigation" className="grid border-t border-[#d1c2a2] px-5 py-2 text-sm font-semibold">
-            <Link href="/" className="border-b border-[#e2d8c4] py-3">Home</Link>
-            <Link href="/presidents" className="border-b border-[#e2d8c4] py-3">Presidents</Link>
-            <Link href="/first-pitches" className="border-b border-[#e2d8c4] py-3">First Pitch</Link>
-            <Link href="/heritage-collection" className="border-b border-[#e2d8c4] py-3">Heritage Collection</Link>
-            <Link href="/about" className="border-b border-[#e2d8c4] py-3">About</Link>
-            <Link href="/donate" className="border-b border-[#e2d8c4] py-3">Donate</Link>
-            <Link href="/contact" className="py-3">Contact</Link>
-          </nav>
-        </details>
-
-        {/* DESKTOP NAVIGATION */}
-        <nav aria-label="Main navigation" className="hidden border-t border-[#31475b] bg-[#f8f2e4] text-[#10243a] md:block">
-          <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-7 gap-y-3 px-6 py-4 text-center text-sm font-semibold">
-            <Link href="/" className="hover:text-[#a71924]">Home</Link>
-            <Link href="/presidents" className="hover:text-[#a71924]">Presidents</Link>
-            <Link href="/first-pitches" className="hover:text-[#a71924]">First Pitch</Link>
-            <Link href="/heritage-collection" className="hover:text-[#a71924]">Heritage Collection</Link>
-            <Link href="/about" className="hover:text-[#a71924]">About</Link>
-            <Link href="/donate" className="hover:text-[#a71924]">Donate</Link>
-            <Link href="/contact" className="hover:text-[#a71924]">Contact</Link>
-          </div>
-        </nav>
-      </header>
+      
 
       {/* HERO */}
       <section className="bg-[#0b2439]">
@@ -770,42 +721,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t-4 border-[#a71924] bg-[#071d31] px-6 py-10 text-center text-[#eee2c7]">
-        <div className="mx-auto max-w-5xl">
-          <p className="font-serif text-2xl font-bold tracking-wide md:text-3xl">
-            PRESIDENTIAL PASTIME
-          </p>
-
-          <p className="mt-2 text-xs tracking-[0.12em] text-[#c8b17b] md:text-sm">
-            The Baseball History of the American Presidency
-          </p>
-
-          <div className="mx-auto my-6 h-px max-w-lg bg-[#405064]" />
-
-          <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-medium">
-            <Link href="/" className="transition hover:text-[#d6b46f]">Home</Link>
-            <Link href="/about" className="transition hover:text-[#d6b46f]">About</Link>
-            <Link href="/contact" className="transition hover:text-[#d6b46f]">Contact</Link>
-            <Link href="/donate" className="transition hover:text-[#d6b46f]">Donate</Link>
-          </nav>
-
-          <div className="mx-auto my-6 h-px max-w-lg bg-[#405064]" />
-
-          <p className="mx-auto max-w-2xl text-xs leading-6 text-[#9baab6]">
-            An independent historical research project. Not affiliated with
-            the United States government, any presidential administration,
-            or Major League Baseball.
-          </p>
-
-          <p className="mt-4 text-xs text-[#9baab6]">
-            © {new Date().getFullYear()} Presidential Pastime. All rights reserved.
-          </p>
-
-          <p className="mt-3 text-center font-serif text-[10px] font-semibold tracking-[0.2em] text-[#c8b17b]">
-            SDG
-          </p>
-        </div>
-      </footer>
+      
     </main>
   );
 }

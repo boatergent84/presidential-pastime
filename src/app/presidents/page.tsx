@@ -10,45 +10,7 @@ export default function PresidentsArchivePage() {
   return (
     <main className="min-h-screen w-full max-w-full overflow-x-clip bg-[#eee7d7] text-[#172b3d]">
       {/* HEADER */}
-      <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto max-w-6xl flex flex-wrap items-center justify-between gap-4 px-6 py-5">
-          <Link href="/" className="flex items-center gap-3">
-            <div>
-              <p className="font-serif text-xl font-bold tracking-wide md:text-2xl">
-                PRESIDENTIAL PASTIME
-              </p>
-
-              <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-[#c9b98c]">
-                The Baseball History of the American Presidency
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            href="/"
-            className="border border-[#c9b98c] px-4 py-2 text-xs font-bold uppercase tracking-wider hover:bg-white/10"
-          >
-            ← Home
-          </Link>
-        </div>
-
-        <nav
-          aria-label="Presidential Profiles navigation"
-          className="w-full min-w-0 border-t border-[#40576b] bg-[#f8f3e8] text-[#102c44]"
-        >
-          <div className="mx-auto w-full min-w-0 max-w-6xl px-5 py-4 md:px-6">
-            <div className="flex w-full min-w-0 flex-nowrap gap-6 overflow-x-auto overscroll-x-contain whitespace-nowrap pb-2 text-sm font-semibold [touch-action:pan-x] md:flex-wrap md:overflow-visible md:whitespace-normal md:pb-0">
-              <Link href="/" className="shrink-0 hover:text-[#a4282d]">Home</Link>
-              <Link href="/presidents" className="shrink-0 text-[#a4282d]">Presidents</Link>
-              <Link href="/first-pitches" className="shrink-0 hover:text-[#a4282d]">First Pitch</Link>
-              <Link href="/heritage-collection" className="shrink-0 hover:text-[#a4282d]">Heritage Collection</Link>
-              <Link href="/about" className="shrink-0 hover:text-[#a4282d]">About</Link>
-              <Link href="/donate" className="shrink-0 hover:text-[#a4282d]">Donate</Link>
-              <Link href="/contact" className="shrink-0 hover:text-[#a4282d]">Contact</Link>
-            </div>
-          </div>
-        </nav>
-      </header>
+      
 
       {/* INTRODUCTION */}
       <section className="mx-auto max-w-6xl px-6 pb-10 pt-14">
@@ -227,19 +189,7 @@ export default function PresidentsArchivePage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t-4 border-[#a4282d] bg-[#071d31] px-6 py-10 text-center text-white">
-        <Link href="/" className="font-serif text-2xl font-bold">
-          PRESIDENTIAL PASTIME
-        </Link>
-
-        <p className="mt-3 text-sm text-[#c9b98c]">
-          The Baseball History of the American Presidency
-        </p>
-
-        <p className="mt-7 text-xs text-[#9baab6]">
-          An independent historical research archive.
-        </p>
-      </footer>
+      
     </main>
   );
 }

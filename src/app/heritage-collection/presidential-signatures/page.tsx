@@ -196,30 +196,31 @@ export default function PresidentialSignaturesPage() {
 
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#102c44]">
-      <header className="border-b-4 border-[#a4282d] bg-[#102c44] px-6 py-5 text-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
-          <Link href="/" className="font-serif text-2xl font-bold">PRESIDENTIAL PASTIME</Link>
-          <Link href="/heritage-collection" className="text-sm text-[#d7bb83]">← Heritage Collection</Link>
-        </div>
-      </header>
+      
 
-      <section className="border-b border-[#b89a61] bg-[#102c44] px-6 py-20 text-center text-white">
+      <section className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-20 text-center text-white">
         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
-          The Heritage Collection · Special Museum Exhibit
+          The Heritage Collection · Special Exhibit
         </p>
-        <div className="mx-auto my-8 flex h-28 w-28 items-center justify-center rounded-full border-4 border-[#b89a61] bg-[#eee7d7] text-6xl shadow-xl">
-          ⚾
+
+        <div className="mx-auto mt-7 flex max-w-xs items-center gap-4 text-[#d7bb83]">
+          <div className="h-px flex-1 bg-[#b89a61]" />
+          <span>★</span>
+          <div className="h-px flex-1 bg-[#b89a61]" />
         </div>
-        <h1 className="font-serif text-4xl font-bold md:text-6xl">
+
+        <h1 className="mt-6 font-serif text-2xl font-bold md:text-4xl">
           The Presidential Signature Collection
         </h1>
-        <p className="mx-auto mt-5 max-w-2xl font-serif text-xl italic text-[#d7bb83]">
+
+        <p className="mt-5 font-serif text-xl text-[#d7bb83] md:text-2xl">
           A History of America, Written on Baseballs
         </p>
-        <p className="mx-auto mt-7 max-w-3xl leading-8 text-[#eee7d7]">
-          A growing historical archive of baseballs signed by American presidents.
-          Explore documented examples, discover the stories behind their signatures,
-          and follow the original historical sources.
+
+        <p className="mx-auto mt-8 max-w-2xl leading-8 text-[#eee7d7]">
+          A growing historical archive of baseballs signed by American
+          presidents. Explore documented examples, discover the stories
+          behind their signatures, and follow the original historical sources.
         </p>
       </section>
 
@@ -298,9 +299,7 @@ export default function PresidentialSignaturesPage() {
         {filtered.length === 0 && <p>No presidents match your search.</p>}
       </section>
 
-      <footer className="border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-10 text-center text-sm text-[#eee7d7]">
-        Presidential Pastime · Preserving the intersection of the presidency and America&apos;s pastime.
-      </footer>
+      
     </main>
   );
 }

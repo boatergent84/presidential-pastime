@@ -1,3 +1,5 @@
+import SiteFooter from "./components/site-footer";
+import SiteNav from "./components/site-nav";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -69,7 +71,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
           }}
         />
+        <SiteNav />
         {children}
+        <SiteFooter />
         <Analytics />
       </body>
     </html>

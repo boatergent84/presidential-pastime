@@ -145,28 +145,7 @@ const stories = [
 export default function DidYouKnowPage() {
   return (
     <main className="min-h-screen w-full max-w-full overflow-x-clip bg-[#f4ecdb] text-[#102c44]">
-      <header className="w-full min-w-0 border-b-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto flex w-full min-w-0 max-w-6xl flex-col items-start gap-4 px-5 py-6 md:flex-row md:items-center md:justify-between md:px-6">
-          <Link href="/" className="max-w-full font-serif text-xl font-bold tracking-wide">
-            PRESIDENTIAL PASTIME
-          </Link>
-          <nav className="flex w-full min-w-0 max-w-full flex-nowrap gap-6 overflow-x-auto overscroll-x-contain whitespace-nowrap pb-2 text-sm [touch-action:pan-x] md:w-auto md:overflow-visible md:whitespace-normal md:pb-0">
-            <Link href="/" className="hover:text-[#d6b46f]">
-              Home
-            </Link>
-            <Link href="/presidents" className="hover:text-[#d6b46f]">
-              Presidents
-            </Link>
-            <Link href="/first-pitches" className="hover:text-[#d6b46f]">First Pitch</Link>
-            <Link href="/heritage-collection" className="hover:text-[#d6b46f]">
-              Heritage Collection
-            </Link>
-            <Link href="/about" className="hover:text-[#d6b46f]">About</Link>
-            <Link href="/donate" className="hover:text-[#d6b46f]">Donate</Link>
-            <Link href="/contact" className="hover:text-[#d6b46f]">Contact</Link>
-          </nav>
-        </div>
-      </header>
+      
 
       <section className="bg-[#0b2439] px-6 py-20 text-center text-[#fff8e8]">
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d6b46f]">

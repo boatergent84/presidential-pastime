@@ -23,29 +23,7 @@ export default function WilliamHowardTaftPage() {
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#172b3d]">
       {/* HEADER */}
-      <header className="border-b-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <div>
-            <Link
-              href="/"
-              className="font-serif text-2xl font-bold tracking-wide"
-            >
-              PRESIDENTIAL PASTIME
-            </Link>
-
-            <p className="mt-1 text-xs uppercase tracking-[0.25em] text-[#c9d4df]">
-              America&apos;s Presidents. America&apos;s Pastime.
-            </p>
-          </div>
-
-          <Link
-            href="/presidents"
-            className="border border-[#c9d4df] px-4 py-2 text-xs font-bold uppercase tracking-widest"
-          >
-            ← All Presidents
-          </Link>
-        </div>
-      </header>
+      
 
       <div className="mx-auto max-w-6xl px-6 py-10">
         {/* HERO */}
@@ -386,20 +364,7 @@ export default function WilliamHowardTaftPage() {
       </nav>
 
       {/* FOOTER */}
-      <footer className="mt-16 border-t-4 border-[#a4282d] bg-[#102c44] text-white">
-        <div className="mx-auto max-w-6xl px-6 py-8">
-          <p className="font-serif text-xl font-bold">
-            PRESIDENTIAL PASTIME
-          </p>
-
-          <p className="mt-1 text-sm text-[#c9d4df]">
-            America&apos;s Presidents. America&apos;s Pastime.
-          </p>
-        </div>
-
-
-
-      </footer>
+      
     </main>
   );
 }

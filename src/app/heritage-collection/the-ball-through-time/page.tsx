@@ -220,19 +220,7 @@ function MuseumGallery({
 export default function BallThroughTimePage() {
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#102c44]">
-      <header className="border-b-4 border-[#a4282d] bg-[#102c44] px-6 py-6 text-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
-          <Link href="/" className="font-serif text-2xl font-bold">
-            PRESIDENTIAL PASTIME
-          </Link>
-          <Link
-            href="/heritage-collection"
-            className="text-sm text-[#d7bb83] hover:text-white"
-          >
-            ← Heritage Collection
-          </Link>
-        </div>
-      </header>
+      
 
       <section className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-20 text-center text-white">
         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
@@ -245,7 +233,7 @@ export default function BallThroughTimePage() {
           <div className="h-px flex-1 bg-[#b89a61]" />
         </div>
 
-        <h1 className="mt-6 font-serif text-5xl font-bold md:text-7xl">
+        <h1 className="mt-6 font-serif text-2xl font-bold md:text-4xl">
           The Ball Through Time
         </h1>
 
