@@ -380,26 +380,18 @@ export default function FirstPitchPage() {
           </Link>
         </section>
 
-        {/* Historical sources */}
-        <section className="border-t border-[#c9b98c] pt-7">
-          <h2 className="font-serif text-xl font-bold text-[#102c44]">
-            Historical Sources & Further Reading
-          </h2>
-          <div className="mt-4 space-y-3">
-            {sources.map((source) => (
-              <a
-                key={source.href}
-                href={source.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm font-medium text-[#a4282d] underline underline-offset-4 hover:text-[#102c44]"
-              >
-                {source.title} ↗
-              </a>
-            ))}
-          </div>
-        </section>
       </div>
+
+      {/* SITE FOOTER */}
+      <footer className="relative left-1/2 mt-16 -mb-12 w-screen max-w-none -translate-x-1/2 border-t-4 border-[#a4282d] bg-[#071d31] px-6 py-12 text-center text-white">
+        <Link href="/" className="font-serif text-2xl font-bold">
+          PRESIDENTIAL PASTIME
+        </Link>
+
+        <p className="mt-3 text-sm tracking-wide text-[#c9b98c]">
+          The Baseball History of the American Presidency
+        </p>
+      </footer>
     </ArchiveShell>
   );
 }
