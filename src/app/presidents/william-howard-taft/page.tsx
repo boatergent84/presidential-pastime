@@ -393,8 +393,7 @@ export default function WilliamHowardTaftPage() {
           </p>
 
           <p className="mt-1 text-sm text-[#c9d4df]">
-            Exploring the history of America&apos;s presidents and
-            America&apos;s pastime.
+            America&apos;s Presidents. America&apos;s Pastime.
           </p>
         </div>
 
