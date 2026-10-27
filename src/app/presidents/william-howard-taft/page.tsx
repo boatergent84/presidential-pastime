@@ -242,7 +242,6 @@ export default function WilliamHowardTaftPage() {
           </div>
         </section>
 
-        {/* GAMES */}
         <section className="mt-14">
           <div className="border-b-2 border-[#b8aa8e] pb-3">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">

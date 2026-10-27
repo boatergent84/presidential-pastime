@@ -389,23 +389,6 @@ export default async function PresidentPage({
           </div>
         </section>
 
-        <section className="mt-14">
-          <div className="border-b-2 border-[#b8aa8e] pb-3">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Games &amp; First Pitches</p>
-            <h2 className="mt-1 font-serif text-3xl font-bold">{president.name} at the Ballpark</h2>
-          </div>
-          <div className="mt-6 grid gap-5 md:grid-cols-2">
-            {events.filter(event => /pitch|opening day|ballpark|stadium|world series|game/i.test(`${event.title} ${event.description}`)).slice(0, 6).map((event, index) => (
-              <article key={`${event.title}-${index}`} className="border border-[#b8aa8e] bg-[#f8f3e8] p-6">
-                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#a4282d]">{event.date}</p>
-                <h3 className="mt-2 font-serif text-xl font-bold">{event.title}</h3>
-                <p className="mt-2 leading-7 text-[#59636b]">{event.description}</p>
-              </article>
-            ))}
-          </div>
-          <Link href="/first-pitches" className="mt-5 inline-block font-bold text-[#a4282d] underline">Explore the First Pitch Archive →</Link>
-        </section>
-
         {mainPhoto && <section className="mt-14">
           <div className="border-b-2 border-[#b8aa8e] pb-3">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Historic Photos</p>
