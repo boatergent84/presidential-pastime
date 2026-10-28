@@ -151,7 +151,7 @@ export default function DidYouKnowPage() {
         <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d6b46f]">
           Fascinating Presidential Baseball History
         </p>
-        <h1 className="mt-5 font-serif text-4xl font-bold md:text-6xl">
+        <h1 className="mt-5 font-serif text-3xl font-bold md:text-[45px]">
           Did You Know?
         </h1>
         <div className="mx-auto my-7 h-[2px] w-28 bg-[#a4282d]" />
