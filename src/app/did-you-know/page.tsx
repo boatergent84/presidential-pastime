@@ -161,7 +161,7 @@ export default function DidYouKnowPage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16">
+      <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-10">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
             From the Historical Record
@@ -175,50 +175,63 @@ export default function DidYouKnowPage() {
           </p>
         </div>
 
-        <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-          {stories.map((story) => (
+        <div className="grid items-stretch gap-9 md:grid-cols-2 lg:grid-cols-3">
+          {[...stories]
+            .sort((a, b) => parseInt(a.year, 10) - parseInt(b.year, 10))
+            .map((story) => (
             <article
               key={story.title}
-              className="flex flex-col border border-[#c9b994] bg-[#f8f1df] p-7"
+              className="group flex h-full flex-col overflow-hidden rounded-sm border border-[#bda77d] bg-[#fffaf0] shadow-[0_7px_20px_rgba(16,44,68,0.13)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(16,44,68,0.2)]"
             >
-              <div className="flex items-center justify-between gap-3">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#a4282d]">
-                  {story.category}
-                </span>
-                <span className="font-serif text-xl font-bold text-[#98723c]">
-                  {story.year}
-                </span>
+              <div className="border-b-[4px] border-[#a4282d] bg-[#102c44] px-7 pb-7 pt-6 text-white">
+                <div className="flex items-start justify-between gap-4">
+                  <span className="text-[11px] font-bold uppercase leading-5 tracking-[0.16em] text-[#e3c99a]">
+                    {story.category}
+                  </span>
+                  <span className="shrink-0 border border-[#c9a86b] px-3 py-1 font-serif text-lg font-bold text-[#e9ce91]">
+                    {story.year}
+                  </span>
+                </div>
+
+                <h3 className="mt-5 font-serif text-[25px] font-bold leading-snug text-[#fff8e8]">
+                  {story.title}
+                </h3>
               </div>
 
-              <h3 className="mt-6 font-serif text-2xl font-bold leading-snug">
-                {story.title}
-              </h3>
+              <div className="flex flex-1 flex-col px-7 pb-7 pt-7">
+                <div className="border-l-[4px] border-[#a4282d] bg-[#f2e7d2] px-5 py-4">
+                  <p className="font-serif text-[18px] font-semibold italic leading-7 text-[#102c44]">
+                    {story.fact}
+                  </p>
+                </div>
 
-              <p className="mt-4 border-l-2 border-[#a4282d] pl-4 font-serif text-lg italic leading-7">
-                {story.fact}
-              </p>
+                <p className="mt-6 flex-1 text-[15px] leading-8 text-[#485766]">
+                  {story.story}
+                </p>
 
-              <p className="mt-5 flex-1 leading-7 text-[#52606d]">
-                {story.story}
-              </p>
+                <div className="mt-5 border-t border-[#d3c2a0] pt-3">
+                  <p className="mb-2 text-[9px] font-bold uppercase tracking-[0.15em] text-[#98723c]">
+                    Archival References
+                  </p>
 
-              <div className="mt-7 border-t border-[#c9b994] pt-5">
-                <a
-                  href={story.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs font-bold uppercase tracking-wide text-[#a4282d] hover:underline"
-                >
-                  Historical Source: {story.source} ↗
-                </a>
-                {story.profile && (
-                  <Link
-                    href={story.profile}
-                    className="mt-4 block text-xs font-bold uppercase tracking-wide text-[#102c44] hover:underline"
+                  <a
+                    href={story.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-[10px] font-semibold uppercase leading-4 tracking-wide text-[#a4282d] hover:underline"
                   >
-                    Explore Presidential Profile →
-                  </Link>
-                )}
+                    Historical Source: {story.source} ↗
+                  </a>
+
+                  {story.profile && (
+                    <Link
+                      href={story.profile}
+                      className="mt-2 block text-[10px] font-semibold uppercase tracking-wide text-[#102c44] hover:underline"
+                    >
+                      Explore Presidential Profile →
+                    </Link>
+                  )}
+                </div>
               </div>
             </article>
           ))}
