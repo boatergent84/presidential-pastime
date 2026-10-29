@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   title: "The First Pitch | Presidential Pastime",
   description:
     "April 14, 1910: Discover how President William Howard Taft began the presidential ceremonial first-pitch tradition.",
+  openGraph: {
+    title: "The First Pitch | Presidential Pastime",
+    description: "April 14, 1910 — The Day a Presidential Tradition Was Born.",
+    url: "https://presidentialpastime.com/first-pitches",
+    type: "article",
+    images: [{
+      url: "/taft-first-pitch-1910.jpg",
+      alt: "President William Howard Taft and the 1910 first-pitch tradition",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/taft-first-pitch-1910.jpg"],
+  },
 };
 
 const gold = "#b59a62";

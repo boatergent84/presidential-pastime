@@ -49,6 +49,18 @@ export async function generateMetadata({
     .slice(0, 155)
     .trim();
 
+  const candidateImages = [
+    ...(president.events ?? []).map((event) => event.image),
+    ...(president.photos ?? []).map((photo) => photo.image),
+    president.portrait,
+  ].filter((image): image is string => Boolean(image));
+
+  const socialImage =
+    candidateImages.find((image) =>
+      image.startsWith("/") &&
+      !image.toLowerCase().endsWith(".svg")
+    ) ?? "/opengraph-image.jpg";
+
   const url = `https://presidentialpastime.com/presidents/${slug}`;
 
   return {
@@ -63,6 +75,16 @@ export async function generateMetadata({
       url,
       siteName: "Presidential Pastime",
       type: "article",
+      images: [{
+        url: socialImage,
+        alt: `${president.name} — Presidential Pastime historical baseball archive`,
+      }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [socialImage],
     },
   };
 }
@@ -170,7 +192,7 @@ export default async function PresidentPage({
     "lyndon-b-johnson": "Right",
     "john-f-kennedy": "Right",
     "dwight-d-eisenhower": "Right",
-    "harry-s-truman": "Left",
+    "harry-s-truman": "Right & Left",
     "calvin-coolidge": "Right",
     "franklin-d-roosevelt": "Right",
     "herbert-hoover": "Right",
