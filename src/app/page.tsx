@@ -265,9 +265,9 @@ export default function Home() {
 
               <div className="my-7 h-[2px] w-32 bg-[#a91d28]" />
 
-              <p className="max-w-xl font-serif text-xl italic leading-relaxed text-[#e6dac1]">
-                When Presidents Stepped Up to the Plate
-              </p>
+              <h1 className="mt-7 max-w-xl font-serif text-4xl font-bold leading-tight text-[#f7eed9] sm:text-5xl lg:text-6xl">
+                Presidential Pastime
+              </h1>
 
               <p className="mt-5 max-w-xl leading-7 text-[#c8d0d5]">
                 Discover the presidents who loved the game, threw
