@@ -1,3 +1,4 @@
+import ExhibitShare from "./exhibit-share";
 import Link from "next/link";
 
 const footerLinks = [
@@ -13,7 +14,9 @@ const footerLinks = [
 
 export default function SiteFooter() {
   return (
-    <footer className="w-full bg-[#061727] px-5 py-5 text-center text-xs text-[#aebcc6]">
+    <>
+      <ExhibitShare />
+      <footer className="w-full bg-[#061727] px-5 py-5 text-center text-xs text-[#aebcc6]">
       <div className="mx-auto max-w-6xl">
         <Link
           href="/"
@@ -55,6 +58,7 @@ export default function SiteFooter() {
           </p>
         </div>
       </div>
-    </footer>
+      </footer>
+    </>
   );
 }
