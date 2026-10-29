@@ -1,18 +1,31 @@
+
 import type { Metadata } from "next";
 
+const siteUrl = "https://presidentialpastime.com/";
+
 export const homeMetadata: Metadata = {
-  title: "Presidential Pastime | The Baseball History of the American Presidency",
+  title: "Presidential Pastime | Presidents & Baseball History",
+
   description:
-    "Discover the connections between American presidents and baseball through ceremonial first pitches, historic photographs, presidential memorabilia, and original historical research.",
+    "Presidential Pastime explores the baseball history of America's presidents, featuring historic first pitches, rare photographs, presidential stories, and authentic baseball memorabilia.",
+
   alternates: {
-    canonical: "https://presidentialpastime.com/",
+    canonical: siteUrl,
   },
+
   openGraph: {
-    title: "Presidential Pastime | The Baseball History of the American Presidency",
+    title: "Presidential Pastime | Presidents & Baseball History",
     description:
-      "Explore the remarkable history connecting America's presidents with America's pastime.",
-    url: "https://presidentialpastime.com/",
+      "Explore the remarkable connection between America's presidents and baseball through historical photographs, first pitches, presidential profiles, and authentic memorabilia.",
+    url: siteUrl,
     siteName: "Presidential Pastime",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    title: "Presidential Pastime | Presidents & Baseball History",
+    description:
+      "Discover historic presidential first pitches, rare photographs, and the baseball history of America's presidents.",
   },
 };

@@ -2,9 +2,20 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Story | Presidential Pastime",
+  title: "About Presidential Pastime | Our Story & Mission",
   description:
-    "Discover the story and mission behind Presidential Pastime, a digital museum exploring the history of America's presidents and baseball.",
+    "Learn about the mission behind Presidential Pastime, an independent historical archive dedicated to preserving the connections between American presidents and baseball.",
+  alternates: {
+    canonical: "https://presidentialpastime.com/about",
+  },
+  openGraph: {
+    title: "About Presidential Pastime | Our Story & Mission",
+    description:
+      "Discover the story and historical mission behind Presidential Pastime.",
+    url: "https://presidentialpastime.com/about",
+    siteName: "Presidential Pastime",
+    type: "website",
+  },
 };
 
 const collections = [
