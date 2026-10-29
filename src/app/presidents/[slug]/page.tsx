@@ -49,17 +49,8 @@ export async function generateMetadata({
     .slice(0, 155)
     .trim();
 
-  const candidateImages = [
-    ...(president.events ?? []).map((event) => event.image),
-    ...(president.photos ?? []).map((photo) => photo.image),
-    president.portrait,
-  ].filter((image): image is string => Boolean(image));
-
-  const socialImage =
-    candidateImages.find((image) =>
-      image.startsWith("/") &&
-      !image.toLowerCase().endsWith(".svg")
-    ) ?? "/opengraph-image.jpg";
+  // Museum-style social card using the president's profile portrait.
+  const socialImage = `/presidents/${slug}/opengraph-image`;
 
   const url = `https://presidentialpastime.com/presidents/${slug}`;
 
