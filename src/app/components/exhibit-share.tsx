@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function ExhibitShare() {
+  const pathname = usePathname();
   const [url, setUrl] = useState("");
   const [title, setTitle] = useState("Presidential Pastime");
   const [copied, setCopied] = useState(false);
@@ -10,7 +12,7 @@ export default function ExhibitShare() {
   useEffect(() => {
     setUrl(window.location.href);
     setTitle(document.title);
-  }, []);
+  }, [pathname]);
 
   const shareText = `Explore ${title} at Presidential Pastime`;
 
