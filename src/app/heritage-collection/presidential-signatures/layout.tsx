@@ -15,6 +15,15 @@ export const metadata: Metadata = {
     url: "https://presidentialpastime.com/heritage-collection/presidential-signatures",
     siteName: "Presidential Pastime",
     type: "article",
+    images: [{
+      url: "/heritage-collection/presidential-signatures/opengraph-image",
+      width: 1200,
+      height: 630,
+      alt: "Presidential Signature Collection — George H. W. Bush signed baseball",
+    }],
+  },  twitter: {
+    card: "summary_large_image",
+    images: ["/heritage-collection/presidential-signatures/opengraph-image"],
   },
 };
 
