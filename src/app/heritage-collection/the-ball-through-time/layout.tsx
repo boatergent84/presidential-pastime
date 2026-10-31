@@ -15,6 +15,20 @@ export const metadata: Metadata = {
     url: "https://presidentialpastime.com/heritage-collection/the-ball-through-time",
     siteName: "Presidential Pastime",
     type: "article",
+    images: [
+      {
+        url: "https://presidentialpastime.com/ball-through-time-social.png",
+        width: 1200,
+        height: 630,
+        alt: "The Ball Through Time — Presidential Pastime",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      "https://presidentialpastime.com/ball-through-time-social.png",
+    ],
   },
 };
 
