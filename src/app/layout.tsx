@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import SiteFooter from "./components/site-footer";
 import SiteNav from "./components/site-nav";
 import { Analytics } from "@vercel/analytics/next";
@@ -75,6 +76,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         <SiteFooter />
         <Analytics />
+              <GoogleAnalytics gaId="G-ETSWZ48GMX" />
       </body>
     </html>
   );
