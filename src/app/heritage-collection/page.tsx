@@ -49,7 +49,7 @@ export default function HeritageCollectionPage() {
           className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
         >
           <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
-            <ExhibitNumber number="01" />
+            <ExhibitNumber number="002" />
 
             <div className="my-6 flex h-[208px] w-[208px] items-center justify-center overflow-hidden rounded-full border-4 border-[#b89a61] bg-white shadow-xl">
               <img
@@ -94,7 +94,7 @@ export default function HeritageCollectionPage() {
           className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
         >
           <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
-            <ExhibitNumber number="02" />
+            <ExhibitNumber number="003" />
 
             <div className="my-6 flex w-full max-w-sm items-center justify-center border-4 border-[#b89a61] bg-[#eee7d7] p-3 shadow-xl">
               <img
@@ -140,7 +140,7 @@ export default function HeritageCollectionPage() {
       <section className="mx-auto max-w-6xl px-6 pb-12 pt-10">
         <div className="grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] md:grid-cols-2">
           <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-5">
-            <ExhibitNumber number="03" />
+            <ExhibitNumber number="004" />
 
             <img
               src="/heritage/walter-johnson-baseballs.jpg"
