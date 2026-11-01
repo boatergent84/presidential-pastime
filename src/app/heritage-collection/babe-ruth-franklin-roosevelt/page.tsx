@@ -32,29 +32,6 @@ const facts = [
   { label: "FINAL SCORE", value: "Yankees 7 · Cubs 5" },
 ];
 
-const moments = [
-  {
-    number: "01",
-    title: "A Future President at Wrigley Field",
-    text: "Franklin D. Roosevelt, then governor of New York and the Democratic presidential nominee, attended Game Three of the World Series while campaigning in Chicago.",
-  },
-  {
-    number: "02",
-    title: "The Yankees Face the Cubs",
-    text: "The New York Yankees entered Wrigley Field with a two-game lead over the Chicago Cubs. Babe Ruth was playing in what would become his final World Series.",
-  },
-  {
-    number: "03",
-    title: "The Called Shot",
-    text: "In the fifth inning, Ruth gestured during his confrontation with pitcher Charlie Root and then hit a home run. Whether he actually predicted the home run remains one of baseball's great historical debates.",
-  },
-  {
-    number: "04",
-    title: "A Remarkable Surviving Baseball",
-    text: "An Official National League baseball survives bearing the signatures of Babe Ruth and Franklin D. Roosevelt, along with the handwritten date October 1, 1932. Its precise signing circumstances and game use remain unproven.",
-  },
-];
-
 const photographs = [
   {
     src: "/ruth-roosevelt/roosevelt-baseball-signed.png",
@@ -188,67 +165,6 @@ export default function RuthRooseveltExhibit() {
           <p className="mt-6 text-center text-sm italic text-[#dfcda8]">
             Wrigley Field, Chicago — The Yankees took a 3–0 lead in the series.
           </p>
-        </section>
-
-        <section>
-          <div className="mb-7 text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">
-              Historical Photography
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold text-[#102c44]">
-              Ruth and Roosevelt at the 1932 World Series
-            </h2>
-            <p className="mx-auto mt-4 max-w-3xl leading-7 text-[#46515a]">
-              Period photographs document this extraordinary intersection of baseball and presidential history. The original archival records are linked below while reproduction permissions are being established.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            <article className="rounded-lg border border-[#c9b98c] bg-[#f5efdf] p-6">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">October 1, 1932</p>
-              <h3 className="mt-3 font-serif text-xl font-bold">Roosevelt at Wrigley Field</h3>
-              <p className="mt-3 leading-7 text-[#46515a]">
-                Hunt Auctions documents a period photograph of Franklin D. Roosevelt attending Game Three of the 1932 World Series.
-              </p>
-              <a href="https://huntauctions.com/live/imageviewer.cfm?auction_num=116&lot_num=64&lot_qual=" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block font-bold text-[#a4282d] underline">
-                View archival photograph →
-              </a>
-            </article>
-            <article className="rounded-lg border border-[#c9b98c] bg-[#f5efdf] p-6">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">1932 World Series</p>
-              <h3 className="mt-3 font-serif text-xl font-bold">Babe Ruth and the Called Shot</h3>
-              <p className="mt-3 leading-7 text-[#46515a]">
-                Historical photographs of Babe Ruth and Lou Gehrig help illustrate the legendary fifth-inning home run.
-              </p>
-              <a href="https://baseballhall.org/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block font-bold text-[#a4282d] underline">
-                Explore the Baseball Hall of Fame →
-              </a>
-            </article>
-          </div>
-          <p className="mt-4 text-xs italic text-[#65717b]">
-            Historical photographs are not presented as evidence that the signed baseball was used in the game.
-          </p>
-        </section>
-
-        <section>
-          <div className="mb-8 text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#a4282d]">
-              The Historic Afternoon
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold text-[#102c44]">
-              Four Moments That Made History
-            </h2>
-          </div>
-          <div className="space-y-4">
-            {moments.map((moment) => (
-              <article key={moment.number} className="flex gap-5 rounded-lg border border-[#d5c8a8] bg-[#f5efdf] p-5 sm:p-7">
-                <div className="font-serif text-3xl font-bold text-[#a4282d]">{moment.number}</div>
-                <div>
-                  <h3 className="font-serif text-xl font-bold text-[#102c44]">{moment.title}</h3>
-                  <p className="mt-2 leading-7 text-[#334454]">{moment.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
         </section>
 
         <section className="rounded-xl border-2 border-[#b59a62] bg-[#eee5d2] p-6 sm:p-10">
