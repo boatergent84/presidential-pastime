@@ -17,26 +17,26 @@ function ExhibitNumber({ number }: { number: string }) {
 export default function HeritageCollectionPage() {
   return (
     <main className="min-h-screen w-full max-w-full overflow-x-clip bg-[#eee7d7] text-[#102c44]">
-      <section className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-20 text-center text-white">
+      <section className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-9 text-center text-white">
         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
           Presidential Pastime · Historical Collection
         </p>
 
-        <div className="mx-auto mt-7 flex max-w-xs items-center justify-center gap-4 text-[#d7bb83]">
+        <div className="mx-auto mt-3 flex max-w-xs items-center justify-center gap-4 text-[#d7bb83]">
           <span className="h-px flex-1 bg-[#b89a61]" />
           <span>★</span>
           <span className="h-px flex-1 bg-[#b89a61]" />
         </div>
 
-        <h1 className="mt-6 font-serif text-2xl font-bold md:text-4xl">
+        <h1 className="mt-3 font-serif text-2xl font-bold md:text-4xl">
           The 1600 Collection
         </h1>
 
-        <p className="mt-5 font-serif text-xl text-[#d7bb83] md:text-2xl">
+        <p className="mt-2 font-serif text-xl text-[#d7bb83] md:text-2xl">
           Where the American Presidency Meets Baseball History
         </p>
 
-        <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-[#eee7d7]">
+        <p className="mx-auto mt-3 max-w-2xl text-base leading-8 text-[#eee7d7]">
           A developing research gallery of presidential baseball artifacts,
           photographs, tickets, and signed baseballs.
         </p>
