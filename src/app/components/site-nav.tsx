@@ -23,33 +23,17 @@ export default function SiteNav() {
     <header className="w-full border-b-4 border-[#a4282d] bg-[#102c44] text-white">
       <div className="mx-auto max-w-6xl px-5 py-5">
         <div className="flex items-center justify-between gap-4">
-          <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+          <div className="min-w-0">
             <Link
               href="/"
-              className="shrink-0"
-              aria-label="Presidential Pastime home"
+              className="font-serif text-xl font-bold tracking-wide sm:text-2xl"
             >
-              <img
-                src="/icon.png"
-                alt="Presidential Pastime logo"
-                width="34"
-                height="34"
-                className="h-8 w-8 object-contain sm:h-[34px] sm:w-[34px]"
-              />
+              PRESIDENTIAL PASTIME
             </Link>
 
-            <div className="min-w-0">
-              <Link
-                href="/"
-                className="font-serif text-xl font-bold tracking-wide sm:text-2xl"
-              >
-                PRESIDENTIAL PASTIME
-              </Link>
-
-              <p className="mt-1 text-[11px] tracking-wide text-[#c9b98c] sm:text-xs">
-                The Baseball History of the American Presidency
-              </p>
-            </div>
+            <p className="mt-1 text-[11px] tracking-wide text-[#c9b98c] sm:text-xs">
+              The Baseball History of the American Presidency
+            </p>
           </div>
 
           <button
