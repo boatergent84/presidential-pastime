@@ -174,8 +174,9 @@ function MuseumGallery({
         {selected.credit ?? "Period artifact photograph to be added"}
       </p>
 
-      <div className="mt-5 grid grid-cols-4 gap-2">
-        {photos.map((photo, index) => (
+      {photos.length > 1 && (
+        <div className="mt-5 grid grid-cols-4 gap-2">
+          {photos.map((photo, index) => (
           <button
             key={`${photo.label}-${index}`}
             type="button"
@@ -211,8 +212,9 @@ function MuseumGallery({
               {photo.label}
             </span>
           </button>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -224,7 +226,7 @@ export default function BallThroughTimePage() {
 
       <section className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-20 text-center text-white">
         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
-          The The 1600 Collection · Special Exhibit
+          The 1600 Collection · Special Exhibit
         </p>
 
         <div className="mx-auto mt-7 flex max-w-xs items-center gap-4 text-[#d7bb83]">
@@ -322,7 +324,7 @@ export default function BallThroughTimePage() {
       <section className="bg-[#102c44] px-6 py-14 text-center text-white">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs uppercase tracking-[0.25em] text-[#d7bb83]">
-            The The 1600 Collection
+            The 1600 Collection
           </p>
 
           <h2 className="mt-4 font-serif text-3xl font-bold">
