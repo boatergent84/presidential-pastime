@@ -202,14 +202,7 @@ export default function RuthRooseveltExhibit() {
                 game use should not be treated as proof that this baseball
                 was used during Ruth's famous home run.
               </p>
-              <a
-                href={sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-block border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]"
-              >
-                View the original Heritage Auctions catalog entry ↗
-              </a>
+              
             </section>
           </article>
 
