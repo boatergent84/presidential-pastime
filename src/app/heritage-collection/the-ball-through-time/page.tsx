@@ -339,7 +339,7 @@ export default function BallThroughTimePage() {
           </p>
 
           <Link
-            href="/heritage-collection"
+            href="/1600-collection"
             className="mt-8 inline-block border border-[#b89a61] px-7 py-3 font-semibold text-[#d7bb83] hover:bg-[#b89a61] hover:text-[#102c44]"
           >
             Return to the The 1600 Collection

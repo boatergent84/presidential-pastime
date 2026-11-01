@@ -43,9 +43,9 @@ export default function HeritageCollectionPage() {
       </section>
 
       {/* EXHIBIT 01 — PRESIDENTIAL SIGNATURES */}
-      <section className="mx-auto max-w-6xl px-6 pt-8">
+      <section className="mx-auto max-w-6xl px-6 pt-0 pb-4 mt-0 mb-0">
         <Link
-          href="/heritage-collection/presidential-signatures"
+          href="/1600-collection/presidential-signatures"
           className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
         >
           <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
@@ -88,9 +88,9 @@ export default function HeritageCollectionPage() {
       </section>
 
       {/* EXHIBIT 02 — THE BALL THROUGH TIME */}
-      <section className="mx-auto max-w-6xl px-6 pt-8">
+      <section className="mx-auto max-w-6xl px-6 pt-0 pb-4 mt-0 mb-0">
         <Link
-          href="/heritage-collection/the-ball-through-time"
+          href="/1600-collection/the-ball-through-time"
           className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
         >
           <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
@@ -136,11 +136,58 @@ export default function HeritageCollectionPage() {
         </Link>
       </section>
 
-      {/* EXHIBIT 03 — WALTER JOHNSON */}
-      <section className="mx-auto max-w-6xl px-6 pb-12 pt-10">
+      {/* EXHIBIT 004 — RUTH AND ROOSEVELT */}
+      <section className="mx-auto max-w-6xl px-6 pt-0 pb-4 mt-0 mb-0">
+        <Link
+          href="/1600-collection/babe-ruth-franklin-roosevelt"
+          className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
+        >
+          <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
+            <ExhibitNumber number="004" />
+            <div className="my-6 flex h-[208px] w-[208px] items-center justify-center overflow-hidden rounded-full border-4 border-[#b89a61] bg-white p-[9px] shadow-xl">
+              <div className="h-full w-full overflow-hidden rounded-full bg-white">
+                <img
+                  src="/ruth-roosevelt/roosevelt-baseball-signed.jpeg"
+                  alt="Original 1932 baseball signed by Franklin D. Roosevelt"
+                  className="h-full w-full scale-[1.04] object-cover"
+                />
+              </div>
+            </div>
+            <p className="font-serif text-lg italic text-[#d7bb83]">
+              Two American Icons · One Baseball
+            </p>
+          </div>
+          <div className="flex flex-col justify-center p-7 md:p-10">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
+              The 1600 Collection · Featured Artifact · 1932
+            </p>
+            <h2 className="mt-3 font-serif text-3xl font-bold">
+              Babe Ruth &amp; Franklin D. Roosevelt
+            </h2>
+            <p className="mt-2 font-serif text-lg italic text-[#987944]">
+              A Baseball Dated to the Called Shot Game
+            </p>
+            <p className="mt-5 leading-7 text-[#59636b]">
+              Explore a remarkable baseball signed by Babe Ruth and future
+              President Franklin D. Roosevelt, inscribed with the date
+              October 1, 1932, and documented by Heritage Auctions.
+            </p>
+            <p className="mt-3 text-xs text-[#59636b]">
+              Artifact photographs courtesy of Heritage Auctions. The baseball
+              is not owned by Presidential Pastime.
+            </p>
+            <span className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]">
+              Explore the featured exhibit →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* EXHIBIT 005 — WALTER JOHNSON */}
+      <section className="mx-auto max-w-6xl px-6 pt-0 pb-4 mt-0 mb-0">
         <div className="grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] md:grid-cols-2">
           <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-5">
-            <ExhibitNumber number="004" />
+            <ExhibitNumber number="005" />
 
             <img
               src="/heritage/walter-johnson-baseballs.jpg"
@@ -167,7 +214,7 @@ export default function HeritageCollectionPage() {
               The original baseballs are not owned by Presidential Pastime.
             </p>
             <Link
-              href="/heritage-collection/walter-johnson-presidential-baseballs"
+              href="/1600-collection/walter-johnson-presidential-baseballs"
               className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d]"
             >
               Explore the featured exhibit →

@@ -657,7 +657,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/heritage-collection"
+            href="/1600-collection"
             className="group relative isolate flex min-h-[340px] flex-col overflow-hidden border border-[#b99b62] bg-[#071d31] p-6 text-[#f8f2e4] transition hover:border-[#e0c78e] hover:shadow-xl"
           >
             <div

@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = `${exhibit.title} | Presidential Pastime`;
   const description = exhibit.description;
-  const url = `https://presidentialpastime.com/heritage-collection/${slug}`;
+  const url = `https://presidentialpastime.com/1600-collection/${slug}`;
 
   return {
     title,
@@ -46,7 +46,7 @@ const verifiedReferences: Record<string, { title: string; url: string; note: str
     { title: "Library of Congress collections", url: "https://www.loc.gov/photos/", note: "Use catalog records to confirm the attribution and date of individual photographs." },
   ],
   "presidential-signed-baseballs": [
-    { title: "Walter Johnson's Six Presidential Baseballs", url: "/heritage-collection/walter-johnson-presidential-baseballs", note: "A separate illustrated exhibit with a linked 1937 Library of Congress photographic record." },
+    { title: "Walter Johnson's Six Presidential Baseballs", url: "/1600-collection/walter-johnson-presidential-baseballs", note: "A separate illustrated exhibit with a linked 1937 Library of Congress photographic record." },
   ],
 };
 
@@ -66,7 +66,7 @@ export default async function ExhibitPage({ params }: Props) {
       
 
       <div className="mx-auto max-w-6xl px-6 py-12">
-        <Link href="/heritage-collection" className="text-sm font-bold text-[#a4282d] hover:underline">← Back to the The 1600 Collection</Link>
+        <Link href="/1600-collection" className="text-sm font-bold text-[#a4282d] hover:underline">← Back to the The 1600 Collection</Link>
         <p className="mt-10 text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">The 1600 Collection · Research Exhibit</p>
         <h1 className="mt-3 max-w-4xl font-serif text-4xl font-bold leading-tight md:text-6xl">{exhibit.title}</h1>
         <p className="mt-4 text-lg text-[#59636b]">{exhibit.year} · {exhibit.president}</p>
@@ -139,7 +139,7 @@ export default async function ExhibitPage({ params }: Props) {
             <h2 className="mt-2 font-serif text-3xl font-bold">Related Heritage Exhibits</h2>
             <div className="mt-6 grid gap-4 md:grid-cols-3">
               {related.map((item) => (
-                <Link key={item.slug} href={`/heritage-collection/${item.slug}`} className="border border-[#b8aa8e] bg-[#f8f3e8] p-5 hover:border-[#a4282d]">
+                <Link key={item.slug} href={`/1600-collection/${item.slug}`} className="border border-[#b8aa8e] bg-[#f8f3e8] p-5 hover:border-[#a4282d]">
                   <p className="text-xs font-bold uppercase tracking-widest text-[#a4282d]">{item.year} · {item.category}</p>
                   <h3 className="mt-2 font-serif text-xl font-bold">{item.title}</h3>
                   <p className="mt-4 text-sm font-bold text-[#a4282d]">Explore exhibit →</p>

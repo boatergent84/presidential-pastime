@@ -7,13 +7,13 @@ export const metadata: Metadata = {
     "Explore six presidential-autographed baseballs associated with Walter Johnson, documented in a 1937 Library of Congress photograph.",
   alternates: {
     canonical:
-      "https://presidentialpastime.com/heritage-collection/walter-johnson-presidential-baseballs",
+      "https://presidentialpastime.com/1600-collection/walter-johnson-presidential-baseballs",
   },
   openGraph: {
     title: "Walter Johnson's Six Presidential Baseballs",
     description:
       "A remarkable 1937 archival photograph documenting six presidential-signed baseballs associated with Walter Johnson.",
-    url: "https://presidentialpastime.com/heritage-collection/walter-johnson-presidential-baseballs",
+    url: "https://presidentialpastime.com/1600-collection/walter-johnson-presidential-baseballs",
     siteName: "Presidential Pastime",
     type: "article",
   },

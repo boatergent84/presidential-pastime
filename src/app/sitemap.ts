@@ -49,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   const exhibitRoutes = exhibits.map(
-    (exhibit) => `/heritage-collection/${exhibit.slug}`
+    (exhibit) => `/1600-collection/${exhibit.slug}`
   );
 
   const allRoutes = [

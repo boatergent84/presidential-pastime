@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Explore historical presidential baseball artifacts, original photographs, signed baseballs, tickets, and America's presidential baseball heritage.",
   alternates: {
-    canonical: "https://presidentialpastime.com/heritage-collection",
+    canonical: "https://presidentialpastime.com/1600-collection",
   },
   openGraph: {
     title: "The The 1600 Collection | Presidential Pastime",
     description:
       "Discover the historical artifacts connecting America's presidents with America's pastime.",
-    url: "https://presidentialpastime.com/heritage-collection",
+    url: "https://presidentialpastime.com/1600-collection",
     siteName: "Presidential Pastime",
     type: "website",
     images: [{

@@ -43,7 +43,7 @@ const collections = [
     title: "Objects That Tell Stories",
     description:
       "Discover photographs, signed baseballs, programs, and surviving artifacts that preserve the relationship between the presidency and America's game.",
-    href: "/heritage-collection",
+    href: "/1600-collection",
     action: "Enter the The 1600 Collection",
   },
 ];
@@ -293,7 +293,7 @@ export default function AboutPage() {
               Explore the Presidents →
             </Link>
             <Link
-              href="/heritage-collection"
+              href="/1600-collection"
               className="border border-[#c3a063] px-8 py-4 text-xs font-bold uppercase tracking-widest text-[#f0e3c6] transition hover:bg-white/10"
             >
               Visit the The 1600 Collection

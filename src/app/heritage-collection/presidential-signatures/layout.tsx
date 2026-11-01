@@ -6,13 +6,13 @@ export const metadata: Metadata = {
     "Explore the history of baseballs signed by American presidents, with archival photographs, documented examples, historical references, and presidential baseball connections.",
   alternates: {
     canonical:
-      "https://presidentialpastime.com/heritage-collection/presidential-signatures",
+      "https://presidentialpastime.com/1600-collection/presidential-signatures",
   },
   openGraph: {
     title: "Presidential Signed Baseballs | Presidential Pastime",
     description:
       "Discover the history of presidential autographed baseballs through archival records and documented historical examples.",
-    url: "https://presidentialpastime.com/heritage-collection/presidential-signatures",
+    url: "https://presidentialpastime.com/1600-collection/presidential-signatures",
     siteName: "Presidential Pastime",
     type: "article",
     images: [{

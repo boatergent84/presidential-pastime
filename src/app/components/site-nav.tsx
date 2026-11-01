@@ -9,7 +9,7 @@ const links = [
   ["Home", "/"],
   ["Presidents", "/presidents"],
   ["First Pitch", "/first-pitches"],
-  ["The 1600 Collection", "/heritage-collection"],
+  ["The 1600 Collection", "/1600-collection"],
   ["About", "/about"],
   ["Donate", "/donate"],
   ["Contact", "/contact"],
