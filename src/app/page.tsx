@@ -676,7 +676,7 @@ export default function Home() {
             </div>
 
             <h3 className="relative z-10 font-serif text-2xl font-bold text-[#fff8e8]">
-              Heritage Collection
+              The 1600 Collection
             </h3>
 
             <div className="relative z-10 my-4 h-[2px] w-16 bg-[#b99b62]" />
@@ -686,7 +686,7 @@ export default function Home() {
             </p>
 
             <p className="relative z-10 mt-auto pt-7 text-xs font-bold uppercase tracking-wider text-[#e0c78e] group-hover:underline">
-              View the Heritage Collection →
+              View the The 1600 Collection →
             </p>
           </Link>
         </div>

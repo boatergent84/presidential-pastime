@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "The Heritage Collection | Presidential Pastime",
+  title: "The The 1600 Collection | Presidential Pastime",
   description:
     "Explore historical presidential baseball artifacts, original photographs, signed baseballs, tickets, and America's presidential baseball heritage.",
   alternates: {
     canonical: "https://presidentialpastime.com/heritage-collection",
   },
   openGraph: {
-    title: "The Heritage Collection | Presidential Pastime",
+    title: "The The 1600 Collection | Presidential Pastime",
     description:
       "Discover the historical artifacts connecting America's presidents with America's pastime.",
     url: "https://presidentialpastime.com/heritage-collection",

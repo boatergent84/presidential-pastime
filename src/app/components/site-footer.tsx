@@ -5,7 +5,7 @@ const footerLinks = [
   ["Home", "/"],
   ["Presidents", "/presidents"],
   ["First Pitch", "/first-pitches"],
-  ["Heritage Collection", "/heritage-collection"],
+  ["The 1600 Collection", "/heritage-collection"],
   ["About", "/about"],
   ["Donate", "/donate"],
   ["Contact", "/contact"],

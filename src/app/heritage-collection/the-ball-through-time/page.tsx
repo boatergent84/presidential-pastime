@@ -224,7 +224,7 @@ export default function BallThroughTimePage() {
 
       <section className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-20 text-center text-white">
         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
-          The Heritage Collection · Special Exhibit
+          The The 1600 Collection · Special Exhibit
         </p>
 
         <div className="mx-auto mt-7 flex max-w-xs items-center gap-4 text-[#d7bb83]">
@@ -322,7 +322,7 @@ export default function BallThroughTimePage() {
       <section className="bg-[#102c44] px-6 py-14 text-center text-white">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs uppercase tracking-[0.25em] text-[#d7bb83]">
-            The Heritage Collection
+            The The 1600 Collection
           </p>
 
           <h2 className="mt-4 font-serif text-3xl font-bold">
@@ -340,7 +340,7 @@ export default function BallThroughTimePage() {
             href="/heritage-collection"
             className="mt-8 inline-block border border-[#b89a61] px-7 py-3 font-semibold text-[#d7bb83] hover:bg-[#b89a61] hover:text-[#102c44]"
           >
-            Return to the Heritage Collection
+            Return to the The 1600 Collection
           </Link>
         </div>
       </section>

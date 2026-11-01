@@ -44,7 +44,7 @@ const collections = [
     description:
       "Discover photographs, signed baseballs, programs, and surviving artifacts that preserve the relationship between the presidency and America's game.",
     href: "/heritage-collection",
-    action: "Enter the Heritage Collection",
+    action: "Enter the The 1600 Collection",
   },
 ];
 
@@ -296,7 +296,7 @@ export default function AboutPage() {
               href="/heritage-collection"
               className="border border-[#c3a063] px-8 py-4 text-xs font-bold uppercase tracking-widest text-[#f0e3c6] transition hover:bg-white/10"
             >
-              Visit the Heritage Collection
+              Visit the The 1600 Collection
             </Link>
           </div>
         </div>

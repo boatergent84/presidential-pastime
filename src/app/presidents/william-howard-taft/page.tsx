@@ -245,66 +245,6 @@ export default function WilliamHowardTaftPage() {
         <section className="mt-14">
           <div className="border-b-2 border-[#b8aa8e] pb-3">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              Games &amp; First Pitches
-            </p>
-
-            <h2 className="mt-1 font-serif text-3xl font-bold">
-              Taft at the Ballpark
-            </h2>
-          </div>
-
-          <div className="mt-6 grid gap-5 md:grid-cols-2">
-            {[
-              [
-                "APR 14",
-                "1910",
-                "Washington, D.C.",
-                "Washington vs. Philadelphia",
-                "Taft threw the ceremonial first pitch as Washington defeated Philadelphia 3–0.",
-              ],
-              [
-                "APR 12",
-                "1911",
-                "Washington, D.C.",
-                "Opening Day",
-                "Taft returned for another Opening Day appearance and ceremonial first pitch.",
-              ],
-            ].map(([date, year, place, game, note]) => (
-              <article
-                key={`${date}-${year}`}
-                className="border border-[#b8aa8e] bg-[#f8f3e8] p-6"
-              >
-                <div className="flex items-start gap-5">
-                  <div className="min-w-[80px] bg-[#a4282d] p-3 text-center text-white">
-                    <p className="text-xs font-bold">{date}</p>
-                    <p className="font-serif text-xl font-bold">
-                      {year}
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#a4282d]">
-                      {place}
-                    </p>
-
-                    <h3 className="mt-1 font-serif text-xl font-bold">
-                      {game}
-                    </h3>
-
-                    <p className="mt-2 leading-7 text-[#59636b]">
-                      {note}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        {/* HISTORIC PHOTO */}
-        <section className="mt-14">
-          <div className="border-b-2 border-[#b8aa8e] pb-3">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
               Historic Photos
             </p>
 

@@ -66,8 +66,8 @@ export default async function ExhibitPage({ params }: Props) {
       
 
       <div className="mx-auto max-w-6xl px-6 py-12">
-        <Link href="/heritage-collection" className="text-sm font-bold text-[#a4282d] hover:underline">← Back to the Heritage Collection</Link>
-        <p className="mt-10 text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">Heritage Collection · Research Exhibit</p>
+        <Link href="/heritage-collection" className="text-sm font-bold text-[#a4282d] hover:underline">← Back to the The 1600 Collection</Link>
+        <p className="mt-10 text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">The 1600 Collection · Research Exhibit</p>
         <h1 className="mt-3 max-w-4xl font-serif text-4xl font-bold leading-tight md:text-6xl">{exhibit.title}</h1>
         <p className="mt-4 text-lg text-[#59636b]">{exhibit.year} · {exhibit.president}</p>
 
