@@ -22,7 +22,7 @@ export default function HeritageCollectionPage() {
           Presidential Pastime
         </p>
         <h1 className="mt-3 font-serif text-[30px] font-bold md:text-[37.5px]">
-          The The 1600 Collection
+          The 1600 Collection
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-[#eee7d7]">
           A developing research gallery of presidential baseball artifacts,
@@ -54,7 +54,7 @@ export default function HeritageCollectionPage() {
 
           <div className="flex flex-col justify-center p-7 md:p-10">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
-              The The 1600 Collection · Special Exhibit
+              The 1600 Collection · Special Exhibit
             </p>
             <h2 className="mt-3 font-serif text-3xl font-bold">
               The Presidential Signature Collection
@@ -99,7 +99,7 @@ export default function HeritageCollectionPage() {
 
           <div className="flex flex-col justify-center p-7 md:p-10">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
-              The The 1600 Collection · Special Exhibit
+              The 1600 Collection · Special Exhibit
             </p>
             <h2 className="mt-3 font-serif text-3xl font-bold">
               The Ball Through Time
