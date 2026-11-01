@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://presidentialpastime.com/1600-collection/babe-ruth-franklin-roosevelt",
     siteName: "Presidential Pastime",
     type: "article",
-    images: ["/ruth-roosevelt/roosevelt-baseball-signed.png"],
+    images: ["/ruth-roosevelt/social-preview.png"],
   },
 };
 
