@@ -200,7 +200,7 @@ export default function PresidentialSignaturesPage() {
 
       <section className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-20 text-center text-white">
         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
-          The The 1600 Collection · Special Exhibit
+          The 1600 Collection · Special Exhibit
         </p>
 
         <div className="mx-auto mt-7 flex max-w-xs items-center gap-4 text-[#d7bb83]">
