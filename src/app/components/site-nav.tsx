@@ -32,9 +32,9 @@ export default function SiteNav() {
               <img
                 src="/icon.png"
                 alt="Presidential Pastime logo"
-                width="52"
-                height="52"
-                className="h-11 w-11 object-contain sm:h-[52px] sm:w-[52px]"
+                width="34"
+                height="34"
+                className="h-8 w-8 object-contain sm:h-[34px] sm:w-[34px]"
               />
             </Link>
 
