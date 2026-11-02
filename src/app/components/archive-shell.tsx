@@ -12,10 +12,11 @@ export default function ArchiveShell({
   children: ReactNode;
 }) {
   const isFirstPitch = title === "The First Pitch";
+  const isRuthExhibit = title === "Babe Ruth & Franklin D. Roosevelt";
 
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#102c44]">
-      {isFirstPitch ? (
+      {isFirstPitch || isRuthExhibit ? (
         <header className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-9 text-center text-white">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
             {eyebrow}
@@ -35,11 +36,13 @@ export default function ArchiveShell({
             {subtitle}
           </p>
 
-          <p className="mx-auto mt-3 max-w-2xl leading-8 text-[#eee7d7]">
-            Discover the historic moment President William Howard Taft
-            inaugurated a tradition connecting the White House
-            and America&apos;s national pastime.
-          </p>
+          {isFirstPitch && (
+            <p className="mx-auto mt-3 max-w-2xl leading-8 text-[#eee7d7]">
+              Discover the historic moment President William Howard Taft
+              inaugurated a tradition connecting the White House
+              and America&apos;s national pastime.
+            </p>
+          )}
         </header>
       ) : (
         <header className="bg-[#102c44] px-6 py-14 text-center text-white">
