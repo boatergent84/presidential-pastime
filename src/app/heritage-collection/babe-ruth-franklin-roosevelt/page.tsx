@@ -70,7 +70,7 @@ export default function RuthRooseveltExhibit() {
   return (
     <ArchiveShell
       eyebrow="Presidential Pastime | The 1600 Collection | Exhibit No. 006"
-      title={<span className="text-2xl md:text-4xl">Babe Ruth & Franklin D. Roosevelt</span>}
+      title={<span className="text-2xl md:text-4xl">Babe Ruth &amp; Franklin D. Roosevelt</span>}
       subtitle="October 1, 1932 — Two American Icons. One Historic Baseball."
     >
       <div className="space-y-12 pb-12">
