@@ -75,9 +75,9 @@ export default function RuthRooseveltExhibit() {
     >
       <div className="space-y-12 pb-12">
         <section className="overflow-hidden rounded-xl border border-[#c9b98c] bg-[#102c44] text-white shadow-xl">
-          <div className="relative h-[280px] sm:h-[420px] lg:h-[520px]">
+          <div className="relative aspect-[1.55/1] w-[70%] mx-auto overflow-hidden">
             <Image
-              src="/ruth-roosevelt/roosevelt-baseball-signed.png"
+              src="/ruth-roosevelt/babe-ruth-swinging-1932-clean.jpg"
               alt="Original 1932 dual-signed baseball showing Franklin D. Roosevelt's signature, photographed by Heritage Auctions"
               fill
               priority
@@ -93,7 +93,7 @@ export default function RuthRooseveltExhibit() {
               Two American icons. One remarkable baseball.
             </p>
             <p className="mt-3 text-xs text-[#d7bb7a]">
-              Original baseball photograph courtesy of Heritage Auctions
+              Babe Ruth at Wrigley Field, October 1, 1932 | Heritage Auctions
             </p>
           </div>
         </section>
