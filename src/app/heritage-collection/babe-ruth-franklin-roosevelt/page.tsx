@@ -180,6 +180,21 @@ export default function RuthRooseveltExhibit() {
           <p className="mt-4 leading-8 text-[#334454]">
             The baseball sold in Heritage Auctions' October 2026 Fall Sports Catalog Auction, lot 81351, for $103,700. Presidential Pastime documents the artifact for historical research and does not claim ownership or custody.
           </p>
+          <div className="mt-8 rounded-xl border-2 border-[#b59a62] bg-[#102c44] px-6 py-9 text-center text-white shadow-lg">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#d7bb83]">
+              Heritage Auctions · October 24, 2026
+            </p>
+            <p className="mt-4 font-serif text-5xl font-bold sm:text-6xl">
+              $103,700
+            </p>
+            <p className="mt-3 text-sm font-bold uppercase tracking-[0.25em] text-[#d7bb83]">
+              Final Sale Price
+            </p>
+            <p className="mt-4 text-sm text-[#eee7d7]">
+              Fall Sports Catalog Auction · Lot 81351
+            </p>
+          </div>
+
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {photographs.map((photo) => (
               <figure key={photo.src} className="overflow-hidden rounded-lg border border-[#c9b98c] bg-white">
