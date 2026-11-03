@@ -25,12 +25,7 @@ export const metadata: Metadata = {
 
 const gold = "#b59a62";
 
-const facts = [
-  { label: "DATE", value: "October 1, 1932" },
-  { label: "BALLPARK", value: "Wrigley Field, Chicago" },
-  { label: "ATTENDANCE", value: "49,986" },
-  { label: "FINAL SCORE", value: "Yankees 7 · Cubs 5" },
-];
+
 
 const photographs = [
   {
@@ -73,12 +68,30 @@ export default function RuthRooseveltExhibit() {
       title="Babe Ruth & Franklin D. Roosevelt"
       subtitle="October 1, 1932 — Two American Icons. One Historic Baseball."
     >
-      <div className="space-y-12 pb-12">
+      <div className="relative isolate space-y-12 pb-12">
+
+        {/* Subtle historic Babe Ruth background */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+        >
+          <div
+            className="absolute inset-x-0 top-0 h-[1000px] bg-top bg-no-repeat opacity-[0.10]"
+            style={{
+              backgroundImage:
+                "url('/ruth-roosevelt/babe-ruth-swinging-1932-clean.jpg')",
+              backgroundSize: "contain",
+            }}
+          />
+        </div>
 
       {/* COLLECTOR_VAULT_START */}
       <section className="mb-12 overflow-hidden rounded-2xl border-2 border-[#b89a61] bg-[#102c44] text-white shadow-2xl">
 
-        <div className="border-b border-[#b89a61] px-6 py-8 text-center">
+        <div
+          className="relative overflow-hidden border-b border-[#b89a61] px-6 py-8 text-center"
+          
+        >
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
             Presidential Pastime · The Collector&apos;s Vault
           </p>
@@ -146,37 +159,10 @@ export default function RuthRooseveltExhibit() {
       </section>
       {/* COLLECTOR_VAULT_END */}
 
-        <section className="overflow-hidden rounded-xl border border-[#c9b98c] bg-[#102c44] text-white shadow-xl">
-          <div className="relative aspect-[1.55/1] w-[70%] mx-auto overflow-hidden">
-            <Image
-              src="/ruth-roosevelt/babe-ruth-swinging-1932-clean.jpg"
-              alt="Original 1932 dual-signed baseball showing Franklin D. Roosevelt's signature, photographed by Heritage Auctions"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 1100px"
-              className="object-contain"
-            />
-          </div>
-          <div className="border-t border-[#806b46] px-6 py-5 text-center">
-            <p className="text-xs uppercase tracking-[0.3em] text-[#d7bb7a]">
-              Chicago, Illinois | October 1, 1932
-            </p>
-            <p className="mt-3 font-serif text-xl sm:text-2xl">
-              Two American icons. One remarkable baseball.
-            </p>
-            <p className="mt-3 text-xs text-[#d7bb7a]">
-              Babe Ruth at Wrigley Field, October 1, 1932 | Heritage Auctions
-            </p>
-          </div>
-        </section>
+        
 
         <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-          {facts.map((fact) => (
-            <div key={fact.label} className="rounded-lg border border-[#c9b98c] bg-[#102c44] p-5 text-center text-white">
-              <p className="text-[10px] font-bold tracking-[0.2em] text-[#d7bb7a]">{fact.label}</p>
-              <p className="mt-3 font-serif text-base sm:text-lg">{fact.value}</p>
-            </div>
-          ))}
+          {/* Game-stat boxes removed */}
         </section>
 
         <section className="mx-auto max-w-4xl text-center">
@@ -200,7 +186,15 @@ export default function RuthRooseveltExhibit() {
           </div>
         </section>
 
-        <section className="overflow-hidden rounded-xl border-4 border-[#b59a62] bg-[#102c44] p-6 text-white shadow-lg sm:p-9">
+        <section className="overflow-hidden rounded-xl border-4 border-[#b59a62] bg-[#102c44] p-6 text-white shadow-lg sm:p-9"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(16,44,68,0.82), rgba(16,44,68,0.82)), url('/ruth-roosevelt/babe-ruth-swinging-1932-clean.jpg')",
+            backgroundPosition: "center 42%",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <p className="text-center text-xs uppercase tracking-[0.3em] text-[#d7bb7a]">
             World Series Game Three | October 1, 1932
           </p>
@@ -252,20 +246,6 @@ export default function RuthRooseveltExhibit() {
           <p className="mt-4 leading-8 text-[#334454]">
             The baseball sold in Heritage Auctions' October 2026 Fall Sports Catalog Auction, lot 81351, for $103,700. Presidential Pastime documents the artifact for historical research and does not claim ownership or custody.
           </p>
-          <div className="mt-8 rounded-xl border-2 border-[#b59a62] bg-[#102c44] px-6 py-9 text-center text-white shadow-lg">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#d7bb83]">
-              Heritage Auctions · October 24, 2026
-            </p>
-            <p className="mt-4 font-serif text-5xl font-bold sm:text-6xl">
-              $103,700
-            </p>
-            <p className="mt-3 text-sm font-bold uppercase tracking-[0.25em] text-[#d7bb83]">
-              Final Sale Price
-            </p>
-            <p className="mt-4 text-sm text-[#eee7d7]">
-              Fall Sports Catalog Auction · Lot 81351
-            </p>
-          </div>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {photographs.map((photo) => (

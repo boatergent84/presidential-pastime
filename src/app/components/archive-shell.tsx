@@ -17,7 +17,20 @@ export default function ArchiveShell({
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#102c44]">
       {isFirstPitch || isRuthExhibit ? (
-        <header className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-9 text-center text-white">
+        <header
+          className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-9 text-center text-white"
+          style={
+            isRuthExhibit
+              ? {
+                  backgroundImage:
+                    "linear-gradient(rgba(16,44,68,0.65), rgba(16,44,68,0.65)), url('/ruth-roosevelt/roosevelt-1932-first-pitch.jpeg')",
+                  backgroundPosition: "center 22%",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }
+              : undefined
+          }
+        >
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
             {eyebrow}
           </p>
