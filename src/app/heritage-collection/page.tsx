@@ -223,6 +223,108 @@ export default function HeritageCollectionPage() {
         </div>
       </section>
 
+
+      {/* EXHIBIT 006 — RICHARD NIXON */}
+      <section className="mx-auto max-w-6xl px-6 pb-4">
+        <Link
+          href="/1600-collection/nixon-dream-team"
+          className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
+        >
+          <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
+            <ExhibitNumber number="006" />
+
+            <div className="my-6 w-[230px] max-w-full -rotate-3 border-[3px] border-[#b89a61] bg-[#f1e4c7] p-2 shadow-xl transition-transform duration-300 group-hover:rotate-0">
+              <div className="border border-[#8d8068] px-3 py-4 text-[#102c44]">
+
+                <p className="text-[9px] font-bold uppercase tracking-[0.16em]">
+                  Presidential Baseball
+                </p>
+
+                <div className="my-2 flex items-center gap-2 text-[#a4282d]">
+                  <div className="h-px flex-1 bg-[#b89a61]" />
+                  <span>★</span>
+                  <div className="h-px flex-1 bg-[#b89a61]" />
+                </div>
+
+                <p className="font-serif text-xl font-bold uppercase">
+                  Dream Team
+                </p>
+
+                <p className="mt-1 font-serif text-xs italic">
+                  Richard M. Nixon
+                </p>
+
+                <p className="mt-1 text-[10px] font-bold tracking-widest">
+                  1972 · 1992
+                </p>
+
+                <div className="mt-4 border-t-2 border-[#102c44] text-left">
+                  {[
+                    ["01", "Babe Ruth", "OF"],
+                    ["02", "Lou Gehrig", "1B"],
+                    ["03", "Joe DiMaggio", "OF"],
+                    ["04", "Ted Williams", "OF"],
+                    ["05", "Willie Mays", "OF"],
+                  ].map(([no, name, pos]) => (
+                    <div
+                      key={no}
+                      className="grid grid-cols-[24px_1fr_24px] gap-1 border-b border-[#b7a98b] py-1.5"
+                    >
+                      <span className="font-serif text-xs font-bold text-[#a4282d]">
+                        {no}
+                      </span>
+                      <span className="font-serif text-xs italic">
+                        {name}
+                      </span>
+                      <span className="text-right text-[10px] font-bold">
+                        {pos}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <p className="mt-3 font-serif text-[10px] italic">
+                  Commemorative Roster Preview
+                </p>
+              </div>
+            </div>
+
+            <p className="font-serif text-lg italic text-[#d7bb83]">
+              A President's Baseball Dream Team
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center p-7 md:p-10">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
+              The 1600 Collection · Special Exhibit · 1972 &amp; 1992
+            </p>
+
+            <h2 className="mt-3 font-serif text-3xl font-bold">
+              Richard Nixon&apos;s Dream Team
+            </h2>
+
+            <p className="mt-2 font-serif text-lg italic text-[#987944]">
+              A President&apos;s All-Time Baseball Selections
+            </p>
+
+            <p className="mt-5 leading-7 text-[#59636b]">
+              Explore President Richard Nixon&apos;s selections
+              of baseball&apos;s greatest players. Discover his
+              1972 teams, expanded 1992 selections, and
+              vintage-style presidential lineup cards.
+            </p>
+
+            <p className="mt-3 text-xs text-[#59636b]">
+              Historical research exhibit · Reconstructed lineup cards
+            </p>
+
+            <span className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d] group-hover:text-[#102c44]">
+              Explore the featured exhibit →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* HERITAGE RESEARCH GUIDE */}
       <section className="border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-14 text-white">
         <div className="mx-auto max-w-6xl">
