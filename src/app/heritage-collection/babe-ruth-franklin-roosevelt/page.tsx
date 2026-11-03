@@ -74,6 +74,78 @@ export default function RuthRooseveltExhibit() {
       subtitle="October 1, 1932 — Two American Icons. One Historic Baseball."
     >
       <div className="space-y-12 pb-12">
+
+      {/* COLLECTOR_VAULT_START */}
+      <section className="mb-12 overflow-hidden rounded-2xl border-2 border-[#b89a61] bg-[#102c44] text-white shadow-2xl">
+
+        <div className="border-b border-[#b89a61] px-6 py-8 text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
+            Presidential Pastime · The Collector&apos;s Vault
+          </p>
+
+          <h2 className="mt-4 font-serif text-3xl font-bold md:text-5xl">
+            The Ruth–Roosevelt Baseball
+          </h2>
+
+          <p className="mt-3 font-serif text-lg italic text-[#d7bb83]">
+            Two American Icons. One Extraordinary Artifact.
+          </p>
+        </div>
+
+        <div className="bg-[#eee7d7] px-5 py-10 text-center text-[#102c44] md:px-12">
+          <p className="mb-6 text-xs font-bold uppercase tracking-[0.25em] text-[#8b713e]">
+            An Original Piece of American History
+          </p>
+
+          <div className="mx-auto max-w-3xl overflow-hidden rounded-xl border border-[#c9b98c] bg-white p-4 shadow-lg">
+            <img
+              src="/ruth-roosevelt/roosevelt-baseball-signed.png"
+              alt="Historic baseball signed by Babe Ruth and Franklin D. Roosevelt"
+              className="mx-auto max-h-[420px] w-full object-contain"
+            />
+          </div>
+
+          <p className="mt-6 font-serif text-xl">
+            A Remarkable Intersection of Baseball and the Presidency
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-4 px-6 py-8 sm:grid-cols-3">
+          <div className="rounded-lg border border-[#b89a61] p-5 text-center">
+            <p className="text-xs uppercase tracking-widest text-[#d7bb83]">
+              Inscribed Date
+            </p>
+            <p className="mt-3 font-serif text-3xl font-bold">
+              1932
+            </p>
+          </div>
+
+          <div className="rounded-lg border border-[#b89a61] p-5 text-center">
+            <p className="text-xs uppercase tracking-widest text-[#d7bb83]">
+              Historic Signatures
+            </p>
+            <p className="mt-3 font-serif text-3xl font-bold">
+              Ruth &amp; Roosevelt
+            </p>
+          </div>
+
+          <div className="rounded-lg border border-[#b89a61] bg-[#173c5b] p-5 text-center">
+            <p className="text-xs uppercase tracking-widest text-[#d7bb83]">
+              Auction Result
+            </p>
+            <p className="mt-3 font-serif text-3xl font-bold">
+              $103,700
+            </p>
+          </div>
+        </div>
+
+        <p className="px-6 pb-8 text-center text-sm text-[#d7bb83]">
+          The historical narrative, photographs, authentication, and provenance
+          continue below.
+        </p>
+      </section>
+      {/* COLLECTOR_VAULT_END */}
+
         <section className="overflow-hidden rounded-xl border border-[#c9b98c] bg-[#102c44] text-white shadow-xl">
           <div className="relative aspect-[1.55/1] w-[70%] mx-auto overflow-hidden">
             <Image
