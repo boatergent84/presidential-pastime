@@ -369,6 +369,56 @@ export default function HeritageCollectionPage() {
         </Link>
       </section>
 
+
+      {/* EXHIBIT 008 — BILL CLINTON AND THE BASEBALL STRIKE */}
+      <section className="mx-auto max-w-6xl px-6 pb-4">
+        <Link
+          href="/1600-collection/clinton-baseball-strike"
+          className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
+        >
+          <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-8 text-center">
+            <ExhibitNumber number="008" />
+            <div className="my-6 w-full max-w-sm border-4 border-[#b89a61] p-3">
+              <img
+                src="/clinton-baseball-strike/clinton-first-pitch-1994.jpg"
+                alt="President Bill Clinton throwing the ceremonial first pitch at Jacobs Field in Cleveland, April 4, 1994"
+                className="max-h-80 w-full object-contain"
+              />
+            </div>
+            <p className="font-serif text-lg italic text-[#d7bb83]">
+              The White House · 1994–1995
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center p-7 md:p-10">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
+              The 1600 Collection · Special Exhibit · 1995
+            </p>
+
+            <h2 className="mt-3 font-serif text-3xl font-bold">
+              The President Who Tried to Save Baseball
+            </h2>
+
+            <p className="mt-2 font-serif text-lg italic text-[#987944]">
+              Bill Clinton and the Lost World Series
+            </p>
+
+            <p className="mt-5 leading-7 text-[#59636b]">
+              When the 1994 Major League Baseball strike brought
+              America's national pastime to a halt, President
+              Bill Clinton intervened. Discover the White House
+              negotiations, the proposed federal legislation,
+              and the extraordinary presidential effort to
+              bring baseball back to the field.
+            </p>
+
+            <span className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d] group-hover:text-[#102c44]">
+              Explore the featured exhibit →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* HERITAGE RESEARCH GUIDE */}
       <section className="border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-14 text-white">
         <div className="mx-auto max-w-6xl">
