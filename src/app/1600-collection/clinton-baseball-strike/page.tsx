@@ -87,6 +87,112 @@ export default function ClintonBaseballStrikeExhibit() {
         </section>
 
 
+
+        {/* THE SEASON THAT NEVER FINISHED */}
+        <section className="mx-auto max-w-5xl px-6 pb-16">
+          <div className="bg-[#102c44] p-7 text-[#eee7d7] md:p-10">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#d5bd88]">
+              1994 · Baseball's Lost Summer
+            </p>
+
+            <h2 className="mt-4 font-serif text-3xl font-bold md:text-4xl">
+              The Season That Never Finished
+            </h2>
+
+            <p className="mt-5 max-w-3xl leading-8 text-[#d5dce2]">
+              When the players walked off the field on August 12,
+              1994, some of baseball's greatest performances
+              were frozen in time. These were the numbers
+              left behind.
+            </p>
+
+            <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  number: ".394",
+                  name: "Tony Gwynn",
+                  label: "Batting Average",
+                  detail: "Just six points shy of the legendary .400 mark.",
+                },
+                {
+                  number: "74–40",
+                  name: "Montreal Expos",
+                  label: "Win–Loss Record",
+                  detail: "The best record in Major League Baseball.",
+                },
+                {
+                  number: "43",
+                  name: "Matt Williams",
+                  label: "Home Runs",
+                  detail: "Chasing Roger Maris's single-season record.",
+                },
+                {
+                  number: "40",
+                  name: "Ken Griffey Jr.",
+                  label: "Home Runs",
+                  detail: "Another historic home run season cut short.",
+                },
+                {
+                  number: "1.56",
+                  name: "Greg Maddux",
+                  label: "Earned Run Average",
+                  detail: "An extraordinary season for the Braves ace.",
+                },
+                {
+                  number: "116",
+                  name: "Jeff Bagwell",
+                  label: "Runs Batted In",
+                  detail: "The National League MVP's remarkable total.",
+                },
+              ].map((stat) => (
+                <div
+                  key={stat.name}
+                  className="border border-[#9a8257] bg-[#173c59] p-6"
+                >
+                  <p className="font-serif text-4xl font-bold text-[#e1c58a]">
+                    {stat.number}
+                  </p>
+                  <h3 className="mt-4 font-serif text-xl font-bold text-white">
+                    {stat.name}
+                  </h3>
+                  <p className="mt-1 text-xs font-bold uppercase tracking-widest text-[#d5bd88]">
+                    {stat.label}
+                  </p>
+                  <p className="mt-4 text-sm leading-6 text-[#d5dce2]">
+                    {stat.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 border-t border-[#9a8257] pt-8">
+              <h3 className="font-serif text-2xl font-bold text-[#e1c58a]">
+                What Might Have Been?
+              </h3>
+              <p className="mt-4 leading-8 text-[#d5dce2]">
+                Tony Gwynn was pursuing baseball's first .400
+                season since Ted Williams hit .406 in 1941.
+                Matt Williams was threatening Roger Maris's
+                single-season home run record of 61.
+                And the Montreal Expos, led by a remarkable
+                young roster, held baseball's best record.
+              </p>
+              <p className="mt-4 leading-8 text-[#d5dce2]">
+                None of those stories received a proper ending.
+                The strike canceled the postseason and the
+                World Series, leaving one of baseball's
+                greatest collections of unanswered questions.
+              </p>
+            </div>
+
+            <p className="mt-8 text-xs leading-6 text-[#bfcbd4]">
+              Historical sources: Society for American Baseball
+              Research (SABR), National Baseball Hall of Fame
+              and Museum, and 1994 MLB statistical records.
+            </p>
+          </div>
+        </section>
+
         {/* HISTORICAL PHOTOGRAPHY */}
         <section className="mx-auto max-w-5xl px-6 pb-16">
           <div className="mb-8 border-b border-[#c9b98c] pb-5">
