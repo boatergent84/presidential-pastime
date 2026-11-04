@@ -13,11 +13,12 @@ export default function ArchiveShell({
 }) {
   const isFirstPitch = title === "The First Pitch";
   const isRuthExhibit = title === "Babe Ruth & Franklin D. Roosevelt";
+  const isBushExhibit = title === "The Babe & the Future President";
   const isNixonExhibit = title === "Richard Nixon's Dream Team";
 
   return (
     <main className="min-h-screen bg-[#eee7d7] text-[#102c44]">
-      {isFirstPitch || isRuthExhibit || isNixonExhibit ? (
+      {isFirstPitch || isRuthExhibit || isNixonExhibit || isBushExhibit ? (
         <header
           className="border-b-4 border-[#b89a61] bg-[#102c44] px-6 py-9 text-center text-white"
           style={
