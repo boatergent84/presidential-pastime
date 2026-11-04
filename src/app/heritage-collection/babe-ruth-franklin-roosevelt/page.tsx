@@ -88,23 +88,6 @@ export default function RuthRooseveltExhibit() {
       {/* COLLECTOR_VAULT_START */}
       <section className="mb-12 overflow-hidden rounded-2xl border-2 border-[#b89a61] bg-[#102c44] text-white shadow-2xl">
 
-        <div
-          className="relative overflow-hidden border-b border-[#b89a61] px-6 py-8 text-center"
-          
-        >
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#d7bb83]">
-            Presidential Pastime · The Collector&apos;s Vault
-          </p>
-
-          <h2 className="mt-4 font-serif text-3xl font-bold md:text-5xl">
-            The Ruth–Roosevelt Baseball
-          </h2>
-
-          <p className="mt-3 font-serif text-lg italic text-[#d7bb83]">
-            Two American Icons. One Extraordinary Artifact.
-          </p>
-        </div>
-
         <div className="bg-[#eee7d7] px-5 py-10 text-center text-[#102c44] md:px-12">
           <p className="mb-6 text-xs font-bold uppercase tracking-[0.25em] text-[#8b713e]">
             An Original Piece of American History
