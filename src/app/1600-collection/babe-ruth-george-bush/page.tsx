@@ -238,68 +238,7 @@ export default function BabeRuthGeorgeBushExhibit() {
         </div>
       </article>
     
-      {/* TWO PHOTOGRAPHS FROM YALE FIELD */}
-      <section className="mx-auto max-w-6xl px-6 py-14">
-        <div className="mb-8 text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-            The Photographic Record
-          </p>
-          <h2 className="mt-3 font-serif text-3xl font-bold text-[#102c44]">
-            Photographs from Yale Field
-          </h2>
-          <p className="mt-3 text-sm text-[#526273]">
-            June 5, 1948 · New Haven, Connecticut
-          </p>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-2">
-          <article className="overflow-hidden rounded-lg border border-[#c9b98c] bg-[#f5efdf]">
-            <img
-              src="/babe-ruth-george-bush/bush-ruth-1948.jpg"
-              alt="Babe Ruth and George H. W. Bush at Yale Field in 1948"
-              className="h-80 w-full bg-[#e8e0ce] object-contain"
-            />
-            <div className="p-5">
-              <p className="text-xs font-bold tracking-widest text-[#a4282d]">PHOTOGRAPH 01</p>
-              <h3 className="mt-2 font-serif text-xl font-bold text-[#102c44]">
-                The Historic Presentation
-              </h3>
-              <p className="mt-2 text-sm text-[#526273]">
-                Archival photograph, June 5, 1948.
-              </p>
-            </div>
-          </article>
-
-          <article className="overflow-hidden rounded-lg border border-[#c9b98c] bg-[#f5efdf]">
-            <div className="flex h-80 flex-col items-center justify-center bg-[#102c44] px-6 text-center">
-              <span className="font-serif text-6xl text-[#c9b98c]">02</span>
-              <p className="mt-4 font-serif text-xl text-[#eee7d7]">
-                Yale University Archives
-              </p>
-              <p className="mt-2 text-sm text-[#d5c7a5]">
-                Original historical photograph
-              </p>
-            </div>
-            <div className="p-5">
-              <p className="text-xs font-bold tracking-widest text-[#a4282d]">PHOTOGRAPH 02</p>
-              <h3 className="mt-2 font-serif text-xl font-bold text-[#102c44]">
-                The Yale Archival Photograph
-              </h3>
-              <p className="mt-2 text-sm text-[#526273]">
-                Yale Manuscripts and Archives.
-              </p>
-              <a
-                href="https://news.yale.edu/2018/12/03/photos-george-hw-bush-yale"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-block border-b border-[#a4282d] pb-1 text-sm font-semibold text-[#a4282d]"
-              >
-                View Yale Photograph
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
+      
 
     </ArchiveShell>
   );
