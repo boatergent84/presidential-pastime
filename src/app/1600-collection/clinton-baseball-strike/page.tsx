@@ -37,6 +37,7 @@ const timeline = [
 export default function ClintonBaseballStrikeExhibit() {
   return (
     <ArchiveShell
+      eyebrow="THE HERITAGE COLLECTION · EXHIBIT 008"
       title="The President Who Tried to Save Baseball"
       subtitle="Bill Clinton, the Lost World Series & the Battle for America's National Pastime"
     >
