@@ -380,8 +380,8 @@ export default function HeritageCollectionPage() {
             <ExhibitNumber number="008" />
             <div className="my-6 w-full max-w-sm border-4 border-[#b89a61] p-3">
               <img
-                src="/clinton-baseball-strike/clinton-first-pitch-1994.jpg"
-                alt="President Bill Clinton throwing the ceremonial first pitch at Jacobs Field in Cleveland, April 4, 1994"
+                src="/clinton-baseball-strike/clinton-musial-1993.jpg"
+                alt="President Bill Clinton holding a baseball bat presented by Stan Musial in the Oval Office, May 6, 1993"
                 className="max-h-80 w-full object-contain"
               />
             </div>
