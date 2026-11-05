@@ -58,7 +58,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...exhibitRoutes,
   ];
 
-  return [...new Set(allRoutes)].map((route) => ({
+  const canonicalRoutes = allRoutes.map((route) =>
+    route === "/heritage-collection/babe-ruth-franklin-roosevelt"
+      ? "/1600-collection/babe-ruth-franklin-roosevelt"
+      : route
+  );
+
+  return [...new Set(canonicalRoutes)].map((route) => ({
     url: `${BASE_URL}${route === "/" ? "" : route}`,
     changeFrequency: "monthly",
     priority: route === "/" ? 1 : 0.7,
