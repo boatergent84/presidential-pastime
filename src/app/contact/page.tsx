@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 
 const subjects = [
@@ -16,21 +15,35 @@ export default function ContactPage() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("General Inquiry");
   const [message, setMessage] = useState("");
-  const [copied, setCopied] = useState(false);
+  const [status, setStatus] = useState("");
+  const [sending, setSending] = useState(false);
 
-  function copyInquiry() {
-    const inquiry = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `Subject: ${subject}`,
-      "",
-      message,
-    ].join("\n");
+  async function sendInquiry() {
+    if (sending) return;
 
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(inquiry)
-        .then(() => setCopied(true))
-        .catch(() => setCopied(false));
+    setSending(true);
+    setStatus("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Unable to send");
+      }
+
+      setStatus("Success! Your inquiry has been submitted.");
+      setName("");
+      setEmail("");
+      setSubject("General Inquiry");
+      setMessage("");
+    } catch {
+      setStatus("Unable to send your inquiry. Please try again.");
+    } finally {
+      setSending(false);
     }
   }
 
@@ -103,15 +116,15 @@ export default function ContactPage() {
               Send an Inquiry
             </h2>
             <p className="mt-3 text-sm leading-6 text-[#57606a]">
-              Prepare your message below. Online message delivery is
-              being configured; for now you can copy your inquiry.
+              Complete the form below to send your inquiry directly to
+              Presidential Pastime.
             </p>
           </div>
 
           <form
             onSubmit={(event) => {
               event.preventDefault();
-              copyInquiry();
+              void sendInquiry();
             }}
             className="space-y-6"
           >
@@ -166,15 +179,15 @@ export default function ContactPage() {
 
             <button
               type="submit"
+              disabled={sending}
               className="w-full bg-[#102c44] px-6 py-4 text-xs font-bold uppercase tracking-widest text-white transition hover:bg-[#234b68]"
             >
-              Copy Inquiry →
+              {sending ? "Sending..." : "Send Inquiry →"}
             </button>
 
-            {copied && (
-              <p role="status" className="text-center text-sm font-semibold text-[#51663c]">
-                Inquiry copied. You can paste it into an email.
-                No message has been sent.
+            {status && (
+              <p role="status" className="text-center text-sm font-semibold">
+                {status}
               </p>
             )}
           </form>
