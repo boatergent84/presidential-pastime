@@ -8,8 +8,8 @@ const footerLinks = [
   ["The 1600 Collection", "/1600-collection"],
   ["About", "/about"],
   ["Contact", "/contact"],
-  ["Privacy Policy", "/privacy-policy"],
   ["Support the Project", "/donate"],
+  ["Privacy Policy", "/privacy-policy"],
 ];
 
 export default function SiteFooter() {
