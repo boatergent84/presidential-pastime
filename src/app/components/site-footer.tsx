@@ -7,9 +7,9 @@ const footerLinks = [
   ["First Pitch", "/first-pitches"],
   ["The 1600 Collection", "/1600-collection"],
   ["About", "/about"],
-  ["Donate", "/donate"],
   ["Contact", "/contact"],
   ["Privacy Policy", "/privacy-policy"],
+  ["Support the Project", "/donate"],
 ];
 
 export default function SiteFooter() {

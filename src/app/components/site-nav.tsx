@@ -11,7 +11,6 @@ const links = [
   ["First Pitch", "/first-pitches"],
   ["The 1600 Collection", "/1600-collection"],
   ["About", "/about"],
-  ["Donate", "/donate"],
   ["Contact", "/contact"],
 ];
 
