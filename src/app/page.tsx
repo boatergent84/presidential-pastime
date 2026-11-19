@@ -295,7 +295,7 @@ export default function Home() {
           </div>
 
           {/* COOLIDGE HERO PHOTOGRAPH */}
-          <div className="relative order-1 min-h-[250px] overflow-hidden bg-[#d8cfba] sm:min-h-[340px] md:order-2 md:min-h-[510px]">
+          <div className="relative order-1 min-h-[390px] overflow-hidden bg-[#d8cfba] sm:min-h-[430px] md:order-2 md:min-h-[510px]">
             <img
               src="/coolidge-baseball-1924.jpg"
               alt="President Calvin Coolidge at a baseball event in 1924"
