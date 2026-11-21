@@ -419,6 +419,53 @@ export default function HeritageCollectionPage() {
         </Link>
       </section>
 
+
+      {/* EXHIBIT 009 — THE SWITCH THAT LIT THE BALLPARK */}
+      <section className="mx-auto max-w-6xl px-6 pb-4">
+        <Link
+          href="/1600-collection/the-switch-that-lit-the-ballpark"
+          className="group grid overflow-hidden border-2 border-[#b8aa8e] bg-[#f8f3e8] transition hover:border-[#a4282d] md:grid-cols-2"
+        >
+          <div className="flex min-h-64 flex-col items-center justify-center bg-[#102c44] p-6 text-center">
+            <ExhibitNumber number="009" />
+            <div className="my-5 w-full max-w-sm border-4 border-[#b89a61] bg-white p-2 shadow-xl">
+              <img
+                src="https://tile.loc.gov/storage-services/service/pnp/cph/3c30000/3c33000/3c33800/3c33862r.jpg"
+                alt="President Franklin D. Roosevelt at a Washington baseball game in 1933"
+                className="max-h-72 w-full object-contain"
+              />
+            </div>
+            <p className="font-serif text-lg italic text-[#d7bb83]">
+              The White House · May 24, 1935
+            </p>
+          </div>
+          <div className="flex flex-col justify-center p-7 md:p-10">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a4282d]">
+              The 1600 Collection · Special Exhibit · 1935
+            </p>
+            <h2 className="mt-3 font-serif text-3xl font-bold">
+              The Switch That Lit the Ballpark
+            </h2>
+            <p className="mt-2 font-serif text-lg italic text-[#987944]">
+              FDR, Crosley Field &amp; the Dawn of Night Baseball
+            </p>
+            <p className="mt-5 leading-7 text-[#59636b]">
+              One signal from the White House helped transform baseball.
+              On May 24, 1935, Franklin D. Roosevelt sent the signal that
+              brought the lights on at Cincinnati’s Crosley Field for
+              Major League Baseball’s first night game.
+            </p>
+            <p className="mt-3 text-xs text-[#59636b]">
+              Photograph: Harris &amp; Ewing Collection, Library of Congress.
+              This 1933 image shows FDR at an earlier Washington ballgame.
+            </p>
+            <span className="mt-6 inline-block self-start border-b-2 border-[#a4282d] pb-1 font-bold text-[#a4282d] group-hover:text-[#102c44]">
+              Explore the featured exhibit →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* HERITAGE RESEARCH GUIDE */}
       <section className="border-t-4 border-[#a4282d] bg-[#102c44] px-6 py-14 text-white">
         <div className="mx-auto max-w-6xl">

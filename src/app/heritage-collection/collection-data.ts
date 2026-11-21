@@ -35,4 +35,16 @@ export const exhibits: Exhibit[] = [
   {slug:'kennedy-first-pitch-photo',title:'Kennedy’s 1961 First-Pitch Photograph',category:'Photographs',year:'1961',president:'John F. Kennedy',presidentSlug:'john-f-kennedy',description:'A photographic record of the president at Washington baseball.',researchNote:'Confirm photo credit and exact event attribution using the source archive.',image:'/jfk-first-pitch-1961.jpg'},
   {slug:'presidential-signed-baseballs',title:'Baseballs Signed by U.S. Presidents',category:'Signed Baseballs',year:'20th–21st centuries',president:'Multiple presidents',presidentSlug:'',description:'A future gallery of authenticated presidential signatures on baseballs, including examples documented in museum and auction records.',researchNote:'Do not assign signatures, owners, values, or authentication status until an individual ball has been verified.'},
   {slug:'bush-2001-world-series',title:'2001 World Series Game 3 Tickets & Programs',category:'Tickets & Programs',year:'2001',president:'George W. Bush',presidentSlug:'george-w-bush',description:'Printed artifacts associated with the president’s ceremonial first pitch at Yankee Stadium.',researchNote:'Find a documented Game 3 specimen with image permission and a reliable provenance trail.'},
+
+  {
+    slug: "the-switch-that-lit-the-ballpark",
+    title: "The Switch That Lit the Ballpark",
+    category: "Presidential and Baseball History",
+    year: "1935",
+    president: "Franklin D. Roosevelt",
+    presidentSlug: "franklin-d-roosevelt",
+    description: "The White House signal that helped bring night baseball to Major League Baseball, as the Cincinnati Reds welcomed the Philadelphia Phillies beneath Crosley Field's new lights.",
+    researchNote: "The Library of Congress identifies May 24, 1935, as the night Roosevelt symbolically activated Crosley Field's lights. The archival photograph is contextual, not an image of the White House signal or the first game at Crosley Field.",
+    image: "https://tile.loc.gov/storage-services/service/pnp/cph/3c30000/3c33000/3c33800/3c33862r.jpg",
+  },
 ];
