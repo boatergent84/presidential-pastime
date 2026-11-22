@@ -62,80 +62,7 @@ const teams = [
 ];
 
 
-const teams1992 = [
-  {
-    era: "1925–1959", league: "American League",
-    players: [
-      ["C", "Mickey Cochrane"], ["1B", "Lou Gehrig"],
-      ["2B", "Charlie Gehringer"], ["3B", "George Kell"],
-      ["SS", "Phil Rizzuto"], ["OF", "Babe Ruth"],
-      ["OF", "Joe DiMaggio"], ["OF", "Ted Williams"],
-      ["DH", "Jimmie Foxx"],
-      ["P", "Satchel Paige, Bob Feller, Lefty Grove, Early Wynn, Bobo Newsom"],
-      ["Manager", "Casey Stengel"]
-    ]
-  },
-  {
-    era: "1925–1959", league: "National League",
-    players: [
-      ["C", "Roy Campanella"], ["1B", "Johnny Mize"],
-      ["2B", "Jackie Robinson"], ["3B", "Eddie Mathews"],
-      ["SS", "Ernie Banks"], ["OF", "Stan Musial"],
-      ["OF", "Willie Mays"], ["OF", "Mel Ott"],
-      ["DH", "Rogers Hornsby"],
-      ["P", "Elroy Face, Warren Spahn, Robin Roberts, Carl Hubbell, Dizzy Dean"],
-      ["Manager", "Branch Rickey"]
-    ]
-  },
-  {
-    era: "1960–1991", league: "American League",
-    players: [
-      ["C", "Thurman Munson"], ["1B", "Harmon Killebrew"],
-      ["2B", "Bobby Grich"], ["3B", "Brooks Robinson"],
-      ["SS", "Luis Aparicio"], ["OF", "Carl Yastrzemski"],
-      ["OF", "Mickey Mantle"], ["OF", "Reggie Jackson"],
-      ["DH", "Rod Carew"],
-      ["P", "Luis Tiant, Catfish Hunter, Jim Palmer, Whitey Ford, Rollie Fingers"],
-      ["Manager", "Billy Martin"]
-    ]
-  },
-  {
-    era: "1960–1991", league: "National League",
-    players: [
-      ["C", "Johnny Bench"], ["1B", "Willie McCovey"],
-      ["2B", "Joe Morgan"], ["3B", "Mike Schmidt"],
-      ["SS", "Maury Wills"], ["OF", "Hank Aaron"],
-      ["OF", "Roberto Clemente"], ["OF", "Lou Brock"],
-      ["DH", "Pete Rose"],
-      ["P", "Tom Seaver, Steve Carlton, Sandy Koufax, Juan Marichal, Bob Gibson"],
-      ["Manager", "Walt Alston"]
-    ]
-  },
-  {
-    era: "Active in 1992", league: "American League",
-    players: [
-      ["C", "Carlton Fisk"], ["1B", "Don Mattingly"],
-      ["2B", "Roberto Alomar"], ["3B", "George Brett"],
-      ["SS", "Cal Ripken Jr."], ["OF", "Kirby Puckett"],
-      ["OF", "Ken Griffey Jr."], ["OF", "Rickey Henderson"],
-      ["DH", "Jose Canseco"],
-      ["P", "Jack Morris, Nolan Ryan, Dennis Eckersley, Roger Clemens, Goose Gossage"],
-      ["Manager", "Tony La Russa"]
-    ]
-  },
-  {
-    era: "Active in 1992", league: "National League",
-    players: [
-      ["C", "Gary Carter"], ["1B", "Will Clark"],
-      ["2B", "Ryne Sandberg"], ["3B", "Howard Johnson"],
-      ["SS", "Ozzie Smith"], ["OF", "Tony Gwynn"],
-      ["OF", "Andre Dawson"], ["OF", "Darryl Strawberry"],
-      ["DH", "Bobby Bonilla"],
-      ["P", "Lee Smith, Rob Dibble, David Cone, Bret Saberhagen, Dwight Gooden"],
-      ["Manager", "Tommy Lasorda"]
-    ]
-  }
-];
+
 
 export default function NixonDreamTeamPage() {
   return (
@@ -310,103 +237,24 @@ export default function NixonDreamTeamPage() {
           </a>
         </section>
 
-        <section className="mx-auto max-w-4xl">
+
+        <section className="mx-auto max-w-4xl border-l-4 border-[#b89a61] bg-[#f8f4e9] px-6 py-5">
           <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-            Twenty Years Later
+            The 1992 Update
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-bold">
-            The 1992 Dream Teams
+          <h2 className="mt-2 font-serif text-2xl font-bold">
+            Nixon's Dream Teams, Revisited
           </h2>
-          <p className="mt-5 leading-8">
-            Two decades after publishing his original choices,
-            former President Nixon revisited his baseball selections.
-            The 1992 lists recognized additional generations of
-            players and extended his baseball retrospective.
+          <p className="mt-3 leading-7">
+            On July 15, 1992, Nixon and David Eisenhower presented six updated all-time teams at the Nixon Library. The selections added later generations of stars, including players active that season.
           </p>
-          <p className="mt-4 leading-8">
-            On July 15, 1992, Nixon and David Eisenhower presented
-            six all-time All-Star teams at the Nixon Library in
-            Yorba Linda, California. The new selections included
-            players who were still active that season.
-          </p>
+          <a
+            href="/1600-collection/nixon-dream-team/1992-dream-teams"
+            className="mt-3 inline-block font-bold text-[#a4282d] underline underline-offset-4"
+          >
+            View the 1992 lineups
+          </a>
         </section>
-
-
-        <section>
-          <div className="mb-8 text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
-              The 1992 Edition
-            </p>
-            <h2 className="mt-3 font-serif text-3xl font-bold">
-              Six Presidential All-Star Lineup Cards
-            </h2>
-            <p className="mt-3 text-sm">
-              Nixon's documented selections, arranged as vintage-style
-              commemorative roster cards. Not original artifacts or batting orders.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {teams1992.map((team) => (
-              <article
-                key={`${team.era}-${team.league}`}
-                className="border-[3px] border-[#243b50] bg-[#f2e7cc] p-3 shadow-[5px_7px_0px_#c6b793]"
-                style={{
-                  backgroundImage:
-                    "repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(90,75,55,0.09) 32px)",
-                }}
-              >
-                <div className="border border-[#8d8068] px-5 py-6">
-                  <div className="border-b-4 border-double border-[#243b50] pb-4 text-center">
-                    <p className="font-serif text-xs font-bold uppercase tracking-[0.2em]">
-                      Presidential Baseball Selection · 1992
-                    </p>
-                    <h3 className="mt-3 font-serif text-2xl font-black uppercase">
-                      {team.league}
-                    </h3>
-                    <p className="mt-2 font-serif text-sm font-bold uppercase tracking-widest">
-                      {team.era}
-                    </p>
-                  </div>
-
-                  <div className="mt-5 grid grid-cols-[38px_1fr_55px] border-b-2 border-[#243b50] pb-2 text-xs font-bold uppercase">
-                    <span>No.</span><span>Player</span><span>Pos.</span>
-                  </div>
-
-                  {team.players.map(([position, names], index) => (
-                    <div
-                      key={index}
-                      className="grid grid-cols-[38px_1fr_55px] items-center gap-2 border-b border-[#b7a98b] py-3"
-                    >
-                      <span className="font-serif font-bold text-[#9e3030]">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="font-serif text-lg italic text-[#233b52]">
-                        {names}
-                      </span>
-                      <span className="text-right font-serif text-xs font-bold text-[#665d4b]">
-                        {position}
-                      </span>
-                    </div>
-                  ))}
-
-                  <div className="mt-7 border-t-2 border-[#243b50] pt-4">
-                    <p className="font-serif text-xs uppercase tracking-widest">
-                      Selected By
-                    </p>
-                    <p className="mt-2 font-serif text-2xl italic">
-                      Richard M. Nixon
-                    </p>
-                    <p className="mt-2 text-xs uppercase tracking-wider">
-                      Historical roster recreation · 1992
-                    </p>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
 
         {/* NIXON ARCHIVAL PHOTO GALLERY */}
         <section className="space-y-7">
