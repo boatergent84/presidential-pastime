@@ -172,6 +172,24 @@ export default function NixonDreamTeamPage() {
           </p>
         </section>
 
+
+        <section className="mx-auto max-w-4xl border-l-4 border-[#b89a61] bg-[#f8f4e9] px-6 py-5">
+          <h2 className="font-serif text-2xl font-bold">
+            A Letter to Charlie Gehringer
+          </h2>
+          <p className="mt-3 leading-7">
+            In a September 29, 1972 letter, Nixon sent Hall of Famer Charlie Gehringer a copy of his all-time baseball roster. The letter is JSA authenticated.
+          </p>
+          <a
+            href="/nixon-dream-team/nixon-gehringer-letter.webp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block font-bold text-[#a4282d] underline underline-offset-4"
+          >
+            View the letter
+          </a>
+        </section>
+
         <section>
           <div className="mb-8 text-center">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#a4282d]">
